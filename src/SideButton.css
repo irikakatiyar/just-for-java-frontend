@@ -1,0 +1,22 @@
+.sideButton {
+	background-color: #f19c79;
+	color: #a44a3f;
+	border-radius: 4px;
+	width: 200px;
+	height: 30px;
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.sideButtonSelected {
+	color: #f19c79;
+	background-color: #a44a3f;
+	border-radius: 4px;
+	width: 200px;
+	height: 30px;
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
