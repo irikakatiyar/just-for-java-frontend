@@ -8,6 +8,8 @@
 	margin-bottom: 2.5px;
 	margin-left: 25px;
 	margin-right: 25px;
+	cursor:pointer;
+	transition-duration: 0.4s;
 }
 .sideButtonSelected {
 	color: #f19c79;
@@ -19,4 +21,9 @@
 	margin-bottom: 2.5px;
 	margin-left: 25px;
 	margin-right: 25px;
+}
+
+.sideButton:hover{
+	color: #f19c79;
+  	background-color: #a44a3f;
 }

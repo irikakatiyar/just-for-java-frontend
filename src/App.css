@@ -2,11 +2,14 @@
 
 .full{
   background-color: #f6f4d2;
+  height: 100vh;
 }
 
 h1{
   font-family: 'Gochi Hand', cursive;
   font-size: 50px;
+  margin: 0;
+  padding: 20px;
 }
 
 .title{
@@ -15,17 +18,30 @@ h1{
 }
 .bottom{
   background-color: #f6f4d2;
+  display: inline-block;
 }
 
 .sidebar{
   width: 250px;
   background-color: #cbdfbd;
+  height: 100vh;
+  padding: 10px 0px;
+  float: left;
 }
 
 button {
   outline: none;
   font-family: 'Montserrat', sans-serif;
 }
+
+.content{
+  float: right;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
 
 
 
