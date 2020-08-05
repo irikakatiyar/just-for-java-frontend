@@ -9,7 +9,7 @@ class ContactUs extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the Contact Us content
+				we probably need to put some contact info here
 			</div>
 		)
 	}
