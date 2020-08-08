@@ -24,7 +24,6 @@ class ForLoop extends React.Component{
 				<div className="code">
 					0 1 2 3 4 5
 				</div>
-				now that you know about for loops, let's try some exercises!
 			</div>
 		)
 	}

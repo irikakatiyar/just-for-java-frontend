@@ -48,7 +48,6 @@ class Variables extends React.Component{
 				<div className = "code">
 					boolean isFun = true;
 				</div>
-				<br/>now that you know about variables, let's try some exercises!
 			</div>
 		)
 	}

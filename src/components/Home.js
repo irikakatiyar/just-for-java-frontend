@@ -9,6 +9,7 @@ class Home extends React.Component{
 	render(){
 		return (
 			<div>
+				{this.props.user}
 				hi there! welcome to just for java! this is a website to help you learn cool java concepts to make you a master coder. :)
 			</div>
 		)

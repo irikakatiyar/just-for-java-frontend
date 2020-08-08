@@ -53,13 +53,6 @@ class App extends React.Component{
 
     return (
       <div className="full">
-        <header className="App-header">
-          {
-            user 
-              ? <p>Hello, {user.displayName}</p>
-              : <p>Please sign in.</p>
-          }
-        </header>
         <div className = "title">
           <h1>
             just for java
@@ -79,7 +72,14 @@ class App extends React.Component{
             )}
           </div>
           <div className = "content">
-            <Content page={this.state.sideButtonSelected} user={user.displayName} />
+            <Content 
+              page={this.state.sideButtonSelected}  
+              user={
+                user 
+                  ? <h2>hello, {user.displayName}</h2>
+                  : <h2>home:</h2>
+              }
+            />
           </div>
         </div>
       </div>

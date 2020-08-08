@@ -19,7 +19,7 @@ class Content extends React.Component{
 	getPage(){
 		if(this.props.page === "home"){
 			return (
-				<Home/>
+				<Home user={this.props.user}/>
 			);
 		}
 		else if(this.props.page === "about"){
