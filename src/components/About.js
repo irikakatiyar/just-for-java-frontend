@@ -9,7 +9,6 @@ class About extends React.Component{
 	render(){
 		return (
 			<div>
-				<h2>about:</h2>
 				hi! we're irith and irika katiyar, 17 year old twins from california who love to code! we both have been coding since we were in 7th grade. 
 				we have taken ap computer science and are on the silver level of the USA Computing Olympiad! in the future, we both plan on pursuing computational biology
 				to combine our interest for biology and computer science. besides java, we also know web development, and this whole website was created from scratch 

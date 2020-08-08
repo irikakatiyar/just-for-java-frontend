@@ -10,6 +10,18 @@ import IfStatement from './IfStatement';
 import BooleanLogic from './BooleanLogic';
 import ForLoop from './ForLoop';
 import WhileLoop from './WhileLoop';
+import Comments from './Comments';
+import Functions from './Functions';
+import RandomNumbers from './RandomNumbers';
+import ASCII from './ASCII';
+import Break from './Break';
+import Strings from './Strings';
+import math from './Math';
+import ArrayList from './ArrayList';
+import HashMap from './HashMap';
+import array from './Array';
+import DebuggingErrors from './DebuggingErrors';
+import Arithmetic from './Arithmetic';
 
 class Content extends React.Component{
 	constructor(props){
@@ -19,7 +31,7 @@ class Content extends React.Component{
 	getPage(){
 		if(this.props.page === "home"){
 			return (
-				<Home user={this.props.user}/>
+				<Home greeting={this.props.greeting}/>
 			);
 		}
 		else if(this.props.page === "about"){
@@ -72,11 +84,67 @@ class Content extends React.Component{
 				<WhileLoop/>
 			);
 		}
+		else if(this.props.page === "comments"){
+			return (
+				<Comments/>
+			);
+		}
+		else if(this.props.page === "functions"){
+			return (
+				<Functions/>
+			);
+		}
+		else if(this.props.page === "random numbers"){
+			return (
+				<RandomNumbers/>
+			);
+		}
+		else if(this.props.page === "ASCII"){
+			return (
+				<ASCII/>
+			);
+		}
+		else if(this.props.page === "HashMap"){
+			return (
+				<HashMap/>
+			);
+		}
+		else if(this.props.page === "array"){
+			return (
+				<array/>
+			);
+		}
+		else if(this.props.page === "math"){
+			return (
+				<math/>
+			);
+		}
+		else if(this.props.page === "strings"){
+			return (
+				<Strings/>
+			);
+		}
+		else if(this.props.page === "ArrayList"){
+			return (
+				<ArrayList/>
+			);
+		}
+		else if(this.props.page === "arithmetic"){
+			return (
+				<Arithmetic/>
+			);
+		}
+		else if(this.props.page === "break"){
+			return (
+				<Break/>
+			);
+		}
 	}
 
 	render(){
 		return (
-			<div className = "words">
+			<div className = "page">
+				<h2>{this.props.page}:</h2>
 				{this.getPage()}
 			</div>
 		)

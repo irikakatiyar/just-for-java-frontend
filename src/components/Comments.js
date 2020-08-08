@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Home extends React.Component{
+class Comments extends React.Component{
 	constructor(props){
 		super(props)
 	}
@@ -9,10 +9,10 @@ class Home extends React.Component{
 	render(){
 		return (
 			<div>
-				{this.props.greeting}
+				This is the Comments content
 			</div>
 		)
 	}
 }
 
-export default Home;
+export default Comments;

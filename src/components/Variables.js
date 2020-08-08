@@ -9,10 +9,9 @@ class Variables extends React.Component{
 	render(){
 		return (
 			<div>
-				<h2> variables:</h2>
 				variables are used to store information. 
 				<br/><br/>
-				to create a variable, you should write: <br/>
+				to create a variable, type: <br/>
 				<b><i> &lt;type&gt; &lt;name&gt; = &lt;value&gt;</i></b> <br/>
 				<br/>
 				there are multiple types of things that variables can store:

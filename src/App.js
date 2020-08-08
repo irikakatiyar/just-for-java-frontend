@@ -28,7 +28,7 @@ class App extends React.Component{
 
   constructor(props) {
     super(props);
-    var sideButtonText = ["home", "about", "resources", "contact us", "variables", "printing", "user input", "if statement", "boolean logic", "for loop", "while loop"];
+    var sideButtonText = ["home", "about", "resources", "contact us", "variables", "comments", "printing", "arithmetic", "user input", "Strings", "Math", "if statement", "boolean logic", "for loop", "while loop", "break", "functions", "random numbers", "ASCII", "debugging errors", "array", "ArrayList", "HashMap"];
     var sideButtonSelected = "home";
     
     this.state={
@@ -74,10 +74,10 @@ class App extends React.Component{
           <div className = "content">
             <Content 
               page={this.state.sideButtonSelected}  
-              user={
+              greeting={
                 user 
-                  ? <h2>hello, {user.displayName}</h2>
-                  : <h2>home:</h2>
+                  ? <div>hi, <b>{user.displayName.toLowerCase()}</b>!</div>
+                  : <div>hi!</div>
               }
             />
           </div>

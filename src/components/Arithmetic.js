@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Home extends React.Component{
+class Arithmetic extends React.Component{
 	constructor(props){
 		super(props)
 	}
@@ -9,10 +9,10 @@ class Home extends React.Component{
 	render(){
 		return (
 			<div>
-				{this.props.greeting}
+				This is the Arithmetic content
 			</div>
 		)
 	}
 }
 
-export default Home;
+export default Arithmetic;
