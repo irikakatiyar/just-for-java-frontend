@@ -65,7 +65,7 @@ class App extends React.Component{
             just for java
             {
               user
-                ? <button className="login" onClick={signOut}>sign out</button>
+                ? <button className="login" onClick={signOut}>sign out of account</button>
                 : <button className="login" onClick={signInWithGoogle}>sign in with google</button>
             }
           </h1>
@@ -79,7 +79,7 @@ class App extends React.Component{
             )}
           </div>
           <div className = "content">
-            <Content page={this.state.sideButtonSelected} />
+            <Content page={this.state.sideButtonSelected} user={user.displayName} />
           </div>
         </div>
       </div>
