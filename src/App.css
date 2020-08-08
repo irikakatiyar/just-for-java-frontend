@@ -7,6 +7,10 @@
   height: 100vh;
 }
 
+.login{
+  float: right;
+}
+
 h1{
   font-family: 'Source Code Pro', monospace;
   font-weight: 600;
