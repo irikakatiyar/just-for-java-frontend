@@ -9,16 +9,21 @@ class ForLoop extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the ForLoop content.
+				<h2>for loops:</h2>
+				<br/>
+				for loops are used to loop through some code a specific number of times. 
+				they are most helpful when you know how many times you want to go through your code.
+				<br/><br/>
+				let's say, for example, you want to write some code that will print the numbers 0-5. you can use a for loop to do so: 
 				<div className="code">
-					for(int i = 0; i &lt; 10; i++) &#123; <br/>
-						* code * <br/>
+					for(int i = 0; i &le; 5; i++) &#123; <br/>
+						<p>System.out.print(i + " ")</p> <div className = "comment">//the " " is to add a space between the numbers when printing</div><br/>
 					&#125;<br/>
 				</div>
-				<br/>
-					The code above is a for loop that will iterate through the code inside the curly brackets 10 times,
-					where i will be equal to an integer between 0 and 9.
-
+				The code above prints:
+				<div className="code">
+					0 1 2 3 4 5
+				</div>
 			</div>
 		)
 	}

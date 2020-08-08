@@ -72,6 +72,16 @@ b{
   font-weight: 500;
 }
 
+.comment{
+  color: #6c757d;
+  display: inline-block;
+}
+
+p{
+  margin-left: 40px;
+  display: inline-block;
+}
+
 
 
 
