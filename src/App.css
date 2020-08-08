@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+.login{
+  float: right;
+}
+
 h1{
   font-family: 'Gochi Hand', cursive;
   font-size: 50px;
