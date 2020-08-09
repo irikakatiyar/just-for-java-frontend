@@ -35,7 +35,7 @@ class UserInput extends React.Component{
 				this means that we can now get user input from the console (<b className="note">btw:</b> the console is where you see anything printed out, and that is also where the user will enter their input).
 				<h3>finally! let's get the user's name</h3>
 				now let's learn how to get user input. we are going to create a program that asks the user to type their name and says hello to them.
-				there are three steps we need to do in order to create our program (note that these steps can be applied to any type of program you are creating involving user input):
+				there are three steps we need to do in order to create our program:
 				<ol start="3">
 					<li><b>print</b> out a prompt for the user to answer to</li>
 					<li>get the <b>user input</b> and store it in a <b>variable</b></li>
@@ -66,7 +66,7 @@ class UserInput extends React.Component{
 				<br/>
 				for our program, we want to say hello to the user. now that we have the user's name stored in the variable <i>name</i>, we can print out a greeting to the user saying "hello <i>name</i>". to do this, we can use <b>String concatenation</b>. (<b className="note">psst. need a reminder</b> of what in the world String concatenation is? check out the <b className="pageName">Strings page</b>!) to add our variable <i>name</i> to "hello " (<b className="note">btw:</b> remember that you can use <b>+</b> to add a variable to a <b>String</b>). make sure you add a space after hello so that there is a space between hello and the user's name.
 				<div className="code">System.out.println("hello " + name);</div>
-				awesome! we now have a fully functional program that asks the user for their name and prints out "hello <i>name</i>".
+				awesome! we now have a fully functional program that asks the user for their name and prints out "hello <i>name</i>". just one final step left...
 				<h3>aw it's time to close</h3>
 				once you finish getting user input in the program, it is always good practice to:
 				<ol start="6">
@@ -77,11 +77,11 @@ class UserInput extends React.Component{
 				to close your Scanner, type the following line of code:
 				<div className="code">in.close();</div>
 				<br/>
-				sweet! now you know all 6 steps to get user input!
+				<b>sweet!</b> now you know all 6 steps to get user input!
 				<h3>how about getting the user's age?</h3>
 				sometimes we want to get user input not as a <b>String</b>, but as another variable type. for example, what if we wanted to ask the user for their age instead of their name? age is an integer whereas name is text, so we will need to get the user input as an <b>int</b> instead of as a <b>String</b>. it's actually a very simple fix! all we need to do is change <b>nextLine()</b> to <b>nextInt()</b> and make our variable an <b>int</b> instead of a <b>String</b>.
 				<br/>
-				now let's combine everything we learned to type code that asks the user for their age and prints it out! your code may look something like this:
+				now let's combine everything we learned to type code that asks the user for their age and prints it out! (<b className="note">hint:</b> follow the 6 steps we did to ask the user for their name, and don't forget to use <b>in.nextInt()</b> since we are storing the user input as an integer.) your code may look something like this:
 				<div className="code">
 				<div className="comment">//we will assume that we have imported java.util.Scanner already</div>
 				<br/>
@@ -161,7 +161,7 @@ class UserInput extends React.Component{
 				  </tr>
 				</table>
 				<br/>
-				we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)
 	}

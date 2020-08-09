@@ -24,6 +24,7 @@ import Arithmetic from './Arithmetic';
 import ForEachLoop from './ForEachLoop';
 import NestedLoops from './NestedLoops';
 import GettingStarted from './GettingStarted';
+import TwoDimArrays from './TwoDimArrays';
 
 class Content extends React.Component{
 	constructor(props){
@@ -116,12 +117,12 @@ class Content extends React.Component{
 				<array/>
 			);
 		}
-		else if(this.props.page === "math"){
+		else if(this.props.page === "Math"){
 			return (
 				<math/>
 			);
 		}
-		else if(this.props.page === "strings"){
+		else if(this.props.page === "Strings"){
 			return (
 				<Strings/>
 			);
@@ -154,6 +155,11 @@ class Content extends React.Component{
 		else if(this.props.page === "for-each loop"){
 			return (
 				<ForEachLoop/>
+			);
+		}
+		else if(this.props.page === "2D array"){
+			return (
+				<TwoDimArrays/>
 			);
 		}
 	}

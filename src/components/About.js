@@ -11,8 +11,8 @@ class About extends React.Component{
 			<div>
 				hi! we're irith and irika katiyar, 17 year old twins from california who love to code! we both have been coding since we were in 7th grade. 
 				we have taken ap computer science and are on the silver level of the USA Computing Olympiad! in the future, we both plan on pursuing computational biology
-				to combine our interest for biology and computer science. besides java, we also know web development, and this whole website was created from scratch 
-				by both of us!<br/><br/>
+				to combine our interest for biology and computer science. besides java, we also know web development. (<b className="note">btw:</b> this whole website was created completely from scratch and made with love
+				by both of us!)<br/><br/>
 
 				<b>a little more about irika:</b><br/>
 				my name is irika, and i'm the older twin (by 30 seconds, every second counts!) the programming languages i know are java, html, 
@@ -27,7 +27,9 @@ class About extends React.Component{
 				(black mirror is my all time favorite show), and meet new people. <br/><br/>
 
 				<b>special thanks to:</b><br/>
-				ruby for teaching us coding and helping us a lot in creating this website! :)
+				ruby for teaching us coding and helping us a lot in creating this website!<br/>
+				our amazing parents for letting us stay up till midnight working on this website!
+				<br/><b className="note">:)</b>
 			</div>
 		)
 	}
