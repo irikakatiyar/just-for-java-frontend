@@ -20,8 +20,10 @@ import math from './Math';
 import ArrayList from './ArrayList';
 import HashMap from './HashMap';
 import array from './Array';
-import DebuggingErrors from './DebuggingErrors';
 import Arithmetic from './Arithmetic';
+import ForEachLoop from './ForEachLoop';
+import NestedLoops from './NestedLoops';
+import GettingStarted from './GettingStarted';
 
 class Content extends React.Component{
 	constructor(props){
@@ -139,12 +141,28 @@ class Content extends React.Component{
 				<Break/>
 			);
 		}
+		else if(this.props.page === "getting started"){
+			return (
+				<GettingStarted/>
+			);
+		}
+		else if(this.props.page === "nested loops"){
+			return (
+				<NestedLoops/>
+			);
+		}
+		else if(this.props.page === "for-each loop"){
+			return (
+				<ForEachLoop/>
+			);
+		}
 	}
 
 	render(){
 		return (
 			<div className = "page">
 				<h2>{this.props.page}:</h2>
+				<br/>
 				{this.getPage()}
 			</div>
 		)
