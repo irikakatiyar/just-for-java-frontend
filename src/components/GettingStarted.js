@@ -1,6 +1,6 @@
 import React from 'react';
 
-class DebuggingErrors extends React.Component{
+class GettingStarted extends React.Component{
 	constructor(props){
 		super(props)
 	}
@@ -9,10 +9,10 @@ class DebuggingErrors extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the debugging errors content
+				This is the GettingStarted content
 			</div>
 		)
 	}
 }
 
-export default DebuggingErrors;
+export default GettingStarted;
