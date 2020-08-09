@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap');
 
 
@@ -24,7 +24,7 @@
   border: solid 1px #FFA69E;
 }
 
-h1{
+h1{ 
   font-family: 'Source Code Pro', monospace;
   font-weight: 600;
   font-size: 50px;
@@ -87,6 +87,16 @@ b{
   color: #FFA69E;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+}
+
+.note{
+  color: #6B9080;
+  font-weight: 600;
+}
+
+.pageName{
+  color: #A4C3B2;
+  font-weight: 600;
 }
 
 .comment{

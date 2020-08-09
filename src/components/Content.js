@@ -145,6 +145,7 @@ class Content extends React.Component{
 		return (
 			<div className = "page">
 				<h2>{this.props.page}:</h2>
+				<br/>
 				{this.getPage()}
 			</div>
 		)
