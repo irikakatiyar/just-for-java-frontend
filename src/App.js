@@ -28,7 +28,7 @@ class App extends React.Component{
 
   constructor(props) {
     super(props);
-    var sideButtonText = ["home", "about", "resources", "contact us", "variables", "comments", "printing", "arithmetic", "user input", "Strings", "Math", "if statement", "boolean logic", "for loop", "while loop", "break", "functions", "random numbers", "ASCII", "debugging errors", "array", "ArrayList", "HashMap"];
+    var sideButtonText = ["home", "about", "resources", "contact us", "variables", "comments", "printing", "arithmetic", "Strings", "user input", "Math", "if statement", "boolean logic", "for loop", "while loop", "break", "functions", "random numbers", "ASCII", "debugging errors", "array", "ArrayList", "HashMap"];
     var sideButtonSelected = "home";
     
     this.state={
