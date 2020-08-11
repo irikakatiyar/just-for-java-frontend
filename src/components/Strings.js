@@ -9,8 +9,10 @@ class Strings extends React.Component{
 		return (
 			<div>
 				As we learned on the <b className="pageName">variables page</b>, <b>Strings</b> are used to store text and are denoted using double quotation marks. Strings are different from the other variable types that we have learned about so far – integers, doubles, characters, booleans. (<b className="note">btw:</b> the difference you may have noticed is that <b>String</b> has a capital first letter whereas <b>int</b>, <b>double</b>, <b>char</b>, and <b>boolean</b> are all lowercase.) Strings are special, and that's why we've dedicated a whole page to them!
-				<h3>hello world</h3>
-				primitive types
+				<h3>"hello world"</h3>
+				why can Strings have a whole page dedicated to them? what makes them so special from the other variable types?<br/> 
+				<b>int</b>, <b>double</b>, <b>char</b>, and <b>boolean</b> are examples of <b>primitive types</b>. a primitive type is <b>already defined in, or built into, java</b> and have one job: <b>contain a simple value</b>.<br/> 
+				on the other hand, <b>String</b> is an example of an <b>object</b>, or a <b>non-primitive type</b>. for now, just know that an object is much more <b>complex</b> than a primitive type, with <b>a lot more functionality</b>. because of this increased functionality, and the fact that Strings are used so often by programmers like you, the rest of this page will introduce various String-related topics.
 				<h3>h e l l o w o r l d</h3>
 				let's redefine what a String is: <b>a String is just a bunch of characters</b>. this means that we can extract specific characters in a String.
 				<br/>
@@ -126,7 +128,7 @@ class Strings extends React.Component{
 				<br/>
 				our goal is to try to retrieve the String "hello" from "hello world".
 				<br/>
-				woah, hold your horses! before we start coding, let's first take a look at the indexes of each character in "hello world" (<b className="note">btw:</b> the substring we want to retrieve is highlighted):
+				first, let's take a look at the indexes of each character in "hello world" (<b className="note">btw:</b> the substring we want to retrieve is highlighted):
 				<br/>
 				<br/>
 				<table>
@@ -175,7 +177,7 @@ class Strings extends React.Component{
 				<br/>
 				our goal is to try to retrieve the String "world" from "hello world". 
 				<br/>
-				woah, hold your horses! before we start coding, let's first take a look at the indexes of each character in "hello world" (<b className="note">btw:</b> the substring we want to retrieve is highlighted):
+				first, let's take a look at the indexes of each character in "hello world" (<b className="note">btw:</b> the substring we want to retrieve is highlighted):
 				<br/>
 				<br/>
 				<table>
@@ -219,6 +221,68 @@ class Strings extends React.Component{
 				</div>
 				<br/>
 				that was a huge info dump: you learned about indexing, accessing a character by index, and extracting a substring. but... erm... there may still be another load of information to be dumped... <b>oof. good luck.</b>
+				<h3>0 1 2 3 4 5 6 7 8 9 10</h3>
+				we just learned how we can get a <b>character</b> or a <b>substring</b> from a String using <b>charAt()</b> and <b>substring()</b>, respectively. how about if we want to do the <b>reverse</b>? is there a way we can get the index of a character or a substring in a String? indeed.<br/>
+				<b>indexOf()</b> will give you the <b>starting index</b> of the <b>first occurence</b> of a <b>specified character or substring</b>. let's head over to the blueprint to see the four ways we can construct <b>indexOf()</b> (<b className="note">btw:</b> let's assume that we have already created a String variable called <i>str</i> from which we will get the index of either a character or a substring):
+				<br/>
+				<b>str.indexOf(<i>&lt;character&gt;</i>)</b><br/>
+				<b>str.indexOf(<i>&lt;substring&gt;</i>)</b><br/>
+				<b>str.indexOf(<i>&lt;character&gt;</i>, <i>&lt;from_index&gt;</i>)</b><br/>
+				<b>str.indexOf(<i>&lt;substring&gt;</i>, <i>&lt;from_index&gt;</i>)</b><br/><br/>
+				as we can see, there are three different components to <b>indexOf()</b>. let's go over each one:
+				<ul>
+					<li><b><i>character</i></b>: the single char you are looking for in <i>str</i></li>
+					<li><b><i>substring</i></b>: the substring you are looking for in <i>str</i> </li>
+					<li><b><i>from_index</i></b>: the index in <i>str</i> from which you should start looking</li>
+				</ul>
+				for the first two blueprints, where no <i>from_index</i> is provided, you search the <b>whole String</b> for the character or substring you provided.<br/> 
+				for the second two blueprints, where <i>from_index</i> is provided, you search the String <b>starting at <i>from_index</i> till the end of the String</b>.<br/><br/>
+				you may be wondering, what if the character or substring we specify is not actually in <i>str</i>? say we want to get the index of the first occurence of "cat" in the String "doggo". there is no "cat" in "doggo", so what will happen? <b>if the character or substring specified is not found in <i>str</i>, then indexOf() will return -1.</b>
+				<br/><br/>now let's see examples of each of these blueprints being used in code! for each example, try to do the following:
+				<ul>
+					<li>type the code necessary to solve the problem, storing the value of whichever <b>indexOf()</b> blueprint you use in an <b>int</b></li>
+					<li>predict the value of the <b>int</b> variable you created before looking at the answer we have provided</li>
+				</ul>
+				<b>example 1: str.indexOf(<i>&lt;character&gt;</i>)</b><br/>
+				what is the index of the first occurence of 'l' in "hello"?
+				<div className="code">
+				String hello = "hello";
+				<br/>
+				int i = hello.indexOf('l'); <div className="comment">//i = 2</div>
+				</div>
+				<br/>
+				<b>example 2: str.indexOf(<i>&lt;substring&gt;</i>)</b><br/>
+				what is the index of the first occurence of "cat" in "doggo"?
+				<div className="code">
+				String doggo = "doggo";
+				<br/>
+				int i = doggo.indexOf("cat"); <div className="comment">//i = -1</div>
+				</div>
+				<br/>
+				<b>example 3: str.indexOf(<i>&lt;character&gt;</i>, <i>&lt;from_index&gt;</i>)</b><br/>
+				what is the index of the first occurence of 'j' in "just for java" from index 1? 
+				<div className="code">
+				String justForJava = "just for java";
+				<br/>
+				int i = justForJava.indexOf('j'); <div className="comment">//i = 9</div>
+				</div>
+				<br/>
+				<b>example 4: str.indexOf(<i>&lt;substring&gt;</i>, <i>&lt;from_index&gt;</i>)</b><br/>
+				what is the index of the first occurence of "oompa" in "oompa loompa" from index 6? 
+				<div className="code">
+				String oompaLoompa = "oompa loompa";
+				<br/>
+				int i = oompaLoompa.indexOf("oompa"); <div className="comment">//i = 7</div>
+				</div>
+				<br/>one <b>last</b> thing... if you want to get the <b>last</b> occurence rather than the first occurence of a character or substring in a String, all you need to do is replace indexOf() with <b>lastIndexOf()</b>. you can use any of the four blueprints that we had for indexOf() with lastIndexOf(). here's a quick example:
+				<br/><br/>
+				<b>example 5: using lastIndexOf() instead of indexOf()</b><br/>
+				what is the index of the last occurence of 'e' in "awesome"?
+				<div className="code">
+				String awesome = "awesome";
+				<br/>
+				int i = awesome.lastIndexOf('e'); <div className="comment">//i = 6</div>
+				</div>
 				<h3>11</h3>
 				all Strings have <b>length</b>, which is an integer, and their length is equal to the <b>number of characters</b> in the String. for example, "hello world" has a length of 11 (<b className="note">btw:</b> spaces count as characters). an empty String – <b>""</b> – has a length of 0. but rather than counting how many characters are in a String, we can just use the following syntax to get the length of a String:
 				<div className="code">
@@ -226,7 +290,7 @@ class Strings extends React.Component{
 				<br/>
 				<div className="comment">//get the length of the fun fact using length()</div>
 				<br/>
-				int funFactLen = funFact.length(); <div className="comment">//funFactLen is initialized to 36</div>
+				int funFactLength = funFact.length(); <div className="comment">//funFactLength is initialized to 36</div>
 				</div>
 				not too bad, right? now you know how to get the length of a String using <b>length()</b>!
 				<h3>HELLO world</h3>
@@ -272,9 +336,149 @@ class Strings extends React.Component{
 				</div>
 				if a String <i>str</i> is empty, then <b><i>str</i>.isEmpty()</b> will be <b>true</b>. if a String <i>str</i> is not empty, then <b><i>str</i>.isEmpty()</b> will be <b>false</b>.
 				<h3>hello + world</h3>
+				we saw how the <b>+</b> operator was used between integers and doubles in addition (<b className="note">psst. need a reminder</b> on how you can do addition, as well as other arithmetic operations, in java? check out the <b className="pageName">arithmetics page</b>!), but how about the <b>+</b> being used between <b>Strings</b>? when we have a <b>+</b> between two Strings, we <b>concatenate</b>, which is a fancy word for add, the two Strings together. what does this look like? 
+				<br/><br/>
+				<b>example 1: the basics</b>
+				<br/>
+				if we have <b>"hello" + "world"</b>, the resulting String would be <b>"helloworld"</b>. see how "world" was concatenated to the end of "hello"?
+				<br/><br/>
+				this is fun! let's do some more!
+				<br/><br/>
+				<b>example 2: i want more</b>
+				<br/>
+				how about we add <b>"just" + " " + "for" + " " + "java"</b>. we get <b>"just for java"</b>!
+				<br/><br/>
+				woah, hold your horses! we aren't done yet! String concatenation can be more powerful that just adding Strings together. you can add <b>integers</b>, <b>doubles</b>, and <b>characters</b> to Strings as well! exciting, right?
+				<br/><br/>
+				<b>example 3: pricey jeans</b>
+				<br/>
+				<b>"my favorite jeans cost $" + 99.99</b> becomes <b>"my favorite jeans cost $99.99"</b> (<b className="note">btw:</b> those jeans rly do be expensive $$$$ cha ching).
+				<br/><br/>
+				<b>example 3: how old are you?</b>
+				<br/>
+				<b>"i am " + 18 + " years old"</b> becomes <b>"i am 18 years old"</b>. first 18 is concatenated to "i am " and then " years old" is concatenated to "i am 18".
+				<br/><br/>
+				getting the hang of this, eh? let's look at some more complicated examples.
+				<br/><br/>
+				<b>example 4: the prankster</b>
+				<br/>
+				what do you think <b>"hey" + 1 + 2</b> would be equal to? (<b className="note">hint:</b> it isn't "hey3".) if you guessed <b>"hey12"</b>, you're correct! yay! it isn't equal to "hey3" because first the 1 gets concatenated to "hey", so now we have "hey1" + 2, which becomes "hey12".
+				<br/><br/>
+				<b>example 5: changing things up a bit</b>
+				<br/>
+				what if we have <b>"hey" + (1 + 2)</b>? what is that equal to? (<b className="note">hint:</b> notice that 1 + 2 is in parentheses now.) if you guessed <b>"hey3"</b>, you're correct! yay! because 1 + 2 is in parentheses, they get summed together first before getting concatenated to "hey", so "hey" + (1 + 2) becomes "hey" + 3 which becomes "hey3".
+				<br/><br/>
+				ok, last example... 
+				<br/><br/>
+				<b>example 6: too hot to handle</b>
+				<br/>
+				what is <b>1 + 2 + "hey"</b> equal to? (<b className="note">hint:</b> pay attention to the order; order matters.) if you guessed <b>"3hey"</b>, you're correct! yay! order does matter, so the first thing we are doing here is 1 + 2. there are no Strings, so 1 + 2 is simply 3. it's normal addition. now we have 3 + "hey", which is equal to "3hey".
+				<h3>hEllO WoRLd</h3>
+				to end with, here is some code combining all the String-related topics we learned about. <b>can you guess what gets printed to the console?</b> (<b className="note">hint:</b> get stuck? review each of the String-related topics above to help you.)
+				<div className="code">
+				String folks = "that's it folks";
+				<br/>
+				String myString = folks.substring(0, 6);
+				<br/>
+				String learningLesson = "Strings are special!";
+				<br/>
+				String bestLanguage = "java";
+				<br/>
+				char mysteryChar = bestLanguage.charAt(learningLesson.indexOf('i'));
+				<br/>
+				String wrap = "wRaP";
+				<br/>
+				char anotherMysteryChar = learningLesson.charAt(learningLesson.length() - 1);
+				<br/>
+				System.out.println(myString + " " + mysteryChar + " " + wrap.toLowerCase() + anotherMysteryChar);
+				</div>
+				let's see if your guess on what prints to the console is correct:
+				<div className="code">
+				that's a wrap!
+				</div>
 				<h3>hello world... more like hello recap</h3>
 				<b>YASSS!</b> you made it to recap!
+				<br/><br/>
+				int, double, char, and boolean are <b>primitive types</b>, whereas String is an <b>object</b>, which has more functionality.
 				<br/>
+				a String is made up of <b>characters</b>, and each character in a String is given an <b>index</b>, which describes <b>its position in the String</b>. indexing starts at <b>0</b>.
+				<br/>
+				here is the blueprints of all of the String-related topics you learned about:
+				<br/><br/>
+				<table>
+				 <tr>
+				 </tr>
+				 	<tr>
+					  	<td>str.charAt(<i>&lt;index&gt;</i>)</td>
+					  	<td>get the character in <i>str</i> at <i>index</i></td>
+					</tr>
+					<tr>
+						<td>str.substring(<i>&lt;start_index&gt;, &lt;end_index&gt;</i>)</td>	
+						<td>get the substring of <i>str</i> from <i>start_index</i>, inclusive, to <i>end_index</i>, exclusive</td>
+					</tr>
+					<tr>
+						<td>str.substring(<i>&lt;start_index&gt;</i>)</td>
+						<td>get the substring of the first occurence of <i>str</i> from <i>start_index</i>, inclusive, till the end of <i>str</i></td>
+					</tr>
+					<tr>
+						<td>str.indexOf(<i>&lt;char&gt;</i>)</td>
+						<td>get the index of the first occurence of <i>char</i> in <i>str</i>, or -1 if <i>char</i> isn't in <i>str</i></td>
+					</tr>
+					<tr>
+						<td>str.indexOf(<i>&lt;substring&gt;</i>)</td>
+						<td>get the starting index of the first occurence of <i>substring</i> in <i>str</i>, or -1 if <i>substring</i> isn't in <i>str</i></td>
+					</tr>
+					<tr>
+						<td>str.indexOf(<i>&lt;char&gt;, &lt;from_index&gt;</i>)</td>
+						<td>get the index of <i>char</i> in <i>str</i>, or -1 if <i>char</i> isn't in <i>str</i>, and start the search at <i>from_index</i></td>
+					</tr>
+					<tr>
+						<td>str.indexOf(<i>&lt;substring&gt;, &lt;from_index&gt;</i>)</td>
+						<td>get the starting index of the first occurence of <i>substring</i> in <i>str</i>, or -1 if <i>substring</i> isn't in <i>str</i>, and start the search at <i>from_index</i></td>
+					</tr>
+					<tr>
+						<td>str.lastIndexOf(<i>&lt;char&gt;</i>)</td>
+						<td>get the index of the last occurence of <i>char</i> in <i>str</i>, or -1 if <i>char</i> isn't in <i>str</i></td>
+					</tr>
+					<tr>
+						<td>str.lastIndexOf(<i>&lt;substring&gt;</i>)</td>
+						<td>get the starting index of <i>substring</i> in <i>str</i>, or -1 if <i>substring</i> isn't in <i>str</i></td>
+					</tr>
+					<tr>
+						<td>str.lastIndexOf(<i>&lt;char&gt;, &lt;from_index&gt;</i>)</td>
+						<td>get the index of the last occurence of <i>char</i> in <i>str</i>, or -1 if <i>char</i> isn't in <i>str</i>, and start the search at <i>from_index</i></td>
+					</tr>
+					<tr>
+						<td>str.lastIndexOf(<i>&lt;substring&gt;, &lt;from_index&gt;</i>)</td>
+						<td>get the starting index of the last occurence of <i>substring</i> in <i>str</i>, or -1 if <i>substring</i> isn't in <i>str</i>, and start the search at <i>from_index</i></td>
+					</tr>
+					<tr>
+						<td>str.length()</td>
+						<td>get an integer representing how many characters are in <i>str</i></td>
+					</tr>
+					<tr>
+						<td>str.toUpperCase()</td>
+						<td>get <i>str</i> with all of its characters in uppercase</td>
+					</tr>
+					<tr>
+						<td>str.toLowerCase()</td>
+						<td>get <i>str</i> with all of its characters in lowercase</td>
+					</tr>
+					<tr>
+						<td>str.isEmpty()</td>
+						<td>get true if <i>str</i> is empty (its length is 0), and false otherwise</td>
+				  	</tr>
+				</table>
+				<br/>
+				finally, here is the blueprint for <b>String concatenation</b>:
+				<br/>
+				<b>"<i>&lt;String&gt;</i>" + <i>&lt;variable&gt;</i> = "<i>&lt;String&gt;&lt;variable&gt;</i>"</b><br/>
+				<b><i>&lt;variable&gt;</i> + "<i>&lt;String&gt;</i>" = "<i>&lt;variable&gt;&lt;String&gt;</i>"</b><br/>
+				<b>"<i>&lt;String&gt;</i>" + <i>&lt;variable&gt;</i> + <i>&lt;variable&gt;</i> = "<i>&lt;String&gt;&lt;variable&gt;&lt;variable&gt;</i>"</b><br/>
+				remember that operations occur from <b>left to right</b>; also, if there are <b>parentheses</b>, then whatever is in the parentheses happens first.
+				<br/><br/>
+				now you know everything about <b>Strings</b>!
+				<br/><br/>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)
