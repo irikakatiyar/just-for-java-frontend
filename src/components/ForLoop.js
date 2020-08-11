@@ -78,7 +78,7 @@ class ForLoop extends React.Component{
 					<li><b>condition</b>, where you decide <b>how</b> and <b>when</b> your loop should stop using the different signs</li>
 					<li><b>iterate</b>, where you <b>increment</b> your integer a specific amount each time it loops through your code</li>
 				</ol>
-
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)
 	}
