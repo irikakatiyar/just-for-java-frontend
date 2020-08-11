@@ -50,7 +50,6 @@ class App extends React.Component{
       signOut,
       signInWithGoogle,
     } = this.props;
-
     return (
       <div className="full">
         <div className = "title">

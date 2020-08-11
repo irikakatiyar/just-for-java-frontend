@@ -48,6 +48,10 @@ class Printing extends React.Component{
 				remember, there are two types of printing: <b>same-line printing</b>, which is you can do by typing <b>System.out.print();</b>, 
 				and <b>next-line printing</b>, which you can do by typing <b>System.out.println();</b>. 
 				both of these print statements print information into the <b>console</b>.
+				<h3>practice</h3>
+				<div className="repl">
+				<iframe height="400px" width="100%" src="https://repl.it/@justforjava/CanineFreshExpertise?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+				</div>
 				<br/><br/>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 
