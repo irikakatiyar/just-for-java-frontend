@@ -9,7 +9,11 @@ class Arithmetic extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the Arithmetic content
+				talk about +=, -=, *=, /=, amd %=
+				<br/>
+				notation: number = number + 1; shorthand notation: number += 1; shorthand shorthand notation: number++;
+				<br/>
+				notation: number = number - 1; shorthand notation: number -= 1; shorthand shorthand notation: number--;
 			</div>
 		)
 	}

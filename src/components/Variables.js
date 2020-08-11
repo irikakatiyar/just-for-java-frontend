@@ -37,8 +37,8 @@ class Variables extends React.Component{
 					double number = 3.5;
 				</div>
 				<h3>strings? you mean what you use to make bracelets?</h3>
-				nope. in java, <b>strings</b> are used to store text. they're denoted using double quotation marks. if you set make a string variable equal to <b>""</b>, that's an empty string, meaning it doesn't contain any text yet.
-				to make a string variable, you need to type <b>String</b> as the type.
+				nope. in java, <b>strings</b> are used to store text. they're denoted using double quotation marks. if you set a string variable equal to <b>""</b>, that's an empty string, meaning it doesn't contain any text yet.
+				to make a string variable, you need to type <b>String</b> as the type. strings are a lot cooler than the other variable types. if you want to learn why that is, check out the <b className="pageName">Strings page</b>!
 				below is an example of a string variable with the name <i>word</i> being used to store the value "hello world".<br/>
 				<div className = "code">
 					String word = "hello world"; <div className = "comment">//note that the value is surrounded by double quotation marks</div>
@@ -56,6 +56,10 @@ class Variables extends React.Component{
 				<div className = "code">
 					boolean isFun = true;
 				</div>
+				<h3>boolean timeForRecap = true;</h3>
+				<b>woohoo!</b> you made it to recap!
+				<br/>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)
 	}
