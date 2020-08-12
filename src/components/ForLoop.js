@@ -42,7 +42,7 @@ class ForLoop extends React.Component{
 				you can also use multiplication (<b>i *=</b>)and division (<b>i /=</b>), but addition and subtraction are the most common.
 				<br/>going back to our example of printing numbers 1-5, we would want to increase i by 1 each time. so, for our last component of the for loop, we would type <b>i++</b>.
 				(<b className="note">btw:</b> don't forget the semicolons between each of the three components.)
-				<h3>and for some examples</h3>
+				<h3>and for some examples...</h3>
 				here is our example from above fully coded out: 
 				<div className="code">
 					for(int i = 1; i &le; 5; i++) &#123; <br/>
@@ -53,7 +53,7 @@ class ForLoop extends React.Component{
 				<div className="code">
 					1 2 3 4 5
 				</div>
-				<h3>and here's another example:</h3>
+				<h3>...and here's another example:</h3>
 				in this example, we want to use a for loop to add up the powers of 2 between 1 and 100. sounds difficult, i know, but let's break down the problem.<br/>
 				remember, the first thing we want to do is <b>make our integer i</b>. (<b className="note">hint:</b> think about what number we want to start at.) 
 				next, we want our <b>condition</b>. (<b className="note">hint:</b> there are two ways to write this part.)
@@ -67,7 +67,44 @@ class ForLoop extends React.Component{
 					&#125;
 				</div>
 				<b>i*=2</b> works by multiplying i by 2 each time it iterates through the for loop. so, with this in mind, i would start at 1, then 2, then 4, then 8, then 16, and so on.<br/>
-				<br/>yay! now you know all about for loops!
+				<h3>...and last example, we promise:</h3>
+				in the first example, we printed out <b>i</b>, and in the second example, we added <b>i</b> to a <i>sum</i> variable. in this last example, i want to show you a different way that you can use the iterator variable, <b>int i</b>. 
+				what if <b>i</b> represented an <b>index</b> in a <b>String</b>? (<b className="note">psst. need a reminder</b> on what an index is and how it relates to Strings? check out the <b className="pageName">Strings page</b>!) let's try to use a for loop to <b>iterate through each character in a String</b>. 
+				<ul>
+					<li>for the first component of our for loop, <b>initialize</b>, we want to set <b>int i</b> to the starting value. what should our starting value be? (<b className="note">hint:</b> think about what number indexing start at.) because <b>indexing starts at 0</b>, our first component should be <b>int i = 0</b>.</li>
+					<li>for the second component of our for loop, <b>condition</b>, we want to answer the question: when should our for loop stop? (<b className="note">hint:</b> our for loop should stop after we've looped through each index in the given String.) we learned on the <b className="pageName">Strings page</b> that indexing goes from 0, inclusive, till the length of the String, exclusive (<b className="note">btw:</b> the length of a String is equal to the number of characters in the String). that means that we want our for loop to keep going as long as <b>i is less than the length of the String</b>. (<b className="note">btw:</b> to get the length of a String <i>str</i>, use the syntax <b>str.length()</b>.) therefore, our second component should be <b>i &lt; str.length()</b>.</li>
+					<li>for the third component of our for loop, <b>iterate</b>, we want to think about what should happen to <b>i</b> each time we iterate. since <b>i</b> is the index, we want <b>i</b> to increase by 1 each time since <b>we are moving to the next index each iteration</b>, so our third component should be <b>i++</b>.</li>
+				</ul>
+				now that we have all three components of our for loop, <b>let's code it!</b> let's have our program print out each character in String <i>str</i> on its own line. (<b className="note">psst. need a reminder</b> of how to use <b>charAt()</b> to get the character at a given index in a String? check out the <b className="pageName">Strings page</b>!)
+				<div className="code">
+				String str = "happy birthday";
+				<br/>
+				<div className="comment">//loop through each character in str</div>
+				<br/>
+				for(int i = 0; i &le; str.length(); i++)&#123;<br/>
+				<p>
+					<div className="comment">//use charAt() to print out each character on its own line</div><br/>
+					System.out.println(str.charAt(i));
+				</p><br/>
+				&#125;
+				</div>
+				the code above prints out the following in the console:
+				<div className="code">
+				h<br/>
+				a<br/>
+				p<br/>
+				p<br/>
+				y<br/>
+				 <br/>
+				b<br/>
+				i<br/>
+				r<br/>
+				t<br/>
+				h<br/>
+				d<br/>
+				a<br/>
+				y<br/>
+				</div>
 				<h3>is it really time for reacap? get it. for. hehe.</h3>
 				<b>ayyyyyy!</b> you made it to recap!<br/><br/>
 				now, i know that was a lot, so here's a lil' summary:<br/>

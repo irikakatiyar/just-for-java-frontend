@@ -220,7 +220,7 @@ class Strings extends React.Component{
 				String world = str.substring(6);
 				</div>
 				<br/>
-				that was a huge info dump: you learned about indexing, accessing a character by index, and extracting a substring. but... erm... there may still be another load of information to be dumped... <b>oof. good luck.</b>
+				that was a <b>huge info dump</b>: you learned about indexing, accessing a character by index, and extracting a substring. but... erm... there may still be another load of information to be dumped... <b>oof. good luck.</b>
 				<h3>0 1 2 3 4 5 6 7 8 9 10</h3>
 				we just learned how we can get a <b>character</b> or a <b>substring</b> from a String using <b>charAt()</b> and <b>substring()</b>, respectively. how about if we want to do the <b>reverse</b>? is there a way we can get the index of a character or a substring in a String? indeed.<br/>
 				<b>indexOf()</b> will give you the <b>starting index</b> of the <b>first occurence</b> of a <b>specified character or substring</b>. let's head over to the blueprint to see the four ways we can construct <b>indexOf()</b> (<b className="note">btw:</b> let's assume that we have already created a String variable called <i>str</i> from which we will get the index of either a character or a substring):
@@ -292,7 +292,15 @@ class Strings extends React.Component{
 				<br/>
 				int funFactLength = funFact.length(); <div className="comment">//funFactLength is initialized to 36</div>
 				</div>
-				not too bad, right? now you know how to get the length of a String using <b>length()</b>!
+				not too bad, right? now you know how to get the length of a String using <b>length()</b>! but you might be wondering, why would you even want to get the length of a String in the first place? 
+				<br/>say you want to get the <b>last character</b> in a String. how can you make this program work for <b>any String, no matter its length</b>? before we can actually get the last character, we need its <b>index</b>. what is the last index in a String? (<b className="note">hint:</b> remember that indexing starts at <b>0</b>, so the first character is at index 0, second at index 1, third at index 2, and so on.) if you said that the last index of String <i>str</i> is <b>str.length() - 1</b>, that's absolutely correct! now we can get the last character of String <i>str</i> using the following code (<b className="note">btw:</b> if you don't understand the code below, you may want to review <b>charAt()</b>):
+				<div className="code">
+				String str = "Strings rule";
+				<br/>
+				<div className="comment">//to get the last character in str, get the character at the index length of str - 1, since indexing starts at 0</div>
+				<br/>
+				char last = str.charAt(str.length() - 1); <div className="comment">//last = 'e'</div>
+				</div>
 				<h3>HELLO world</h3>
 				next, let's learn how to make "heLlO woRlD" into "hello world" or "HELLO WORLD". in other words, let's learn how to make a String all <b>lowercase</b> or all <b>UPPERCASE</b>.
 				<br/>
@@ -320,9 +328,9 @@ class Strings extends React.Component{
 				<h3>""</h3>
 				you can also check if a String is <b>empty</b>, meaning that it doesn't contain any text (<b className="note">btw:</b> to make an empty string, set a String variable equal to <b>""</b>). another way you can think about an empty String is that it is a String with a <b>length of 0</b>. let's take a look at the following sample code to see how we can utilize <b>isEmpty()</b>:
 				<div className="code">
-				String feelingEmpty = ""; <div className="comment">//create an empty String</div>
+				String feelinEmpty = ""; <div className="comment">//create an empty String</div>
 				<br/>
-				System.out.println(feelingEmpty.isEmpty());
+				System.out.println(feelinEmpty.isEmpty());
 				<br/>
 				String wowzers = "WOW! :o"; <div className="comment">//create a String that isn't empty</div>
 				<br/>
