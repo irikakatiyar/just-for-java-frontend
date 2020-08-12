@@ -9,13 +9,13 @@ class Variables extends React.Component{
 	render(){
 		return (
 			<div>
-				variables are used to store information. 
+				<b>variables</b> are used to store information. 
 				<h3>wait, so how do you create a variable?</h3>
 				here is the blueprint when creating a variable: <br/>
 				<b><i> &lt;type&gt; &lt;name&gt; = &lt;value&gt;;</i></b> <br/>
 				(<b className="note">btw:</b> don't forget the semicolon!)
 				<br/><br/>
-				there are multiple types of information that variables can store:
+				there are multiple <b>types</b> of information that variables can store:
 				<ul>
 					<li>integer</li>
 					<li>double</li>
@@ -56,9 +56,74 @@ class Variables extends React.Component{
 				<div className = "code">
 					boolean isFun = true;
 				</div>
+				<h3>umm so what happens after you create a variable?</h3>
+				great question! after you create a variable, you can either <b>change the value of it</b> or <b>use it in your program</b>!
+				<br/><br/>
+				<b>change the value of your variable</b>
+				<br/>
+				after you create a variable of a certain type, <b>you can change the value of the variable</b>, but <b>you cannot change its type</b>. here's an example to help you understand this concept:
+				<br/>
+				let's say you have the following code that creates a <b>double</b> variable called <i>price</i> that stores the value 9.99.
+				<div className="code">
+				double price = 9.99;
+				</div>
+				now let's say we wanted to lower the price by a dollar, making it 8.99 instead of 9.99. we can use the following code to change the value of <i>price</i>:
+				<div className="code">
+				price = 8.99;
+				</div>
+				but what we cannot do is change <i>price</i> to make it an <b>int</b> or a <b>char</b>, etc. once you create <i>price</i> as a <b>double</b>, it will always stay as a <b>double</b>.
+				<br/><br/>
+				here is the blueprint when changing a variable:
+				<br/>
+				<b><i> &lt;name&gt; = &lt;new_value&gt;;</i></b>
+				<br/><br/>
+				let's do one more example! this time create a <b>String</b> variable called <i>hello</i> and initialize it to "hello". then change the value of <i>hello</i> to "goodbye".
+				<div className="code">
+				String hello = "hello";
+				<br/>
+				hello = "goodbye";
+				</div>
+				<br/>
+				<b>use your variable in your program</b>
+				<br/>
+				since all we have learned so far is variables, we don't quite have the knowledge yet to actually use our variables in our program... <b>but don't worry!</b> you will learn this <b>very soon</b>!! for now, simply make sure you are comfortable with <b>creating a variable</b> and <b>changing a variable</b>.
 				<h3>boolean timeForRecap = true;</h3>
 				<b>woohoo!</b> you made it to recap!
-				<br/>
+				<br/><br/>
+				a <b>variable</b> is used to store information. here is the blueprint when creating a variable: <br/>
+				<b><i> &lt;type&gt; &lt;name&gt; = &lt;value&gt;;</i></b> <br/><br/>
+				there are multiple <b>types</b> of information that variables can store:
+				<ul>
+					<li><b>integer</b></li>
+					<ul>
+						<li>integers store <b>whole numbers</b>, including negative numbers</li>
+						<li>to make an integer, type <b>int</b> as the type</li>
+					</ul>
+					<li><b>double</b></li>
+					<ul>
+						<li>doubles store <b>decimals</b>, like 1.5 and 0.923</li>
+						<li>to make a double, type <b>double</b> as the type</li>
+					</ul>
+					<li><b>string</b></li>
+					<ul>
+						<li>strings store <b>text</b>, enclosed in double quotes</li>
+						<li>to make a string, type <b>String</b> as the type</li>
+					</ul>
+					<li><b>character</b></li>
+					<ul>
+						<li>characters store a <b>single letter/digit/symbol</b>, enclosed in single quotes</li>
+						<li>to make a character, type <b>char</b> as the type</li>
+					</ul>
+					<li><b>boolean</b></li>
+					<ul>
+						<li>booleans store either <b>true</b> or <b>false</b></li>
+						<li>to make a boolean, type <b>boolean</b> as the type</li>
+					</ul>
+				</ul>
+				after you create a variable of a certain type, <b>you can change the value but not the type</b> of the variable. here is the blueprint when changing the value of a variable: <br/>
+				<b><i> &lt;name&gt; = &lt;new_value&gt;;</i></b> <br/><br/>
+				congrats! you finished learning about variables. keep up the good work!
+				<br/><br/>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)
