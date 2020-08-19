@@ -418,63 +418,63 @@ class Strings extends React.Component{
 				 </tr>
 				 	<tr>
 					  	<td>str.charAt(<i>&lt;index&gt;</i>)</td>
-					  	<td>get the character in <i>str</i> at <i>index</i></td>
+					  	<td>get the character in <i>&lt;str</i> at <i>&lt;index&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.substring(<i>&lt;start_index&gt;, &lt;end_index&gt;</i>)</td>	
-						<td>get the substring of <i>str</i> from <i>start_index</i>, inclusive, to <i>end_index</i>, exclusive</td>
+						<td>get the substring of <i>&lt;str&gt;</i> from <i>&lt;start_index&gt;</i>, inclusive, to <i>&lt;end_index&gt;</i>, exclusive</td>
 					</tr>
 					<tr>
 						<td>str.substring(<i>&lt;start_index&gt;</i>)</td>
-						<td>get the substring of the first occurence of <i>str</i> from <i>start_index</i>, inclusive, till the end of <i>str</i></td>
+						<td>get the substring of the first occurence of <i>&lt;str&gt;</i> from <i>&lt;start_index&gt;</i>, inclusive, till the end of <i>&lt;str&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.indexOf(<i>&lt;char&gt;</i>)</td>
-						<td>get the index of the first occurence of <i>char</i> in <i>str</i>, or -1 if <i>char</i> isn't in <i>str</i></td>
+						<td>get the index of the first occurence of <i>&lt;char&gt;</i> in <i>&lt;str&gt;</i>, or -1 if <i>&lt;char&gt;</i> isn't in <i>&lt;str&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.indexOf(<i>&lt;substring&gt;</i>)</td>
-						<td>get the starting index of the first occurence of <i>substring</i> in <i>str</i>, or -1 if <i>substring</i> isn't in <i>str</i></td>
+						<td>get the starting index of the first occurence of <i>&lt;substring&gt;</i> in <i>&lt;str&gt;</i>, or -1 if <i>&lt;substring&gt;</i> isn't in <i>&lt;str&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.indexOf(<i>&lt;char&gt;, &lt;from_index&gt;</i>)</td>
-						<td>get the index of <i>char</i> in <i>str</i>, or -1 if <i>char</i> isn't in <i>str</i>, and start the search at <i>from_index</i></td>
+						<td>get the index of <i>&lt;char</i> in <i>&lt;str</i>, or -1 if <i>&lt;char</i> isn't in <i>&lt;str&gt;</i>, and start the search at <i>&lt;from_index&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.indexOf(<i>&lt;substring&gt;, &lt;from_index&gt;</i>)</td>
-						<td>get the starting index of the first occurence of <i>substring</i> in <i>str</i>, or -1 if <i>substring</i> isn't in <i>str</i>, and start the search at <i>from_index</i></td>
+						<td>get the starting index of the first occurence of <i>&lt;substring&gt;</i> in <i>&lt;str&gt;</i>, or -1 if <i>&lt;substring&gt;</i> isn't in <i>&lt;str&gt;</i>, and start the search at <i>&lt;from_index&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.lastIndexOf(<i>&lt;char&gt;</i>)</td>
-						<td>get the index of the last occurence of <i>char</i> in <i>str</i>, or -1 if <i>char</i> isn't in <i>str</i></td>
+						<td>get the index of the last occurence of <i>&lt;char&gt;</i> in <i>&lt;str&gt;</i>, or -1 if <i>&lt;char&gt;</i> isn't in <i>&lt;str&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.lastIndexOf(<i>&lt;substring&gt;</i>)</td>
-						<td>get the starting index of <i>substring</i> in <i>str</i>, or -1 if <i>substring</i> isn't in <i>str</i></td>
+						<td>get the starting index of <i>&lt;substring&gt;</i> in <i>&lt;str&gt;</i>, or -1 if <i>&lt;substring&gt;</i> isn't in <i>&lt;str&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.lastIndexOf(<i>&lt;char&gt;, &lt;from_index&gt;</i>)</td>
-						<td>get the index of the last occurence of <i>char</i> in <i>str</i>, or -1 if <i>char</i> isn't in <i>str</i>, and start the search at <i>from_index</i></td>
+						<td>get the index of the last occurence of <i>&lt;char&gt;</i> in <i>&lt;str&gt;</i>, or -1 if <i>&lt;char&gt;</i> isn't in <i>&lt;str&gt;</i>, and start the search at <i>&lt;from_index&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.lastIndexOf(<i>&lt;substring&gt;, &lt;from_index&gt;</i>)</td>
-						<td>get the starting index of the last occurence of <i>substring</i> in <i>str</i>, or -1 if <i>substring</i> isn't in <i>str</i>, and start the search at <i>from_index</i></td>
+						<td>get the starting index of the last occurence of <i>&lt;substring&gt;</i> in <i>&lt;str&gt;</i>, or -1 if <i>&lt;substring&gt;</i> isn't in <i>&lt;str&gt;</i>, and start the search at <i>&lt;from_index&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.length()</td>
-						<td>get an integer representing how many characters are in <i>str</i></td>
+						<td>get an integer representing how many characters are in <i>&lt;str&gt;</i></td>
 					</tr>
 					<tr>
 						<td>str.toUpperCase()</td>
-						<td>get <i>str</i> with all of its characters in uppercase</td>
+						<td>get <i>&lt;str&gt;</i> with all of its characters in uppercase</td>
 					</tr>
 					<tr>
 						<td>str.toLowerCase()</td>
-						<td>get <i>str</i> with all of its characters in lowercase</td>
+						<td>get <i>&lt;str&gt;</i> with all of its characters in lowercase</td>
 					</tr>
 					<tr>
 						<td>str.isEmpty()</td>
-						<td>get true if <i>str</i> is empty (its length is 0), and false otherwise</td>
+						<td>get true if <i>&lt;str&gt;</i> is empty (its length is 0), and false otherwise</td>
 				  	</tr>
 				</table>
 				<br/>
@@ -485,7 +485,7 @@ class Strings extends React.Component{
 				<b>"<i>&lt;String&gt;</i>" + <i>&lt;variable&gt;</i> + <i>&lt;variable&gt;</i> = "<i>&lt;String&gt;&lt;variable&gt;&lt;variable&gt;</i>"</b><br/>
 				remember that operations occur from <b>left to right</b>; also, if there are <b>parentheses</b>, then whatever is in the parentheses happens first.
 				<br/><br/>
-				now you know everything about <b>Strings</b>!
+				i know that was a lot of String things you just went through, but in fact there are lots of more cool things you can do with Strings that we didn't have room to mention here. <b>if you want to learn even more about Strings, simply search online!</b>
 				<br/><br/>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

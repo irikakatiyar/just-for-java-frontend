@@ -16,10 +16,10 @@ import RandomNumbers from './RandomNumbers';
 import ASCII from './ASCII';
 import Break from './Break';
 import Strings from './Strings';
-import math from './Math';
+import Mathematics from './Mathematics';
 import ArrayList from './ArrayList';
 import HashMap from './HashMap';
-import array from './Array';
+import Arrays from './Array';
 import Arithmetic from './Arithmetic';
 import ForEachLoop from './ForEachLoop';
 import NestedLoops from './NestedLoops';
@@ -114,12 +114,12 @@ class Content extends React.Component{
 		}
 		else if(this.props.page === "array"){
 			return (
-				<array/>
+				<Arrays/>
 			);
 		}
 		else if(this.props.page === "Math"){
 			return (
-				<math/>
+				<Mathematics/>
 			);
 		}
 		else if(this.props.page === "Strings"){

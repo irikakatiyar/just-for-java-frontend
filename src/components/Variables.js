@@ -88,7 +88,7 @@ class Variables extends React.Component{
 				<br/>
 				since all we have learned so far is variables, we don't quite have the knowledge yet to actually use our variables in our program... <b>but don't worry!</b> you will learn this <b>very soon</b>!! for now, simply make sure you are comfortable with <b>creating a variable</b> and <b>changing a variable</b>.
 				<h3>boolean timeForRecap = true;</h3>
-				<b>woohoo!</b> you made it to recap!
+				<b>you did it!</b> you made it to recap!
 				<br/><br/>
 				a <b>variable</b> is used to store information. here is the blueprint when creating a variable: <br/>
 				<b><i> &lt;type&gt; &lt;name&gt; = &lt;value&gt;;</i></b> <br/><br/>
