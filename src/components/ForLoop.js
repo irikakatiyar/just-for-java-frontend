@@ -107,8 +107,11 @@ class ForLoop extends React.Component{
 				</div>
 				<h3>is it really time for reacap? get it. for. hehe.</h3>
 				<b>ayyyyyy!</b> you made it to recap!<br/><br/>
-				now, i know that was a lot, so here's a lil' summary:<br/>
-				for loops help to loop through code a <b>specific number of times</b>.<br/>
+				now, i know that was a lot, so here's a lil' summary:<br/><br/>
+				a <b>loop</b> is a repeating block of code. one type of loop is <b>for loops</b>, which help to loop through code a <b>specific number of times</b>. here is the blueprint for creating a for loop:<br/>
+				<b>for(<i>initialize</i> ; <i>condition</i> ; <i>iterate</i>)&#123; <br/>
+				<p>*code*</p> <br/>
+				&#125;</b><br/><br/>
 				there are three parts to a for loop: 
 				<ol>
 					<li><b>initialize</b>, when you make your integer <b>i</b> and set it equal to the start number</li>

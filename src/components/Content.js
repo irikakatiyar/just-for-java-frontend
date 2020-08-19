@@ -25,6 +25,7 @@ import ForEachLoop from './ForEachLoop';
 import NestedLoops from './NestedLoops';
 import GettingStarted from './GettingStarted';
 import TwoDimArrays from './TwoDimArrays';
+import Casting from './Casting';
 
 class Content extends React.Component{
 	constructor(props){
@@ -160,6 +161,11 @@ class Content extends React.Component{
 		else if(this.props.page === "2D array"){
 			return (
 				<TwoDimArrays/>
+			);
+		}
+		else if(this.props.page === "casting"){
+			return (
+				<Casting/>
 			);
 		}
 	}
