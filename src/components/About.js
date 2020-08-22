@@ -27,7 +27,7 @@ class About extends React.Component{
 				(black mirror is my all time favorite show), and meet new people. <br/><br/>
 
 				<b>special thanks to:</b><br/>
-				ruby for teaching us coding and helping us a lot in creating this website!<br/>
+				our coding instructor, ruby, for helping us create this website!<br/>
 				our amazing parents for letting us stay up till midnight working on this website!
 				<br/><b className="note">:)</b>
 			</div>
