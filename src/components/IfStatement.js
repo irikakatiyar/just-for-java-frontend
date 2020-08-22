@@ -202,8 +202,39 @@ class IfStatement extends React.Component{
 					you're at speed limit
 				</div>
 				i know that was a lot, so let's practice!<br/>
-				PRACTICE HERE 
 				
+				
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">traffic lights:</b><br/><br/>
+					your <b>goal</b> is to use <b>if statements</b> to <b>print out a command</b> into the console depending on what color our traffic light is. this will require two steps:<br/>
+					<ol>
+						<li>create a variable to keep track of the color of the light (red, yellow, green)</li>
+						<li>use an if statement to print out a specific command depending on the color of the traffic light</li>
+						<ul>
+							<li>if it's red, print out "stop"</li>
+							<li>if it's yellow, print out "slow"</li>
+							<li>if it's green, print out "go"</li>
+							<li>if it doesn't match any of the above colors, then print out "not a valid color"</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, you might need to use else if and else statements too, not just if *wink, wink*<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/if-statement-traffic-lights?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> for each step help to explain why our code looks the way it does. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/solution-traffic-lights?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				
+
 				<h3>if(recap == true)&#123;</h3>
 				<b>oooooo</b> you made it to reacp!<br/><br/>
 				remember, the blueprint of an <b>if statement</b> with <b>else if</b> as well as <b>else</b> is<br/>
@@ -217,8 +248,9 @@ class IfStatement extends React.Component{
 					<p>*code block*</p><br/>
 				&#125;</b><br/><br/>
 				remeber that the <b>condition</b> can be any statement that equates to a value of <b>true</b> or <b>false</b>. 
-				this can be done using any of the four <b>comparison operators</b> (<b>==</b>, <b>!=</b>, <b>&lt;</b>, <b>&gt;</b>) or <b>.equals</b> for comparing <b>Strings</b>.
-				and that's all of it! great job, you're now a master of if statements!!<br/><br/>
+				this can be done using any of the four <b>comparison operators</b> (<b>==</b>, <b>!=</b>, <b>&lt;</b>, <b>&gt;</b>) or <b>.equals()</b> for comparing <b>Strings</b>.
+				and that's all of it! great job, you're now a master of if statements!!
+				<h3>&#125;</h3>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)
