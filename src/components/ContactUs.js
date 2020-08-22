@@ -9,7 +9,7 @@ class ContactUs extends React.Component{
 	render(){
 		return (
 			<div>
-				we probably need to put some contact info here
+				have any comments or questions? have any feedback or suggestions? don't hesitate to email us at <b>justforjavaco@gmail.com</b>!
 			</div>
 		)
 	}

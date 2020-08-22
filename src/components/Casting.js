@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Math extends React.Component{
+class Casting extends React.Component{
 	constructor(props){
 		super(props)
 	}
@@ -9,10 +9,10 @@ class Math extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the math content
+				This is the Casting content
 			</div>
 		)
 	}
 }
 
-export default Math;
+export default Casting;

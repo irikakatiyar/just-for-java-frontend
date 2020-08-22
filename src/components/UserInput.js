@@ -126,7 +126,7 @@ class UserInput extends React.Component{
 				    <td>in.nextBoolean()</td>
 				  </tr>
 				</table>
-				<h3>it do be time for a recap</h3>
+				<h3>it do be time for recap</h3>
 				<b>congratulations!</b> you made it to recap!
 				<br/>
 				<br/>
