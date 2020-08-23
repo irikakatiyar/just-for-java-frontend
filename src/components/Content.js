@@ -26,6 +26,7 @@ import NestedLoops from './NestedLoops';
 import GettingStarted from './GettingStarted';
 import TwoDimArrays from './TwoDimArrays';
 import Casting from './Casting';
+import Constants from './Constants';
 
 class Content extends React.Component{
 	constructor(props){
@@ -36,6 +37,11 @@ class Content extends React.Component{
 		if(this.props.page === "home"){
 			return (
 				<Home greeting={this.props.greeting}/>
+			);
+		}
+		else if(this.props.page === "constants") {
+			return (
+				<Constants/>
 			);
 		}
 		else if(this.props.page === "about"){

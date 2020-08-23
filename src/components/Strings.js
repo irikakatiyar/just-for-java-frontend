@@ -124,9 +124,7 @@ class Strings extends React.Component{
 					<li>using a <i>start_index</i> and an <i>end_index</i></li>
 					<li>using just a <i>start_index</i></li>
 				</ol>
-				<b>example 1: using a <i>start_index</i> and an <i>end_index</i></b>
-				<br/>
-				our goal is to try to retrieve the String "hello" from "hello world".
+				<b>example 1:</b> our goal is to try to retrieve the String "hello" from "hello world".
 				<br/>
 				first, let's take a look at the indexes of each character in "hello world" (<b className="note">btw:</b> the substring we want to retrieve is highlighted):
 				<br/>
@@ -173,9 +171,7 @@ class Strings extends React.Component{
 				String hello = str.substring(0, 5);
 				</div>
 				<br/>
-				<b>example 2: using just a <i>start_index</i></b>
-				<br/>
-				our goal is to try to retrieve the String "world" from "hello world". 
+				<b>example 2:</b> our goal is to try to retrieve the String "world" from "hello world". 
 				<br/>
 				first, let's take a look at the indexes of each character in "hello world" (<b className="note">btw:</b> the substring we want to retrieve is highlighted):
 				<br/>
@@ -243,7 +239,6 @@ class Strings extends React.Component{
 					<li>type the code necessary to solve the problem, storing the value of whichever <b>indexOf()</b> blueprint you use in an <b>int</b></li>
 					<li>predict the value of the <b>int</b> variable you created before looking at the answer we have provided</li>
 				</ul>
-				<b>example 1: str.indexOf(<i>&lt;character&gt;</i>)</b><br/>
 				what is the index of the first occurence of 'l' in "hello"?
 				<div className="code">
 				String hello = "hello";
@@ -251,7 +246,6 @@ class Strings extends React.Component{
 				int i = hello.indexOf('l'); <div className="comment">//i = 2</div>
 				</div>
 				<br/>
-				<b>example 2: str.indexOf(<i>&lt;substring&gt;</i>)</b><br/>
 				what is the index of the first occurence of "cat" in "doggo"?
 				<div className="code">
 				String doggo = "doggo";
@@ -259,7 +253,6 @@ class Strings extends React.Component{
 				int i = doggo.indexOf("cat"); <div className="comment">//i = -1</div>
 				</div>
 				<br/>
-				<b>example 3: str.indexOf(<i>&lt;character&gt;</i>, <i>&lt;from_index&gt;</i>)</b><br/>
 				what is the index of the first occurence of 'j' in "just for java" from index 1? 
 				<div className="code">
 				String justForJava = "just for java";
@@ -267,7 +260,6 @@ class Strings extends React.Component{
 				int i = justForJava.indexOf('j'); <div className="comment">//i = 9</div>
 				</div>
 				<br/>
-				<b>example 4: str.indexOf(<i>&lt;substring&gt;</i>, <i>&lt;from_index&gt;</i>)</b><br/>
 				what is the index of the first occurence of "oompa" in "oompa loompa" from index 6? 
 				<div className="code">
 				String oompaLoompa = "oompa loompa";
@@ -276,7 +268,6 @@ class Strings extends React.Component{
 				</div>
 				<br/>one <b>last</b> thing... if you want to get the <b>last</b> occurence rather than the first occurence of a character or substring in a String, all you need to do is replace indexOf() with <b>lastIndexOf()</b>. you can use any of the four blueprints that we had for indexOf() with lastIndexOf(). here's a quick example:
 				<br/><br/>
-				<b>example 5: using lastIndexOf() instead of indexOf()</b><br/>
 				what is the index of the last occurence of 'e' in "awesome"?
 				<div className="code">
 				String awesome = "awesome";
@@ -344,43 +335,15 @@ class Strings extends React.Component{
 				</div>
 				if a String <i>str</i> is empty, then <b><i>str</i>.isEmpty()</b> will be <b>true</b>. if a String <i>str</i> is not empty, then <b><i>str</i>.isEmpty()</b> will be <b>false</b>.
 				<h3>hello + world</h3>
-				we saw how the <b>+</b> operator was used between integers and doubles in addition (<b className="note">psst. need a reminder</b> on how you can do addition, as well as other arithmetic operations, in java? check out the <b className="pageName">arithmetics page</b>!), but how about the <b>+</b> being used between <b>Strings</b>? when we have a <b>+</b> between two Strings, we <b>concatenate</b>, which is a fancy word for add, the two Strings together. what does this look like? 
-				<br/><br/>
-				<b>example 1: the basics</b>
-				<br/>
-				if we have <b>"hello" + "world"</b>, the resulting String would be <b>"helloworld"</b>. see how "world" was concatenated to the end of "hello"?
-				<br/><br/>
-				this is fun! let's do some more!
-				<br/><br/>
-				<b>example 2: i want more</b>
-				<br/>
-				how about we add <b>"just" + " " + "for" + " " + "java"</b>. we get <b>"just for java"</b>!
+				we saw how the <b>+</b> operator was used between integers and doubles in addition. (<b className="note">psst. need a reminder</b> on how you can do addition, as well as other arithmetic operations, in java? check out the <b className="pageName">arithmetics page</b>!) but how about the <b>+</b> being used between <b>Strings</b>? when we have a <b>+</b> between two Strings, we <b>concatenate</b>, which is a fancy word for add, the two Strings together. what does this look like? if we have "hello" + "world", the resulting String would be "helloworld". see how "world" was <b>concatenated</b> to the end of "hello"?
 				<br/><br/>
 				woah, hold your horses! we aren't done yet! String concatenation can be more powerful that just adding Strings together. you can add <b>integers</b>, <b>doubles</b>, and <b>characters</b> to Strings as well! exciting, right?
 				<br/><br/>
-				<b>example 3: pricey jeans</b>
-				<br/>
-				<b>"my favorite jeans cost $" + 99.99</b> becomes <b>"my favorite jeans cost $99.99"</b> (<b className="note">btw:</b> those jeans rly do be expensive $$$$ cha ching).
+				<b>the pricey jeans example:</b> "my favorite jeans cost $" + 99.99 becomes "my favorite jeans cost $99.99" (<b className="note">btw:</b> those jeans rly do be expensive $$$$ cha ching). getting the hang of this, eh? let's look at some more complicated examples.
 				<br/><br/>
-				<b>example 3: how old are you?</b>
-				<br/>
-				<b>"i am " + 18 + " years old"</b> becomes <b>"i am 18 years old"</b>. first 18 is concatenated to "i am " and then " years old" is concatenated to "i am 18".
+				<b>the prankster example:</b> what do you think "hey" + 1 + 2 would be equal to? (<b className="note">hint:</b> it isn't "hey3".) if you guessed "hey12", you're correct! yay! it isn't equal to "hey3" because first the 1 gets concatenated to "hey", so now we have "hey1" + 2, which becomes "hey12". this is fun! let's do some more.
 				<br/><br/>
-				getting the hang of this, eh? let's look at some more complicated examples.
-				<br/><br/>
-				<b>example 4: the prankster</b>
-				<br/>
-				what do you think <b>"hey" + 1 + 2</b> would be equal to? (<b className="note">hint:</b> it isn't "hey3".) if you guessed <b>"hey12"</b>, you're correct! yay! it isn't equal to "hey3" because first the 1 gets concatenated to "hey", so now we have "hey1" + 2, which becomes "hey12".
-				<br/><br/>
-				<b>example 5: changing things up a bit</b>
-				<br/>
-				what if we have <b>"hey" + (1 + 2)</b>? what is that equal to? (<b className="note">hint:</b> notice that 1 + 2 is in parentheses now.) if you guessed <b>"hey3"</b>, you're correct! yay! because 1 + 2 is in parentheses, they get summed together first before getting concatenated to "hey", so "hey" + (1 + 2) becomes "hey" + 3 which becomes "hey3".
-				<br/><br/>
-				ok, last example... 
-				<br/><br/>
-				<b>example 6: too hot to handle</b>
-				<br/>
-				what is <b>1 + 2 + "hey"</b> equal to? (<b className="note">hint:</b> pay attention to the order; order matters.) if you guessed <b>"3hey"</b>, you're correct! yay! order does matter, so the first thing we are doing here is 1 + 2. there are no Strings, so 1 + 2 is simply 3. it's normal addition. now we have 3 + "hey", which is equal to "3hey".
+				<b>the trickster example:</b> what if we have "hey" + (1 + 2)? what is that equal to? (<b className="note">hint:</b> notice that 1 + 2 is in parentheses now.) if you guessed "hey3", you're correct! yay! because 1 + 2 is in parentheses, they get summed together first before getting concatenated to "hey", so "hey" + (1 + 2) becomes "hey" + 3 which becomes "hey3".
 				<h3>hEllO WoRLd</h3>
 				to end with, here is some code combining all the String-related topics we learned about. <b>can you guess what gets printed to the console?</b> (<b className="note">hint:</b> get stuck? review each of the String-related topics above to help you.)
 				<div className="code">
@@ -411,7 +374,7 @@ class Strings extends React.Component{
 				<br/>
 				a String is made up of <b>characters</b>, and each character in a String is given an <b>index</b>, which describes <b>its position in the String</b>. indexing starts at <b>0</b>.
 				<br/>
-				here is the blueprints of all of the String-related topics you learned about:
+				here is table full of all the String-related topics you learned about:
 				<br/><br/>
 				<table>
 				 <tr>

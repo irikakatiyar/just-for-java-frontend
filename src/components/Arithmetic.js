@@ -32,7 +32,15 @@ class Arithmetic extends React.Component{
 						<li>if you perform an operation between an integer and a double, no matter the order, then the resulting value is an <b>double</b></li>
 					</ul>
 				</ul>
-				note how the <b>type of the result</b> after the operation changes depending on <b>what types the operation is in between</b>. now that you understand this nuance, let's talk about each operation.
+				note how the <b>type of the result</b> after the operation changes depending on <b>what types the operation is in between</b>.
+				<br/><br/>
+				one last nuance... <b>order of operations</b>. in the order of operations in java, anything in <b>()</b> happens first, then <b>*</b>, <b>/</b>, and <b>%</b> happen from left to right, and finally <b>+</b> and <b>-</b> happen from left to right. here is a visual representation of the order of operations:
+				<ol>
+					<li>()</li>
+					<li>* / %</li>
+					<li>+ -</li>
+				</ol>
+				awesome! now let's discuss each arithmetic operation in greater detail!
 				<h3>+ addition +</h3>
 				<b>addition</b> is denoted using <b>+</b> in java. here are some examples of addition between two integers, two doubles, and an integer and a double:
 				<ul>
@@ -41,9 +49,7 @@ class Arithmetic extends React.Component{
 					<li>7 + 1.0 = 8.0</li>
 					<li>9.9 + 2 = 11.9</li>
 				</ul>
-				<b>the standard notation</b>
-				<br/>
-				the standard notation for addition is to <b>change the value of a variable</b> to be equal to the result of <b>adding another variable to that variable</b>. here is the blueprint of the standard notation of adding another variable <i>i</i> to a variable <i>sum</i> (<b className="note">btw:</b> we can assume that <i>sum</i> and <i>i</i> have already been initialized):
+				here is the blueprint of the <b>standard notation</b> of adding another variable <i>i</i> to a variable <i>sum</i> (<b className="note">btw:</b> we can assume that <i>sum</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>sum</i> = <i>sum</i> + <i>i</i>;</b>
 				<br/><br/>
@@ -58,9 +64,7 @@ class Arithmetic extends React.Component{
 				price = price + tip;
 				</div>
 				<br/>
-				<b>the shorthand notation</b>
-				<br/>
-				the shorthand notation for addition is to use <b>+=</b> to change the value of a variable to be equal to <b>adding another variable to itself</b>. the standard notation and the shorthand notation do <b>exactly the same thing</b>. here is the blueprint of the shorthand notation of adding another variable <i>i</i> to a variable <i>sum</i> (<b className="note">btw:</b> we can assume that <i>sum</i> and <i>i</i> have already been initialized):
+				the <b>shorthand notation</b> for addition uses <b>+=</b>. here is the blueprint of the <b>shorthand notation</b> of adding another variable <i>i</i> to a variable <i>sum</i> (<b className="note">btw:</b> we can assume that <i>sum</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>sum</i> += <i>i</i>;</b>
 				<br/><br/>
@@ -75,9 +79,7 @@ class Arithmetic extends React.Component{
 				price += tip;
 				</div>
 				<br/>
-				<b>the shorthand of the shorthand notation</b>
-				<br/>
-				if you want to <b>increment</b> a variable, there is actually a shorthand of the shorthand notation that we can use that <b>automatically adds 1</b> to a variable using <b>++</b>. here is the blueprint of the shorthand of the shorthand notation of incrementing, or adding 1 to, a variable <i>sum</i> (<b className="note">btw:</b> we can assume that <i>sum</i> and <i>i</i> have already been initialized):
+				if you want to <b>increment</b> a variable, there is actually a <b>shorthand of the shorthand notation</b> that we can use that automatically adds 1 to a variable using <b>++</b>. here is the blueprint of the <b>shorthand of the shorthand notation</b> of incrementing, or adding 1 to, a variable <i>sum</i> (<b className="note">btw:</b> we can assume that <i>sum</i> has already been initialized):
 				<br/>
 				<b><i>sum</i>++;</b>
 				<br/><br/>
@@ -104,16 +106,14 @@ class Arithmetic extends React.Component{
 				num++;
 				</div>
 				<h3>- subtraction -</h3>
-				<b>subtraction</b> is denoted using <b>-</b> in java. (<b className="note">btw:</b> subtraction is super similar to addition, so feel free to skim through this section if you understand it pretty well.) here are some examples of subtraction between two integers, two doubles, and an integer and a double:
+				<b>subtraction</b> is denoted using <b>-</b> in java. here are some examples of subtraction between two integers, two doubles, and an integer and a double:
 				<ul>
 					<li>1 - 4 = -3</li>
 					<li>8.4 - 3.1 = 5.3</li>
 					<li>22 - 0.001 = 21.999</li>
 					<li>7.7 - 7 = 0.7</li>
 				</ul>
-				<b>the standard notation</b>
-				<br/>
-				the standard notation for subtraction is to <b>change the value of a variable</b> to be equal to the result of <b>subtracting another variable to that variable</b>. here is the blueprint of the standard notation of subtracting another variable <i>i</i> from a variable <i>difference</i> (<b className="note">btw:</b> we can assume that <i>difference</i> and <i>i</i> have already been initialized):
+				here is the blueprint of the <b>standard notation</b> of subtracting another variable <i>i</i> from a variable <i>difference</i> (<b className="note">btw:</b> we can assume that <i>difference</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>difference</i> = <i>difference</i> - <i>i</i>;</b>
 				<br/><br/>
@@ -128,9 +128,7 @@ class Arithmetic extends React.Component{
 				price = price - discount;
 				</div>
 				<br/>
-				<b>the shorthand notation</b>
-				<br/>
-				the shorthand notation for subtraction is to use <b>-=</b> to change the value of a variable to be equal to <b>subtracting another variable from itself</b>. the standard notation and the shorthand notation do <b>exactly the same thing</b>. here is the blueprint of the shorthand notation of subtracting another variable <i>i</i> from a variable <i>difference</i> (<b className="note">btw:</b> we can assume that <i>difference</i> and <i>i</i> have already been initialized):
+				the <b>shorthand notation</b> for subtraction uses <b>-=</b>. here is the blueprint of the <b>shorthand notation</b> of subtracting another variable <i>i</i> from a variable <i>difference</i> (<b className="note">btw:</b> we can assume that <i>difference</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>difference</i> -= <i>i</i>;</b>
 				<br/><br/>
@@ -145,9 +143,7 @@ class Arithmetic extends React.Component{
 				price -= discount;
 				</div>
 				<br/>
-				<b>the shorthand of the shorthand notation</b>
-				<br/>
-				if you want to <b>decrement</b> a variable, there is actually a shorthand of the shorthand notation that we can use that <b>automatically subtracts 1</b> from a variable using <b>--</b>. here is the blueprint of the shorthand of the shorthand notation of decrementing, or subtracting 1 from, a variable <i>difference</i> (<b className="note">btw:</b> we can assume that <i>difference</i> and <i>i</i> have already been initialized):
+				if you want to <b>decrement</b> a variable, there is actually a <b>shorthand of the shorthand notation</b> that we can use that automatically subtracts 1 from a variable using <b>--</b>. here is the blueprint of the <b>shorthand of the shorthand notation</b> of decrementing, or subtracting 1 from, a variable <i>difference</i> (<b className="note">btw:</b> we can assume that <i>difference</i> has already been initialized):
 				<br/>
 				<b><i>difference</i>++;</b>
 				<br/><br/>
@@ -181,9 +177,7 @@ class Arithmetic extends React.Component{
 					<li>2 * 4.4 = 8.8</li>
 					<li>9.1 * 6 = 54.6</li>
 				</ul>
-				<b>the standard notation</b>
-				<br/>
-				the standard notation for multiplication is to <b>change the value of a variable</b> to be equal to the result of <b>multiplying the variable by another variable</b>. here is the blueprint of the standard notation of multiplying a variable <i>product</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>difference</i> and <i>i</i> have already been initialized):
+				here is the blueprint of the <b>standard notation</b> of multiplying a variable <i>product</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>difference</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>product</i> = <i>product</i> * <i>i</i>;</b>
 				<br/><br/>
@@ -198,9 +192,7 @@ class Arithmetic extends React.Component{
 				price = price * cookies;
 				</div>
 				<br/>
-				<b>the shorthand notation</b>
-				<br/>
-				the shorthand notation for multiplication is to use <b>*=</b> to change the value of a variable to be equal to <b>multiplying itself by another variable</b>. the standard notation and the shorthand notation do <b>exactly the same thing</b>. here is the blueprint of the shorthand notation of multiplying a variable <i>product</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>product</i> and <i>i</i> have already been initialized):
+				the <b>shorthand notation</b> for multiplication uses <b>*=</b>. here is the blueprint of the <b>shorthand notation</b> of multiplying a variable <i>product</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>product</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>product</i> *= <i>i</i>;</b>
 				<br/><br/>
@@ -222,9 +214,7 @@ class Arithmetic extends React.Component{
 					<li>9.0 / 4 = 2.25</li>
 					<li>9 / 4.0 = 2.25</li>
 				</ul>
-				<b>the standard notation</b>
-				<br/>
-				the standard notation for division is to <b>change the value of a variable</b> to be equal to the result of <b>dividing the variable by another variable</b>. here is the blueprint of the standard notation of dividing a variable <i>quotient</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>quotient</i> and <i>i</i> have already been initialized):
+				here is the blueprint of the <b>standard notation</b> of dividing a variable <i>quotient</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>quotient</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>quotient</i> = <i>quotient</i> / <i>i</i>;</b>
 				<br/><br/>
@@ -238,12 +228,10 @@ class Arithmetic extends React.Component{
 				<br/>
 				price = price / people;
 				</div>
+				<br/><br/>
+				the <b>shorthand notation</b> for division uses <b>/=</b>. here is the blueprint of the <b>shorthand notation</b> of dividing a variable <i>quotient</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>quotient</i> and <i>i</i> have already been initialized):
 				<br/>
-				<b>the shorthand notation</b>
-				<br/>
-				the shorthand notation for division is to use <b>/=</b> to change the value of a variable to be equal to <b>dividing itself by another variable</b>. the standard notation and the shorthand notation do <b>exactly the same thing</b>. here is the blueprint of the shorthand notation of dividing a variable <i>quotient</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>quotient</i> and <i>i</i> have already been initialized):
-				<br/>
-				<b><i>product</i> *= <i>i</i>;</b>
+				<b><i>quotient</i> /= <i>i</i>;</b>
 				<br/><br/>
 				now let's convert the code above from standard notation into shorthand notation! take a look below:
 				<div className="code">
@@ -262,9 +250,7 @@ class Arithmetic extends React.Component{
 					<li>3 % 5 = 3 because 3 / 5 is 0 with a remainder of 3</li>
 					<li>14 % 7 = 0 because 14 / 7 is 2 with a remainder of 0</li>
 				</ul>
-				<b>the standard notation</b>
-				<br/>
-				the standard notation for modulus is to <b>change the value of a variable</b> to be equal to the result of <b>getting the remainder after dividing the variable by another variable</b>. here is the blueprint of the standard notation of getting the remainder after dividing a variable <i>remainder</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>remainder</i> and <i>i</i> have already been initialized):
+				here is the blueprint of the <b>standard notation</b> of getting the remainder after dividing a variable <i>remainder</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>remainder</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>remainder</i> = <i>remainder</i> % <i>i</i>;</b>
 				<br/><br/>
@@ -279,9 +265,8 @@ class Arithmetic extends React.Component{
 				apples = apples % friends;
 				</div>
 				<br/>
-				<b>the shorthand notation</b>
 				<br/>
-				the shorthand notation for modulus is to use <b>%=</b> to change the value of a variable to be equal to <b>getting the remainder after dividing itself by another variable</b>. the standard notation and the shorthand notation do <b>exactly the same thing</b>. here is the blueprint of the shorthand notation of getting the remainder after dividing a variable <i>remainder</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>remainder</i> and <i>i</i> have already been initialized):
+				the <b>shorthand notation</b> for modulus uses <b>%=</b>. here is the blueprint of the <b>shorthand notation</b> of getting the remainder after dividing a variable <i>remainder</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>remainder</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>remainder</i> %= <i>i</i>;</b>
 				<br/><br/>
@@ -295,10 +280,8 @@ class Arithmetic extends React.Component{
 				<br/>
 				apples %= friends;
 				</div>
-				<br/>
-				<b>divisibility, a common application of modulus</b>
-				<br/>
-				modulus is often used to figure out if a certain integer is <b>divisible</b> by another integer. you might be wondering, <b>"how can modulus be used in divisibility?"</b> great question! this whole section is dedicated to answering this question. let's dive into it!
+				<br/><br/>
+				modulus is often used to figure out if a certain integer is <b>divisible</b> by another integer. you might be wondering, <b>"how can modulus be used in divisibility?"</b> great question! let's dive into it!
 				<br/>
 				as we stated earlier, modulus represents the <b>remainder after dividing two integers</b>; in other words, modulus is the <b>leftover</b>. now for divisibility: if a number <i>x</i> is <b>divisible</b> by a number <i>y</i>, that means that <i>x</i><b>/</b><i>y</i> is an <b>integer</b>. in other words, the <b>remainder</b> when you divide <i>x</i> by <i>y</i> should be equal to <b>0</b>. have you connected the dots? <b>a number <i>x</i> is divisible by another number <i>y</i> when x % y = 0.</b> now let's translate this into lines of code:
 				<div className="code">
@@ -314,7 +297,6 @@ class Arithmetic extends React.Component{
 				<div className="code">
 				0
 				</div>
-				awesome job!
 				<h3>:) recap :)</h3>
 				<b>gr8!</b> you made it to recap!
 				<br/><br/>
@@ -326,7 +308,6 @@ class Arithmetic extends React.Component{
 					<li><b>division</b>, denoted using <b>/</b></li>
 					<li><b>modulus</b>, denoted using <b>%</b></li>
 				</ul>
-				remember that <b>modulus</b> means the <b>remainder</b> after dividing and is commonly used in <b>divisibility</b>.
 				<br/><br/>
 				here is the blueprint for how the resulting variable type changes based on whether you are performing an operation between <b>two integers</b>, <b>two doubles</b>, or <b>an integer and a double</b>:
 				<br/>
@@ -346,7 +327,7 @@ class Arithmetic extends React.Component{
 				<br/>
 				<b><i>&lt;variable_1&gt;</i> <i>&lt;operator&gt;</i>= <i>&lt;variable_2&gt;</i>;</b>
 				<br/><br/>
-				and finally, if you want to <b>increment</b>, which means add 1 to, or <b>decrement</b>, which means subtract 1 from, a variable, you can use <b>++</b> and <b>--</b>, respectively.
+				and finally, if you want to increment or decrement a variable, you can use <b>++</b> and <b>--</b>, respectively.
 				<br/><br/>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

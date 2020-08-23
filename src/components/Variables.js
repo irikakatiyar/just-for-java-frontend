@@ -12,7 +12,7 @@ class Variables extends React.Component{
 				<b>variables</b> are used to store information. 
 				<h3>wait, so how do you create a variable?</h3>
 				here is the blueprint when creating a variable: <br/>
-				<b><i> &lt;type&gt; &lt;name&gt; = &lt;value&gt;;</i></b> <br/>
+				<b><i>&lt;type&gt; &lt;name&gt; = &lt;value&gt;;</i></b> <br/>
 				(<b className="note">btw:</b> don't forget the semicolon!)
 				<br/><br/>
 				there are multiple <b>types</b> of information that variables can store:
