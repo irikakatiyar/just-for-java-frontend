@@ -31,73 +31,59 @@ class Constants extends React.Component{
 				final double PRICE_PER_AVOCADO = 2.10; <div className="comment">//constant</div>
 				</div>
 				<h3>ok enough blabbering about naming conventions; let's get an example</h3>
-				let's try to create a program that asks the user how many avocados they want to buy from our avocado store. it should then print out the price that the user has to pay for the number of avocados they purchased. (<b className="note">psst. need a reminder</b> on how to get input from the user and store it as an <b>int</b>? check out the <b className="pageName">user input page</b>!)<br/> 
-				let's <b>break this down</b> into some basic steps:
-				<ol>
-					<li>just some <b>setup</b> we have to do to get user input</li>
-					<ul>
-						<li>import Scanner</li>
-						<li>create a Scanner variable</li>
-					</ul>
-					<li>just some <b>constants</b> we have to create</li>
-					<ul>
-						<li>create a String constant to store the name of your avocado store</li>
-						<li>create a double constant to store the price per avocado</li>
-					</ul>
-					<li>just some <b>input</b> we need to get from the user</li>
-					<ul>
-						<li>print a prompt for the user asking them how many avocados they want to buy</li>
-						<li>store the user input in an integer variable</li>
-					</ul>
-					<li>just some <b>calculations</b> we need to do to get the price</li>
-					<ul>
-						<li>calculate the total price the user has to pay for the avocados they purchased</li>
-					</ul>
-				</ol>
-				now try coding this yourself! you can do it!
+				let's try to create a program that asks the user how many avocados they want to buy from our avocado store, and prints out the price that the user has to pay for the number of avocados they purchased!
 				<br/><br/>
-				...have you finished coding your program? here's what we got:
-				<br/>
-				at the <b>very top of your program</b>, you should have the following line of code that imports Scanner:
+				the first we need to do is some <b>setup</b> so that we can get <b>user input</b> in our program. this involves <b>importing Scanner</b> and <b>creating a Scanner variable</b>. (<b className="note">psst. need a reminder</b> of the six steps you need to do in order to get user input? check out the <b className="pageName">user input page</b>!) 
+				<br/>next, we need to create two <b>constants</b>: one to store the name of your avocado store, and one to store the price per avocado. print a welcome message for the user that incorporates your avocado store's name. (<b className="note">hint:</b> you can concatenate, or add, a variable to the end of a String using the <b>+</b> operator.)
+				<br/>then, <b>print out a prompt</b> asking the user how many avocados they want to buy, and store the user input in an <b>int</b>.
+				<br/>finally, calculate and print the <b>total price</b> the user has to pay for the avocados they purchased. (<b className="note">hint:</b> to calculate the total price, multiply the price per avocado by the number of avocados the user wants to buy.)
+				<br/><br/>let's see it coded out!
+				<br/><br/>at the very top of our program, we type the following line of code to import Scanner:
 				<div className="code">
-				import java.util.Scanner; <div className="comment">//step 1</div>
+				import java.util.Scanner;
 				</div>
-				here's the code that's inside our <b>main method</b> (<b className="note">btw:</b> what you set your constants to and what you printed out may be different, but the overall construction of your program should be very similar to ours):
+				and here's the code inside our main method:
 				<div className="code">
-				<div className="comment">//step 1</div>
+				<div className="comment">//create a Scanner variable to get user input</div>
 				<br/>
 				Scanner in = new Scanner(System.in);
 				<br/>
-				<div className="comment">//step 2</div>
+				<div className="comment">//create two constants using the final keyword</div>
 				<br/>
 				final String AVOCADO_STORE = "Avo's Avocados";
 				<br/>
 				final double PRICE_PER_AVOCADO = 1.99;
 				<br/>
+				<div className="comment">//print out a welcome message</div>
+				<br/>
 				System.out.println("Welcome to " + AVOCADO_STORE + "!");
 				<br/>
-				<div className="comment">//step 3</div>
+				<div className="comment">//use System.out.print() so that the user can answer on the same line as the prompt</div>
 				<br/>
 				System.out.print("How many avocados would you like to purchase? ");
 				<br/>
+				<div className="comment">//store the user input as an integer</div>
+				<br/>
 				int avocados = in.nextInt();
 				<br/>
-				<div className="comment">//step 4</div>
+				<div className="comment">//calculate the total price the user has to pay and print it out</div>
 				<br/>
 				double totalPrice = PRICE_PER_AVOCADO * avocados;
 				<br/>
 				System.out.println("Total: $" + totalPrice);
+				<br/>
+				<div className="comment">//print out a final message</div>
 				<br/>
 				System.out.println("Thanks for shopping at " + AVOCADO_STORE + "!");
 				</div>
 				<h3>but what happens if i do try to change the value of a constant?</h3>
 				for example, say you type the following code:
 				<div className="code">
-				final int AVOCADOS = 13;
+				final int MY_AVOCADOS = 13;
 				<br/>
-				<div className="comment">//gotta love the avocados</div>
+				<div className="comment">//gotta love my avocados</div>
 				<br/>
-				AVOCADOS++;
+				MY_AVOCADOS++;
 				</div>
 				as much as i love avocados, this code = <b>no no</b>. if you ever attempt changing the value of a constant in your program, you will get an <b>error</b>. and red text in the console = <b>no no</b>. so don't change the value of a constant. <b>just. don't. do. it.</b>
 				<h3>final(ly), it's recap</h3>
@@ -112,7 +98,7 @@ class Constants extends React.Component{
 				and here is the blueprint for <b>creating a constant</b>:<br/>
 				<b>final <i>&lt;type&gt; &lt;name&gt; = &lt;immutable_value&gt;;</i></b>
 				<br/><br/>
-				and last but not least, remember that if you ever attempt to change the value of a constant in your program, you will get an <b>error</b>.
+				and last but not least, remember that if you ever attempt to change the value of a constant in your program, you will get an <b>error</b>. sweet!
 				<br/><br/>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

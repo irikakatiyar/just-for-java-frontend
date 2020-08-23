@@ -32,7 +32,7 @@ class IfStatement extends React.Component{
 				<h3>ok, that just looks like math</h3>
 				it might right now, but let's go through each of them...<br/><br/>
 				<b>==</b> is used to check equality between <b>primitive types</b> (<b className="note">psst. need a reminder</b> of what in the world a primitive type is? check out the <b className="pageName">Strings page</b>!)
-				let's check out an example.
+				let's check out an example:
 				<div className="code">
 					int cookies = 0; <div className="comment">//this will keep track of how many cookies are in our "jar"</div><br/>
 					<div className="comment">//if the number of cookies in the jar is equal to 0, we will print something out in the console</div><br/>
@@ -40,12 +40,12 @@ class IfStatement extends React.Component{
 						<p>System.out.println("you ran our of cookies!")</p><br/>
 					&#125;
 				</div>
-				because our integer <i>cookies</i> is equal to 0, the code block would print the folloiwng into the console
+				because our integer <i>cookies</i> is equal to 0, the code block would print the folloiwng into the console:
 				<div className="code">
 					you ran our of cookies!
 				</div><br/>
 				
-				<b>!=</b> is used to check inequality between <b>primitive types</b>. let's take a look at how this is used in an example.
+				<b>!=</b> is used to check inequality between <b>primitive types</b>. let's take a look at how this is used in an example:
 				<div className="code">
 					int cookies = 3;<br/>
 					<div className="comment">//if the number of cookies in the jar is not equal to 0, we will print how many cookies are left after we take one</div><br/>
@@ -54,13 +54,13 @@ class IfStatement extends React.Component{
 						System.out.println("there are " + cookies + " left!");</p><br/>
 					&#125;
 				</div>
-				our program above would print the following into the console.
+				our program above would print the following into the console:
 				<div className="code">
 					there are 2 cookes left!
 				</div>
 				this makes sense. since our integer <i>cookies</i> was not equal to 0, we would subtract 1 to give us a final value of 2.
 				<h3>but what's with the pac man lookin symbols?</h3>
-				<b>&lt;</b> is used to check if one value is less than another value. likewise, <b>&le;</b> is used to check if a value is less than or equal to another value. let's check out an example.
+				<b>&lt;</b> is used to check if one value is less than another value. likewise, <b>&le;</b> is used to check if a value is less than or equal to another value. let's check out an example:
 				<div className="code">
 					int cookies = 3;<br/>
 					int cookiesWanted = 4; <div className="comment">//this represents the number of cookies we want...we hungry</div><br/>
@@ -71,14 +71,14 @@ class IfStatement extends React.Component{
 						System.out.println("there aren't enough cookies");</p><br/>
 					&#125;
 				</div>
-				because the number of cookies we have in the jar is less than what we want, our program will pring the folling into the console
+				because the number of cookies we have in the jar is less than what we want, our program will print the following into the console:
 				<div className="code">
 					there aren't enough cookies
 				</div><br/>
 				
-				<b>&gt;</b> is used to check if one value is greater than another value. likewise, <b>&ge;</b> is used to check if a value is greater than or equal to another value. let's take a look at an example.<br/>
+				<b>&gt;</b> is used to check if one value is greater than another value. likewise, <b>&ge;</b> is used to check if a value is greater than or equal to another value. let's take a look at an example:<br/>
 				<div className="code">
-					int budget = 15; <div className="comment">//this is the amt. of money (in US Dollars) you can spend</div><br/>
+					int budget = 15; <div className="comment">//this is the amt of money (in US Dollars) you can spend</div><br/>
 					int pricePerCookie = 2;<br/>
 					<div className="comment">//this next line of code will use division to determine how many cookies we can buy with the money we have</div>
 					int numCookiesBought = budget / pricePerCookie; <br/>
@@ -87,7 +87,7 @@ class IfStatement extends React.Component{
 						<p>System.out.println("we can buy " + numCookiesBought + " cookies with $" + budget +".");</p><br/>
 					&#125;
 				</div>
-				our program above would print the following in the console
+				our program above would print the following in the console:
 				<div className="code">
 					we can buy 7 cookies with $15.
 				</div>
@@ -114,7 +114,7 @@ class IfStatement extends React.Component{
 				</div>
 				the code above would not change <i>isHello</i>. Though both our variable <i>word</i> and "Hello" are the same word, they are not the same in terms of their case. 
 				remember, the <b>.equals() method</b> is case sensitive! because our <i>word</i> variable is not capitalized, our boolean <i>isHello</i> would stay false.
-				<h3>alright, but can I get an example?</h3>
+				<h3>alright, but can i get an example?</h3>
 				yessir! in this example, let's say we wanted to make a program to see if you are over speed limit.
 				in this case, we are going to need one variable that keeps track of our speed.  
 				if we are going over the speed limit, we are going to print "slow down!" into the console. 
@@ -135,7 +135,7 @@ class IfStatement extends React.Component{
 						<p>System.out.print("slow down!");</p><br/>
 					&#125;
 				</div>
-				because we are going faster than the speed limit, the code would print the following into the console.
+				because we are going faster than the speed limit, the code would print the following into the console:
 				<div className="code">
 					slow down!
 				</div>
@@ -164,7 +164,7 @@ class IfStatement extends React.Component{
 						<p>System.out.print(yourSpeed)</p><br/>
 					&#125;
 				</div>
-				in this case, since we are going below the speed limit, our program would print the following into the console.
+				in this case, since we are going below the speed limit, our program would print the following into the console:
 				<div className="code">
 					32
 				</div>
@@ -181,7 +181,7 @@ class IfStatement extends React.Component{
 				&#125;</b><br/><br/>
 				(<b className="note">btw:</b> you can have multiple else if statements as long as there's an if statement before them!)
 				<h3>ok, so how does it work with our example</h3>
-				going back to our example of the speed sign, we want our program to wring "you're at speed limit." in the console if we are going at speed limit. 
+				going back to our example of the speed sign, we want our program to print "you're at speed limit" in the console if we are going at speed limit. 
 				so, our entire program, with the if and else from before, will look like this:
 				<div className="code">
 					int yourSpeed = 32;<br/>
@@ -197,13 +197,11 @@ class IfStatement extends React.Component{
 						<p>System.out.print(yourSpeed)</p><br/>
 					&#125;
 				</div>
-				in this case, since we are going at speed limit, our program would print out the following into the console.
+				in this case, since we are going at speed limit, our program would print out the following into the console:
 				<div className="code">
 					you're at speed limit
 				</div>
-				i know that was a lot, so let's practice!<br/>
-				
-				
+				i know that was a lot, so let's do some <b>practice problems</b>!<br/>
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">traffic lights:</b><br/><br/>
@@ -228,7 +226,7 @@ class IfStatement extends React.Component{
 				<br/>
 				<div className="solution">
 				<b className="note">our solution:</b><br/><br/>
-				below is <b>our solution</b> for the problem above. the <b>comments</b> for each step help to explain why our code looks the way it does. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/solution-traffic-lights?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -236,7 +234,7 @@ class IfStatement extends React.Component{
 				
 
 				<h3>if(recap == true)&#123;</h3>
-				<b>oooooo</b> you made it to reacp!<br/><br/>
+				<b>oooooo!</b> you made it to recap!<br/><br/>
 				remember, the blueprint of an <b>if statement</b> with <b>else if</b> as well as <b>else</b> is<br/>
 				<b>if(<i>&lt;condition&gt;</i>)&#123;<br/>
 					<p>*code block*</p><br/>
