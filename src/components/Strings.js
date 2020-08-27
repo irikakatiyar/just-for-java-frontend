@@ -369,8 +369,8 @@ class Strings extends React.Component{
 				</div>
 				<h3>pit stop</h3>
 				<div className="problem">
-					<b className="note">favorite song:</b><br/><br/>
-					your <b>goal</b> is to use <b>String concatenation</b> to print out <b>your favorite song, its artist, and what album it's in</b> into the console. this will require two steps:<br/>
+					<b className="note">my jam:</b><br/><br/>
+					what do you jam to on the radio? your <b>goal</b> is to use <b>String concatenation</b> to print out <b>your favorite song, its artist, and what album it's in</b> into the console. this will require two steps:<br/>
 					<ol>
 						<li>create three variables to store your favorite song, its artist, and what album it's in</li>
 						<li>in a print statement, use String concatenation to print out the song name, artist, and album</li>
@@ -383,7 +383,7 @@ class Strings extends React.Component{
 						<b className="note">hint:</b> for <b>step 2</b>, remember that a + between two String variables will add the second variable to the end of the first<br/><br/>
 					</div>
 					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-favorite-song?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-my-jam?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>
@@ -391,7 +391,45 @@ class Strings extends React.Component{
 				<b className="note">our solution:</b><br/><br/>
 				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
 					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-favorite-song-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-my-jam-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">fun and fresh formatting:</b><br/><br/>
+					your <b>goal</b> is to use <b>Strings</b> to <b>format your name into the proper capitalization</b>, meaning that the first letter is capitalized while the rest is lowercased. this will require five steps:<br/>
+					<ol>
+						<li>create a variable to store your name (in any random casing that you want) and print it out</li>
+						<li>create another variable to store your name after it's been formatted</li>
+						<ul>
+							<li>for now you can simply initialize it to an empty String, since we will change this variable later</li>
+						</ul>
+						<li>uppercase the first letter of your name and concatenate it to the formatted name variable</li>
+						<ul>
+							<li>you can use substring to get the first character and then uppercase the substring</li>
+						</ul>
+						<li>lowercase the rest of your name and concatenate it to the formatted name variable</li>
+						<ul>
+							<li>you can use substring to get the rest of your name and then lowercase the substring</li>
+						</ul>
+						<li>print out your name with its fun and fresh formatting</li>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, an empty String is denoted using ""<br/>
+						<b className="note">hint:</b> for <b>step 3</b>, which index does the first letter start at, inclusively? which index does the first letter end at, exclusively? if you said 0 and 1 (respectively) you may be correct hehe<br/>
+						<b className="note">hint:</b> for <b>step 4</b>, which index does the rest of your name start at, inclusively? which index does the rest of your name end at, exclusively? if you said 1 and the length of your name (respectively) you may be correct hehe<br/>
+						<b className="note">hint:</b> for <b>steps 3 and 4</b>, you can use += to concatenate the properly cased substring to the formatted name variable<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-fun-and-fresh-formatting?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-fun-and-fresh-formatting-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<h3>hello world... more like hello recap</h3>

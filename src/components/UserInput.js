@@ -102,6 +102,45 @@ class UserInput extends React.Component{
 				    <td>in.nextBoolean()</td>
 				  </tr>
 				</table>
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">tip tip:</b><br/><br/>
+					how much do you want to tip? your <b>goal</b> is to use <b>user input</b> to <b>ask the user how much they want to tip</b> and add the tip to the price. this will require five steps:<br/>
+					<ol>
+						<li>just some setting up you have to do to get user input</li>
+						<ul>
+							<li>import the Scanner class and create a Scanner variable</li>
+						</ul>
+						<li>make a variable that stores any price you want</li>
+						<li>ask the user how much they want to tip</li>
+						<ul>
+							<li>here, use same-line printing to print out the question</li>
+						</ul>
+						<li>add the tip that the user enters to the price</li>
+						<ul>
+							<li>you can do this in just one line of code :o</li>
+						</ul>
+						<li>print out the grand total and close the Scanner for good practice</li>
+						<ul>
+							<li>here, use next-line printing to print out the total price</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 4</b>, we want to get the user input as a double, so use in.nextDouble()<br/>
+						<b className="note">hint:</b> for <b>step 4</b>, to add the user input to the price variable, you can use the += shorthand that we learned about on the <b className="pageName">arithmetics page</b><br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/user-input-tip-tip?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/user-input-tip-tip-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<h3>it do be time for recap</h3>
 				<b>congrats!</b> you made it to recap!
 				<br/>

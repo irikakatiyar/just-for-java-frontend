@@ -86,6 +86,34 @@ class Constants extends React.Component{
 				MY_AVOCADOS++;
 				</div>
 				as much as i love avocados, this code = <b>no no</b>. if you ever attempt changing the value of a constant in your program, you will get an <b>error</b>. and red text in the console = <b>no no</b>. so don't change the value of a constant. <b>just. don't. do. it.</b>
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">happy birthday:</b><br/><br/>
+					if you're reading this and it's your birthday, happy birthday to you! your <b>goal</b> is to use <b>constants</b> to <b>store your birthday</b>. this will require four steps:<br/>
+					<ol>
+						<li>create a constant to store the year you were born</li>
+						<li>create a constant to store the month you were born</li>
+						<li>create a constant to store the day you were born</li>
+						<li>print out your birthday</li>
+						<ul>
+							<li>if your birthday is September 23, 2002, then your program should print out "September 23, 2002"</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 4</b>, you may need to use String concatenation... remember when we learned that the + operator can be used between Strings and variables on the <b className="pageName">Strings page</b>?<br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/constants-happy-birthday?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/constants-happy-birthday-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<h3>final(ly), it's recap</h3>
 				<b>awesome!</b> you made it to recap!
 				<br/><br/>
