@@ -201,7 +201,8 @@ class IfStatement extends React.Component{
 				<div className="code">
 					you're at speed limit
 				</div>
-				i know that was a lot, so let's do some <b>practice problems</b>!<br/>
+				<br/>
+				i know that was a lot, so let's do some <b>practice problems</b>!
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">traffic lights:</b><br/><br/>
@@ -228,11 +229,9 @@ class IfStatement extends React.Component{
 				<b className="note">our solution:</b><br/><br/>
 				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
 					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/solution-traffic-lights?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/if-statement-traffic-lights-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				
-
 				<h3>if(recap == true)&#123;</h3>
 				<b>oooooo!</b> you made it to recap!<br/><br/>
 				remember, the blueprint of an <b>if statement</b> with <b>else if</b> as well as <b>else</b> is<br/>

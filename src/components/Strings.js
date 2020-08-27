@@ -367,6 +367,33 @@ class Strings extends React.Component{
 				<div className="code">
 				that's a wrap!
 				</div>
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">favorite song:</b><br/><br/>
+					your <b>goal</b> is to use <b>String concatenation</b> to print out <b>your favorite song, its artist, and what album it's in</b> into the console. this will require two steps:<br/>
+					<ol>
+						<li>create three variables to store your favorite song, its artist, and what album it's in</li>
+						<li>in a print statement, use String concatenation to print out the song name, artist, and album</li>
+						<ul>
+							<li>for example, my favorite song is Brother, its artist is Matt Corby, and the album it's in is called Into The Flame</li>
+							<li>my program should print out "my favorite song is Brother by Matt Corby in his album Into The Flame"</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, remember that a + between two String variables will add the second variable to the end of the first<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-favorite-song?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-favorite-song-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<h3>hello world... more like hello recap</h3>
 				<b>YASSS!</b> you made it to recap!
 				<br/><br/>
