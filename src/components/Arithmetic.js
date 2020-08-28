@@ -297,6 +297,9 @@ class Arithmetic extends React.Component{
 				<div className="code">
 				0
 				</div>
+				shopping spree
+				make variables for the price of everything you buy at a shop. add up every price. multiply by tax. print out total price.
+				also temp conversion
 				<h3>:) recap :)</h3>
 				<b>gr8!</b> you made it to recap!
 				<br/><br/>

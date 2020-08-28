@@ -39,7 +39,7 @@ class App extends React.Component{
       signOut,
       signInWithGoogle,
     } = this.props;
-    //console.log(user.uid)
+
     return (
       <div className="full">
         <div className = "title">
@@ -62,12 +62,8 @@ class App extends React.Component{
           </div>
           <div className = "content">
             <Content 
-              page={this.state.sideButtonSelected}  
-              greeting={
-                user 
-                  ? <div>hi, <b>{user.displayName.toLowerCase()}</b>!</div>
-                  : <div>hi!</div>
-              }
+              page={this.state.sideButtonSelected}
+              user={user} 
             />
           </div>
         </div>

@@ -36,7 +36,7 @@ class Content extends React.Component{
 	getPage(){
 		if(this.props.page === "home"){
 			return (
-				<Home greeting={this.props.greeting}/>
+				<Home user={this.props.user}/>
 			);
 		}
 		else if(this.props.page === "constants") {
