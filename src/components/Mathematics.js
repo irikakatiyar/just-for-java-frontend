@@ -160,6 +160,7 @@ class Mathematics extends React.Component{
 				there is so much more cool and complex math functions you can utilize with the Math library! (<b className="note">btw:</b> if you love trigonometry, the Math library has even more trig functions that you can play with.) unfortunately, we didn't have room to talk about everything in the Math library on this page, but <b>if you want to learn more about the Math library, simply search online</b>!
 				<br/>
 				there is one more topic in the Math library – generating random numbers – which is so important that we have dedicated a whole separate <b className="pageName">random numbers page</b> just for that topic. it's a bit more <b>advanced</b> than everything we've talked about so far, so you'll see it after some more pages. <b>exciting times ahead!</b>
+				<h3>pit stop</h3>
 				<h3>Math.recap()</h3>
 				<b>woohoo!</b> you made it to recap!
 				<br/><br/>

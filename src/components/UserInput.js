@@ -126,7 +126,7 @@ class UserInput extends React.Component{
 						</ul>
 					</ol>
 					<div className="hints">
-						<b className="note">hint:</b> for <b>step 4</b>, we want to get the user input as a double, so use in.nextDouble()<br/>
+						<b className="note">hint:</b> for <b>step 4</b>, we want to get the user input as a double, so use in.nextDouble()<br/><br/>
 						<b className="note">hint:</b> for <b>step 4</b>, to add the user input to the price variable, you can use the += shorthand that we learned about on the <b className="pageName">arithmetics page</b><br/><br/>
 					</div>
 					<div className="repl">

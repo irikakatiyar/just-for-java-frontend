@@ -240,20 +240,195 @@ class BooleanLogic extends React.Component{
 				yay! you can buy this super cute t-shirt!
 				</div>
 				<h3>pit stop</h3>
-				you want to buy something from store a or store b. if available in one store, go to that store; if no store, then can't buy it. if both stores, then check to see which price is cheaper. two booleans, two prices. :).
-				check if two people have the same initials given their names (find index of space and use substring to get first name and last name!!).
+				<div className="problem">
+					<b className="note">unexcused absence:</b><br/><br/>
+					your <b>goal</b> is to use <b>boolean logic</b> to <b>check if a student has an unexcused absence</b>, meaning that the student is not sick or does not have an appointment but is still absent. this will require two steps:<br/>
+					<ol>
+						<li>create three boolean variables: isAbsent, isSick, and hasAppointment</li>
+						<li>if the student has an unexcused absence, then print a message screaming "detention for you when you get back!"</li>
+						<ul>
+							<li>a student has an unexcused absence if they are absent, if they are not sick, and if they do not have an appointment</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, you can use ! to check if the student is not sick or does not have an appointment<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, you can use && to check if all three conditions are true in a single if statement<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-unexcused-absence?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-unexcused-absence-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">chocolate lava cake:</b><br/><br/>
+					which store has the best deal on chocolate lava cakes? your <b>goal</b> is to use <b>boolean logic</b> to decide where you should buy chocolate lava cake from between two grocery stores based on <b>if chocolate lava cake is in stock and which chocolate lava cake is cheaper</b>. this will require three steps:<br/>
+					<ol>
+						<li>create all of your variables</li>
+						<ul>
+							<li>create two variables to store whether chocolate lava cake is in stock at store 1 and in stock at store 2</li>
+							<li>create two variables to store the price of chocolate lava cake at store 1 and at store 2</li>
+						</ul>
+						<li>check in which store(s), if any, chocolate lava cake is in stock</li>
+						<ul>
+							<li>if chocolate lava cake is not in stock at either store, then print out "chocolate lava cakes aren't in stock"</li>
+							<li>if chocolate lava cake is in stock at store 1 but not in stock at store 2, then print out "chocolate lava cakes are only at store 1"</li>
+							<li>if chocolate lava cake is in stock at store 2 but not in stock at store 1, then print out "chocolate lava cakes are only at store 2"</li>
+							<li>we will deal with the case when chocolate lava cake is in stock at both stores in the next step</li>
+						</ul>
+						<li>if chocolate lava cake is in stock at both stores, then pick the store that has the best deal on chocolate lava cakes</li>
+						<ul>
+							<li>if the price of chocolate lava cake is cheaper at store 1, then print out "best deal for chocolate lava cakes at store 1"</li>
+							<li>if the price of chocolate lava cake is cheaper at store 2, then print out "best deal for chocolate lava cakes at store 2"</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, you can use ! to check if chocolate lava cakes are not in stock at a store<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, you can use && to check if both in stock conditions are true in a single if statement<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, you might need to use else if and else statements too<br/><br/>
+						<b className="note">hint:</b> for <b>step 3</b>, you will need to make the if statement and else statement that compares the chocolate lava cake prices inside the if statement checking if chocolate lava cakes are in stock at both stores<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-chocolate-lava-cake?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-chocolate-lava-cake-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">initials:</b><br/><br/>
+					your <b>goal</b> is to use <b>boolean logic</b> to <b>check if two people have the same initials given their names</b>. this will require two steps:<br/>
+					<ol>
+						<li>create two variables to store the names of two people</li>
+						<ul>
+							<li>each variable should hold both the first and last name of the person; for example, "John Doe"</li>
+						</ul>
+						<li>check if the two names have the same initials, meaning the first letters of both the first and last names are the same</li>
+						<ul>
+							<li>short version: check if the first initial of the first person equals the first initial of the second person and if the last initial of the first person equals the last initial of the second person</li>
+							<li>long version: check if the first letter of the first name of the first person is equal to the first letter of the first name of the second person and if the first letter of the last name of the first person is equal to the first letter of the last name of the second person – phew! that was a lot</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, it's a good idea to take a look at the <b className="pageName">Strings page</b> to review indexing, charAt, and indexOf, but the rest of the hints will walk through what you need to do with Strings<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, the first letter of the first name is the first character in the String, which is at index 0, since indexing starts at 0<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, you can use charAt to get a character in a String at a given index in the String<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, the first letter of the last name is the character right after the space in the String<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, you can use indexOf to get the index of the first occurrence of a given character in a String<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, the index of the first letter of the last name is equal to the index of the first space + 1<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-initials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-initials-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<h3>!(!recap)</h3>
 				<b>awesome!</b> you made it to recap!
 				<br/><br/>
 				we can use <b>!</b>, <b>&&</b>, <b>||</b>, and <b>()</b> to make our <b>if statements</b> more complex, allowing us to check multiple things in a single if statement. here is the <b>logical precedence</b>, meaning <b>which funky symbol you should perform first</b>:
-				<br/>
+				<br/> 
 				<ol>
 					<li><b>()</b> = do this first</li>
 					<li><b>!</b> = not this</li>
 					<li><b>&&</b> = this and this</li>
 					<li><b>||</b> = this or this</li>
 				</ol>
-				to end with, hamlet once said, <b>2B||!2B</b>, that is the question... i guess shakespeare did have a knack for coding...
+				and here are the <b>true false tables</b> that you haven't seen enough of!<br/><br/>
+				<table>
+					<tr>
+						<td><b>!</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+					<tr>
+						<td><b>!</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+				</table><br/>
+				<table>
+					<tr>
+						<td>true</td>
+						<td><b>&&</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+					<tr>
+						<td>false</td>
+						<td><b>&&</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+					<tr>
+						<td>true</td>
+						<td><b>&&</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+					<tr>
+						<td>false</td>
+						<td><b>&&</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+				</table><br/>
+				<table>
+					<tr>
+						<td>true</td>
+						<td><b>||</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+					<tr>
+						<td>false</td>
+						<td><b>||</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+					<tr>
+						<td>true</td>
+						<td><b>||</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+					<tr>
+						<td>false</td>
+						<td><b>||</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+				</table><br/>
+				to end with, hamlet once said, <b>2B||!2B</b>, that is the question... i guess shakespeare did have a knack for coding!
 				<br/><br/>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
