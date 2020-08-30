@@ -192,8 +192,8 @@ class Mathematics extends React.Component{
 				<b>woohoo!</b> you made it to recap!
 				<br/><br/>
 				you know what? after learning about all that <b>Math</b> i bet you're feeling <b>lazy like me</b> (<b className="note">btw:</b> i guess that's why i don't have a six pack...), so i'll keep this recap short.
-				<br/>
-				here's a table of all of the <b>constants and functions from the Math library</b> we learned about today:
+				<br/><br/>
+				imma just leave a table of all the constants and functions from the <b>Math library</b> we learned about today. and don't even bother reading through it; it's simply there for <b>reference</b>. with that, we're done with recap! pretty short, eh?
 				<br/><br/>
 				<table>
 					<tr>
