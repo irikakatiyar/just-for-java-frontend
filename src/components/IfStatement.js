@@ -201,8 +201,6 @@ class IfStatement extends React.Component{
 				<div className="code">
 					you're at speed limit
 				</div>
-				<br/>
-				i know that was a lot, so let's do some <b>practice problems</b>!
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">traffic lights:</b><br/><br/>
@@ -218,7 +216,7 @@ class IfStatement extends React.Component{
 						</ul>
 					</ol>
 					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b> you might need to use else if and else statements too, not just if *wink, wink*<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, you might need to use else if and else statements too, not just if *wink, wink*<br/><br/>
 					</div>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/if-statement-traffic-lights?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

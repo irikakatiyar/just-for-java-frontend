@@ -88,6 +88,32 @@ class Constants extends React.Component{
 				as much as i love avocados, this code = <b>no no</b>. if you ever attempt changing the value of a constant in your program, you will get an <b>error</b>. and red text in the console = <b>no no</b>. so don't change the value of a constant. <b>just. don't. do. it.</b>
 				<h3>pit stop</h3>
 				<div className="problem">
+					<b className="note">my name:</b><br/><br/>
+					your <b>goal</b> is to use <b>constants</b> to <b>store your legal name and your nickname</b>. this will require two steps:<br/>
+					<ol>
+						<li>create a constant to store your legal name and print it out</li>
+						<ul>
+							<li>try to use the naming conventions we mentioned above</li>
+						</ul>
+						<li>create a regular variable to store your nickname and print it out</li>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>steps 1 and 2</b>, note the difference between the construction of creating a constant and the construction of creating a regular variable<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/constants-my-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/constants-my-name-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
 					<b className="note">happy birthday:</b><br/><br/>
 					if you're reading this and it's your birthday, happy birthday to you! your <b>goal</b> is to use <b>constants</b> to <b>store your birthday</b>. this will require four steps:<br/>
 					<ol>
@@ -100,7 +126,7 @@ class Constants extends React.Component{
 						</ul>
 					</ol>
 					<div className="hints">
-						<b className="note">hint:</b> for <b>step 4</b>, you may need to use String concatenation... remember when we learned that the + operator can be used between Strings and variables on the <b className="pageName">Strings page</b>?<br/>
+						<b className="note">hint:</b> for <b>step 4</b>, you may need to use String concatenation... remember when we learned that the + operator can be used between Strings and variables on the <b className="pageName">Strings page</b>?<br/><br/>
 					</div>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/constants-happy-birthday?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
