@@ -9,7 +9,7 @@ class TwoDimArrays extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the TwoDimArrays content
+				<b>coming soon!</b>
 			</div>
 		)
 	}

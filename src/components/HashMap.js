@@ -9,7 +9,7 @@ class HashMap extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the HashMap content
+				<b>coming soon!</b>
 			</div>
 		)
 	}

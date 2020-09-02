@@ -6,6 +6,7 @@ import React from 'react';
 import './App.css';
 import Content from './components/Content';
 import SideButton from './components/SideButton';
+import axios from 'axios';
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseApp.auth();

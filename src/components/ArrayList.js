@@ -9,7 +9,7 @@ class ArrayList extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the ArrayList content
+				<b>coming soon!</b>
 			</div>
 		)
 	}
