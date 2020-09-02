@@ -105,10 +105,56 @@ class ForLoop extends React.Component{
 				a<br/>
 				y<br/>
 				</div>
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">fr lp:</b><br/><br/>
+					your <b>goal</b> is to use <b>for loops</b> to <b>remove the vowels from a String</b>; for example, if the original String is "for loop", the new String would be "fr lp". this will require five steps:<br/>
+					<ol>
+						<li>create two String variables, one that stores the original String and one that will store the vowels-removed String</li>
+						<ul>
+							<li>you can set the original String variable to any text you want</li>
+							<li>the vowels-removed String variable can be initialized to an empty String ""</li>
+						</ul>
+						<li>use a for loop to iterate through each character in the String using indexing</li>
+						<ul>
+							<li>think about what the three components – initialze, condition, and iterate – of your for loop are going to be</li>
+						</ul>
+						<li>get the current character that you are on in the String using its index</li>
+						<li>if the current character is not a vowel, then concatenate it to the vowels-removed String</li>
+						<ul>
+							<li>remember that vowels can be lowercase or uppercase</li>
+							<li>there are numerous ways to do this step: one uses boolean logic and one creates a String of all the vowels</li>
+						</ul>
+						<li>print out the vowels-removed String variable</li>
+						<ul>
+							<li>this step should be performed after the for loop is done</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, your initialize component should be int i = 0 because indexing starts at 0<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, your condition component should be i &lt; str.length() the last index in the String is at the length of the String - 1<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, your iterate component should be i++ since each time we loop, we want to go to the next index in the String<br/><br/>
+						<b className="note">hint:</b> for <b>step 3</b>, you will need to use charAt to get the character at a specified index in the String – check out the <b className="pageName">Strings page</b> for more details<br/><br/>
+						<b className="note">hint:</b> for <b>step 4</b>, if you want to use boolean logic, make one giant if statement that checks if the character doesn't equal any of the vowels, both uppercase and lowercase; remember, ! = not, && = and, || = or, () = do this first; refer to the <b className="pageName">boolean logic page</b> for the specifics<br/><br/>
+						<b className="note">hint:</b> for <b>step 4</b>, you can also create a String of all the vowels "AEIOUaeiou" – notice that it includes both uppercase and lowercase vowels – and check if the index of the current character in the vowels String is equal to -1, meaning that the current character does not appear in the vowels String, meaing that it isn't a vowel<br/><br/>
+						<b className="note">hint:</b> for <b>step 4</b>, if the current character is not a vowel, then you can use += to concatenate, or add, that character to the end of the vowels-removed String<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-fr-lp?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-fr-lp-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<h3>is it really time for reacap? get it. for. hehe.</h3>
 				<b>ayyyyyy!</b> you made it to recap!<br/><br/>
 				now, i know that was a lot, so here's a lil' summary:<br/><br/>
-				a <b>loop</b> is a repeating block of code. one type of loop is <b>for loops</b>, which help to loop through code a <b>specific number of times</b>. here is the blueprint for creating a for loop:<br/>
+				a <b>loop</b> is a repeating block of code. one type of loop is a <b>for loop</b>, which helps to loop through a block of code a <b>specific number of times</b>. here is the blueprint for creating a for loop:<br/>
 				<b>for(<i>initialize</i> ; <i>condition</i> ; <i>iterate</i>)&#123; <br/>
 				<p>*code*</p> <br/>
 				&#125;</b><br/><br/>

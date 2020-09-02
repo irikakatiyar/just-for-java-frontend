@@ -160,12 +160,40 @@ class Mathematics extends React.Component{
 				there is so much more cool and complex math functions you can utilize with the Math library! (<b className="note">btw:</b> if you love trigonometry, the Math library has even more trig functions that you can play with.) unfortunately, we didn't have room to talk about everything in the Math library on this page, but <b>if you want to learn more about the Math library, simply search online</b>!
 				<br/>
 				there is one more topic in the Math library – generating random numbers – which is so important that we have dedicated a whole separate <b className="pageName">random numbers page</b> just for that topic. it's a bit more <b>advanced</b> than everything we've talked about so far, so you'll see it after some more pages. <b>exciting times ahead!</b>
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">leftover pie:</b><br/><br/>
+					if you're still hungry, we discovered a whole pie leftover! your <b>goal</b> is to use <b>Math</b> to find the <b>area of the leftover pie using pi and some other Math functions</b>. this will require two steps:<br/>
+					<ol>
+						<li>create a variable to store the radius of the leftover pie</li>
+						<li>calculate the area of the leftover pie and store it in a new variable</li>
+						<ul>
+							<li>here's the formula for calculating the area of a circle: A = π * r ^ 2</li>
+							<li>print out the area variable after creating it</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, you can retrieve the value of pi by using Math.PI<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, you can square the radius by using Math.pow(radius, 2), where radius is the base and 2 is the exponent<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-leftover-pie?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-leftover-pie-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<h3>Math.recap()</h3>
 				<b>woohoo!</b> you made it to recap!
 				<br/><br/>
 				you know what? after learning about all that <b>Math</b> i bet you're feeling <b>lazy like me</b> (<b className="note">btw:</b> i guess that's why i don't have a six pack...), so i'll keep this recap short.
-				<br/>
-				here's a table of all of the <b>constants and functions from the Math library</b> we learned about today:
+				<br/><br/>
+				imma just leave a table of all the constants and functions from the <b>Math library</b> we learned about today. and don't even bother reading through it; it's simply there for <b>reference</b>. with that, we're done with recap! pretty short, eh?
 				<br/><br/>
 				<table>
 					<tr>

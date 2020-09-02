@@ -228,7 +228,7 @@ class Arithmetic extends React.Component{
 				<br/>
 				price = price / people;
 				</div>
-				<br/><br/>
+				<br/>
 				the <b>shorthand notation</b> for division uses <b>/=</b>. here is the blueprint of the <b>shorthand notation</b> of dividing a variable <i>quotient</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>quotient</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>quotient</i> /= <i>i</i>;</b>
@@ -265,7 +265,6 @@ class Arithmetic extends React.Component{
 				apples = apples % friends;
 				</div>
 				<br/>
-				<br/>
 				the <b>shorthand notation</b> for modulus uses <b>%=</b>. here is the blueprint of the <b>shorthand notation</b> of getting the remainder after dividing a variable <i>remainder</i> by another variable <i>i</i> (<b className="note">btw:</b> we can assume that <i>remainder</i> and <i>i</i> have already been initialized):
 				<br/>
 				<b><i>remainder</i> %= <i>i</i>;</b>
@@ -280,7 +279,7 @@ class Arithmetic extends React.Component{
 				<br/>
 				apples %= friends;
 				</div>
-				<br/><br/>
+				<br/>
 				modulus is often used to figure out if a certain integer is <b>divisible</b> by another integer. you might be wondering, <b>"how can modulus be used in divisibility?"</b> great question! let's dive into it!
 				<br/>
 				as we stated earlier, modulus represents the <b>remainder after dividing two integers</b>; in other words, modulus is the <b>leftover</b>. now for divisibility: if a number <i>x</i> is <b>divisible</b> by a number <i>y</i>, that means that <i>x</i><b>/</b><i>y</i> is an <b>integer</b>. in other words, the <b>remainder</b> when you divide <i>x</i> by <i>y</i> should be equal to <b>0</b>. have you connected the dots? <b>a number <i>x</i> is divisible by another number <i>y</i> when x % y = 0.</b> now let's translate this into lines of code:
@@ -297,6 +296,73 @@ class Arithmetic extends React.Component{
 				<div className="code">
 				0
 				</div>
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">slope:</b><br/><br/>
+					throwback to math class... the slope of a line connecting two points (x1, y1) and (x2, y2) is (y2-y1)/(x2-x1). your <b>goal</b> is to use <b>arithmetic</b> to <b>calculate the slope given the two points (x1, y1) and (x2, y2)</b>. this will require three steps:<br/>
+					<ol>
+						<li>store the two points (x1, y1) and (x2, y2) in variables</li>
+						<ul>
+							<li>to store a point in our program, we will create two variables: one for the x-coordinate and one for the y-coordinate</li>
+							<li>that means that, in total, there should be four variables: x1, y1, x2, and y2</li>
+							<li>each of these variables will be a double, since they can store a decimal</li>
+						</ul>
+						<li>calculate the slope of the line connecting (x1, y1) and (x2, y2)</li>
+						<ul>
+							<li>here's the formula: slope = (y2-y1)/(x2-x1)</li>
+							<li>store the slope in a double variable</li>
+						</ul>
+						<li>print out the slope variable</li>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 3</b>, if you forgot what printing is or how to print a variable, you can revisit the <b className="pageName">printing page</b><br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-slope?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-slope-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">handy dandy temp convertor:</b><br/><br/>
+					how do you convert between Celsius and Fahrenheit? your <b>goal</b> is to use <b>arithmetic</b> to <b>convert a temperature from °C to °F</b> and to <b>convert a temperature from °F to °C</b>. this will require four steps:<br/>
+					<ol>
+						<li>create a double variable to store a temperature in Celsius</li>
+						<li>print out what the temperature is in Fahrenheit, using next-line printing</li>
+						<ul>
+							<li>inside the print statement, you will need to convert the temperature variable from Celsius to Fahrenheit</li>
+							<li>here's the handy dandy formula: °F = °C * 9/5 + 32</li>
+						</ul>
+						<li>create a double variable to store a temperature in Fahrenheit</li>
+						<li>print out what the temperature is in Celsius, using next-line printing</li>
+						<ul>
+							<li>inside the print statement, you will need to convert the temperature variable from Fahrenheit to Celsius</li>
+							<li>here's the handy dandy formula: °C = (°F - 32) * 5/9</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>steps 2 and 4</b>, if you forgot what next-line printing means, you can revisit the <b className="pageName">printing page</b><br/><br/>
+						<b className="note">hint:</b> for <b>steps 2 and 4</b>, whatever arithmetic you do can go inside the print statement, and the arithmetic will get performed first, and then the result will get printed out<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-handy-dandy-temp-convertor?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-handy-dandy-temp-convertor-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<h3>:) recap :)</h3>
 				<b>gr8!</b> you made it to recap!
 				<br/><br/>
@@ -308,7 +374,6 @@ class Arithmetic extends React.Component{
 					<li><b>division</b>, denoted using <b>/</b></li>
 					<li><b>modulus</b>, denoted using <b>%</b></li>
 				</ul>
-				<br/><br/>
 				here is the blueprint for how the resulting variable type changes based on whether you are performing an operation between <b>two integers</b>, <b>two doubles</b>, or <b>an integer and a double</b>:
 				<br/>
 				<b>

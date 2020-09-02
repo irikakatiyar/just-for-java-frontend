@@ -27,6 +27,7 @@ import GettingStarted from './GettingStarted';
 import TwoDimArrays from './TwoDimArrays';
 import Casting from './Casting';
 import Constants from './Constants';
+import MoreFunctions from './MoreFunctions';
 
 class Content extends React.Component{
 	constructor(props){
@@ -36,7 +37,7 @@ class Content extends React.Component{
 	getPage(){
 		if(this.props.page === "home"){
 			return (
-				<Home greeting={this.props.greeting}/>
+				<Home user={this.props.user}/>
 			);
 		}
 		else if(this.props.page === "constants") {
@@ -57,6 +58,11 @@ class Content extends React.Component{
 		else if(this.props.page === "contact us"){
 			return (
 				<ContactUs/>
+			);
+		}
+		else if(this.props.page === "more functions") {
+			return (
+				<MoreFunctions/>
 			);
 		}
 		else if(this.props.page === "variables"){

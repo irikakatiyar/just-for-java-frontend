@@ -415,9 +415,9 @@ class Strings extends React.Component{
 						<li>print out your name with its fun and fresh formatting</li>
 					</ol>
 					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, an empty String is denoted using ""<br/>
-						<b className="note">hint:</b> for <b>step 3</b>, which index does the first letter start at, inclusively? which index does the first letter end at, exclusively? if you said 0 and 1 (respectively) you may be correct hehe<br/>
-						<b className="note">hint:</b> for <b>step 4</b>, which index does the rest of your name start at, inclusively? which index does the rest of your name end at, exclusively? if you said 1 and the length of your name (respectively) you may be correct hehe<br/>
+						<b className="note">hint:</b> for <b>step 2</b>, an empty String is denoted using ""<br/><br/>
+						<b className="note">hint:</b> for <b>step 3</b>, which index does the first letter start at, inclusively? which index does the first letter end at, exclusively? if you said 0 and 1 (respectively) you may be correct hehe<br/><br/>
+						<b className="note">hint:</b> for <b>step 4</b>, which index does the rest of your name start at, inclusively? which index does the rest of your name end at, exclusively? if you said 1 and the length of your name (respectively) you may be correct hehe<br/><br/>
 						<b className="note">hint:</b> for <b>steps 3 and 4</b>, you can use += to concatenate the properly cased substring to the formatted name variable<br/><br/>
 					</div>
 					<div className="repl">
