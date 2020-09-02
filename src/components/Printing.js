@@ -100,9 +100,39 @@ class Printing extends React.Component{
 				and <b>next-line printing</b>, which you can do by typing <b>System.out.println();</b>. 
 				both of these print statements print information into the <b>console</b>. <br/>
 				you can print out <b>Strings</b>, <b>characters</b>, <b>integers</b>, <b>doubles</b>, and <b>booleans</b>. finally, you can also print out <b>variables</b> by putting the variable name in between the parentheses of the print statement.
-				<h3>practice</h3>
-				<div className="repl">
-				
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">envelope:</b><br/><br/>
+					your <b>goal</b> is to <b>create variables</b> that store the various components of what would be written on an evnelope addressed to you. you will then need to <b>print</b> out the variables using the <b>two methods</b> that you just learned.
+					this will require five steps:<br/>
+					<ol>
+						<li>first, you will create a variable to store your first name</li>
+						<li>next, you will create a variable to store your last name</li>
+						<li>after that, you will create a variable to store your street address, what would be the second line on an envelope addressed to you</li>
+						<li>next, you will create a variable to store the city, state / region / province, country, and zipcode what would be the third line on an envelope addressed to you</li>
+						<li>now, you are going to print out all of these components to make it look as though it would be written on an envelope addressed to you</li>
+						<ul>
+							<li>normally, an envelope addressed to you would have your first and last name on the first line, your street address on the second, and your city, state / region / province, country, and zipcode on the third</li>
+						</ul>
+					</ol>
+					good luck!<br/>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>steps 1-4</b>, because these are storing text, you would want to use Strings as your variable type<br/><br/>
+						<b className="note">hint:</b> for <b>step 5</b>, if you need to print your name on one line, what type of printing would you need to use for the first line? maybe single-line? and if you need to print the other parts on separate lines, what type of printing would that be? maybe multi-line? hmmm...
+					</div>
+					<br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/printing-envelope?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. 
+					hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/printing-envelope-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
 				</div>
 				<br/>
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
