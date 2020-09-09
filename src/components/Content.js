@@ -37,147 +37,147 @@ class Content extends React.Component{
 	getPage(){
 		if(this.props.page === "home"){
 			return (
-				<Home user={this.props.user}/>
+				<Home user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "constants") {
 			return (
-				<Constants/>
+				<Constants user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "about"){
 			return (
-				<About/>
+				<About user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "resources"){
 			return (
-				<Resources/>
+				<Resources user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "contact us"){
 			return (
-				<ContactUs/>
+				<ContactUs user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "more functions") {
 			return (
-				<MoreFunctions/>
+				<MoreFunctions user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "variables"){
 			return (
-				<Variables/>
+				<Variables user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "printing"){
 			return (
-				<Printing/>
+				<Printing user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "user input"){
 			return (
-				<UserInput/>
+				<UserInput user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "if statement"){
 			return (
-				<IfStatement/>
+				<IfStatement user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "boolean logic"){
 			return (
-				<BooleanLogic/>
+				<BooleanLogic user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "for loop"){
 			return (
-				<ForLoop/>
+				<ForLoop user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "while loop"){
 			return (
-				<WhileLoop/>
+				<WhileLoop user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "comments"){
 			return (
-				<Comments/>
+				<Comments user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "functions"){
 			return (
-				<Functions/>
+				<Functions user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "random numbers"){
 			return (
-				<RandomNumbers/>
+				<RandomNumbers user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "ASCII"){
 			return (
-				<ASCII/>
+				<ASCII user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "HashMap"){
 			return (
-				<HashMap/>
+				<HashMap user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "array"){
 			return (
-				<Arrays/>
+				<Arrays user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "Math"){
 			return (
-				<Mathematics/>
+				<Mathematics user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "Strings"){
 			return (
-				<Strings/>
+				<Strings user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "ArrayList"){
 			return (
-				<ArrayList/>
+				<ArrayList user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "arithmetic"){
 			return (
-				<Arithmetic/>
+				<Arithmetic user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "break"){
 			return (
-				<Break/>
+				<Break user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "getting started"){
 			return (
-				<GettingStarted/>
+				<GettingStarted user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "nested loops"){
 			return (
-				<NestedLoops/>
+				<NestedLoops user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "for-each loop"){
 			return (
-				<ForEachLoop/>
+				<ForEachLoop user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "2D array"){
 			return (
-				<TwoDimArrays/>
+				<TwoDimArrays user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "casting"){
 			return (
-				<Casting/>
+				<Casting user={this.props.user} page={this.props.page}/>
 			);
 		}
 	}
