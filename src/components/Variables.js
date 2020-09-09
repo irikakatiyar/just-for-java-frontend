@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class Variables extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class Variables extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				<b>variables</b> are used to store information. 
 				<h3>wait, so how do you create a variable?</h3>
 				here is the blueprint when creating a variable: <br/>
