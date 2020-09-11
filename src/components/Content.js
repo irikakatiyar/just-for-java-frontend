@@ -22,7 +22,7 @@ import HashMap from './HashMap';
 import Arrays from './Array';
 import Arithmetic from './Arithmetic';
 import ForEachLoop from './ForEachLoop';
-import NestedLoops from './NestedLoops';
+import Nesting from './Nesting';
 import GettingStarted from './GettingStarted';
 import TwoDimArrays from './TwoDimArrays';
 import Casting from './Casting';
@@ -160,9 +160,9 @@ class Content extends React.Component{
 				<GettingStarted user={this.props.user} page={this.props.page}/>
 			);
 		}
-		else if(this.props.page === "nested loops"){
+		else if(this.props.page === "nesting"){
 			return (
-				<NestedLoops user={this.props.user} page={this.props.page}/>
+				<Nesting user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "for-each loop"){

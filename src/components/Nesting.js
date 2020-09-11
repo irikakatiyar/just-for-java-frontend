@@ -1,6 +1,6 @@
 import React from 'react';
 
-class NestedLoops extends React.Component{
+class Nesting extends React.Component{
 	constructor(props){
 		super(props)
 	}
@@ -9,6 +9,7 @@ class NestedLoops extends React.Component{
 	render(){
 		return (
 			<div>
+				talk about nested if statements and nested loops!
 				<h3>&#123; &#123; &#123; recap &#125; &#125; &#125;</h3>
 				<b>yo!</b> you made it to recap!
 				<br/><br/>
@@ -18,4 +19,4 @@ class NestedLoops extends React.Component{
 	}
 }
 
-export default NestedLoops;
+export default Nesting;
