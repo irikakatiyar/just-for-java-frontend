@@ -9,7 +9,7 @@ class Resources extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the Resources content
+				<b>coming soon!</b>
 			</div>
 		)
 	}

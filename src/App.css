@@ -120,8 +120,20 @@ b{
 }
 
 p{
-  margin-left: 40px;
+  margin-left: 30px;
   display: inline-block;
+}
+
+.indent1{
+  margin-left: 40px;
+}
+
+.indent2{
+  margin-left: 50px;
+}
+
+.indent3{
+ margin-left: 60px; 
 }
 
 iframe{
@@ -141,28 +153,5 @@ iframe{
 }
 
 .progress{
-  color: #A4C3B2;
-  font-weight: 600;
   margin-bottom: 30px;
-}
-
-.dropdown{
-  transition-duration: 0.4s;
-  margin-right: 10px;
-  cursor: pointer;
-  outline: none;
-  background-color: #FFA69E;
-  color: #172A3A;
-  border-radius: 8px;
-  border: solid 1px #172A3A;
-  width: 150px;
-  height: 50px;
-  font-family: 'Montserrat', sans-serif;
-  text-align-last: center;
-}
-
-.dropdown:hover{
-  background-color: #172A3A;
-  color: #FFA69E;
-  border: solid 1px #FFA69E;
 }

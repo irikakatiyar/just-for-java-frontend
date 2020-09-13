@@ -1,12 +1,18 @@
 import React from 'react';
 import axios from 'axios';
+import Select from 'react-select';
+
+const options = [
+  { label: "todo", value: "todo" },
+  { label: "in progress", value: "in progress" },
+  { label: "complete", value: "complete" }
+];
 
 class ProgressUpdater extends React.Component{
 	constructor(props){
 		super(props)
 		this.state={
-	      status: "todo",
-	      message: ""
+	      selectedOption: { label: "todo", value: "todo" }
 	    }
 	}
 
@@ -22,6 +28,20 @@ class ProgressUpdater extends React.Component{
 		}
 	}
 
+	handleChange = selectedOption => {
+    	this.setState({ 
+    		selectedOption: selectedOption
+    	}, () => {
+	    	axios.post("http://localhost:5001/just-for-java/us-central1/app/api/update-topic-status", { 
+				id: this.props.user.uid,
+				topic: this.props.page,
+				status: this.state.selectedOption.value
+			})
+		      .then(res => {
+		        console.log(res.data);
+		      })
+	    })
+	};
 
 	getTopicStatus() {
     	axios.get("http://localhost:5001/just-for-java/us-central1/app/api/get-topic-status", { 
@@ -34,13 +54,11 @@ class ProgressUpdater extends React.Component{
 	        console.log(res.data);
 	        if(!res.data.status) {
 	        	this.setState({
-	        		status: "todo",
-	        		message: ""
+	        		selectedOption: { label: "todo", value: "todo" }
 	        	})
 	        } else {
 	        	this.setState({
-	        		status: res.data.status,
-	        		message: ""
+	        		selectedOption: { label: res.data.status, value: res.data.status }
 	        	})
 	        }
 	      })
@@ -49,34 +67,58 @@ class ProgressUpdater extends React.Component{
 	updateTopicStatus(){
 		var status = document.getElementById("myProgressUpdater").value;
 		this.setState({
-	      status: status,
-	      message: ""
+	      selectedOption: status
 	    }, () => {
 	    	axios.post("http://localhost:5001/just-for-java/us-central1/app/api/update-topic-status", { 
 				id: this.props.user.uid,
 				topic: this.props.page,
-				status: this.state.status
+				status: this.state.selectedOption
 			})
 		      .then(res => {
 		        console.log(res.data);
-		        this.setState({
-		        	message: "progress saved!"
-		        })
 		      })
 	    })
 	}
 
 	render(){
+		const customStyles = {
+		  option: (provided, state) => ({
+		    ...provided,
+		    backgroundColor: state.value == "todo" ? '#6B9080' : state.value == "in progress" ? '#A4C3B2' : '#cce3de',
+		    color: '#172A3A',
+		  }),
+		  control: (provided, state) => ({
+		  	...provided,
+		  	backgroundColor: this.state.selectedOption.value == "todo" ? '#6B9080' : this.state.selectedOption.value == "in progress" ? '#A4C3B2' : '#cce3de',
+		    border: this.state.selectedOption.value == "todo" ? '#6B9080' : this.state.selectedOption.value == "in progress" ? '#A4C3B2' : '#cce3de',
+		  }),
+		  singleValue: (provided, state) => ({
+		  	color: '#172A3A',
+		  }),
+		}
 		return (
 			<div className="progress">
 				{this.props.user ? 
 					<div>
-						<select id="myProgressUpdater" className="dropdown" onChange={() => this.updateTopicStatus()} value={this.state.status}>
-						  <option value="todo">todo</option>
-						  <option value="in progress">in progress</option>
-						  <option value="complete">complete</option>
-						</select>
-						{this.state.message}
+						<Select
+							styles={customStyles}
+					      	value={this.state.selectedOption}
+					      	onChange={this.handleChange}
+					      	options={options}
+					      	isSearchable={false}
+					      	theme={theme => ({
+						      ...theme,
+						      borderRadius: 8,
+						      colors: {
+						        ...theme.colors,
+						        primary: '#FFA69E',
+						        primary50: '#FFA69E',
+						        neutral20: '#172A3A',
+								neutral60: '#FFA69E',
+						        neutral90: '#172A3A',
+						      },
+						    })}
+					    />
 					</div>
 					: "sign in to save your progress!"
 				}
