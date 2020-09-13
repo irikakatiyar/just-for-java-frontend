@@ -46,7 +46,7 @@ class ForLoop extends React.Component{
 				here is our example from above fully coded out: 
 				<div className="code">
 					for(int i = 1; i &le; 5; i++) &#123; <br/>
-						<p>System.out.print(i + " ")</p> <div className = "comment">//the " " is to add a space between the numbers when printing</div><br/>
+						<p>System.out.print(i + " ");</p> <div className = "comment">//the " " is to add a space between the numbers when printing</div><br/>
 					&#125;<br/>
 				</div>
 				the code above prints out the following in the console:
@@ -107,51 +107,70 @@ class ForLoop extends React.Component{
 				</div>
 				<h3>pit stop</h3>
 				<div className="problem">
-					<b className="note">fr lp:</b><br/><br/>
-					your <b>goal</b> is to use <b>for loops</b> to <b>remove the vowels from a String</b>; for example, if the original String is "for loop", the new String would be "fr lp". this will require five steps:<br/>
+					<b className="note">blast off:</b><br/><br/>
+					your <b>goal</b> is to use <b>for loops</b> to <b>print out a count down before the blast off of a rocket ship</b>. this will require two steps:<br/>
 					<ol>
-						<li>create two String variables, one that stores the original String and one that will store the vowels-removed String</li>
+						<li>construct a for loop that counts down from 5 to 1</li>
 						<ul>
-							<li>you can set the original String variable to any text you want</li>
-							<li>the vowels-removed String variable can be initialized to an empty String ""</li>
+							<li>each number should be printed to the console on its own line</li>
 						</ul>
-						<li>use a for loop to iterate through each character in the String using indexing</li>
-						<ul>
-							<li>think about what the three components – initialze, condition, and iterate – of your for loop are going to be</li>
-						</ul>
-						<li>get the current character that you are on in the String using its index</li>
-						<li>if the current character is not a vowel, then concatenate it to the vowels-removed String</li>
-						<ul>
-							<li>remember that vowels can be lowercase or uppercase</li>
-							<li>there are numerous ways to do this step: one uses boolean logic and one creates a String of all the vowels</li>
-						</ul>
-						<li>print out the vowels-removed String variable</li>
-						<ul>
-							<li>this step should be performed after the for loop is done</li>
-						</ul>
+						<li>after the for loop is over, print "blast off!" to the console</li>
 					</ol>
 					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, your initialize component should be int i = 0 because indexing starts at 0<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, your condition component should be i &lt; str.length() the last index in the String is at the length of the String - 1<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, your iterate component should be i++ since each time we loop, we want to go to the next index in the String<br/><br/>
-						<b className="note">hint:</b> for <b>step 3</b>, you will need to use charAt to get the character at a specified index in the String – check out the <b className="pageName">Strings page</b> for more details<br/><br/>
-						<b className="note">hint:</b> for <b>step 4</b>, if you want to use boolean logic, make one giant if statement that checks if the character doesn't equal any of the vowels, both uppercase and lowercase; remember, ! = not, && = and, || = or, () = do this first; refer to the <b className="pageName">boolean logic page</b> for the specifics<br/><br/>
-						<b className="note">hint:</b> for <b>step 4</b>, you can also create a String of all the vowels "AEIOUaeiou" – notice that it includes both uppercase and lowercase vowels – and check if the index of the current character in the vowels String is equal to -1, meaning that the current character does not appear in the vowels String, meaing that it isn't a vowel<br/><br/>
-						<b className="note">hint:</b> for <b>step 4</b>, if the current character is not a vowel, then you can use += to concatenate, or add, that character to the end of the vowels-removed String<br/><br/>
+						<b className="note">hint: </b>for <b>step 1</b>, your initialize component should be int i = 5 since your countdown begins at 5<br/><br/>
+						<b className="note">hint: </b>for <b>step 1</b>, your condition component should be i &gt;= 1 because your countdown ends at 1, so as long as i is greater than or equal to 1, the countdown should keep going<br/><br/>
+						<b className="note">hint: </b>for <b>step 1</b>, your iterate component should be i-- because you want i to decrement, or decrease by 1, each iteration, since we are counting down<br/><br/>
 					</div>
 					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-fr-lp?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-blast-off?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>
 				<div className="solution">
-				<b className="note">our solution:</b><br/><br/>
-				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
 					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-fr-lp-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-blast-off-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>is it really time for reacap? get it. for. hehe.</h3>
+				<br/>
+				<div className="problem">
+					<b className="note">nibble nibble nom nom:</b><br/><br/>
+					your <b>goal</b> is to use <b>for loops</b> to print out <b>nibble</b> and <b>nom</b> multiple times; an example output may look like this: "nibble nibble nibble nom nom nom".
+					this will require four steps: <br/>
+					<ol>
+						<li>create a variable <i>n</i> that stores how many times you want to print out nibble and nom</li>
+						<li>construct a for loop that iterates <i>n</i> times</li>
+						<li>inside the for loop, print out nibble</li>
+						<ul>
+							<li>we want our nibbles and noms to all appear on the same line when they are printed</li>
+							<li>we also want a space in between each nibble and nom</li>
+						</ul>
+						<li>construct a second for loop that prints out nom <i>n</i> times</li>
+						<ul>
+							<li>this construction should be almost identical to what you did in steps 2 and 3</li>
+							<li>the only difference is that you are printing nom instead of nibble</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint: </b>for <b>step 2</b>, your initialize component should be int i = 1 and your iterate component should be i++, because you want i to increment each time you loop<br/><br/>
+						<b className="note">hint: </b>for <b>step 2</b>, since you want your for loop to iterate <i>n</i> times, where <i>n</i> is how many times you want to print out nibble and nom, your condition component should be i &lt;= <i>n</i><br/><br/>
+						<b className="note">hint: </b>for <b>step 3</b>, you can use same-line printing - System.out.print() – so that your nibbles and noms are on the same line in the console<br/><br/>
+						<b className="note">hint: </b>for <b>step 3</b>, add a space after nibble and nom when you print them out inside your for loops<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-nibble-nibble-nom-nom?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-nibble-nibble-nom-nom-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<h3>is it really time for recap? get it. for. hehe.</h3>
 				<b>ayyyyyy!</b> you made it to recap!<br/><br/>
 				now, i know that was a lot, so here's a lil' summary:<br/><br/>
 				a <b>loop</b> is a repeating block of code. one type of loop is a <b>for loop</b>, which helps to loop through a block of code a <b>specific number of times</b>. here is the blueprint for creating a for loop:<br/>

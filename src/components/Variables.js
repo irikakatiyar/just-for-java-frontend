@@ -95,7 +95,7 @@ class Variables extends React.Component{
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">savvy school scheduling:</b><br/><br/>
-					your <b>goal</b> is to <b>practice making different variables</b>. you are going to do this by making a program that creates a variable to hold your favorite class, if you like school, the number of classes you have, and your letter grade in your favorite class. 
+					your <b>goal</b> is to use <b>variables</b> to store your favorite class, if you like school, the number of classes you have, and your letter grade in your favorite class.
 					this will require four steps: <br/>
 					<ol>
 						<li>create a variable to store your favorite class</li>
@@ -103,12 +103,11 @@ class Variables extends React.Component{
 						<li>create a variabele to store the number of classes you have</li>
 						<li>create a variable to store your letter grade (A, B, C, D, or F) in your favorite class</li>
 					</ol>
-					in order for you to complete this problem, you will need to determine which variable type should store each of the four items. good luck!<br/><br/>
 					<div className="hints">
 						<b className="note">hint: </b>for <b>step 1</b>, you might want to use String as the type for your variable.<br/><br/>
-						<b className="note">hint: </b>for <b>step 2</b>, think of what you could use to store either a yes or no answer...maybe a boolean<br/><br/>
+						<b className="note">hint: </b>for <b>step 2</b>, think of what you could use to store either a yes or no answer... maybe a boolean<br/><br/>
 						<b className="note">hint: </b>for <b>step 3</b>, what type of variable can be used to store a number?<br/><br/>
-						<b className="note">hint: </b>for <b>step 4</b>, if we want to store a letter (emphasis on <i>letter</i>), what can we use? well, what's another word for letter...that's right! a character<br/><br/>
+						<b className="note">hint: </b>for <b>step 4</b>, if we want to store a letter – emphasis on <i>letter</i> – what can we use? well, what's another word for letter... that's right! a character<br/><br/>
 					</div>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-savvy-school-scheduling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
@@ -121,6 +120,36 @@ class Variables extends React.Component{
 					hopefully your code looks similar to ours <b>:)</b><br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-savvy-school-scheduling-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">i scream ice cream:</b><br/><br/>
+					your <b>goal</b> is to use <b>variables</b> to store the name of your favorite ice cream shop, your favorite flavor, how many scoops you want, and the price of your ice cream. 
+					this will require four steps: <br/>
+					<ol>
+						<li>create a variable to store the name of your favorite ice cream shop</li>
+						<li>create a variable to store your favorite ice cream flavor</li>
+						<li>create a variable to store how many scoops of ice cream you would like</li>
+						<li>create a variable to store the price of your ice cream</li>
+					</ol>
+					<div className="hints">
+						<b className="note">hint: </b>for <b>step 1</b>, the name of your favorite ice cream shop is text... so create a String.<br/><br/>
+						<b className="note">hint: </b>for <b>step 2</b>, your favorite ice cream flavor is also text... so create a String.<br/><br/>
+						<b className="note">hint: </b>for <b>step 3</b>, what type of variable can be used to store a number?<br/><br/>
+						<b className="note">hint: </b>for <b>step 4</b>, a price is not a whole number necessarily; it can be a decimal too! what variable type stores a decimal?<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-i-scream-ice-cream?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. (<b className="note">psst.</b> confused about what a comment is? don't worry about it for now because we're gonna talk about that next on the <b className="pageName">comments page</b>!) 
+					hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-i-scream-ice-cream-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<h3>boolean timeForRecap = true;</h3>
