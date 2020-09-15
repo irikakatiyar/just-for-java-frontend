@@ -6,7 +6,7 @@ class Home extends React.Component{
 	}
 
 	render(){
-		var greeting = this.props.user ? <div>hi, <b>{this.props.user.displayName.toLowerCase()}</b>!</div> : <div>hi!</div>
+		var greeting = this.props.user ? <div>hi, <b>{this.props.user.displayName.toLowerCase()}</b>! welcome to <b>just for java</b>!</div> : <div>hi! welcome to <b>just for java</b>!</div>
 		return (
 			<div>
 				{greeting}
