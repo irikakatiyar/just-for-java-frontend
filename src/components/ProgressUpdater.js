@@ -72,9 +72,9 @@ class ProgressUpdater extends React.Component{
 				{this.props.user ? 
 					<div>
 						<select id="myProgressUpdater" className="dropdown" onChange={() => this.updateTopicStatus()} value={this.state.status}>
-						  <option value="todo">todo</option>
-						  <option value="in progress">in progress</option>
-						  <option value="complete">complete</option>
+						  <option className="dropdownOption" value="todo">todo</option>
+						  <option className="dropdownOption" value="in progress">in progress</option>
+						  <option className="dropdownOption" value="complete">complete</option>
 						</select>
 						{this.state.message}
 					</div>

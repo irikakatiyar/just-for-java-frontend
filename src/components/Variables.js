@@ -111,7 +111,7 @@ class Variables extends React.Component{
 						<b className="note">hint: </b>for <b>step 4</b>, if we want to store a letter (emphasis on <i>letter</i>), what can we use? well, what's another word for letter...that's right! a character<br/><br/>
 					</div>
 					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-savvy-school-scheduling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-savvy-school-scheduling?lite=true" scrolling="no" frameBorder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>
