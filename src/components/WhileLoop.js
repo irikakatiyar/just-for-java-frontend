@@ -25,23 +25,88 @@ class WhileLoop extends React.Component{
 				<div className="code">
 					int count = 1; <div className="comment">//this is the variable we will use to keep track of our #</div><br/>
 					while(count &le; 5)&#123;<br/>
-					<p>System.out.println(count);<br/>
+					<p>System.out.print(count + " ");<br/>
 					count ++;</p><br/>
 					&#125;
 				</div>
 				our program above will print the following into the console:
 				<div className="code">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5
+					1 2 3 4 5
 				</div>
 				ok, that might seem confusing now, but let's <b>break down our code</b>.<br/><br/>
 				<b>first</b>, we start out by making an integer <i>count</i>, which stores the number we are currently printing. pretty straightforward...<br/><br/>
 				<b>next</b>, we create a <b>while loop</b> with the condition of <b>count &le; 5</b>. this means that, as long as our variable <i>count</i> is <b>less than or equal to 5</b>, the code within the curly braces <b>will run</b>.
 				this is exactly what we want, as we wanted to print out every number starting from 1 that is less than 5! great!<br/><br/>
-				<b>lastly</b>, inside our while loop, we want to <b>print out the number we are currntly on</b>, and then <b>increase <i>count</i> by 1</b>. great!<br/><br/>
+				<b>lastly</b>, inside our while loop, we want to <b>print out the number we are currently on</b>, and then <b>increase <i>count</i> by 1</b>. great! now time for some practice!<br/>
+				<h3>hey...wait a minute, that  example looks familiar</h3>
+				omg! you caught us! this example is just like the example in for loops (<b className="note">psst. need a reminder</b> on what we're referring to? check out the <b className="pageName">for loops page</b>!) 
+				as you notice from the example above, you can use while loops to do <b>similar things as what for loops do</b>. thinking back to for loops, remember there were <b>three components</b> needed. so where are those components while loops? well, let's <b>break this down:</b><br/>
+				<ul>
+					<li><b>initialize</b></li>
+					<ul>
+						<li>in while loops, we initialize when we create the varibale and define it's value</li>
+						<li>in this example, we initialized our <i>count</i> varibale right before the loop with the statement <b>int count = 1;</b></li>
+					</ul>
+					<li><b>condition</b></li>
+					<ul>
+						<li>in while loops, the condition is what we put in the parentheses of the while loop</li>
+						<li>in the example above, our condition was <b>count &le; 5</b></li>
+					</ul>
+					<li><b>iterate</b></li>
+					<ul>
+						<li>in while loops, we iterate within the while loop</li>
+						<li>in the example above, we iterate our <i>count</i> variable within the while loop with the statement <b>count ++;</b></li>
+					</ul>
+				</ul>
+				but, unlike for loops, we can also use while loops when we don't know how many times we want to iterate through the code. in other words, we don't know how many times it will take until the condition is false.
+				<h3>let's take a look at an example</h3>
+				let's say we want to make a program that prompts the user to answer the question "do you like chocolate?" normally, the user will either type in yes or no, but what if the user types in "idk" or "sometimes" (cuz i mean sometimes chocolate is good, and sometimes it's not so good u kno?).
+				we can use a <b>while loop</b> to check if the user's answer is valid. let's break down the steps we need to go through...<br/><br/>
+				to do this, we will first need to get the user input, prompting the user to answer the question "do you like chocolate?" (<b className="note">psst. need a reminder</b> on how to get user input? check out the <b className="pageName">user input page</b>!)<br/><br/>
+				next, we will need to make a while loop to check if the user input isn't valid (meaning if they didn't write "yes" and they didn't write "no"). if they didn't have the correct answer, we will need ask the user the question again.<br/><br/>
+				ok, got it? let's take a look at all of that in code!
+				<div className="code">
+					<div className="comment">//let's assume that we've already imported the Scanner</div><br/><br/>
+					Scanner in = new Scanner(System.in);<br/>
+					System.out.print("do you like chocolate? "); <div className="comment">//this is asking the user our question</div><br/>
+					String answer = in.nextLine();<br/>
+					<div className="comment">//for Strings, we need to use .equals() to check for equality</div><br/>
+					while(!answer.equals("yes") && !answer.equals("no"))&#123;<br/>
+						<p>System.out.println("you didn't enter yes or no.");<br/>
+						System.out.print("do you like chocolate? ");<br/>
+						answer = in.nextLine();</p><br/>
+					&#125;<br/>
+					in.close();
+				</div>
+				great! nice job!
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">even:</b><br/><br/>
+					your <b>goal</b> is to use <b>while loops</b> to <b>print out all even numbers between 1 and 20</b>. this will require six steps<br/>
+					<ol>
+						<li>first, you will need to create a varibale to store the value that you are currently on</li>
+						<li>next, you will need to create a while loop with a condition to make sure that you are looking through the specific range of numbers of 1-20</li>
+						<li>after that, you will need to print out the number</li>
+						<li>and finally, you will want to increment your variable to move onto the next even number</li>
+					</ol>
+					you got this!<br/><br/>
+					<div className="hints">
+						<b className="note">hint: </b>for <b>step 2</b>, we only want to look at 1-20. assuming our lower bound is taken care of by what we define our variable to be, what condition would we want to make sure that our variable doesn't go beyond 20? maybe something that checks if our variable is less than or equal to 20 (&le; 20)!<br/><br/>
+						<b className="note">hint: </b>for <b>step 4</b>, if we want to only check even numbers, values that come in increments of two, how should we increment our variable to make sure it is only the even numbers? by 2 of course! reminder that a shortcut to use is +=.
+					</div>
+					<br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/while-loop-even?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/while-loop-even-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<h3>while(recap == true)&#123;</h3>
 				<b>!!</b> yess recap time.<br/>
 				so, to review, a <b>while loop</b> loops through a block of code as long as a specific condition is true, and is written:<br/>
