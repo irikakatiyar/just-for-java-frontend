@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class Printing extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class Printing extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				<b>printing</b> is used to <b>display information in the console</b>. this is how we <b>output</b> anything to the user, and is a great way to <b>check if your code is working</b> properly.<br/>
 				there are two types of printing statements:<br/>
 				<ul>
@@ -135,6 +140,10 @@ class Printing extends React.Component{
 					</div>
 				</div>
 				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

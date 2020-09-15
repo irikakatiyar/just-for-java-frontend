@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class IfStatement extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class IfStatement extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				an <b>if statement</b> is used to determine if a specific block of code <b>should or should not be run</b>. 
 				<br/>
 				<h3>wait, how do you make an if statement?</h3>
@@ -201,6 +206,22 @@ class IfStatement extends React.Component{
 				<div className="code">
 					you're at speed limit
 				</div>
+				<h3>if(recap == true)&#123;</h3>
+				<b>oooooo!</b> you made it to recap!<br/><br/>
+				remember, the blueprint of an <b>if statement</b> with <b>else if</b> as well as <b>else</b> is<br/>
+				<b>if(<i>&lt;condition&gt;</i>)&#123;<br/>
+					<p>*code block*</p><br/>
+				&#125;<br/>
+				else if(<i>&lt;other condition&gt;</i>)&#123;<br/>
+					<p>*code block*</p><br/>
+				&#125;<br/>
+				else&#123;<br/>
+					<p>*code block*</p><br/>
+				&#125;</b><br/><br/>
+				remeber that the <b>condition</b> can be any statement that equates to a value of <b>true</b> or <b>false</b>. 
+				this can be done using any of the four <b>comparison operators</b> (<b>==</b>, <b>!=</b>, <b>&lt;</b>, <b>&gt;</b>) or <b>.equals()</b> for comparing <b>Strings</b>.
+				and that's all of it! great job, you're now a master of if statements!!
+				<h3>&#125;</h3>
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">traffic lights:</b><br/><br/>
@@ -230,22 +251,11 @@ class IfStatement extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/if-statement-traffic-lights-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>if(recap == true)&#123;</h3>
-				<b>oooooo!</b> you made it to recap!<br/><br/>
-				remember, the blueprint of an <b>if statement</b> with <b>else if</b> as well as <b>else</b> is<br/>
-				<b>if(<i>&lt;condition&gt;</i>)&#123;<br/>
-					<p>*code block*</p><br/>
-				&#125;<br/>
-				else if(<i>&lt;other condition&gt;</i>)&#123;<br/>
-					<p>*code block*</p><br/>
-				&#125;<br/>
-				else&#123;<br/>
-					<p>*code block*</p><br/>
-				&#125;</b><br/><br/>
-				remeber that the <b>condition</b> can be any statement that equates to a value of <b>true</b> or <b>false</b>. 
-				this can be done using any of the four <b>comparison operators</b> (<b>==</b>, <b>!=</b>, <b>&lt;</b>, <b>&gt;</b>) or <b>.equals()</b> for comparing <b>Strings</b>.
-				and that's all of it! great job, you're now a master of if statements!!
-				<h3>&#125;</h3>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

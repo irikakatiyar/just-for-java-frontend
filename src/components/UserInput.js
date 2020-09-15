@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class UserInput extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class UserInput extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				sometimes in our program we want to get information from the user, such as their name. you will learn how to get <b>user input from the console</b>, which will allow you to create super cool programs that can actually interact with the user!
 				<h3>awesome! can i create one of these super cool programs rn?</h3>
 				in fact, yes! we are going to create a program that <b>asks the user to type their name and says hello to them</b>! in order to get user input, there are 6 steps we have to follow:
@@ -102,6 +107,40 @@ class UserInput extends React.Component{
 				    <td>in.nextBoolean()</td>
 				  </tr>
 				</table>
+				<h3>it do be time for recap</h3>
+				<b>congrats!</b> you made it to recap!
+				<br/>
+				<br/>
+				there are 6 steps that you need to do to get <b>user input</b>:
+				<ol>
+					<li>import the Scanner class</li>
+					<li>create a Scanner variable</li>
+					<li>print out a prompt</li>
+					<li>get and store the user input</li>
+					<li>do something with their input</li>
+					<li>close your Scanner</li>
+				</ol>
+				depending on what <b>variable type</b> you are trying to get, the code you write will look slightly different:
+				<br/>
+				<br/>
+				<table>
+				  <tr>
+				    <td>String</td>
+				    <td>in.nextLine()</td>
+				  </tr>
+				  <tr>
+				    <td>int</td>
+				    <td>in.nextInt()</td>
+				  </tr>
+				  <tr>
+				    <td>double</td>
+				    <td>in.nextDouble()</td>
+				  </tr>
+				  <tr>
+				    <td>boolean</td>
+				    <td>in.nextBoolean()</td>
+				  </tr>
+				</table>
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">tip tip:</b><br/><br/>
@@ -141,41 +180,11 @@ class UserInput extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/user-input-tip-tip-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>it do be time for recap</h3>
-				<b>congrats!</b> you made it to recap!
 				<br/>
-				<br/>
-				there are 6 steps that you need to do to get <b>user input</b>:
-				<ol>
-					<li>import the Scanner class</li>
-					<li>create a Scanner variable</li>
-					<li>print out a prompt</li>
-					<li>get and store the user input</li>
-					<li>do something with their input</li>
-					<li>close your Scanner</li>
-				</ol>
-				depending on what <b>variable type</b> you are trying to get, the code you write will look slightly different:
-				<br/>
-				<br/>
-				<table>
-				  <tr>
-				    <td>String</td>
-				    <td>in.nextLine()</td>
-				  </tr>
-				  <tr>
-				    <td>int</td>
-				    <td>in.nextInt()</td>
-				  </tr>
-				  <tr>
-				    <td>double</td>
-				    <td>in.nextDouble()</td>
-				  </tr>
-				  <tr>
-				    <td>boolean</td>
-				    <td>in.nextBoolean()</td>
-				  </tr>
-				</table>
-				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class Arithmetic extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class Arithmetic extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				we learned on the <b className="pageName">variables page</b> how to create <b>integers</b> and <b>doubles</b>. on this page, we are going to use these two variable types in <b>arithmetic operations</b>. oooh, fancy right? not really. <b>arithmetic</b> is just a cool-sounding word for the study of numbers and operations on them, such as addition, subtraction, multiplication, and division. here are the <b>five operations</b> and their corresponding <b>operator symbols</b> that java provides:
 				<ul>
 					<li><b>addition</b>, denoted using <b>+</b></li>
@@ -296,7 +301,65 @@ class Arithmetic extends React.Component{
 				<div className="code">
 				0
 				</div>
+				<h3>:) recap :)</h3>
+				<b>gr8!</b> you made it to recap!
+				<br/><br/>
+				here are the five arithmetic operations we learned about on this page along with their operators:
+				<ul>
+					<li><b>addition</b>, denoted using <b>+</b></li>
+					<li><b>subtraction</b>, denoted using <b>-</b></li>
+					<li><b>multiplication</b>, denoted using <b>*</b></li>
+					<li><b>division</b>, denoted using <b>/</b></li>
+					<li><b>modulus</b>, denoted using <b>%</b></li>
+				</ul>
+				here is the blueprint for how the resulting variable type changes based on whether you are performing an operation between <b>two integers</b>, <b>two doubles</b>, or <b>an integer and a double</b>:
+				<br/>
+				<b>
+				<i>&lt;integer&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;integer&gt;</i> = <i>&lt;integer&gt;</i>
+				<br/>
+				<i>&lt;double&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;double&gt;</i> = <i>&lt;double&gt;</i>
+				<br/>
+				<i>&lt;integer&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;double&gt;</i> = <i>&lt;double&gt;</i>
+				<br/>
+				<i>&lt;double&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;integer&gt;</i> = <i>&lt;double&gt;</i>
+				</b>
+				<br/><br/>
+				here is the blueprint for both the <b>standard notation</b> and the <b>shorthand notation</b> for performing an arithmetic operation on between <i>variable_1</i> and <i>variable_2</i>, where <i>variable_1</i> stores the result of the operation and <i>operator</i> can be <b>+</b>, <b>-</b>, <b>*</b>, <b>/</b>, or <b>%</b>:
+				<br/>
+				<b><i>&lt;variable_1&gt;</i> = <i>&lt;variable_1&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;variable_2&gt;</i>;</b>
+				<br/>
+				<b><i>&lt;variable_1&gt;</i> <i>&lt;operator&gt;</i>= <i>&lt;variable_2&gt;</i>;</b>
+				<br/><br/>
+				and finally, if you want to increment or decrement a variable, you can use <b>++</b> and <b>--</b>, respectively.
 				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">delivery package:</b><br/><br/>
+					your <b>goal</b> is to use <b>arithmetic</b> to <b>calculate the volume of a delivery package</b> given its <b>length</b>, <b>width</b>, and <b>height</b>. this will require three steps:<br/>
+					<ol>
+						<li>create three variables to store the length, width, and height of the delivery package</li>
+						<li>calculate the volume of the delivery package</li>
+						<ul>
+							<li>to calculate the volume of a box, use the following formula: volume = length * width * height</li>
+							<li>don't forget to store the volume in a new variable</li>
+						</ul>
+						<li>print out the length, width, height, and volume of the delivery package</li>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 3</b>, if you forgot what printing is or how to print a variable, you can revisit the <b className="pageName">printing page</b><br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-delivery-package?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-slope?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
 				<div className="problem">
 					<b className="note">slope:</b><br/><br/>
 					throwback to math class... the slope of a line connecting two points (x1, y1) and (x2, y2) is (y2-y1)/(x2-x1). your <b>goal</b> is to use <b>arithmetic</b> to <b>calculate the slope given the two points (x1, y1) and (x2, y2)</b>. this will require three steps:<br/>
@@ -363,37 +426,11 @@ class Arithmetic extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-handy-dandy-temp-convertor-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>:) recap :)</h3>
-				<b>gr8!</b> you made it to recap!
-				<br/><br/>
-				here are the five arithmetic operations we learned about on this page along with their operators:
-				<ul>
-					<li><b>addition</b>, denoted using <b>+</b></li>
-					<li><b>subtraction</b>, denoted using <b>-</b></li>
-					<li><b>multiplication</b>, denoted using <b>*</b></li>
-					<li><b>division</b>, denoted using <b>/</b></li>
-					<li><b>modulus</b>, denoted using <b>%</b></li>
-				</ul>
-				here is the blueprint for how the resulting variable type changes based on whether you are performing an operation between <b>two integers</b>, <b>two doubles</b>, or <b>an integer and a double</b>:
 				<br/>
-				<b>
-				<i>&lt;integer&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;integer&gt;</i> = <i>&lt;integer&gt;</i>
-				<br/>
-				<i>&lt;double&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;double&gt;</i> = <i>&lt;double&gt;</i>
-				<br/>
-				<i>&lt;integer&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;double&gt;</i> = <i>&lt;double&gt;</i>
-				<br/>
-				<i>&lt;double&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;integer&gt;</i> = <i>&lt;double&gt;</i>
-				</b>
-				<br/><br/>
-				here is the blueprint for both the <b>standard notation</b> and the <b>shorthand notation</b> for performing an arithmetic operation on between <i>variable_1</i> and <i>variable_2</i>, where <i>variable_1</i> stores the result of the operation and <i>operator</i> can be <b>+</b>, <b>-</b>, <b>*</b>, <b>/</b>, or <b>%</b>:
-				<br/>
-				<b><i>&lt;variable_1&gt;</i> = <i>&lt;variable_1&gt;</i> <i>&lt;operator&gt;</i> <i>&lt;variable_2&gt;</i>;</b>
-				<br/>
-				<b><i>&lt;variable_1&gt;</i> <i>&lt;operator&gt;</i>= <i>&lt;variable_2&gt;</i>;</b>
-				<br/><br/>
-				and finally, if you want to increment or decrement a variable, you can use <b>++</b> and <b>--</b>, respectively.
-				<br/><br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

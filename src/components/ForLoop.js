@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class ForLoop extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class ForLoop extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				a <b>loop</b> is <b>a repeating block of code</b>. here, we will focus on <b>for loops</b>, a type of loop that iterates through your block of code a <b>specific number of times</b>.
 				<h3>wait, so how do you create a for loop?</h3>
 				here is the blueprint for creating a for loop:<br/>
@@ -105,6 +110,19 @@ class ForLoop extends React.Component{
 				a<br/>
 				y<br/>
 				</div>
+				<h3>is it really time for recap? get it. for. hehe.</h3>
+				<b>ayyyyyy!</b> you made it to recap!<br/><br/>
+				now, i know that was a lot, so here's a lil' summary:<br/><br/>
+				a <b>loop</b> is a repeating block of code. one type of loop is a <b>for loop</b>, which helps to loop through a block of code a <b>specific number of times</b>. here is the blueprint for creating a for loop:<br/>
+				<b>for(<i>initialize</i> ; <i>condition</i> ; <i>iterate</i>)&#123; <br/>
+				<p>*code*</p> <br/>
+				&#125;</b><br/><br/>
+				there are three parts to a for loop: 
+				<ol>
+					<li><b>initialize</b>, when you make your integer <b>i</b> and set it equal to the start number</li>
+					<li><b>condition</b>, where you decide <b>how</b> and <b>when</b> your loop should stop using the different signs</li>
+					<li><b>iterate</b>, where you <b>increment</b> your integer a specific amount each time it loops through your code</li>
+				</ol>
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">blast off:</b><br/><br/>
@@ -170,19 +188,11 @@ class ForLoop extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-nibble-nibble-nom-nom-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>is it really time for recap? get it. for. hehe.</h3>
-				<b>ayyyyyy!</b> you made it to recap!<br/><br/>
-				now, i know that was a lot, so here's a lil' summary:<br/><br/>
-				a <b>loop</b> is a repeating block of code. one type of loop is a <b>for loop</b>, which helps to loop through a block of code a <b>specific number of times</b>. here is the blueprint for creating a for loop:<br/>
-				<b>for(<i>initialize</i> ; <i>condition</i> ; <i>iterate</i>)&#123; <br/>
-				<p>*code*</p> <br/>
-				&#125;</b><br/><br/>
-				there are three parts to a for loop: 
-				<ol>
-					<li><b>initialize</b>, when you make your integer <b>i</b> and set it equal to the start number</li>
-					<li><b>condition</b>, where you decide <b>how</b> and <b>when</b> your loop should stop using the different signs</li>
-					<li><b>iterate</b>, where you <b>increment</b> your integer a specific amount each time it loops through your code</li>
-				</ol>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

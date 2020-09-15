@@ -1,7 +1,6 @@
 import React from 'react';
 import Home from './Home';
 import About from './About';
-import Resources from './Resources';
 import ContactUs from './ContactUs';
 import Variables from './Variables';
 import Printing from './Printing';
@@ -48,11 +47,6 @@ class Content extends React.Component{
 		else if(this.props.page === "about"){
 			return (
 				<About user={this.props.user} page={this.props.page}/>
-			);
-		}
-		else if(this.props.page === "resources"){
-			return (
-				<Resources user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "contact us"){

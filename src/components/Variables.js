@@ -92,6 +92,42 @@ class Variables extends React.Component{
 				<b>use your variable in your program</b>
 				<br/>
 				since all we have learned so far is variables, we don't quite have the knowledge yet to actually use our variables in our program... <b>but don't worry!</b> you will learn this <b>very soon</b>!! for now, simply make sure you are comfortable with <b>creating a variable</b> and <b>changing a variable</b>.
+				<h3>boolean timeForRecap = true;</h3>
+				<b>you did it!</b> you made it to recap!
+				<br/><br/>
+				a <b>variable</b> is used to store information. here is the blueprint when creating a variable: <br/>
+				<b><i> &lt;type&gt; &lt;name&gt; = &lt;value&gt;;</i></b> <br/><br/>
+				there are multiple <b>types</b> of information that variables can store:
+				<ul>
+					<li><b>integer</b></li>
+					<ul>
+						<li>integers store <b>whole numbers</b>, including negative numbers</li>
+						<li>to make an integer, type <b>int</b> as the type</li>
+					</ul>
+					<li><b>double</b></li>
+					<ul>
+						<li>doubles store <b>decimals</b>, like 1.5 and 0.923</li>
+						<li>to make a double, type <b>double</b> as the type</li>
+					</ul>
+					<li><b>string</b></li>
+					<ul>
+						<li>strings store <b>text</b>, enclosed in double quotes</li>
+						<li>to make a string, type <b>String</b> as the type</li>
+					</ul>
+					<li><b>character</b></li>
+					<ul>
+						<li>characters store a <b>single letter/digit/symbol</b>, enclosed in single quotes</li>
+						<li>to make a character, type <b>char</b> as the type</li>
+					</ul>
+					<li><b>boolean</b></li>
+					<ul>
+						<li>booleans store either <b>true</b> or <b>false</b></li>
+						<li>to make a boolean, type <b>boolean</b> as the type</li>
+					</ul>
+				</ul>
+				after you create a variable of a certain type, <b>you can change the value but not the type</b> of the variable. here is the blueprint when changing the value of a variable: <br/>
+				<b><i> &lt;name&gt; = &lt;new_value&gt;;</i></b> <br/><br/>
+				congrats! you finished learning about variables. keep up the good work!
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">savvy school scheduling:</b><br/><br/>
@@ -152,43 +188,11 @@ class Variables extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-i-scream-ice-cream-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>boolean timeForRecap = true;</h3>
-				<b>you did it!</b> you made it to recap!
-				<br/><br/>
-				a <b>variable</b> is used to store information. here is the blueprint when creating a variable: <br/>
-				<b><i> &lt;type&gt; &lt;name&gt; = &lt;value&gt;;</i></b> <br/><br/>
-				there are multiple <b>types</b> of information that variables can store:
-				<ul>
-					<li><b>integer</b></li>
-					<ul>
-						<li>integers store <b>whole numbers</b>, including negative numbers</li>
-						<li>to make an integer, type <b>int</b> as the type</li>
-					</ul>
-					<li><b>double</b></li>
-					<ul>
-						<li>doubles store <b>decimals</b>, like 1.5 and 0.923</li>
-						<li>to make a double, type <b>double</b> as the type</li>
-					</ul>
-					<li><b>string</b></li>
-					<ul>
-						<li>strings store <b>text</b>, enclosed in double quotes</li>
-						<li>to make a string, type <b>String</b> as the type</li>
-					</ul>
-					<li><b>character</b></li>
-					<ul>
-						<li>characters store a <b>single letter/digit/symbol</b>, enclosed in single quotes</li>
-						<li>to make a character, type <b>char</b> as the type</li>
-					</ul>
-					<li><b>boolean</b></li>
-					<ul>
-						<li>booleans store either <b>true</b> or <b>false</b></li>
-						<li>to make a boolean, type <b>boolean</b> as the type</li>
-					</ul>
-				</ul>
-				after you create a variable of a certain type, <b>you can change the value but not the type</b> of the variable. here is the blueprint when changing the value of a variable: <br/>
-				<b><i> &lt;name&gt; = &lt;new_value&gt;;</i></b> <br/><br/>
-				congrats! you finished learning about variables. keep up the good work!
-				<br/><br/>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

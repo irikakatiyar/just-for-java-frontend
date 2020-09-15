@@ -43,6 +43,10 @@ class Comments extends React.Component{
 					understandComments = true;
 				</div>
 				in the code above, you can see both single-line and multi-line comments being used.
+				<h3>//is it already time for recap?</h3>
+				<b>yayyyy!</b> you made it to reacap!<br/><br/>
+				so, just to sum up, the two types of comments are <b>single-line comments</b>, denoted by <b>//</b>, and <b>multi-line comments</b>, denoted by <b>/* ... */</b>. <br/><br/>
+				comments are <b>really important</b> because they help increase your code's <b>readability</b>. now, going forward, be sure to comment on your code! :)
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">birthday partayy:</b><br/><br/>
@@ -74,12 +78,11 @@ class Comments extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/comments-brithday-partayy-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-
-				<h3>//is it already time for recap?</h3>
-				<b>yayyyy!</b> you made it to reacap!<br/><br/>
-				so, just to sum up, the two types of comments are <b>single-line comments</b>, denoted by <b>//</b>, and <b>multi-line comments</b>, denoted by <b>/* ... */</b>. <br/><br/>
-				comments are <b>really important</b> because they help increase your code's <b>readability</b>. now, going forward, be sure to comment on your code! :)
-				<br/><br/>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

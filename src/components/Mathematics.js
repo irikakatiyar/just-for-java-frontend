@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class Mathematics extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class Mathematics extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				we've already discussed <b>+</b>, <b>-</b>, <b>*</b>, <b>/</b>, and <b>%</b> (<b className="note">psst. need a reminder</b> on what these operators mean? check out the <b className="pageName">arithmetics page</b>!). but what if we want to do more <b>complex math operations</b>, such as raising a number to a power, or getting the absolute value of a number? luckily for us, the <b>Math</b> library provides us with a variety of math constants and complex functions. let's take a look at all of the brand new and super cool functionality the <b>Math</b> library gives us! 
 				<br/>
 				(<b className="note">btw:</b> if you don't understand some of the mathematical concepts discussed below, that is <b>completely okay</b>. knowing every single aspect of the Math library isn't essential to your programming journey. the goal of talking about the Math library is simply to <b>add more tools into your programming toolbox</b>. you may never use some of the functionality, but you may use other functionality frequently.)
@@ -160,34 +165,6 @@ class Mathematics extends React.Component{
 				there is so much more cool and complex math functions you can utilize with the Math library! (<b className="note">btw:</b> if you love trigonometry, the Math library has even more trig functions that you can play with.) unfortunately, we didn't have room to talk about everything in the Math library on this page, but <b>if you want to learn more about the Math library, simply search online</b>!
 				<br/>
 				there is one more topic in the Math library – generating random numbers – which is so important that we have dedicated a whole separate <b className="pageName">random numbers page</b> just for that topic. it's a bit more <b>advanced</b> than everything we've talked about so far, so you'll see it after some more pages. <b>exciting times ahead!</b>
-				<h3>pit stop</h3>
-				<div className="problem">
-					<b className="note">leftover pie:</b><br/><br/>
-					if you're still hungry, we discovered a whole pie leftover! your <b>goal</b> is to use <b>Math</b> to find the <b>area of the leftover pie using pi and some other Math functions</b>. this will require two steps:<br/>
-					<ol>
-						<li>create a variable to store the radius of the leftover pie</li>
-						<li>calculate the area of the leftover pie and store it in a new variable</li>
-						<ul>
-							<li>here's the formula for calculating the area of a circle: A = π * r ^ 2</li>
-							<li>print out the area variable after creating it</li>
-						</ul>
-					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, you can retrieve the value of pi by using Math.PI<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, you can square the radius by using Math.pow(radius, 2), where radius is the base and 2 is the exponent<br/><br/>
-					</div>
-					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-leftover-pie?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-					</div>
-				</div>
-				<br/>
-				<div className="solution">
-				<b className="note">our solution:</b><br/><br/>
-				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
-					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-leftover-pie-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-					</div>
-				</div>
 				<h3>Math.recap()</h3>
 				<b>woohoo!</b> you made it to recap!
 				<br/><br/>
@@ -249,7 +226,39 @@ class Mathematics extends React.Component{
 						<td>returns a double that holds <i>&lt;double&gt;</i> rounded up to the nearest integer</td>
 					</tr>
 				</table>
+				<h3>pit stop</h3>
+				<div className="problem">
+					<b className="note">leftover pie:</b><br/><br/>
+					if you're still hungry, we discovered a whole pie leftover! your <b>goal</b> is to use <b>Math</b> to find the <b>area of the leftover pie using pi and some other Math functions</b>. this will require two steps:<br/>
+					<ol>
+						<li>create a variable to store the radius of the leftover pie</li>
+						<li>calculate the area of the leftover pie and store it in a new variable</li>
+						<ul>
+							<li>here's the formula for calculating the area of a circle: A = π * r ^ 2</li>
+							<li>print out the area variable after creating it</li>
+						</ul>
+					</ol>
+					<div className="hints">
+						<b className="note">hint:</b> for <b>step 2</b>, you can retrieve the value of pi by using Math.PI<br/><br/>
+						<b className="note">hint:</b> for <b>step 2</b>, you can square the radius by using Math.pow(radius, 2), where radius is the base and 2 is the exponent<br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-leftover-pie?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
 				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-leftover-pie-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class Nesting extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class Nesting extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				in programming, <b>nesting</b> simply means <b>putting code blocks inside each other</b>, such as <b>if statements</b>, <b>for loops</b>, and <b>while loops</b>. (<b className="note">psst. need a reminder</b> on how these three code blocks work? check out the <b className="pageName">if statement page</b>, the <b className="pageName">for loop page</b>, and the <b className="pageName">while loop page</b>!) now, you might be thinking, what's the point of putting an if statement inside a while loop inside a for loop? nesting allows our programs to become <b>more complex in their functionality</b>!
 				<h3>let's get funky</h3>
 				let's take a look at the <b>classic example</b> we used to demonstrate how for loops and while loops work: <b>print the numbers 1-5</b>. just to refresh you, here is the classic example coded out using a for loop:
@@ -106,6 +111,12 @@ class Nesting extends React.Component{
 			    &#125;
 				</div>
 				awesome! hope you didn't get confuzzled by all of those curly braces!
+				<h3>&#123; &#123; &#123; recap &#125; &#125; &#125;</h3>
+				<b>yo!</b> you made it to recap!
+				<br/><br/>
+				because you created super long and complex programs here using nesting, we'll keep this recap <b>short and sweet</b>.
+				<br/>
+				once again, <b>nesting</b> simply means putting code blocks inside each other, whether that's if statements, for loops, or while loops. and nesting involves a lot of curly braces, so it's <b>super duper important keep track of which curly brace defines what code block</b>.
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">loopity loopity loop:</b><br/><br/>
@@ -184,13 +195,43 @@ class Nesting extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/nesting-hll-wrld-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>&#123; &#123; &#123; recap &#125; &#125; &#125;</h3>
-				<b>yo!</b> you made it to recap!
-				<br/><br/>
-				because you created super long and complex programs here using nesting, we'll keep this recap <b>short and sweet</b>.
 				<br/>
-				once again, <b>nesting</b> simply means putting code blocks inside each other, whether that's if statements, for loops, or while loops. and nesting involves a lot of curly braces, so it's <b>super duper important keep track of which curly brace defines what code block</b>.
-				<br/><br/>
+				<div className="problem">
+					<b className="note">divisibility:</b><br/><br/>
+					your <b>goal</b> is to use <b>nesting</b> to make a <b>while loop</b> that <b>prints out all numbers</b> from <b>1-50</b> that meet the requirement of being <b>divisible by 4 and 7</b>; in addition, you will need to <b>print out</b> the <b>total number of values</b> that meet the requirement. this will require six steps<br/>
+					<ol>
+						<li>first, you will need to create a variable to store the number that you are currently on and the total number of values that meet the requirement</li>
+						<li>next, you will need to create a while loop with a condition to make sure that you are looking through the specific range of numbers of 1-50</li>
+						<li>after that, you will need to check if the number is divisible by 4 and 7</li>
+						<li>if the above is true, then you will print out the number (with your choice of printing mechanism) and also update your total</li>
+						<li>then, you will need to increment your number so that it can move onto the next</li>
+						<li>lastly, you will want to print out the total number at the end, making sure to label it so it is clear that the user knows the total is being printed at the bottom</li>
+					</ol>
+					it sounds like a lot, but we know you have the knowledge to be able to do it!<br/><br/>
+					<div className="hints">
+						<b className="note">hint: </b>for <b>step 2</b>, what would our condition need to be if we wanted the numbers to be from 1-50? we are going to be starting at 1 with our variable, so we don't need to worry about the lower bound. but the upper bound...
+						we want our values to be less than or equal to 50...so what should that condition be so that the code block will only run if it's less than or equal to 50? maybe something that checks if our current value vairable is less than or equal to 50!<br/><br/>
+						<b className="note">hint: </b>for <b>step 3</b>, to check if our number is divisible by both 4 and 7, we will need to use an if statement, because we want some code (which we write in step 4) to only be run if this requirement is met. now, to actually check, what type of arithmetic can help us check if a value is divisible by a specific number? ohh... of course! % does that! (<b className="note">psst.</b> need a reminder of what we're talking about here? check out our <b className="pageName">arithmetic page</b>!)<br/><br/>
+						<b className="note">hint: </b>for <b>step 5</b>, we will want to increment outside of our if statement, as we want to do that no matter if the value we are currently on is divisible by 4 and 7. to increment, remember a short cut is just doing <i>++</i>.<br/><br/>
+						<b className="note">hint: </b>for <b>step 6</b>, if we want to do this at the end, once we have reached the total number, we would want to print out total outside of our for loop! also, if we want to label that this is the total, we will want to combine a string, maybe something like "total: ", and our total number variable. <br/><br/>
+					</div>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/nesting-divisibility?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/nesting-divisibility-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

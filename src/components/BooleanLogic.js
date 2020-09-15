@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class BooleanLogic extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class BooleanLogic extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				welcome to <b>boolean logic</b>! our goal for this page is for you to understand what <b>2B||!2B</b> means! 
 				<br/>
 				we are going to learn how to make our <b>if statements</b> more complex so that we can check multiple things at once (<b className="note">psst. need a reminder</b> on what in the world if statements are? check out the <b className="pageName">if statements page</b>!). and of course, as the name suggests, we are going to work with <b>booleans</b>! (<b className="note">btw:</b> a <b>boolean</b> is a variable type that has only two possible values: <b>true</b> or <b>false</b>.)
@@ -239,6 +244,94 @@ class BooleanLogic extends React.Component{
 				<div className="code">
 				yay! you can buy this super cute t-shirt!
 				</div>
+				<h3>!(!recap)</h3>
+				<b>awesome!</b> you made it to recap!
+				<br/><br/>
+				we can use <b>!</b>, <b>&&</b>, <b>||</b>, and <b>()</b> to make our <b>if statements</b> more complex, allowing us to check multiple things in a single if statement. here is the <b>logical precedence</b>, meaning <b>which funky symbol you should perform first</b>:
+				<br/> 
+				<ol>
+					<li><b>()</b> = do this first</li>
+					<li><b>!</b> = not this</li>
+					<li><b>&&</b> = this and this</li>
+					<li><b>||</b> = this or this</li>
+				</ol>
+				and here are the <b>true false tables</b> that you haven't seen enough of!<br/><br/>
+				<table>
+					<tr>
+						<td><b>!</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+					<tr>
+						<td><b>!</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+				</table><br/>
+				<table>
+					<tr>
+						<td>true</td>
+						<td><b>&&</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+					<tr>
+						<td>false</td>
+						<td><b>&&</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+					<tr>
+						<td>true</td>
+						<td><b>&&</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+					<tr>
+						<td>false</td>
+						<td><b>&&</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+				</table><br/>
+				<table>
+					<tr>
+						<td>true</td>
+						<td><b>||</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+					<tr>
+						<td>false</td>
+						<td><b>||</b></td>
+						<td>true</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+					<tr>
+						<td>true</td>
+						<td><b>||</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>true</td>
+					</tr>
+					<tr>
+						<td>false</td>
+						<td><b>||</b></td>
+						<td>false</td>
+						<td>=</td>
+						<td>false</td>
+					</tr>
+				</table><br/>
+				to end with, hamlet once said, <b>2B||!2B</b>, that is the question... i guess shakespeare did have a knack for coding!
+				<br/>
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">unexcused absence:</b><br/><br/>
@@ -342,94 +435,11 @@ class BooleanLogic extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-initials-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>!(!recap)</h3>
-				<b>awesome!</b> you made it to recap!
-				<br/><br/>
-				we can use <b>!</b>, <b>&&</b>, <b>||</b>, and <b>()</b> to make our <b>if statements</b> more complex, allowing us to check multiple things in a single if statement. here is the <b>logical precedence</b>, meaning <b>which funky symbol you should perform first</b>:
-				<br/> 
-				<ol>
-					<li><b>()</b> = do this first</li>
-					<li><b>!</b> = not this</li>
-					<li><b>&&</b> = this and this</li>
-					<li><b>||</b> = this or this</li>
-				</ol>
-				and here are the <b>true false tables</b> that you haven't seen enough of!<br/><br/>
-				<table>
-					<tr>
-						<td><b>!</b></td>
-						<td>true</td>
-						<td>=</td>
-						<td>false</td>
-					</tr>
-					<tr>
-						<td><b>!</b></td>
-						<td>false</td>
-						<td>=</td>
-						<td>true</td>
-					</tr>
-				</table><br/>
-				<table>
-					<tr>
-						<td>true</td>
-						<td><b>&&</b></td>
-						<td>true</td>
-						<td>=</td>
-						<td>true</td>
-					</tr>
-					<tr>
-						<td>false</td>
-						<td><b>&&</b></td>
-						<td>true</td>
-						<td>=</td>
-						<td>false</td>
-					</tr>
-					<tr>
-						<td>true</td>
-						<td><b>&&</b></td>
-						<td>false</td>
-						<td>=</td>
-						<td>false</td>
-					</tr>
-					<tr>
-						<td>false</td>
-						<td><b>&&</b></td>
-						<td>false</td>
-						<td>=</td>
-						<td>false</td>
-					</tr>
-				</table><br/>
-				<table>
-					<tr>
-						<td>true</td>
-						<td><b>||</b></td>
-						<td>true</td>
-						<td>=</td>
-						<td>true</td>
-					</tr>
-					<tr>
-						<td>false</td>
-						<td><b>||</b></td>
-						<td>true</td>
-						<td>=</td>
-						<td>true</td>
-					</tr>
-					<tr>
-						<td>true</td>
-						<td><b>||</b></td>
-						<td>false</td>
-						<td>=</td>
-						<td>true</td>
-					</tr>
-					<tr>
-						<td>false</td>
-						<td><b>||</b></td>
-						<td>false</td>
-						<td>=</td>
-						<td>false</td>
-					</tr>
-				</table><br/>
-				to end with, hamlet once said, <b>2B||!2B</b>, that is the question... i guess shakespeare did have a knack for coding!
-				<br/><br/>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

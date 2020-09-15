@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class Constants extends React.Component{
 	constructor(props){
@@ -9,6 +10,10 @@ class Constants extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				let's go down memory lane to the <b className="pageName">variables page</b> where you learned how to initialize a variable and change its value. now, we are going to learn about a special type of variable called a <b>constant</b>. in java, a constant is <b>a variable whose value cannot be changed once it has been initialized</b>. a constant is an <b>immutable</b> variable, or unable to be changed. on the other hand, the variables you have been creating so far have all been <b>mutable</b>, or able to be changed. (<b className="note">btw:</b> from here on out, whenever we say "constant", we are referencing an immutable variable, and whenever we say "variable", you can assume that we are referencing a mutable variable, the ones that you've been creating so far.)
 				<h3>wait, so how do you make this so-called "special variable"?</h3>
 				in order to create a constant, we can use the <b>final</b> keyword. you can remember that the keyword is final because you are essentially initializing the constant variable to its <b>final value</b>, since it can't be changed. here is the blueprint for <b>creating a constant</b>:<br/>
@@ -86,6 +91,19 @@ class Constants extends React.Component{
 				MY_AVOCADOS++;
 				</div>
 				as much as i love avocados, this code = <b>no no</b>. if you ever attempt changing the value of a constant in your program, you will get an <b>error</b>. and red text in the console = <b>no no</b>. so don't change the value of a constant. <b>just. don't. do. it.</b>
+				<h3>final(ly), it's recap</h3>
+				<b>awesome!</b> you made it to recap!
+				<br/><br/>
+				to kick off our recap, here's a nice little <b>vocab dump</b> for you:
+				<ul>
+					<li><b>constant</b> – a special type of variable whose value cannot be changed once it has been initialized</li>
+					<li><b>immutable</b> – unable to be changed</li>
+					<li><b>mutable</b> – able to be changed</li>
+				</ul>
+				and here is the blueprint for <b>creating a constant</b>:<br/>
+				<b>final <i>&lt;type&gt; &lt;name&gt; = &lt;immutable_value&gt;;</i></b>
+				<br/><br/>
+				and last but not least, remember that if you ever attempt to change the value of a constant in your program, you will get an <b>error</b>. sweet!
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">my name:</b><br/><br/>
@@ -140,20 +158,11 @@ class Constants extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/constants-happy-birthday-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>final(ly), it's recap</h3>
-				<b>awesome!</b> you made it to recap!
-				<br/><br/>
-				to kick off our recap, here's a nice little <b>vocab dump</b> for you:
-				<ul>
-					<li><b>constant</b> – a special type of variable whose value cannot be changed once it has been initialized</li>
-					<li><b>immutable</b> – unable to be changed</li>
-					<li><b>mutable</b> – able to be changed</li>
-				</ul>
-				and here is the blueprint for <b>creating a constant</b>:<br/>
-				<b>final <i>&lt;type&gt; &lt;name&gt; = &lt;immutable_value&gt;;</i></b>
-				<br/><br/>
-				and last but not least, remember that if you ever attempt to change the value of a constant in your program, you will get an <b>error</b>. sweet!
-				<br/><br/>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)

@@ -1,4 +1,5 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
 
 class GettingStarted extends React.Component{
 	constructor(props){
@@ -9,8 +10,7 @@ class GettingStarted extends React.Component{
 	render(){
 		return (
 			<div>
-				each of our concept pages contais practice problems to help you solidify the information you learn. 
-				for these practice probmes, we use <b>repl.it</b>, an online browser-based software development website.
+				
 			</div>
 		)
 	}
