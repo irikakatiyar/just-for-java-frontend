@@ -10,6 +10,10 @@ class WhileLoop extends React.Component{
 	render(){
 		return (
 			<div>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				a <b>while loop</b> is a <b>type of loop</b> that is used to <b>perform a block of code <i>while</i> a specific condition is met</b>. once it is not met, or is false, then the code block will stop being run and the code will move onto the next block of code outside of the while loop.
 				<h3>wait, so how do you make a while loop?</h3>
 				here is the blue print for a while loop:<br/>
@@ -79,6 +83,13 @@ class WhileLoop extends React.Component{
 					in.close();
 				</div>
 				great! nice job!
+				<h3>while(recap == true)&#123;</h3>
+				<b>!!</b> yess recap time.<br/>
+				so, to review, a <b>while loop</b> loops through a block of code as long as a specific condition is true, and is written:<br/>
+				<b>while(&lt;<i>condition</i>&gt;)&#123;<br/>
+				<p>*code*</p><br/>
+				&#125;</b><br/><br/>
+				and that's pretty much it!
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">even:</b><br/><br/>
@@ -107,13 +118,11 @@ class WhileLoop extends React.Component{
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/while-loop-even-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
-				<h3>while(recap == true)&#123;</h3>
-				<b>!!</b> yess recap time.<br/>
-				so, to review, a <b>while loop</b> loops through a block of code as long as a specific condition is true, and is written:<br/>
-				<b>while(&lt;<i>condition</i>&gt;)&#123;<br/>
-				<p>*code*</p><br/>
-				&#125;</b><br/><br/>
-				and that's pretty much it!<br/><br/>
+				<br/>
+				<ProgressUpdater 
+	              page={this.props.page} 
+	              user={this.props.user}
+	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
 		)
