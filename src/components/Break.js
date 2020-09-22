@@ -9,7 +9,7 @@ class Break extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the Break content
+				<b>coming soon!</b>
 			</div>
 		)
 	}

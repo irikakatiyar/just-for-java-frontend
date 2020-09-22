@@ -9,7 +9,7 @@ class Functions extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the Functions content
+				<b>coming soon!</b>
 			</div>
 		)
 	}

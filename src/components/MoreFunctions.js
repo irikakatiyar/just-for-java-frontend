@@ -9,7 +9,7 @@ class MoreFunctions extends React.Component{
 	render(){
 		return (
 			<div>
-				This is the MoreFunctions content
+				<b>coming soon!</b>
 			</div>
 		)
 	}
