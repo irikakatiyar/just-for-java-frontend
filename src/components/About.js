@@ -18,7 +18,7 @@ class About extends React.Component{
 				my name is irika, and i'm the older twin (by 30 seconds, every second counts!) the programming languages i know are java, html, 
 				css, and javascript. other than coding, i love to play squash, do bollywood dance, play guitar, sing, bike, travel, write children's books 
 				(search up my name on amazon), and make animated videos (check out 2MinuteBio on youtube). i also love watching netflix, making random videos on imovie, 
-				and haging out with friends!<br/><br/>
+				and hanging out with friends!<br/><br/>
 
 				<b> a little more about irith:</b><br/>
 				my name is irith, and i'm the younger twin, something irika never fails to remind me about. the programming languages i know are java, html, 
