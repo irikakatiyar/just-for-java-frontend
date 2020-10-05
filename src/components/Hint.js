@@ -8,15 +8,31 @@ class Hint extends React.Component{
 		}
 	}
 
+	hintClicked() {
+		this.setState({
+	      hintsShown: this.state.hintsShown+1
+	    }, () => {
+	    	if(this.state.hintsShown >= this.props.hints.length) {
+				document.getElementById("hintButton").disabled = true;
+			}
+	    })
+	}
 
 	render(){
 		return (
 			<div className="hints">
+				<button 
+					id="hintButton"
+					class="hintButton"
+					onClick={() => this.hintClicked()}
+				>
+					hint please ({this.state.hintsShown}/{this.props.hints.length})
+				</button>
 				<ul>
 				{this.props.hints.map((hint, index) => {
-					if (index < 2) {
+					if (index < this.state.hintsShown) {
 						return (
-							<li>{index}. {hint}</li>
+							<li><b className="note">hint:</b> {hint}</li>
 						)
 					}
 				})}

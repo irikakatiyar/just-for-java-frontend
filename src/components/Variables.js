@@ -174,9 +174,9 @@ class Variables extends React.Component{
 					<Hint
 						hints={[
 							"for step 1, you might want to use String as the type for your variable.",
-							"for step 2,think of what you could use to store either a yes or no answer... maybe a boolean",
+							"for step 2, think of what you could use to store either a yes or no answer... maybe a boolean...",
 							"for step 3, what type of variable can be used to store a number?", 
-							"for step 4, if we want to store a letter – emphasis on letter – what can we use? well, what's another word for letter... that's right! a character"
+							"for step 4, if we want to store a letter – emphasis on letter – what can we use? well, what's another word for letter... that's right! a character!"
 						]}
 					/>
 					<div className="repl">
