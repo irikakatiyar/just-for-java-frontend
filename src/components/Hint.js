@@ -14,6 +14,7 @@ class Hint extends React.Component{
 	    }, () => {
 	    	if(this.state.hintsShown >= this.props.hints.length) {
 				document.getElementById("hintButton").disabled = true;
+				document.getElementById("hintButton").innerHTML = "that's all the hints we have"
 			}
 	    })
 	}
