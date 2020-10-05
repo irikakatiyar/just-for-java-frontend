@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Variables extends React.Component{
 	constructor(props){
@@ -170,12 +171,14 @@ class Variables extends React.Component{
 						<li>create a variabele to store the number of classes you have</li>
 						<li>create a variable to store your letter grade (A, B, C, D, or F) in your favorite class</li>
 					</ol>
-					<div className="hints">
-						<b className="note">hint: </b>for <b>step 1</b>, you might want to use String as the type for your variable.<br/><br/>
-						<b className="note">hint: </b>for <b>step 2</b>, think of what you could use to store either a yes or no answer... maybe a boolean<br/><br/>
-						<b className="note">hint: </b>for <b>step 3</b>, what type of variable can be used to store a number?<br/><br/>
-						<b className="note">hint: </b>for <b>step 4</b>, if we want to store a letter – emphasis on <i>letter</i> – what can we use? well, what's another word for letter... that's right! a character<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 1, you might want to use String as the type for your variable.",
+							"for step 2,think of what you could use to store either a yes or no answer... maybe a boolean",
+							"for step 3, what type of variable can be used to store a number?", 
+							"for step 4, if we want to store a letter – emphasis on letter – what can we use? well, what's another word for letter... that's right! a character"
+						]}
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-savvy-school-scheduling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
