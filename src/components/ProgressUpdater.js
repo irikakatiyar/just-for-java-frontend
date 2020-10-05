@@ -32,7 +32,7 @@ class ProgressUpdater extends React.Component{
     	this.setState({ 
     		selectedOption: selectedOption
     	}, () => {
-	    	axios.post("http://localhost:5001/just-for-java/us-central1/app/api/update-topic-status", { 
+	    	axios.post("https://us-central1-just-for-java.cloudfunctions.net/app/api/update-topic-status", { 
 				id: this.props.user.uid,
 				topic: this.props.page,
 				status: this.state.selectedOption.value
@@ -44,7 +44,7 @@ class ProgressUpdater extends React.Component{
 	};
 
 	getTopicStatus() {
-    	axios.get("http://localhost:5001/just-for-java/us-central1/app/api/get-topic-status", { 
+    	axios.get("https://us-central1-just-for-java.cloudfunctions.net/app/api/get-topic-status", { 
 			params: {
       			id: this.props.user.uid,
 				topic: this.props.page
@@ -69,7 +69,7 @@ class ProgressUpdater extends React.Component{
 		this.setState({
 	      selectedOption: status
 	    }, () => {
-	    	axios.post("http://localhost:5001/just-for-java/us-central1/app/api/update-topic-status", { 
+	    	axios.post("https://us-central1-just-for-java.cloudfunctions.net/app/api/update-topic-status", { 
 				id: this.props.user.uid,
 				topic: this.props.page,
 				status: this.state.selectedOption

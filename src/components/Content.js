@@ -109,12 +109,12 @@ class Content extends React.Component{
 				<RandomNumbers user={this.props.user} page={this.props.page}/>
 			);
 		}
-		else if(this.props.page === "ASCII"){
+		else if(this.props.page === "ascii"){
 			return (
 				<ASCII user={this.props.user} page={this.props.page}/>
 			);
 		}
-		else if(this.props.page === "HashMap"){
+		else if(this.props.page === "hashmap"){
 			return (
 				<HashMap user={this.props.user} page={this.props.page}/>
 			);
@@ -124,17 +124,17 @@ class Content extends React.Component{
 				<Arrays user={this.props.user} page={this.props.page}/>
 			);
 		}
-		else if(this.props.page === "Math"){
+		else if(this.props.page === "math"){
 			return (
 				<Mathematics user={this.props.user} page={this.props.page}/>
 			);
 		}
-		else if(this.props.page === "Strings"){
+		else if(this.props.page === "strings"){
 			return (
 				<Strings user={this.props.user} page={this.props.page}/>
 			);
 		}
-		else if(this.props.page === "ArrayList"){
+		else if(this.props.page === "arraylist"){
 			return (
 				<ArrayList user={this.props.user} page={this.props.page}/>
 			);
@@ -164,7 +164,7 @@ class Content extends React.Component{
 				<ForEachLoop user={this.props.user} page={this.props.page}/>
 			);
 		}
-		else if(this.props.page === "2D array"){
+		else if(this.props.page === "2d array"){
 			return (
 				<TwoDimArrays user={this.props.user} page={this.props.page}/>
 			);
