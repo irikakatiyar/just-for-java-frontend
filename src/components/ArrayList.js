@@ -1,4 +1,6 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class ArrayList extends React.Component{
 	constructor(props){

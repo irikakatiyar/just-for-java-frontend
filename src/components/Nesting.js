@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Nesting extends React.Component{
 	constructor(props){
@@ -18,26 +19,39 @@ class Nesting extends React.Component{
 				<h3>let's get funky</h3>
 				let's take a look at the <b>classic example</b> we used to demonstrate how for loops and while loops work: <b>print the numbers 1-5</b>. just to refresh you, here is the classic example coded out using a for loop:
 				<div className="code">
-				for(int i = 1; i &le; 5; i++) &#123; <br/>
-					<p>System.out.print(i + " ");</p>
+				for(int i = 1; i &lt;= 5; i++) &#123; <br/>
+					<p>System.out.print(i + " ");</p><br/>
 				&#125;<br/>
 				</div>
 				and using a while loop:
 				<div className="code">
+				int count = 1;<br/>
+				while(count &lt;= 5)&#123;<br/>
+				<p>System.out.print(count + " ");<br/>
+				count++;</p><br/>
+				&#125;
 				</div>
 				<br/>
 				now, let's change things up a bit. say we wanted to <b>print the numbers 1-5, except for the number 4</b>. how can we do this? well, we already have the code to print the numbers 1-5, so all we need to do is not print the number if it is equal to 4! (<b className="note">btw:</b> did you notice the word "if" in that sentence?). let's add an <b>if statement inside our loop</b> that checks if the number is not equal to 4, and if so, prints the number. (<b className="note">hint:</b> you can use <b>!=</b> to check if the number is not equal 4.) take a look at the code below!
 				<div className="code">
-				for(int i = 1; i &le; 5; i++) &#123; <br/>
-					<p>if(i != 4) &#123; <div className="comment">//if i does not equal 4, print i</div></p><br/>
+				for(int i = 1; i &lt;= 5; i++) &#123; <br/>
+					<p>if(i != 4) &#123; <div className="comment">//if i does not equal 4, print i</div><br/>
 						<p className="indent1">System.out.print(i + " ");</p><br/>
-					<p>&#125;</p><br/>
+					&#125;</p><br/>
 				&#125;<br/>
 				</div>
 				wow! that's a lot of <b>curly braces</b>! when you are nesting, it's super important to keep track of which curly brace defines what code block. for the code above, the opening curly brace at the very top and the closing curly brace at the very bottom define our <b>for loop</b>, whereas the opening and closing curly braces inside the for loop curly braces define our <b>if statement</b>.
 				<br/>
 				before we move on, let's quickly see what our example would look like with a <b>while loop</b> instead of a for loop:
 				<div className="code">
+				int count = 1;<br/>
+				while(count &lt;= 5)&#123;<br/>
+				<p>if(i != 4) &#123; <div className="comment">//if i does not equal 4, print i</div><br/>
+						<p className="indent1">System.out.print(i + " ");</p><br/>
+					&#125;<br/>
+					count++;
+					</p><br/>
+				&#125;
 				</div>
 				finally, let's take a look at what got printed in the console:
 				<div className="code">
@@ -131,12 +145,15 @@ class Nesting extends React.Component{
 							<li>note that there's a space at the end of loopity so that there is space between the words</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, your initialize component should be int i = 1, your condition component should be i &lt;= <i>num</i>, where <i>num</i> is the variable you created in step 1, and your iterate component should be i++<br/><br/>
-						<b className="note">hint:</b> for <b>step 3</b>, you will need an if statement as well as an else statement<br/><br/>
-						<b className="note">hint:</b> for <b>step 3</b>, you know that you have reached the last iteration if your iterator variable i is equal to <i>num</i>, where <i>num</i> is the variable you created in step 1<br/><br/>
-						<b className="note">hint:</b> for <b>step 3</b>, make sure you use System.out.print() so that all the words are printed on the same line<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, your initialize component should be int i = 1, your condition component should be i <= num, where num is the variable you created in step 1, and your iterate component should be i++",
+							"for step 3, you will need an if statement as well as an else statement",
+							"for step 3, you know that you have reached the last iteration if your iterator variable i is equal to num, where num is the variable you created in step 1",
+							"for step 3, make sure you use System.out.print() so that all the words are printed on the same line"
+						]}
+						id="nesting-loopity-loopity-loop"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/nesting-loopity-loopity-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -174,15 +191,18 @@ class Nesting extends React.Component{
 							<li>this step should be performed after the for loop is done</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, your initialize component should be int i = 0 because indexing starts at 0<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, your condition component should be i &lt; str.length() the last index in the String is at the length of the String - 1<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, your iterate component should be i++ since each time we loop, we want to go to the next index in the String<br/><br/>
-						<b className="note">hint:</b> for <b>step 3</b>, you will need to use charAt to get the character at a specified index in the String – check out the <b className="pageName">Strings page</b> for more details<br/><br/>
-						<b className="note">hint:</b> for <b>step 4</b>, if you want to use boolean logic, make one giant if statement that checks if the character doesn't equal any of the vowels, both uppercase and lowercase; remember, ! = not, && = and, || = or, () = do this first; refer to the <b className="pageName">boolean logic page</b> for the specifics<br/><br/>
-						<b className="note">hint:</b> for <b>step 4</b>, you can also create a String of all the vowels "AEIOUaeiou" – notice that it includes both uppercase and lowercase vowels – and check if the index of the current character in the vowels String is equal to -1, meaning that the current character does not appear in the vowels String, meaing that it isn't a vowel<br/><br/>
-						<b className="note">hint:</b> for <b>step 4</b>, if the current character is not a vowel, then you can use += to concatenate, or add, that character to the end of the vowels-removed String<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, your initialize component should be int i = 0 because indexing starts at 0",
+							"for step 2, your condition component should be i < str.length() the last index in the String is at the length of the String - 1",
+							"for step 2, your iterate component should be i++ since each time we loop, we want to go to the next index in the String",
+							"for step 3, you will need to use <String>.charAt(<index>) to get the character at a specified index in the String",
+							"for step 4, if you want to use boolean logic, make one giant if statement that checks if the character doesn't equal any of the vowels, both uppercase and lowercase; remember, ! = not, && = and, || = or, () = do this first",
+							"for step 4, you can also create a String of all the vowels \"AEIOUaeiou\" – notice that it includes both uppercase and lowercase vowels – and check if the index of the current character in the vowels String is equal to -1, meaning that the current character does not appear in the vowels String, meaing that it isn't a vowel",
+							"for step 4, if the current character is not a vowel, then you can use += to concatenate, or add, that character to the end of the vowels-removed String"
+						]}
+						id="nesting-hll-wrld"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/nesting-hll-wrld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -207,14 +227,15 @@ class Nesting extends React.Component{
 						<li>then, you will need to increment your number so that it can move onto the next</li>
 						<li>lastly, you will want to print out the total number at the end, making sure to label it so it is clear that the user knows the total is being printed at the bottom</li>
 					</ol>
-					it sounds like a lot, but we know you have the knowledge to be able to do it!<br/><br/>
-					<div className="hints">
-						<b className="note">hint: </b>for <b>step 2</b>, what would our condition need to be if we wanted the numbers to be from 1-50? we are going to be starting at 1 with our variable, so we don't need to worry about the lower bound. but the upper bound...
-						we want our values to be less than or equal to 50...so what should that condition be so that the code block will only run if it's less than or equal to 50? maybe something that checks if our current value vairable is less than or equal to 50!<br/><br/>
-						<b className="note">hint: </b>for <b>step 3</b>, to check if our number is divisible by both 4 and 7, we will need to use an if statement, because we want some code (which we write in step 4) to only be run if this requirement is met. now, to actually check, what type of arithmetic can help us check if a value is divisible by a specific number? ohh... of course! % does that! (<b className="note">psst.</b> need a reminder of what we're talking about here? check out our <b className="pageName">arithmetic page</b>!)<br/><br/>
-						<b className="note">hint: </b>for <b>step 5</b>, we will want to increment outside of our if statement, as we want to do that no matter if the value we are currently on is divisible by 4 and 7. to increment, remember a short cut is just doing <i>++</i>.<br/><br/>
-						<b className="note">hint: </b>for <b>step 6</b>, if we want to do this at the end, once we have reached the total number, we would want to print out total outside of our for loop! also, if we want to label that this is the total, we will want to combine a string, maybe something like "total: ", and our total number variable. <br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, what would our condition need to be if we wanted the numbers to be from 1-50? we are going to be starting at 1 with our variable, so we don't need to worry about the lower bound. but the upper bound... we want our values to be less than or equal to 50...so what should that condition be so that the code block will only run if it's less than or equal to 50? maybe something that checks if our current value variable is less than or equal to 50!",
+							"for step 3, to check if our number is divisible by both 4 and 7, we will need to use an if statement, because we want some code (which we write in step 4) to only be run if this requirement is met. now, to actually check, what type of arithmetic can help us check if a value is divisible by a specific number? ohh... of course! % (modulus) does that!",
+							"for step 5, we will want to increment outside of our if statement, as we want to do that no matter if the value we are currently on is divisible by 4 and 7. to increment, remember a shortcut is just doing ++",
+							"for step 6, if we want to do this at the end, once we have reached the total number, we would want to print out total outside of our for loop! also, if we want to label that this is the total, we will want to combine a string, maybe something like \"total: \", and our total number variable"
+						]}
+						id="nesting-divisibility"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/nesting-divisibility?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

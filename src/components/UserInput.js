@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class UserInput extends React.Component{
 	constructor(props){
@@ -164,10 +165,13 @@ class UserInput extends React.Component{
 							<li>here, use next-line printing to print out the total price</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 4</b>, we want to get the user input as a double, so use in.nextDouble()<br/><br/>
-						<b className="note">hint:</b> for <b>step 4</b>, to add the user input to the price variable, you can use the += shorthand that we learned about on the <b className="pageName">arithmetics page</b><br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 4, we want to get the user input as a double, so use in.nextDouble()",
+							"for step 4, to add the user input to the price variable, you can use the += shorthand"
+						]}
+						id="user-input-tip-tip"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/user-input-tip-tip?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

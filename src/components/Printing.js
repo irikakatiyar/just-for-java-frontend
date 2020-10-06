@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Printing extends React.Component{
 	constructor(props){
@@ -120,11 +121,13 @@ class Printing extends React.Component{
 							<li>normally, an envelope addressed to you would have your first and last name on the first line, your street address on the second, and your city, state / region / province, country, and zipcode on the third</li>
 						</ul>
 					</ol>
-					good luck!<br/>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>steps 1-4</b>, because these are storing text, you would want to use Strings as your variable type<br/><br/>
-						<b className="note">hint:</b> for <b>step 5</b>, if you need to print your name on one line, what type of printing would you need to use for the first line? maybe single-line? and if you need to print the other parts on separate lines, what type of printing would that be? maybe multi-line? hmmm...
-					</div>
+					<Hint
+						hints={[
+							"for steps 1-4, because these are storing text, you would want to use Strings as your variable type",
+							"for step 5, if you need to print your name on one line, what type of printing would you need to use for the first line? maybe single-line? and if you need to print the other parts on separate lines, what type of printing would that be? maybe multi-line? hmmm..."
+						]}
+						id="printing-envelope"
+					/>
 					<br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/printing-envelope?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

@@ -1,4 +1,6 @@
 import React from 'react';
+import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Array extends React.Component{
 	constructor(props){

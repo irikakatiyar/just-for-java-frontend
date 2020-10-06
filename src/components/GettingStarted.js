@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class GettingStarted extends React.Component{
 	constructor(props){

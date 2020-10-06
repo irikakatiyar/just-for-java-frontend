@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Mathematics extends React.Component{
 	constructor(props){
@@ -238,10 +239,13 @@ class Mathematics extends React.Component{
 							<li>print out the area variable after creating it</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, you can retrieve the value of pi by using Math.PI<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, you can square the radius by using Math.pow(radius, 2), where radius is the base and 2 is the exponent<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, you can retrieve the value of pi by using Math.PI",
+							"for step 2, you can square the radius by using Math.pow(radius, 2), where radius is the base and 2 is the exponent"
+						]}
+						id="Math-leftover-pie"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-leftover-pie?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

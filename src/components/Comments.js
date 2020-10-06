@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Comments extends React.Component{
 	constructor(props){
@@ -60,11 +61,14 @@ class Comments extends React.Component{
 						<li>oh no! somebody you invited got sick and can't make it! change your variable that stored the number of people to reflect what happened, and don't forget to comment why you are doing so</li>
 					</ol>
 					good luck!<br/><br/>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 1</b>, because this comment is multiple sentences, it's best to use a multi-line comment.<br/><br/>
-						<b className="note">hint:</b> for <b>steps 2-4</b>, because you are making the comments about the variables, which would be short, it might be best to use the comment that is shorter...aka the single-line comment.<br/><br/>
-						<b className="note">hint:</b> for <b>step 5</b>, since you are explaining what happened to cause you to change the variable, this comment might be a little longer... emphasis on <i>longer</i><br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 1, because this comment is multiple sentences, it's best to use a multi-line comment",
+							"for steps 2-4, because you are making the comments about the variables, which would be short, it might be best to use the comment that is shorter (aka the single-line comment)",
+							"for step 5, since you are explaining what happened to cause you to change the variable, this comment might be a little longer... emphasis on longer"
+						]}
+						id="comments-birthday-partayy"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/comments-birthday-partayy?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

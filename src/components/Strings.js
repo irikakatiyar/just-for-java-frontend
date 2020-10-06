@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Strings extends React.Component{
 	constructor(props){
@@ -467,9 +468,12 @@ class Strings extends React.Component{
 							<li>my program should print out "my favorite song is Brother by Matt Corby in his album Into The Flame"</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, remember that a + between two String variables will add the second variable to the end of the first<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, remember that a + between two String variables will add the second variable to the end of the first"
+						]}
+						id="Strings-my-jam"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-my-jam?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -502,12 +506,15 @@ class Strings extends React.Component{
 						</ul>
 						<li>print out your name with its fun and fresh formatting</li>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, an empty String is denoted using ""<br/><br/>
-						<b className="note">hint:</b> for <b>step 3</b>, which index does the first letter start at, inclusively? which index does the first letter end at, exclusively? if you said 0 and 1 (respectively) you may be correct hehe<br/><br/>
-						<b className="note">hint:</b> for <b>step 4</b>, which index does the rest of your name start at, inclusively? which index does the rest of your name end at, exclusively? if you said 1 and the length of your name (respectively) you may be correct hehe<br/><br/>
-						<b className="note">hint:</b> for <b>steps 3 and 4</b>, you can use += to concatenate the properly cased substring to the formatted name variable<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, an empty String is denoted using \"\"",
+							"for step 3, which index does the first letter start at, inclusively? which index does the first letter end at, exclusively? if you said 0 and 1 (respectively) you may be correct hehe",
+							"for step 4, which index does the rest of your name start at, inclusively? which index does the rest of your name end at, exclusively? if you said 1 and the length of your name (respectively) you may be correct hehe",
+							"for steps 3 and 4, you can use += to concatenate the properly cased substring to the formatted name variable"
+						]}
+						id="Strings-fun-and-fresh-formatting"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Strings-fun-and-fresh-formatting?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Arithmetic extends React.Component{
 	constructor(props){
@@ -344,9 +345,13 @@ class Arithmetic extends React.Component{
 						</ul>
 						<li>print out the length, width, height, and volume of the delivery package</li>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 3</b>, if you forgot what printing is or how to print a variable, you can revisit the <b className="pageName">printing page</b><br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, to calculate the volume, plug in the appropriate variables into the volume formula we gave above",
+							"for step 3, to print out a variable, put the name of your variable in between the parentheses of your print statement"
+						]}
+						id="arithmetic-delivery-package"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-delivery-package?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -377,9 +382,13 @@ class Arithmetic extends React.Component{
 						</ul>
 						<li>print out the slope variable</li>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 3</b>, if you forgot what printing is or how to print a variable, you can revisit the <b className="pageName">printing page</b><br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, to calculate the slope, plug in the appropriate variables into the slope formula we gave above",
+							"for step 3, to print out the slope variable, put the name of your slope variable in between the parentheses of your print statement"
+						]}
+						id="arithmetic-slope"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-slope?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -410,10 +419,13 @@ class Arithmetic extends React.Component{
 							<li>here's the handy dandy formula: °C = (°F - 32) * 5/9</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>steps 2 and 4</b>, if you forgot what next-line printing means, you can revisit the <b className="pageName">printing page</b><br/><br/>
-						<b className="note">hint:</b> for <b>steps 2 and 4</b>, whatever arithmetic you do can go inside the print statement, and the arithmetic will get performed first, and then the result will get printed out<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for steps 2 and 4, use System.out.println() for next-line printing",
+							"for steps 2 and 4, whatever arithmetic you do can go inside the print statement, and the arithmetic will get performed first, and then the result will get printed out"
+						]}
+						id="arithmetic-handy-dandy-temp-convertor"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/arithmetic-handy-dandy-temp-convertor?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

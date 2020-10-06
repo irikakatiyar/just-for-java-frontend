@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class ForLoop extends React.Component{
 	constructor(props){
@@ -36,8 +37,8 @@ class ForLoop extends React.Component{
 				(<b className="note">psst. need a reminder</b> on how to create a variable? check out the <b className="pageName">variables page</b>!)
 
 				<h3>and what's condition?</h3>
-				the condition is the <b>second component</b>. it works to <b>determine when the loop should stop</b>. you can denote this using <b>&lt;</b>, <b>&le;</b>, <b>&gt;</b>, or <b>&ge;</b> depending on what you want your loop to do.
-				<br/>going back to our example of printing out the numbers 1-5, we can make our condition in two ways: <b>i &le; 5</b> or <b>i &lt; 6</b>. which one you choose is up to you.
+				the condition is the <b>second component</b>. it works to <b>determine when the loop should stop</b>. you can denote this using <b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, or <b>&gt;=</b> depending on what you want your loop to do.
+				<br/>going back to our example of printing out the numbers 1-5, we can make our condition in two ways: <b>i &lt;= 5</b> or <b>i &lt; 6</b>. which one you choose is up to you.
 				
 				<h3>hey, wait! you still have to explain iterate!</h3>
 				don't worry, we didn't forget :). the iterate portion is our <b>last component</b> and works to <b>increment your integer variable</b>. you can increment by however much you want, <b>either increasing or decreasing</b> depending on the direction you would like your loop to go in. 
@@ -50,7 +51,7 @@ class ForLoop extends React.Component{
 				<h3>and for some examples...</h3>
 				here is our example from above fully coded out: 
 				<div className="code">
-					for(int i = 1; i &le; 5; i++) &#123; <br/>
+					for(int i = 1; i &lt;= 5; i++) &#123; <br/>
 						<p>System.out.print(i + " ");</p> <div className = "comment">//the " " is to add a space between the numbers when printing</div><br/>
 					&#125;<br/>
 				</div>
@@ -67,7 +68,7 @@ class ForLoop extends React.Component{
 				ok, got it? let's see it coded out!
 				<div className="code">
 					int sum = 0; <div className = "comment">//this variable will keep track of our sum in our for loop</div><br/>
-					for(int i = 1; i &le; 100; i*=2)&#123;<br/>
+					for(int i = 1; i &lt;= 100; i*=2)&#123;<br/>
 						<p>sum += i; <div className="comment">//+= is a shortcut for saying sum = sum + i.</div></p><br/>
 					&#125;
 				</div>
@@ -86,7 +87,7 @@ class ForLoop extends React.Component{
 				<br/>
 				<div className="comment">//loop through each character in str</div>
 				<br/>
-				for(int i = 0; i &le; str.length(); i++)&#123;<br/>
+				for(int i = 0; i &lt;= str.length(); i++)&#123;<br/>
 				<p>
 					<div className="comment">//use charAt() to print out each character on its own line</div><br/>
 					System.out.println(str.charAt(i));
@@ -134,11 +135,14 @@ class ForLoop extends React.Component{
 						</ul>
 						<li>after the for loop is over, print "blast off!" to the console</li>
 					</ol>
-					<div className="hints">
-						<b className="note">hint: </b>for <b>step 1</b>, your initialize component should be int i = 5 since your countdown begins at 5<br/><br/>
-						<b className="note">hint: </b>for <b>step 1</b>, your condition component should be i &gt;= 1 because your countdown ends at 1, so as long as i is greater than or equal to 1, the countdown should keep going<br/><br/>
-						<b className="note">hint: </b>for <b>step 1</b>, your iterate component should be i-- because you want i to decrement, or decrease by 1, each iteration, since we are counting down<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 1, your initialize component should be int i = 5 since your countdown begins at 5",
+							"for step 1, your condition component should be i >= 1 because your countdown ends at 1, so as long as i is greater than or equal to 1, the countdown should keep going",
+							"for step 1, your iterate component should be i-- because you want i to decrement, or decrease by 1, each iteration, since you are counting down"
+						]}
+						id="for-loop-blast-off"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-blast-off?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -170,12 +174,15 @@ class ForLoop extends React.Component{
 							<li>the only difference is that you are printing nom instead of nibble</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint: </b>for <b>step 2</b>, your initialize component should be int i = 1 and your iterate component should be i++, because you want i to increment each time you loop<br/><br/>
-						<b className="note">hint: </b>for <b>step 2</b>, since you want your for loop to iterate <i>n</i> times, where <i>n</i> is how many times you want to print out nibble and nom, your condition component should be i &lt;= <i>n</i><br/><br/>
-						<b className="note">hint: </b>for <b>step 3</b>, you can use same-line printing - System.out.print() – so that your nibbles and noms are on the same line in the console<br/><br/>
-						<b className="note">hint: </b>for <b>step 3</b>, add a space after nibble and nom when you print them out inside your for loops<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, your initialize component should be int i = 1 and your iterate component should be i++, because you want i to increment each time you loop",
+							"for step 2, since you want your for loop to iterate n times, where n is how many times you want to print out nibble and nom, your condition component should be i <= n",
+							"for step 3, you can use same-line printing - System.out.print() – so that your nibbles and noms are on the same line in the console",
+							"for step 3, add a space after nibble and nom when you print them out inside your for loops"
+						]}
+						id="for-loop-nibble-nibble-nom-nom"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/for-loop-nibble-nibble-nom-nom?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class BooleanLogic extends React.Component{
 	constructor(props){
@@ -343,10 +344,13 @@ class BooleanLogic extends React.Component{
 							<li>a student has an unexcused absence if they are absent, if they are not sick, and if they do not have an appointment</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, you can use ! to check if the student is not sick or does not have an appointment<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, you can use && to check if all three conditions are true in a single if statement<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, you can use ! to check if the student is not sick or does not have an appointment",
+							"for step 2, you can use && to check if all three conditions are true in a single if statement"
+						]}
+						id="boolean-logic-unexcused-absence"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-unexcused-absence?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -382,12 +386,15 @@ class BooleanLogic extends React.Component{
 							<li>if the price of chocolate lava cake is cheaper at store 2, then print out "best deal for chocolate lava cakes at store 2"</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, you can use ! to check if chocolate lava cakes are not in stock at a store<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, you can use && to check if both in stock conditions are true in a single if statement<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, you might need to use else if and else statements too<br/><br/>
-						<b className="note">hint:</b> for <b>step 3</b>, you will need to make the if statement and else statement that compares the chocolate lava cake prices inside the if statement checking if chocolate lava cakes are in stock at both stores<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, you can use ! to check if chocolate lava cakes are not in stock at a store",
+							"for step 2, you can use && to check if both in stock conditions are true in a single if statement",
+							"for step 2, you might need to use else if and else statements too",
+							"for step 3, you will need to make the if statement and else statement that compares the chocolate lava cake prices inside the if statement checking if chocolate lava cakes are in stock at both stores"
+						]}
+						id="boolean-logic-chocolate-lava-cake"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-chocolate-lava-cake?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -415,14 +422,17 @@ class BooleanLogic extends React.Component{
 							<li>long version: check if the first letter of the first name of the first person is equal to the first letter of the first name of the second person and if the first letter of the last name of the first person is equal to the first letter of the last name of the second person – phew! that was a lot</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, it's a good idea to take a look at the <b className="pageName">Strings page</b> to review indexing, charAt, and indexOf, but the rest of the hints will walk through what you need to do with Strings<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, the first letter of the first name is the first character in the String, which is at index 0, since indexing starts at 0<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, you can use charAt to get a character in a String at a given index in the String<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, the first letter of the last name is the character right after the space in the String<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, you can use indexOf to get the index of the first occurrence of a given character in a String<br/><br/>
-						<b className="note">hint:</b> for <b>step 2</b>, the index of the first letter of the last name is equal to the index of the first space + 1<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, it's a good idea to review indexing, charAt, and indexOf, but the rest of the hints will walk through what you need to do with Strings",
+							"for step 2, the first letter of the first name is the first character in the String, which is at index 0, since indexing starts at 0",
+							"for step 2, you can use charAt to get a character in a String at a given index in the String",
+							"for step 2, the first letter of the last name is the character right after the space in the String",
+							"for step 2, you can use indexOf to get the index of the first occurrence of a given character in a String",
+							"for step 2, the index of the first letter of the last name is equal to the index of the first space + 1"
+						]}
+						id="boolean-logic-initials"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/boolean-logic-initials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

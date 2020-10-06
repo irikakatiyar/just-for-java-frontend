@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class WhileLoop extends React.Component{
 	constructor(props){
@@ -28,9 +29,9 @@ class WhileLoop extends React.Component{
 				yea, definitely! let's say you want to print out the numbers 1-5. here's how we can do that using a while loop:
 				<div className="code">
 					int count = 1; <div className="comment">//this is the variable we will use to keep track of our #</div><br/>
-					while(count &le; 5)&#123;<br/>
+					while(count &lt;= 5)&#123;<br/>
 					<p>System.out.print(count + " ");<br/>
-					count ++;</p><br/>
+					count++;</p><br/>
 					&#125;
 				</div>
 				our program above will print the following into the console:
@@ -39,7 +40,7 @@ class WhileLoop extends React.Component{
 				</div>
 				ok, that might seem confusing now, but let's <b>break down our code</b>.<br/><br/>
 				<b>first</b>, we start out by making an integer <i>count</i>, which stores the number we are currently printing. pretty straightforward...<br/><br/>
-				<b>next</b>, we create a <b>while loop</b> with the condition of <b>count &le; 5</b>. this means that, as long as our variable <i>count</i> is <b>less than or equal to 5</b>, the code within the curly braces <b>will run</b>.
+				<b>next</b>, we create a <b>while loop</b> with the condition of <b>count &lt;= 5</b>. this means that, as long as our variable <i>count</i> is <b>less than or equal to 5</b>, the code within the curly braces <b>will run</b>.
 				this is exactly what we want, as we wanted to print out every number starting from 1 that is less than 5! great!<br/><br/>
 				<b>lastly</b>, inside our while loop, we want to <b>print out the number we are currently on</b>, and then <b>increase <i>count</i> by 1</b>. great! now time for some practice!<br/>
 				<h3>hey...wait a minute, that  example looks familiar</h3>
@@ -54,7 +55,7 @@ class WhileLoop extends React.Component{
 					<li><b>condition</b></li>
 					<ul>
 						<li>in while loops, the condition is what we put in the parentheses of the while loop</li>
-						<li>in the example above, our condition was <b>count &le; 5</b></li>
+						<li>in the example above, our condition was <b>count &lt;= 5</b></li>
 					</ul>
 					<li><b>iterate</b></li>
 					<ul>
@@ -101,10 +102,13 @@ class WhileLoop extends React.Component{
 						<li>and finally, you will want to increment your variable to move onto the next even number</li>
 					</ol>
 					you got this!<br/><br/>
-					<div className="hints">
-						<b className="note">hint: </b>for <b>step 2</b>, we only want to look at 1-20. assuming our lower bound is taken care of by what we define our variable to be, what condition would we want to make sure that our variable doesn't go beyond 20? maybe something that checks if our variable is less than or equal to 20 (&le; 20)!<br/><br/>
-						<b className="note">hint: </b>for <b>step 4</b>, if we want to only check even numbers, values that come in increments of two, how should we increment our variable to make sure it is only the even numbers? by 2 of course! reminder that a shortcut to use is +=.
-					</div>
+					<Hint
+						hints={[
+							"for step 2, we only want to look at 1-20. assuming our lower bound is taken care of by what we define our variable to be, what condition would we want to make sure that our variable doesn't go beyond 20? maybe something that checks if our variable is less than or equal to 20 (<= 20)!",
+							"for step 4, if we want to only check even numbers, values that come in increments of two, how should we increment our variable to make sure it is only the even numbers? by 2 of course! reminder that a shortcut to use is +="
+						]}
+						id="while-loop-even"
+					/>
 					<br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/while-loop-even?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

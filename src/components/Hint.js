@@ -13,8 +13,8 @@ class Hint extends React.Component{
 	      hintsShown: this.state.hintsShown+1
 	    }, () => {
 	    	if(this.state.hintsShown >= this.props.hints.length) {
-				document.getElementById("hintButton").disabled = true;
-				document.getElementById("hintButton").innerHTML = "that's all the hints we have"
+				document.getElementById(this.props.id).disabled = true;
+				document.getElementById(this.props.id).innerHTML = "that's all the hints"
 			}
 	    })
 	}
@@ -23,7 +23,7 @@ class Hint extends React.Component{
 		return (
 			<div className="hints">
 				<button 
-					id="hintButton"
+					id={this.props.id}
 					class="hintButton"
 					onClick={() => this.hintClicked()}
 				>

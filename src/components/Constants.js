@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class Constants extends React.Component{
 	constructor(props){
@@ -115,9 +116,12 @@ class Constants extends React.Component{
 						</ul>
 						<li>create a regular variable to store your nickname and print it out</li>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>steps 1 and 2</b>, note the difference between the construction of creating a constant and the construction of creating a regular variable<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for steps 1 and 2, note the difference between the construction of creating a constant and the construction of creating a regular variable"
+						]}
+						id="constants-my-name"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/constants-my-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
@@ -143,9 +147,12 @@ class Constants extends React.Component{
 							<li>if your birthday is September 23, 2002, then your program should print out "September 23, 2002"</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 4</b>, you may need to use String concatenation... remember when we learned that the + operator can be used between Strings and variables on the <b className="pageName">Strings page</b>?<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 4, you may need to use String concatenation (remember that the + operator can be used between Strings and variables)"
+						]}
+						id="constants-happy-birthday"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/constants-happy-birthday?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>

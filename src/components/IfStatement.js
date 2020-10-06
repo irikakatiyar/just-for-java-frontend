@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
+import Hint from './Hint';
 
 class IfStatement extends React.Component{
 	constructor(props){
@@ -65,7 +66,7 @@ class IfStatement extends React.Component{
 				</div>
 				this makes sense. since our integer <i>cookies</i> was not equal to 0, we would subtract 1 to give us a final value of 2.
 				<h3>but what's with the pac man lookin symbols?</h3>
-				<b>&lt;</b> is used to check if one value is less than another value. likewise, <b>&le;</b> is used to check if a value is less than or equal to another value. let's check out an example:
+				<b>&lt;</b> is used to check if one value is less than another value. likewise, <b>&lt;=</b> is used to check if a value is less than or equal to another value. let's check out an example:
 				<div className="code">
 					int cookies = 3;<br/>
 					int cookiesWanted = 4; <div className="comment">//this represents the number of cookies we want...we hungry</div><br/>
@@ -81,7 +82,7 @@ class IfStatement extends React.Component{
 					there aren't enough cookies
 				</div><br/>
 				
-				<b>&gt;</b> is used to check if one value is greater than another value. likewise, <b>&ge;</b> is used to check if a value is greater than or equal to another value. let's take a look at an example:<br/>
+				<b>&gt;</b> is used to check if one value is greater than another value. likewise, <b>&gt;=</b> is used to check if a value is greater than or equal to another value. let's take a look at an example:<br/>
 				<div className="code">
 					int budget = 15; <div className="comment">//this is the amt of money (in US Dollars) you can spend</div><br/>
 					int pricePerCookie = 2;<br/>
@@ -236,9 +237,12 @@ class IfStatement extends React.Component{
 							<li>if it doesn't match any of the above colors, then print out "not a valid color"</li>
 						</ul>
 					</ol>
-					<div className="hints">
-						<b className="note">hint:</b> for <b>step 2</b>, you might need to use else if and else statements too, not just if *wink, wink*<br/><br/>
-					</div>
+					<Hint
+						hints={[
+							"for step 2, you might need to use else if and else statements too, not just if *wink, wink*"
+						]}
+						id="if-statement-traffic-lights"
+					/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/if-statement-traffic-lights?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
