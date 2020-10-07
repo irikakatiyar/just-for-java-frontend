@@ -1,4 +1,5 @@
 import React from 'react';
+import HomePageTable from './HomePageTable'
 
 class Home extends React.Component{
 	constructor(props){
@@ -9,7 +10,9 @@ class Home extends React.Component{
 		var greeting = this.props.user ? <div>hi, <b>{this.props.user.displayName.toLowerCase()}</b>! welcome to <b>just for java</b>!</div> : <div>hi! welcome to <b>just for java</b>!</div>
 		return (
 			<div>
-				{greeting}
+				{greeting}<br/>
+				my progress:<br/>
+				<HomePageTable/>
 			</div>
 		)
 	}
