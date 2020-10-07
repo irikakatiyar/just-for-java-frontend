@@ -7,13 +7,12 @@ class Home extends React.Component{
 	}
 
 	render(){
-		var greeting = this.props.user ? <div>hi, <b>{this.props.user.displayName.toLowerCase()}</b>! welcome to <b>just for java</b>!</div> : <div>hi! welcome to <b>just for java</b>!</div>
-		var tableTitle = this.props.user ? <div><b className="note">{this.props.user.displayName.toLowerCase()}'s progress:</b></div> : <div><b className="note">sign in to see your progress! it just takes 13 seconds :)</b></div>
-		var table = this.props.user ? <div><HomePageTable/></div> : null
+		var greeting = this.props.user ? <div><b>hi, {this.props.user.displayName.toLowerCase()}</b>! welcome to <b className="note">just for java</b>!</div> : <div><b>hi!</b> welcome to <b className="note">just for java</b>!</div>
+		var tableTitle = this.props.user ? <div>{this.props.user.displayName.toLowerCase()}'s progress</div> : null
+		var table = this.props.user ? <div><HomePageTable title={tableTitle} user={this.props.user}/></div> : <div><b className="pageName">sign in to see your progress! it just takes 13 seconds :)</b></div>
 		return (
 			<div>
 				{greeting}<br/>
-				{tableTitle}<br/>
 				{table}
 			</div>
 		)

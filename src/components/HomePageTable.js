@@ -41,16 +41,27 @@ class HomePageTable extends React.Component{
 	render(){
 		return (
 			<div>
-				<table>
+				<table className="homeTable">
+					<tr>
+						<th className="homeTableHeader" colspan="2">{this.props.title}</th>
+					</tr>
 					{this.state.pages.map((page, index) => {
 						var status = "todo";
 						if(this.state.data[page]){
 							status = this.state.data[page];
 						}
+						var statusClass = "";
+						if(status == "todo") {
+							statusClass = "todoRow";
+						} else if(status == "in progress") {
+							statusClass = "inProgressRow";
+						} else if(status == "complete") {
+							statusClass = "completeRow";
+						}
 						return (
-							<tr>
-								<td>{page}</td>
-								<td>{status}</td>
+							<tr className={statusClass}>
+								<td className="homeTableCell">{page}</td>
+								<td className="homeTableCell">{status}</td>
 							</tr>
 						)
 					})}
