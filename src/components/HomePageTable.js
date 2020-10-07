@@ -23,7 +23,7 @@ class HomePageTable extends React.Component{
 	}
 
 	getAllTopicStatuses() {
-    	axios.get("http://localhost:5001/just-for-java/us-central1/app/api/get-all-topic-statuses", { 
+    	axios.get("https://us-central1-just-for-java.cloudfunctions.net/app/api/get-all-topic-statuses", { 
 			params: {
       			id: this.props.user.uid
     		}
