@@ -12,7 +12,7 @@ class Home extends React.Component{
 			<div>
 				{greeting}<br/>
 				my progress:<br/>
-				<HomePageTable/>
+				<HomePageTable user={this.props.user}/>
 			</div>
 		)
 	}
