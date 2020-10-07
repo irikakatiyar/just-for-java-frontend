@@ -120,7 +120,7 @@ class ProgressUpdater extends React.Component{
 						    })}
 					    />
 					</div>
-					: "sign in to save your progress!"
+					: <b className="note">sign in to save your progress! it just takes 13 seconds :)</b>
 				}
 			</div>
 		)
