@@ -545,7 +545,8 @@ class Functions extends React.Component{
 	            and here's the blueprint of a function call:
 	            <br/><b><i>&lt;function name&gt;</i>(<i>&lt;arguments&gt;</i>);</b>
 	            <br/><br/>
-	            still lost on what <b>parameter</b>, <b>argument</b>, and <b>return type</b> mean? we gotchu bro:
+	            woaaahhhh bro hold your horses cowboy. i'm still lost on what <b>parameter</b>, <b>argument</b>, and <b>return type</b> mean. 
+	            <br/>dw bro we gotchu:
 	            <ul>
 	            	<li><b>parameter</b> – the variable that is passed into the function that you can use inside the function body</li>
 	            	<li><b>argument</b> – the value that you pass into the function when you call it</li>
@@ -559,8 +560,80 @@ class Functions extends React.Component{
 	            </ul>
 	            yeehaw, bro!
 	            <h3>pit stop</h3>
-	            <b>coming soon!</b>
-	            <br/><br/>
+	            <div className="problem">
+					<b className="note">product:</b><br/><br/>
+					have you memorized your times tables? your <b>goal</b> is to use <b>functions</b> to create a program with a function that <b>finds the product of two doubles</b>.
+					this will require two steps:<br/>
+					<ol>
+						<li>create a function that returns the product of two doubles</li>
+						<ul>
+							<li>you should be able to write the body of this function in a single line of code</li>
+						</ul>
+						<li>in the main method, print out the value that gets returned when you call your product function</li>
+						<ul>
+							<li>you can pass in any arguments that you would like into the function call</li>
+						</ul>
+					</ol>
+					<Hint
+						hints={[
+							"for step 1, in order to compute the product, our function needs two numbers as input, so it will need to take in two doubles as parameters",
+							"for step 1, the output of our function is the product of the two parameters, which is a double, so our return type is double",
+							"for step 2, simply place the function call in between the parentheses of your print statement, and don't forget to include two doubles as arguments separated by a comma"
+						]}
+						id="functions-product"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/functions-product?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/functions-product-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+	            <div className="problem">
+					<b className="note">spaces:</b><br/><br/>
+					your <b>goal</b> is to use <b>functions</b> to create a program with a function that <b>adds a space between every character</b> in a String.
+					this will require three steps:<br/>
+					<ol>
+						<li>create a function called spaces that takes in a String and returns a new String which has spaces in between each character</li>
+						<ul>
+							<li>for example, if you pass in "java", your function should return "j a v a"</li>
+							<li>note that the first character does not have a space before it and the last character does not have a space after it</li>
+							<li>to steer you in the right direction, you'll need to use a loop with an if statement inside it</li>
+						</ul>
+						<li>in the main method, call your spaces function and store the value that gets returned in a variable</li>
+						<li>print the variable you created in step 2</li>
+					</ol>
+					<Hint
+						hints={[
+							"for step 1, our function is taking in a String, so pass one String parameter into your function",
+							"for step 1, our function is outputting a String, so its return type is String",
+							"for step 1, the first thing we should do in the body of our function is create the new String variable that we will return – just set it to an empty String",
+							"for step 1, we need to create a loop that iterates through each character in the String parameter, so our iterator variable will represent the current index and our loop will keep going as long as the current index is less than the length of the String parameter",
+							"for step 1, inside the loop, we can add the character at the current index to our new String variable, and, if we are not at the last index in the String, then we can add a space to our new String variable as well",
+							"for step 1, don't forget to return the String variable you created",
+							"for step 2, to call a function and store the result in a variable, use the following syntax: <variable type> <variable name> = <function name>(<arguments>);"
+						]}
+						id="functions-spaces"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/functions-spaces?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/functions-spaces-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
 	            <ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}

@@ -79,6 +79,7 @@ class GettingStarted extends React.Component{
 						<li>guess what? you will never have to create a repl when you are on just for java because we're so nice that we've embedded all of the repls where you will type code for pit stops on our website</li>
 						<ul>
 							<li>confused by what we mean? take a look at the embedded repl below</li>
+							<li>embedded repls may take a bit to fully load</li>
 						</ul>
 						<li>the first thing we want is for you to get situated with the repl coding environment; there are three parts to a repl: the editor, console, and sidebar</li>
 						<ul>
