@@ -20,7 +20,6 @@ import ArrayList from './ArrayList';
 import HashMap from './HashMap';
 import Arrays from './Array';
 import Arithmetic from './Arithmetic';
-import ForEachLoop from './ForEachLoop';
 import Nesting from './Nesting';
 import GettingStarted from './GettingStarted';
 import TwoDimArrays from './TwoDimArrays';
@@ -152,11 +151,6 @@ class Content extends React.Component{
 		else if(this.props.page === "nesting"){
 			return (
 				<Nesting user={this.props.user} page={this.props.page}/>
-			);
-		}
-		else if(this.props.page === "for-each loop"){
-			return (
-				<ForEachLoop user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "2d array"){

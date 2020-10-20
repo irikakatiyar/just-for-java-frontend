@@ -444,7 +444,7 @@ class Functions extends React.Component{
 	            (<b className="note">btw:</b> wondering how we got that output bro? we printed the characters in the String <b>"howdy, cowboy!"</b> at the following indexes: <b>0, 3, 6, 9, 12</b>. hope that helps bro!)
 	            <br/><br/>
 	            to conclude, really anything can go inside your function body!
-	            <h3>even another function call bro?</h3>
+	            <h3>even another function call, bro?</h3>
 	            ohh yeaaa, now we're getting <b>spicy</b> bro. just like we've been calling all of our functions from the main method, <b>a function that we create can have a call to another function</b>! in the following example, we are going to call the canPurchaseHorse function that we already made:
 	            <div className="code">
 	            public static boolean canPurchaseHorse(double myMoney, double priceOfHorse) &#123;
@@ -632,6 +632,42 @@ class Functions extends React.Component{
 					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/functions-spaces-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">that's odd:</b><br/><br/>
+					your <b>goal</b> is to use <b>functions</b> to create a program with a function that <b>checks if the length of a String is odd</b>.
+					this will require three steps:<br/>
+					<ol>
+						<li>create a function that returns true if the length of a String is odd</li>
+						<ul>
+							<li>you can either use an if statement to do this or the single line of code shortcut we discussed earlier</li>
+						</ul>
+						<li>in the main method, call your function, passing a String with an odd length as an argument, and print your result</li>
+						<li>in the main method, call your function, passing a String with an even length as an argument, and print your result</li>
+					</ol>
+					<Hint
+						hints={[
+							"for step 1, our function will take in the String whose length it will check as a parameter and will return a boolean",
+							"for step 1, you can use str.length() to obtain the length of a String str",
+							"for step 1, to write the body of your function in one line of code, you can simply return a condition as a boolean in your return statement",
+							"for step 1, when you divide an odd number by 2, its remainder is always 1",
+							"for step 1, you can use the % operator, called modulus, to check if the length of the String parameter divided by 2 yields a remainder of 1",
+							"for steps 2 and 3, make sure to put a String in between the parentheses of your function call to pass it as an argument"
+						]}
+						id="functions-thats-odd"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/functions-thats-odd?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/functions-thats-odd-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>

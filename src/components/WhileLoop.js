@@ -105,17 +105,16 @@ class WhileLoop extends React.Component{
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">even:</b><br/><br/>
-					your <b>goal</b> is to use <b>while loops</b> to <b>print out all even numbers between 1 and 20</b>. this will require six steps<br/>
+					your <b>goal</b> is to use <b>while loops</b> to <b>print out all even numbers between 1 and 20</b>. this will require four steps<br/>
 					<ol>
 						<li>first, you will need to create a varibale to store the value that you are currently on</li>
 						<li>next, you will need to create a while loop with a condition to make sure that you are looking through the specific range of numbers of 1-20</li>
 						<li>after that, you will need to print out the number</li>
 						<li>and finally, you will want to increment your variable to move onto the next even number</li>
 					</ol>
-					you got this!<br/><br/>
 					<Hint
 						hints={[
-							"for step 2, we only want to look at 1-20. assuming our lower bound is taken care of by what we define our variable to be, what condition would we want to make sure that our variable doesn't go beyond 20? maybe something that checks if our variable is less than or equal to 20 (<= 20)!",
+							"for step 2, we only want to look at 1-20; assuming our lower bound is taken care of by what we define our variable to be, what condition would we want to make sure that our variable doesn't go beyond 20? maybe something that checks if our variable is less than or equal to 20 (<= 20)!",
 							"for step 4, if we want to only check even numbers, values that come in increments of two, how should we increment our variable to make sure it is only the even numbers? by 2 of course! reminder that a shortcut to use is +="
 						]}
 						id="while-loop-even"
