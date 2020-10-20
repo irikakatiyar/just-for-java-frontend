@@ -5,15 +5,26 @@ import Hint from './Hint';
 class Arithmetic extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				we learned on the <b className="pageName">variables page</b> how to create <b>integers</b> and <b>doubles</b>. on this page, we are going to use these two variable types in <b>arithmetic operations</b>. oooh, fancy right? not really. <b>arithmetic</b> is just a cool-sounding word for the study of numbers and operations on them, such as addition, subtraction, multiplication, and division. here are the <b>five operations</b> and their corresponding <b>operator symbols</b> that java provides:
 				<ul>
@@ -439,9 +450,11 @@ class Arithmetic extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

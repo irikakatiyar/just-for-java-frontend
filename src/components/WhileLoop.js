@@ -5,15 +5,26 @@ import Hint from './Hint';
 class WhileLoop extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				a <b>while loop</b> is a <b>type of loop</b> that is used to <b>perform a block of code <i>while</i> a specific condition is met</b>. once it is not met, or is false, then the code block will stop being run and the code will move onto the next block of code outside of the while loop.
 				<h3>wait, so how do you make a while loop?</h3>
@@ -123,9 +134,11 @@ class WhileLoop extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

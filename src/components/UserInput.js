@@ -5,15 +5,26 @@ import Hint from './Hint';
 class UserInput extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				sometimes in our program we want to get information from the user, such as their name. you will learn how to get <b>user input from the console</b>, which will allow you to create super cool programs that can actually interact with the user!
 				<h3>awesome! can i create one of these super cool programs rn?</h3>
@@ -52,7 +63,7 @@ class UserInput extends React.Component{
 				<h3>step 5: do something with their input</h3>
 				this step will vary depending on what your program is supposed to do. 
 				<br/>
-				for our program, we want to say hello to the user. now that we have the user's name stored in the variable <i>name</i>, we can print out a greeting to the user saying "hello <i>name</i>". to do this, we can use <b>String concatenation</b>. (<b className="note">psst. need a reminder</b> of what in the world String concatenation is? check out the <b className="pageName">Strings page</b>!) to add our variable <i>name</i> to "hello ". (<b className="note">btw:</b> make sure you add a space after hello so that there is a space between hello and the user's name.)
+				for our program, we want to say hello to the user. now that we have the user's name stored in the variable <i>name</i>, we can print out a greeting to the user saying "hello <i>name</i>". to do this, we can use <b>String concatenation</b>. (<b className="note">psst. need a reminder</b> of what in the world String concatenation is? check out the <b className="pageName">strings page</b>!) to add our variable <i>name</i> to "hello ". (<b className="note">btw:</b> make sure you add a space after hello so that there is a space between hello and the user's name.)
 				<div className="code">System.out.println("hello " + name);</div>
 				awesome! we now have a fully functional program that asks the user for their name and prints out "hello <i>name</i>".
 				<h3>step 6: aw it's time to close</h3>
@@ -185,9 +196,11 @@ class UserInput extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

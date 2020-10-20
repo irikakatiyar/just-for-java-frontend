@@ -5,15 +5,26 @@ import Hint from './Hint';
 class IfStatement extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				an <b>if statement</b> is used to determine if a specific block of code <b>should or should not be run</b>. 
 				<br/>
@@ -37,7 +48,7 @@ class IfStatement extends React.Component{
 				</ul>
 				<h3>ok, that just looks like math</h3>
 				it might right now, but let's go through each of them...<br/><br/>
-				<b>==</b> is used to check equality between <b>primitive types</b> (<b className="note">psst. need a reminder</b> of what in the world a primitive type is? check out the <b className="pageName">Strings page</b>!)
+				<b>==</b> is used to check equality between <b>primitive types</b> (<b className="note">psst. need a reminder</b> of what in the world a primitive type is? check out the <b className="pageName">strings page</b>!)
 				let's check out an example:
 				<div className="code">
 					int cookies = 0; <div className="comment">//this will keep track of how many cookies are in our "jar"</div><br/>
@@ -207,6 +218,25 @@ class IfStatement extends React.Component{
 				<div className="code">
 					you're at speed limit
 				</div>
+				yay! nice work!
+				<h3>there are two types of people in this world</h3>
+				<div className="code">
+				if(<div className="comment">/*condition*/</div>)&#123;
+				<br/>
+				<p><div className="comment">//insert some code here</div></p>
+				<br/>
+				&#125;
+				</div>
+				<div className="code">
+				if(<div className="comment">/*condition*/</div>)
+				<br/>
+				&#123;
+				<br/>
+				<p><div className="comment">//insert some code here</div></p>
+				<br/>
+				&#125;
+				</div>
+				hahahaha <b>*laughs at own joke*</b>
 				<h3>if(recap == true)&#123;</h3>
 				<b>oooooo!</b> you made it to recap!<br/><br/>
 				remember, the blueprint of an <b>if statement</b> with <b>else if</b> as well as <b>else</b> is<br/>
@@ -256,9 +286,11 @@ class IfStatement extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

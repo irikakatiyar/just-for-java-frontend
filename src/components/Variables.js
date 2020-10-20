@@ -5,15 +5,25 @@ import Hint from './Hint';
 class Variables extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
 	}
 
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
+	}
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				<b>variables</b> are used to store information. 
 				<h3>wait, so how do you create a variable?</h3>
@@ -43,8 +53,8 @@ class Variables extends React.Component{
 					double number = 3.5;
 				</div>
 				<h3>strings? you mean what you use to make bracelets?</h3>
-				nope. in java, <b>strings</b> are used to store text. they're denoted using double quotation marks. if you set a string variable equal to <b>""</b>, that's an empty string, meaning it doesn't contain any text yet.
-				to make a string variable, you need to type <b>String</b> as the type. strings are a lot cooler than the other variable types. if you want to learn why that is, check out the <b className="pageName">Strings page</b>!
+				nope. in java, <b>strings</b> are used to store text. they're denoted using double quotation marks. (<b className="note">btw:</b> if you set a string variable equal to <b>""</b>, that's an empty string, meaning it doesn't contain any text yet.)
+				to make a string variable, you need to type <b>String</b> as the type. strings are a lot cooler than the other variable types. if you want to learn why that is, check out the <b className="pageName">strings page</b>!
 				below is an example of a string variable with the name <i>word</i> being used to store the value "hello world".<br/>
 				<div className = "code">
 					String word = "hello world"; <div className = "comment">//note that the value is surrounded by double quotation marks</div>
@@ -64,8 +74,6 @@ class Variables extends React.Component{
 				</div>
 				<h3>umm so what happens after you create a variable?</h3>
 				great question! after you create a variable, you can either <b>change the value of it</b> or <b>use it in your program</b>!
-				<br/><br/>
-				<b>change the value of your variable</b>
 				<br/>
 				after you create a variable of a certain type, <b>you can change the value of the variable</b>, but <b>you cannot change its type</b>. here's an example to help you understand this concept:
 				<br/>
@@ -89,8 +97,6 @@ class Variables extends React.Component{
 				<br/>
 				hello = "goodbye";
 				</div>
-				<br/>
-				<b>use your variable in your program</b>
 				<br/>
 				since all we have learned so far is variables, we don't quite have the knowledge yet to actually use our variables in our program... <b>but don't worry!</b> you will learn this <b>very soon</b>!! for now, simply make sure you are comfortable with <b>creating a variable</b> and <b>changing a variable</b>.
 				<h3>boolean timeForRecap = true;</h3>
@@ -137,7 +143,7 @@ class Variables extends React.Component{
 					<ol>
 						<li>create a variable to store your favorite class</li>
 						<li>create a variable to store your answer to the question <i>do you like school or not?</i></li>
-						<li>create a variabele to store the number of classes you have</li>
+						<li>create a variable to store the number of classes you have</li>
 						<li>create a variable to store your letter grade (A, B, C, D, or F) in your favorite class</li>
 					</ol>
 					<Hint
@@ -160,6 +166,39 @@ class Variables extends React.Component{
 					hopefully your code looks similar to ours <b>:)</b><br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-savvy-school-scheduling-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">sunny:</b><br/><br/>
+					is it sunny outside? your <b>goal</b> is to use <b>variables</b> to store whether or not it is sunny and to change its value.
+					this will require two steps: <br/>
+					<ol>
+						<li>create a variable called <i>isSunny</i> that stores whether or not it is sunny</li>
+						<ul>
+							<li>set it to the appropriate value so that it is not sunny</li>
+						</ul>
+						<li>change the value of your variable so that it is sunny now</li>
+					</ol>
+					<Hint
+						hints={[
+							"for step 1, your variable can only have two possible values: it is sunny, or it isn't sunny – using a boolean sounds like a good idea",
+							"for step 1, if it is not sunny, then the initial value of your variable should be false",
+							"for step 2, if it is sunny now, then the new value of your variable should be true"
+						]}
+						id="variables-sunny"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-i-scream-ice-cream?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. (<b className="note">psst.</b> confused about what a comment is? don't worry about it for now because we're gonna talk about that next on the <b className="pageName">comments page</b>!) 
+					hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-sunny-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>
@@ -199,6 +238,8 @@ class Variables extends React.Component{
 				<ProgressUpdater 
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

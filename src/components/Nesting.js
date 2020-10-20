@@ -5,15 +5,26 @@ import Hint from './Hint';
 class Nesting extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				in programming, <b>nesting</b> simply means <b>putting code blocks inside each other</b>, such as <b>if statements</b>, <b>for loops</b>, and <b>while loops</b>. (<b className="note">psst. need a reminder</b> on how these three code blocks work? check out the <b className="pageName">if statement page</b>, the <b className="pageName">for loop page</b>, and the <b className="pageName">while loop page</b>!) now, you might be thinking, what's the point of putting an if statement inside a while loop inside a for loop? nesting allows our programs to become <b>more complex in their functionality</b>!
 				<h3>let's get funky</h3>
@@ -249,9 +260,11 @@ class Nesting extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

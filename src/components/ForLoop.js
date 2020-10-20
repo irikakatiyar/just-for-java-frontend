@@ -5,15 +5,26 @@ import Hint from './Hint';
 class ForLoop extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				a <b>loop</b> is <b>a repeating block of code</b>. here, we will focus on <b>for loops</b>, a type of loop that iterates through your block of code a <b>specific number of times</b>.
 				<h3>wait, so how do you create a for loop?</h3>
@@ -75,13 +86,13 @@ class ForLoop extends React.Component{
 				<b>i*=2</b> works by multiplying i by 2 each time it iterates through the for loop. so, with this in mind, i would start at 1, then 2, then 4, then 8, then 16, and so on.<br/>
 				<h3>...and last example, we promise:</h3>
 				in the first example, we printed out <b>i</b>, and in the second example, we added <b>i</b> to a <i>sum</i> variable. in this last example, i want to show you a different way that you can use the iterator variable, <b>int i</b>. 
-				what if <b>i</b> represented an <b>index</b> in a <b>String</b>? (<b className="note">psst. need a reminder</b> on what an index is and how it relates to Strings? check out the <b className="pageName">Strings page</b>!) let's try to use a for loop to <b>iterate through each character in a String</b>. 
+				what if <b>i</b> represented an <b>index</b> in a <b>String</b>? (<b className="note">psst. need a reminder</b> on what an index is and how it relates to Strings? check out the <b className="pageName">strings page</b>!) let's try to use a for loop to <b>iterate through each character in a String</b>. 
 				<ul>
 					<li>for the first component of our for loop, <b>initialize</b>, we want to set <b>int i</b> to the starting value. what should our starting value be? (<b className="note">hint:</b> think about what number indexing start at.) because <b>indexing starts at 0</b>, our first component should be <b>int i = 0</b>.</li>
-					<li>for the second component of our for loop, <b>condition</b>, we want to answer the question: when should our for loop stop? (<b className="note">hint:</b> our for loop should stop after we've looped through each index in the given String.) we learned on the <b className="pageName">Strings page</b> that indexing goes from 0, inclusive, till the length of the String, exclusive (<b className="note">btw:</b> the length of a String is equal to the number of characters in the String). that means that we want our for loop to keep going as long as <b>i is less than the length of the String</b>. (<b className="note">btw:</b> to get the length of a String <i>str</i>, use the syntax <b>str.length()</b>.) therefore, our second component should be <b>i &lt; str.length()</b>.</li>
+					<li>for the second component of our for loop, <b>condition</b>, we want to answer the question: when should our for loop stop? (<b className="note">hint:</b> our for loop should stop after we've looped through each index in the given String.) we learned on the <b className="pageName">strings page</b> that indexing goes from 0, inclusive, till the length of the String, exclusive (<b className="note">btw:</b> the length of a String is equal to the number of characters in the String). that means that we want our for loop to keep going as long as <b>i is less than the length of the String</b>. (<b className="note">btw:</b> to get the length of a String <i>str</i>, use the syntax <b>str.length()</b>.) therefore, our second component should be <b>i &lt; str.length()</b>.</li>
 					<li>for the third component of our for loop, <b>iterate</b>, we want to think about what should happen to <b>i</b> each time we iterate. since <b>i</b> is the index, we want <b>i</b> to increase by 1 each time since <b>we are moving to the next index each iteration</b>, so our third component should be <b>i++</b>.</li>
 				</ul>
-				now that we have all three components of our for loop, <b>let's code it!</b> let's have our program print out each character in String <i>str</i> on its own line. (<b className="note">psst. need a reminder</b> of how to use <b>charAt()</b> to get the character at a given index in a String? check out the <b className="pageName">Strings page</b>!)
+				now that we have all three components of our for loop, <b>let's code it!</b> let's have our program print out each character in String <i>str</i> on its own line. (<b className="note">psst. need a reminder</b> of how to use <b>charAt()</b> to get the character at a given index in a String? check out the <b className="pageName">strings page</b>!)
 				<div className="code">
 				String str = "happy birthday";
 				<br/>
@@ -196,9 +207,11 @@ class ForLoop extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

@@ -5,15 +5,26 @@ import Hint from './Hint';
 class Comments extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				<b>comments</b> are used to <b>write notes</b> next to your code <b>that aren't executed when you run your code</b>. 
 				if, on the <b className="pageName">variables page</b>, you saw notes denoted with two forward slashes, those were comments!
@@ -45,14 +56,14 @@ class Comments extends React.Component{
 				</div>
 				in the code above, you can see both single-line and multi-line comments being used.
 				<h3>//is it already time for recap?</h3>
-				<b>yayyyy!</b> you made it to reacap!<br/><br/>
+				<b>yayyyy!</b> you made it to recap!<br/><br/>
 				so, just to sum up, the two types of comments are <b>single-line comments</b>, denoted by <b>//</b>, and <b>multi-line comments</b>, denoted by <b>/* ... */</b>. <br/><br/>
 				comments are <b>really important</b> because they help increase your code's <b>readability</b>. now, going forward, be sure to comment on your code! :)
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">birthday partayy:</b><br/><br/>
-					your <b>goal</b> is to <b>create variables</b> that can store various things for planning your party, and <b>use comments to increase readability</b>. 
-					through this prolblem, you are going to make some variables to store what present you want, how many people you want at your party, and what your age is. to do this, we will need to do five steps:<br/>
+					your <b>goal</b> is to use <b>comments</b> to create variables that can store various things for planning your party, with <b>comments in your code to increase readability</b>. 
+					to do this, we will need to do five steps:<br/>
 					<ol>
 						<li>first, you are going to want to make a comment to explain what the program is doing; this comment will be two sentences just describing what the intent is of your program</li>
 						<li>you need to next make a variable that stores what present you want for your birthday, and don't forget to comment!</li>
@@ -60,7 +71,6 @@ class Comments extends React.Component{
 						<li>next, make a variable to store how old you are turning on your birthday, with a comment to show what the variable is</li>
 						<li>oh no! somebody you invited got sick and can't make it! change your variable that stored the number of people to reflect what happened, and don't forget to comment why you are doing so</li>
 					</ol>
-					good luck!<br/><br/>
 					<Hint
 						hints={[
 							"for step 1, because this comment is multiple sentences, it's best to use a multi-line comment",
@@ -83,9 +93,47 @@ class Comments extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<div className="problem">
+					<b className="note">shoppinh spree:</b><br/><br/>
+					let's go to the mall! your <b>goal</b> is to use <b>comments</b> to create variables that store the number of items and the total price of your shopping spree at the mall, with <b>comments in your code to increase readability</b>. 
+					to do this, we will need to do two steps:<br/>
+					<ol>
+						<li>create a variable to store the number of items you bought during your shopping spree</li>
+						<ul>
+							<li>don't forget to use a comment to explain what this variable is storing</li>
+						</ul>
+						<li>create a variable to store the total price of all the items you bought</li>
+						<ul>
+							<li>don't forget to use a comment to explain what this variable is storing</li>
+						</ul>
+					</ol>
+					<Hint
+						hints={[
+							"for step 1, what variable type can we use to store the number of items you bought? an int!",
+							"for step 2, what variable type can we use to store the number of items you bought? a double!",
+							"for steps 1-2, both type of comments will work in this scenario, so try using the one that you need more practice with"
+						]}
+						id="comments-shopping-spree"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/comments-shopping-spree?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. in this case, because part of the code is comments, we've added comments that say <i>code starts here</i> and <i>code ends here</i> as dividers for the code and the explanation.
+					hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/comments-shopping-spree-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

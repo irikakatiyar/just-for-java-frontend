@@ -5,15 +5,26 @@ import Hint from './Hint';
 class BooleanLogic extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				welcome to <b>boolean logic</b>! our goal for this page is for you to understand what <b>2B||!2B</b> means! 
 				<br/>
@@ -39,7 +50,7 @@ class BooleanLogic extends React.Component{
 					</tr>
 				</table>
 				<h3>! understanding this quite yet? maybe an example will help</h3>
-				here's an example: let's make a program that checks if a password that the user enters is not empty. (<b className="note">psst. need a reminder</b> on how in the world you can get and store user input? check out the <b className="pageName">user input page</b>!) (<b className="note">psst. need a reminder</b> on how to check if a String is empty or not? check out the <b className="pageName">Strings page</b>!)
+				here's an example: let's make a program that checks if a password that the user enters is not empty. (<b className="note">psst. need a reminder</b> on how in the world you can get and store user input? check out the <b className="pageName">user input page</b>!) (<b className="note">psst. need a reminder</b> on how to check if a String is empty or not? check out the <b className="pageName">strings page</b>!)
 				<br/><br/>
 				ready for the <b>big reveal</b>? the first thing you need to do is import the <b>Scanner</b> class to help you get user input. at the <b>top of your program</b>, you should have the following line of code:
 				<div className="code">
@@ -244,7 +255,8 @@ class BooleanLogic extends React.Component{
 				you can set your variables to any values you like, but for our code above, here's what prints out in the console:
 				<div className="code">
 				yay! you can buy this super cute t-shirt!
-				</div>
+				</div><br/>
+				phew that was a lot of coding – awesome work bro! time for a <b>bad joke</b> to brighten up your day: <b>!false</b>. it's funny because it's <b>true</b>. haha.
 				<h3>!(!recap)</h3>
 				<b>awesome!</b> you made it to recap!
 				<br/><br/>
@@ -446,9 +458,11 @@ class BooleanLogic extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

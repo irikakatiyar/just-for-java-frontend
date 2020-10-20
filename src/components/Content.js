@@ -26,7 +26,7 @@ import GettingStarted from './GettingStarted';
 import TwoDimArrays from './TwoDimArrays';
 import Casting from './Casting';
 import Constants from './Constants';
-import MoreFunctions from './MoreFunctions';
+import Overloading from './Overloading';
 
 class Content extends React.Component{
 	constructor(props){
@@ -52,11 +52,6 @@ class Content extends React.Component{
 		else if(this.props.page === "contact us"){
 			return (
 				<ContactUs user={this.props.user} page={this.props.page}/>
-			);
-		}
-		else if(this.props.page === "more functions") {
-			return (
-				<MoreFunctions user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "variables"){
@@ -172,6 +167,11 @@ class Content extends React.Component{
 		else if(this.props.page === "casting"){
 			return (
 				<Casting user={this.props.user} page={this.props.page}/>
+			);
+		}
+		else if(this.props.page === "overloading"){
+			return (
+				<Overloading user={this.props.user} page={this.props.page}/>
 			);
 		}
 	}

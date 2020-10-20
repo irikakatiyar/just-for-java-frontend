@@ -11,9 +11,6 @@ const options = [
 class ProgressUpdater extends React.Component{
 	constructor(props){
 		super(props)
-		this.state={
-	      selectedOption: { label: "todo", value: "todo" }
-	    }
 	}
 
 	componentDidMount() {
@@ -29,18 +26,15 @@ class ProgressUpdater extends React.Component{
 	}
 
 	handleChange = selectedOption => {
-    	this.setState({ 
-    		selectedOption: selectedOption
-    	}, () => {
-	    	axios.post("https://us-central1-just-for-java.cloudfunctions.net/app/api/update-topic-status", { 
-				id: this.props.user.uid,
-				topic: this.props.page,
-				status: this.state.selectedOption.value
-			})
-		      .then(res => {
-		        console.log(res.data);
-		      })
-	    })
+		this.props.update(selectedOption.value);
+    	axios.post("https://us-central1-just-for-java.cloudfunctions.net/app/api/update-topic-status", { 
+			id: this.props.user.uid,
+			topic: this.props.page,
+			status: selectedOption.value
+		})
+	      .then(res => {
+	        console.log(res.data);
+	      })
 	};
 
 	getTopicStatus() {
@@ -53,34 +47,15 @@ class ProgressUpdater extends React.Component{
 	      .then(res => {
 	        console.log(res.data);
 	        if(!res.data.status) {
-	        	this.setState({
-	        		selectedOption: { label: "todo", value: "todo" }
-	        	})
+	        	this.props.update("todo");
 	        } else {
-	        	this.setState({
-	        		selectedOption: { label: res.data.status, value: res.data.status }
-	        	})
+	        	this.props.update(res.data.status);
 	        }
 	      })
 	}
 
-	updateTopicStatus(){
-		var status = document.getElementById("myProgressUpdater").value;
-		this.setState({
-	      selectedOption: status
-	    }, () => {
-	    	axios.post("https://us-central1-just-for-java.cloudfunctions.net/app/api/update-topic-status", { 
-				id: this.props.user.uid,
-				topic: this.props.page,
-				status: this.state.selectedOption
-			})
-		      .then(res => {
-		        console.log(res.data);
-		      })
-	    })
-	}
-
 	render(){
+		const selectedOption = { label: this.props.progress, value: this.props.progress }
 		const customStyles = {
 		  option: (provided, state) => ({
 		    ...provided,
@@ -89,8 +64,8 @@ class ProgressUpdater extends React.Component{
 		  }),
 		  control: (provided, state) => ({
 		  	...provided,
-		  	backgroundColor: this.state.selectedOption.value == "todo" ? '#6B9080' : this.state.selectedOption.value == "in progress" ? '#A4C3B2' : '#cce3de',
-		    border: this.state.selectedOption.value == "todo" ? '#6B9080' : this.state.selectedOption.value == "in progress" ? '#A4C3B2' : '#cce3de',
+		  	backgroundColor: this.props.progress == "todo" ? '#6B9080' : this.props.progress == "in progress" ? '#A4C3B2' : '#cce3de',
+		    border: this.props.progress == "todo" ? '#6B9080' : this.props.progress == "in progress" ? '#A4C3B2' : '#cce3de',
 		  }),
 		  singleValue: (provided, state) => ({
 		  	color: '#172A3A',
@@ -102,7 +77,7 @@ class ProgressUpdater extends React.Component{
 					<div>
 						<Select
 							styles={customStyles}
-					      	value={this.state.selectedOption}
+					      	value={selectedOption}
 					      	onChange={this.handleChange}
 					      	options={options}
 					      	isSearchable={false}

@@ -5,15 +5,25 @@ import Hint from './Hint';
 class Mathematics extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
 	}
 
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
+	}
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				we've already discussed <b>+</b>, <b>-</b>, <b>*</b>, <b>/</b>, and <b>%</b> (<b className="note">psst. need a reminder</b> on what these operators mean? check out the <b className="pageName">arithmetics page</b>!). but what if we want to do more <b>complex math operations</b>, such as raising a number to a power, or getting the absolute value of a number? luckily for us, the <b>Math</b> library provides us with a variety of math constants and complex functions. let's take a look at all of the brand new and super cool functionality the <b>Math</b> library gives us! 
 				<br/>
@@ -45,7 +55,7 @@ class Mathematics extends React.Component{
 				Math.min(<i>&lt;first int or double&gt;</i>, <i>&lt;second int or double&gt;</i>)
 				</b>
 				<br/><br/>
-				here's a basic example of some code using <b>Math.min()</b> that prints out the younger age between two variables: <i>myAge</i> and <i>yourAge</i> (<b className="note">psst. need a reminder</b> on why there's a <b>+</b> sign after the String in the print statement at the bottom of the code? check out the <b className="pageName">Strings page</b>!). try to predict what will be printed out to the console!
+				here's a basic example of some code using <b>Math.min()</b> that prints out the younger age between two variables: <i>myAge</i> and <i>yourAge</i> (<b className="note">psst. need a reminder</b> on why there's a <b>+</b> sign after the String in the print statement at the bottom of the code? check out the <b className="pageName">strings page</b>!). try to predict what will be printed out to the console!
 				<div className="code">
 				int myAge = 18;
 				<br/>
@@ -259,9 +269,11 @@ class Mathematics extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

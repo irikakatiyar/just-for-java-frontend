@@ -5,15 +5,26 @@ import Hint from './Hint';
 class Printing extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				<b>printing</b> is used to <b>display information in the console</b>. this is how we <b>output</b> anything to the user, and is a great way to <b>check if your code is working</b> properly.<br/>
 				there are two types of printing statements:<br/>
@@ -108,8 +119,49 @@ class Printing extends React.Component{
 				you can print out <b>Strings</b>, <b>characters</b>, <b>integers</b>, <b>doubles</b>, and <b>booleans</b>. finally, you can also print out <b>variables</b> by putting the variable name in between the parentheses of the print statement.
 				<h3>pit stop</h3>
 				<div className="problem">
+					<b className="note">dream trip:</b><br/><br/>
+					if you could go anywhere in the world, where would you go? your <b>goal</b> is to use <b>printing</b> to display <b>your dream trip</b>, including a description of what you would do, how many days you would be gone for, and a price estimate.
+					this will require four steps:<br/>
+					<ol>
+						<li>print out the location of where you would go if you could go anywhere in the world</li>
+						<ul>
+							<li>this can be a country, a city, or a local place</li>
+						</ul>
+						<li>on the next line, print out a description of what you would do during your dream trip</li>
+						<ul>
+							<li>feel free to get creative with this one :)</li>
+						</ul>
+						<li>on the next line, print out the number of days you will be gone for</li>
+						<li>on the next line, print out the how much you think your dream trip would cost – a price estimate</li>
+					</ol>
+					<Hint
+						hints={[
+							"for steps 1-4, you don't need to create any variables; you can just put whatever you want to print inside the parentheses of the print statement",
+							"for steps 1-4, did you notice repetitions of the phrase \"on the next line\"? since you want to print each piece of information on its own line, you should use next-line printing",
+							"for steps 1-2 because the location and description are both text, print out Strings", 
+							"for step 3, because the number of days is an integer, print out an int",
+							"for step 4, because the price estimate is a decimal, print out a double"
+						]}
+						id="printing-dream-trip"
+					/>
+					<br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/printing-dream-trip?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. 
+					hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/printing-dream-trip-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
 					<b className="note">envelope:</b><br/><br/>
-					your <b>goal</b> is to <b>create variables</b> that store the various components of what would be written on an evnelope addressed to you. you will then need to <b>print</b> out the variables using the <b>two methods</b> that you just learned.
+					your <b>goal</b> is to use <b>printing</b> to display <b>what would be written on an evnelope addressed to you</b> using the two printing methods we just learned.
 					this will require five steps:<br/>
 					<ol>
 						<li>first, you will create a variable to store your first name</li>
@@ -124,7 +176,7 @@ class Printing extends React.Component{
 					<Hint
 						hints={[
 							"for steps 1-4, because these are storing text, you would want to use Strings as your variable type",
-							"for step 5, if you need to print your name on one line, what type of printing would you need to use for the first line? maybe single-line? and if you need to print the other parts on separate lines, what type of printing would that be? maybe multi-line? hmmm..."
+							"for step 5, if you need to print your name on one line, what type of printing would you need to use for the first line? maybe same-line? and if you need to print the other parts on separate lines, what type of printing would that be? maybe next-line? hmmm..."
 						]}
 						id="printing-envelope"
 					/>
@@ -143,9 +195,11 @@ class Printing extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>

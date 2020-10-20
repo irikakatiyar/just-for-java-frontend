@@ -2,7 +2,7 @@ import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
 
-class MoreFunctions extends React.Component{
+class Overloading extends React.Component{
 	constructor(props){
 		super(props)
 	}
@@ -17,4 +17,4 @@ class MoreFunctions extends React.Component{
 	}
 }
 
-export default MoreFunctions;
+export default Overloading;

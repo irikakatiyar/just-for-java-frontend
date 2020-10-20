@@ -5,14 +5,25 @@ import Hint from './Hint';
 class Strings extends React.Component{
 	constructor(props){
 		super(props)
+		this.state={
+			progress: "todo"
+		}
+	}
+
+	updateProgressState(progress){
+		this.setState({
+			progress: progress
+		});
 	}
 
 	render(){
 		return (
 			<div>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				as we learned on the <b className="pageName">variables page</b>, <b>Strings</b> are used to store text and are denoted using double quotation marks. Strings are different from the other variable types that we have learned about so far – integers, doubles, characters, booleans. (<b className="note">btw:</b> the difference you may have noticed is that <b>String</b> has a capital first letter whereas <b>int</b>, <b>double</b>, <b>char</b>, and <b>boolean</b> are all lowercase.) Strings are special, and that's why we've dedicated a whole page to them!
 				<h3>"hello world"</h3>
@@ -528,9 +539,11 @@ class Strings extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<ProgressUpdater 
+				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
+	              progress={this.state.progress}
+	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
 			</div>
