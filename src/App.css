@@ -178,6 +178,11 @@ iframe{
   padding: 10px;
 }
 
+.email{
+  color: #A4C3B2;
+  font-weight: 600;
+}
+
 .progress{
   margin-bottom: 30px;
   font-weight: 400;
