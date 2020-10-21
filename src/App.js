@@ -46,12 +46,13 @@ class App extends React.Component{
         <div className = "title">
           <h1>
             just for java
-            {
+          </h1>
+          {
               user
                 ? <button className="login" onClick={signOut}>sign out of account</button>
                 : <button className="login" onClick={signInWithGoogle}>sign in with google</button>
             }
-          </h1>
+
         </div>
         <div className = "bottom">
           <div className = "sidebar">
