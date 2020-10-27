@@ -256,7 +256,7 @@ class IfStatement extends React.Component{
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">traffic lights:</b><br/><br/>
-					your <b>goal</b> is to use <b>if statements</b> to <b>print out a command</b> into the console depending on what color our traffic light is. this will require two steps:<br/>
+					your <b>goal</b> is to use <b>if statements</b> to <b>print out a command</b> into the console depending on what <b>color our traffic light</b> is. this will require two steps:<br/>
 					<ol>
 						<li>create a variable to keep track of the color of the light (red, yellow, green)</li>
 						<li>use an if statement to print out a specific command depending on the color of the traffic light</li>
@@ -269,7 +269,8 @@ class IfStatement extends React.Component{
 					</ol>
 					<Hint
 						hints={[
-							"for step 2, you might need to use else if and else statements too, not just if *wink, wink*"
+							"for step 2, you might need to use else if and else statements too, not just if *wink, wink*",
+							"for step 2, remember to use str1.equals(str2) to compare equality between two Strings str1 and str2"
 						]}
 						id="if-statement-traffic-lights"
 					/>
@@ -283,6 +284,38 @@ class IfStatement extends React.Component{
 				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/if-statement-traffic-lights-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">positive vibes only:</b><br/><br/>
+					sorry, we don't accept negative energy – only positive vibes here. your <b>goal</b> is to use <b>if statements</b> to <b>check if a number is positive or not</b>. this will require two steps:<br/>
+					<ol>
+						<li>create a variable to store any integer of your choice</li>
+						<li>use an if statement to check if your integer is positive</li>
+						<ul>
+							<li>just to clarify, a positive number is any number above 0</li>
+							<li>if your integer is positive, then print out a positive message</li>
+							<li>here's an example of a positive message for y'all: "positive vibes only yasss qweens"</li>
+						</ul>
+					</ol>
+					<Hint
+						hints={[
+							"for step 2, zero is not – we repeat, not – a positive number",
+							"for step 2, your condition should be num > 0, where num is your integer variable",
+						]}
+						id="if-statement-positive-vibes-only"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/if-statement-positive-vibes-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/if-statement-positive-vibes-only-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>
