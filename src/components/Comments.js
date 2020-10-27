@@ -62,8 +62,7 @@ class Comments extends React.Component{
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">birthday partayy:</b><br/><br/>
-					your <b>goal</b> is to use <b>comments</b> to create variables that can store various things for planning your party, with <b>comments in your code to increase readability</b>. 
-					to do this, we will need to do five steps:<br/>
+					your <b>goal</b> is to use <b>comments</b> to create variables that can store various things for planning your party, with <b>comments in your code to increase readability</b>. this will require five steps:<br/>
 					<ol>
 						<li>first, you are going to want to make a comment to explain what the program is doing; this comment will be two sentences just describing what the intent is of your program</li>
 						<li>you need to next make a variable that stores what present you want for your birthday, and don't forget to comment!</li>
@@ -94,9 +93,8 @@ class Comments extends React.Component{
 				</div>
 				<br/>
 				<div className="problem">
-					<b className="note">shoppinh spree:</b><br/><br/>
-					let's go to the mall! your <b>goal</b> is to use <b>comments</b> to create variables that store the number of items and the total price of your shopping spree at the mall, with <b>comments in your code to increase readability</b>. 
-					to do this, we will need to do two steps:<br/>
+					<b className="note">shopping spree:</b><br/><br/>
+					let's go to the mall! your <b>goal</b> is to use <b>comments</b> to create variables that store the number of items and the total price of your shopping spree at the mall, with <b>comments in your code to increase readability</b>. this will require two steps:<br/>
 					<ol>
 						<li>create a variable to store the number of items you bought during your shopping spree</li>
 						<ul>

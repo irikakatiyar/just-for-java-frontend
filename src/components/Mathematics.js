@@ -269,6 +269,40 @@ class Mathematics extends React.Component{
 					</div>
 				</div>
 				<br/>
+				<div className="problem">
+					<b className="note">rounding your grade:</b><br/><br/>
+					your <b>goal</b> is to use <b>Math</b> to <b>round your last test grade both up and down</b>. this will require three steps:<br/>
+					<ol>
+						<li>create a variable to store your last test grade</li>
+						<li>create a variable to store your test grade rounded up</li>
+						<ul>
+							<li>after initializing the variable, print it out</li>
+						</ul>
+						<li>create a variable to store your test grade rounded down</li>
+						<ul>
+							<li>after initializing the variable, print it out</li>
+						</ul>
+					</ol>
+					<Hint
+						hints={[
+							"for step 2, remember the the floor is below you, meaning that Math.floor(grade) rounds your grade down",
+							"for step 3, remember that the ceiling is above you, meaning that Math.ceil(grade) rounds your grade up"
+						]}
+						id="Math-rounding-your-grade"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-rounding-your-grade?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/Math-rounding-your-grade-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
 				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}

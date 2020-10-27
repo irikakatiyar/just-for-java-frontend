@@ -49,7 +49,7 @@ class WhileLoop extends React.Component{
 				<div className="code">
 					1 2 3 4 5
 				</div>
-				ok, that might seem confusing now, but let's <b>break down our code</b>.<br/><br/>
+				ok, that might seem confusing right now, but let's <b>break down our code</b>.<br/><br/>
 				<b>first</b>, we start out by making an integer <i>count</i>, which stores the number we are currently printing. pretty straightforward...<br/><br/>
 				<b>next</b>, we create a <b>while loop</b> with the condition of <b>count &lt;= 5</b>. this means that, as long as our variable <i>count</i> is <b>less than or equal to 5</b>, the code within the curly braces <b>will run</b>.
 				this is exactly what we want, as we wanted to print out every number starting from 1 that is less than 5! great!<br/><br/>
@@ -107,7 +107,7 @@ class WhileLoop extends React.Component{
 					<b className="note">even:</b><br/><br/>
 					your <b>goal</b> is to use <b>while loops</b> to <b>print out all even numbers between 1 and 20</b>. this will require four steps<br/>
 					<ol>
-						<li>first, you will need to create a varibale to store the value that you are currently on</li>
+						<li>first, you will need to create a variable to store the value that you are currently on</li>
 						<li>next, you will need to create a while loop with a condition to make sure that you are looking through the specific range of numbers of 1-20</li>
 						<li>after that, you will need to print out the number</li>
 						<li>and finally, you will want to increment your variable to move onto the next even number</li>
@@ -130,6 +130,48 @@ class WhileLoop extends React.Component{
 				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/while-loop-even-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">every other:</b><br/><br/>
+					your <b>goal</b> is to use <b>while loops</b> to <b>create a new String that stores every other character of a given String</b>. this will require five steps<br/>
+					<ol>
+						<li>create a variable to store the original String</li>
+						<li>create a variable to store what will be the String with only every other character</li>
+						<ul>
+							<li>just initialize this variable to an empty String for now</li>
+						</ul>
+						<li>create a while loop that loops through every other index in the original String</li>
+						<ul>
+							<li>before the while loop, first make an iterator variable that keeps track of the current index</li>
+							<li>now, create the while loop with a condition that ensures that you keep iterating until you get to the end of the original String</li>
+							<li>make sure that you change your iterator variable inside your while loop so that the loop iterates through every other index rather than every index</li>
+						</ul>
+						<li>inside the while loop, but before you change your iterator variable, concatenate the current character you are at in the original String to the new String variable</li>
+						<li>after the while loop is complete, print out the new String variable</li>
+					</ol>
+					<Hint
+						hints={[
+							"for step 3, our iterator variable should be initialized to 0 since indexing begins at 0",
+							"for step 3, our condition should be i < str.length(), where i is the iterator variable and str is the original String variable; this is because we want to loop through the whole String",
+							"for step 3, inside our while loop, add the line i+=2, where i is the iterator variable, so that after every iteration, you advance by 2 indexes rather than just 1 if you were to do i++; by doing i+=2 at the end of the code inside your while loop, you effectively loop through every other index in the original String",
+							"for step 4, remember the syntax str.charAt(i), where str is the original String and i is the iterator variable, can be used to access the character in a String at a specified index",
+							"for step 4, in order to concatenate the current character to the new String variable, you can use the += operator",
+						]}
+						id="while-loop-every-other"
+					/>
+					<br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/while-loop-every-other?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/while-loop-every-other-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>
