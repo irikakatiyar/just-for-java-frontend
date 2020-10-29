@@ -1,23 +1,27 @@
 import React from 'react';
 import './SideButton.css';
+import {
+  useLocation,
+  Link
+} from "react-router-dom";
 
 class SideButton extends React.Component{
 	constructor(props){
 		super(props)
 	}
 
-	selected(){
-		this.props.click();
-	}
-
 	render(){
+		const currentPath = this.props.location.pathname;
+		var buttonClass = "sideButton";
+		var linkClass = "sideLink";
+		if(currentPath === this.props.pathName) {
+			buttonClass = "sideButtonSelected";
+			linkClass = "sideLinkSelected";
+		}
 		return (
-			<button 
-				onClick={() => this.selected()}
-				className={ this.props.isSelected ? "sideButtonSelected" : "sideButton" }
-			>
-				{this.props.text}
-			</button>
+			<div className={buttonClass}>
+				<Link className={linkClass} to={"/"+this.props.pathName}>{this.props.pathName}</Link>
+			</div>
 		)
 	}
 }

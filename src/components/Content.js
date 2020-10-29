@@ -171,7 +171,6 @@ class Content extends React.Component{
 	}
 
 	render(){
-		window.scrollTo(0, 0);
 		return (
 			<div className = "page">
 				<h2>{this.props.page}:</h2>

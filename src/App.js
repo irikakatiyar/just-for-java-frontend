@@ -4,9 +4,42 @@ import 'firebase/auth';
 import firebaseConfig from './firebaseConfig';
 import React from 'react';
 import './App.css';
-import Content from './components/Content';
 import SideButton from './components/SideButton';
 import axios from 'axios';
+import Home from './components/Home';
+import About from './components/About';
+import ContactUs from './components/ContactUs';
+import Variables from './components/Variables';
+import Printing from './components/Printing';
+import UserInput from './components/UserInput';
+import IfStatement from './components/IfStatement';
+import BooleanLogic from './components/BooleanLogic';
+import ForLoop from './components/ForLoop';
+import WhileLoop from './components/WhileLoop';
+import Comments from './components/Comments';
+import Functions from './components/Functions';
+import RandomNumbers from './components/RandomNumbers';
+import ASCII from './components/ASCII';
+import Break from './components/Break';
+import Strings from './components/Strings';
+import Mathematics from './components/Mathematics';
+import ArrayList from './components/ArrayList';
+import HashMap from './components/HashMap';
+import Arrays from './components/Array';
+import Arithmetic from './components/Arithmetic';
+import Nesting from './components/Nesting';
+import GettingStarted from './components/GettingStarted';
+import TwoDimArrays from './components/TwoDimArrays';
+import Casting from './components/Casting';
+import Constants from './components/Constants';
+import Overloading from './components/Overloading';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useLocation,
+  Link
+} from "react-router-dom";
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseApp.auth();
@@ -18,7 +51,7 @@ class App extends React.Component{
 
   constructor(props) {
     super(props);
-    var sideButtonText = ["home", "about", "contact us", "getting started", "variables", "comments", "printing", "arithmetic", "strings", "user input", "math", "if statement", "boolean logic", "constants", "for loop", "while loop", "nesting", "break", "functions", "overloading", "array", "arraylist", "2d array", "casting", "random numbers", "ascii", "hashmap"];
+    var sideButtonText = ["home", "about", "contact-us", "getting-started", "variables", "comments", "printing", "arithmetic", "strings", "user-input", "math", "if-statement", "boolean-logic", "constants", "for-loop", "while-loop", "nesting", "break", "functions", "overloading", "array", "arraylist", "2d-array", "casting", "random-numbers", "ascii", "hashmap"];
     var sideButtonSelected = "home";
     
     this.state={
@@ -27,49 +60,159 @@ class App extends React.Component{
     }
   }
 
-  click(text) {
-    var sideButtonSelected = text;
-    this.setState({
-      sideButtonSelected: sideButtonSelected
-    })
-  }
-
   render() {
+    window.scrollTo(0, 0);
+
     const {
       user,
       signOut,
       signInWithGoogle,
     } = this.props;
 
-    return (
-      <div className="full">
-        <div className = "title">
-          <h1>
-            just for java
-          </h1>
-          {
-              user
-                ? <button className="login" onClick={signOut}>sign out of account</button>
-                : <button className="login" onClick={signInWithGoogle}>sign in with google</button>
-            }
+    const location = useLocation();
 
-        </div>
-        <div className = "bottom">
-          <div className = "sidebar">
-            {this.state.sideButtonText.map((text, i) =>
-              <div key={i}>
-                <SideButton text={text} click={()=>this.click(text)} isSelected={this.state.sideButtonSelected === text}/>
-              </div>
-            )}
+    return (
+      <Router>
+        <div className="full">
+          <div className = "title">
+            <h1>
+              just for java
+            </h1>
+            {
+                user
+                  ? <button className="login" onClick={signOut}>sign out of account</button>
+                  : <button className="login" onClick={signInWithGoogle}>sign in with google</button>
+              }
+
           </div>
-          <div className = "content"> 
-            <Content 
-              page={this.state.sideButtonSelected}
-              user={user} 
-            />
+          <div className = "bottom">
+            <div className = "sidebar">
+              {this.state.sideButtonText.map((text, i) =>
+                <div key={i}>
+                  <SideButton location={location} pathName={text}/>
+                </div>
+              )}
+            </div>
+            <div className = "content"> 
+              <h2>{this.state.sideButtonSelected}:</h2>
+              <br/>
+              <Switch>
+                <Route exact path="/">  
+                  <Home user={user}/>
+                </Route>
+                
+                <Route path="/home">
+                  <Home user={user}/>
+                </Route>
+
+                <Route path="/constants">
+                  <Constants user={user}/>
+                </Route>
+
+                <Route path="/about">
+                  <About user={user}/>
+                </Route>
+
+                <Route path="/contact-us">
+                  <ContactUs user={user}/>
+                </Route>
+
+                <Route path="/variables">
+                  <Variables user={user}/>
+                </Route>
+
+                <Route path="/printing">
+                  <Printing user={user}/>
+                </Route>
+
+                <Route path="/user-input">
+                  <UserInput user={user}/>
+                </Route>
+
+                <Route path="/if-statement">
+                  <IfStatement user={user}/>
+                </Route>
+
+                <Route path="/boolean-logic">
+                  <BooleanLogic user={user}/>
+                </Route>
+
+                <Route path="/for-loop">
+                  <ForLoop user={user}/>
+                </Route>
+
+                <Route path="/while-loop">
+                  <WhileLoop user={user}/>
+                </Route>
+
+                <Route path="/comments">
+                  <Comments user={user}/>
+                </Route>
+
+                <Route path="/functions">
+                  <Functions user={user}/>
+                </Route>
+
+                <Route path="/random-numbers">
+                  <RandomNumbers user={user}/>
+                </Route>
+
+                <Route path="/ascii">
+                  <ASCII user={user}/>
+                </Route>
+
+                <Route path="/hashmap">
+                  <HashMap user={user}/>
+                </Route>
+
+                <Route path="/array">
+                  <Arrays user={user}/>
+                </Route>
+
+                <Route path="/math">
+                  <Mathematics user={user}/>
+                </Route>
+
+                <Route path="/strings">
+                  <Strings user={user}/>
+                </Route>
+
+                <Route path="/arraylist">
+                  <ArrayList user={user}/>
+                </Route>
+
+                <Route path="/arithmetic">
+                  <Arithmetic user={user}/>
+                </Route>
+
+                <Route path="/break">
+                  <Break user={user}/>
+                </Route>
+
+                <Route path="/getting-started">
+                  <GettingStarted user={user}/>
+                </Route>
+
+                <Route path="/nesting">
+                  <Nesting user={user}/>
+                </Route>
+
+                <Route path="/2d-array">
+                  <TwoDimArrays user={user}/>
+                </Route>
+
+                <Route path="/casting">
+                  <Casting user={user}/>
+                </Route>
+
+                <Route path="/overloading">
+                  <Overloading user={user}/>
+                </Route>
+              </Switch>
+            </div>
           </div>
         </div>
-      </div>
+      </Router>
     );
   }
 

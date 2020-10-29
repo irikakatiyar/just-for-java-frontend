@@ -155,6 +155,50 @@ class UserInput extends React.Component{
 				</table>
 				<h3>pit stop</h3>
 				<div className="problem">
+					<b className="note">my favorite things:</b><br/><br/>
+					your <b>goal</b> is to use <b>user input</b> to <b>ask the user and store their favorite things</b>. this will require three steps:<br/>
+					<ol>
+						<li>just some setting up you have to do to get user input</li>
+						<ul>
+							<li>import the Scanner class and create a Scanner variable</li>
+						</ul>
+						<li>ask the user three of their favorite things and store their answers in variables</li>
+						<ul>
+							<li>you can ask them their favorite color, animal, movie, tv show, sport, musical instrument, hobby, celebrity, holiday, song, artist, drink, food, restaurant, actor, place, clothing brand, you name it – just pick three!</li>
+							<li>for each favorite thing, print out a question for the user and store their answer in a variable of the appropriate type</li>
+						</ul>
+						<li>close the Scanner for good practice</li>
+					</ol>
+					<Hint
+						hints={[
+							"for step 2, make sure to have a print statement asking the user their question, and a variable initialization using one of the user input methods we learned, for each one of the three favorite things you ask your user",
+							"for step 2, make sure to use System.out.print() when you ask the user the question, and add a space after the ? so that there is a space between the question and the user's answer",
+							"for step 2, all of the user's answers will be Strings, so use nextLine() to get the user input"
+						]}
+						id="user-input-my-favorite-things"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/my-favorite-things?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/my-favorite-things-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+				<b className="note">our solution:</b><br/><br/>
+				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/user-input-tip-tip-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
 					<b className="note">tip tip:</b><br/><br/>
 					how much do you want to tip? your <b>goal</b> is to use <b>user input</b> to <b>ask the user how much they want to tip</b> and add the tip to the price. this will require five steps:<br/>
 					<ol>
