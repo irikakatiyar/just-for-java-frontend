@@ -33,6 +33,7 @@ import TwoDimArrays from './components/TwoDimArrays';
 import Casting from './components/Casting';
 import Constants from './components/Constants';
 import Overloading from './components/Overloading';
+import ForEachLoop from './components/ForEachLoop';
 import {
   BrowserRouter as Router,
   Switch,
@@ -51,7 +52,7 @@ class App extends React.Component{
 
   constructor(props) {
     super(props);
-    var sideButtonText = ["home", "about", "contact-us", "getting-started", "variables", "comments", "printing", "arithmetic", "strings", "user-input", "math", "if-statement", "boolean-logic", "constants", "for-loop", "while-loop", "nesting", "break", "functions", "overloading", "array", "arraylist", "2d-array", "casting", "random-numbers", "ascii", "hashmap"];
+    var sideButtonText = ["home", "about", "contact-us", "getting-started", "variables", "comments", "printing", "arithmetic", "strings", "user-input", "math", "if-statement", "boolean-logic", "constants", "for-loop", "while-loop", "nesting", "break", "functions", "overloading", "array", "for-each-loop", "arraylist", "2d-array", "hashmap", "casting", "random-numbers", "ascii"];
     var sideButtonSelected = "home";
     
     this.state={
@@ -61,16 +62,12 @@ class App extends React.Component{
   }
 
   render() {
-    window.scrollTo(0, 0);
-
+    window.scrollTo(0, 0); //move to content when you create content component!!! this is not working rn
     const {
       user,
       signOut,
       signInWithGoogle,
     } = this.props;
-
-    const location = useLocation();
-
     return (
       <Router>
         <div className="full">
@@ -89,7 +86,7 @@ class App extends React.Component{
             <div className = "sidebar">
               {this.state.sideButtonText.map((text, i) =>
                 <div key={i}>
-                  <SideButton location={location} pathName={text}/>
+                  <SideButton currentPathname={window.location.pathname} myPathname={text}/>
                 </div>
               )}
             </div>
@@ -151,6 +148,10 @@ class App extends React.Component{
 
                 <Route path="/functions">
                   <Functions user={user}/>
+                </Route>
+
+                <Route path="/for-each-loop">
+                  <ForEachLoop user={user}/>
                 </Route>
 
                 <Route path="/random-numbers">

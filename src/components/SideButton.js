@@ -11,17 +11,18 @@ class SideButton extends React.Component{
 	}
 
 	render(){
-		const currentPath = this.props.location.pathname;
-		var buttonClass = "sideButton";
-		var linkClass = "sideLink";
-		if(currentPath === this.props.pathName) {
-			buttonClass = "sideButtonSelected";
-			linkClass = "sideLinkSelected";
+		var sideButtonClass = "sideButton";
+		if(this.props.currentPathname === "/"+this.props.myPathname) {
+			sideButtonClass = "sideButtonSelected";
 		}
 		return (
-			<div className={buttonClass}>
-				<Link className={linkClass} to={"/"+this.props.pathName}>{this.props.pathName}</Link>
-			</div>
+			
+				<Link className="link" to={"/"+this.props.myPathname}>
+					<span className={sideButtonClass} style={{"display": "block"}}>
+						{this.props.myPathname}
+					</span>
+				</Link>
+			
 		)
 	}
 }

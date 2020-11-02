@@ -26,6 +26,7 @@ import TwoDimArrays from './TwoDimArrays';
 import Casting from './Casting';
 import Constants from './Constants';
 import Overloading from './Overloading';
+import ForEachLoop from './ForEachLoop';
 
 class Content extends React.Component{
 	constructor(props){
@@ -41,6 +42,11 @@ class Content extends React.Component{
 		else if(this.props.page === "constants") {
 			return (
 				<Constants user={this.props.user} page={this.props.page}/>
+			);
+		}
+		else if(this.props.page === "for-each loop") {
+			return (
+				<ForEachLoop user={this.props.user} page={this.props.page}/>
 			);
 		}
 		else if(this.props.page === "about"){

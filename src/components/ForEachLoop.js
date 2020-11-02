@@ -2,7 +2,7 @@ import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
 
-class ArrayList extends React.Component{
+class ForEachLoop extends React.Component{
 	constructor(props){
 		super(props)
 		this.state={
@@ -37,4 +37,4 @@ class ArrayList extends React.Component{
 	}
 }
 
-export default ArrayList;
+export default ForEachLoop;
