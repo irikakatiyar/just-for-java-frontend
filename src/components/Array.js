@@ -26,7 +26,7 @@ class Array extends React.Component{
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 	            today's the day we're gonna learn how to store a <b>list of values in a variable</b>, called an <b>array</b>. oooh getting kinda <b>spicy</b> over here! 
-	            <h3>so how do you make this so called spicy array?</h3>
+	            <h3>wait, so how do you make this spicy array?</h3>
 	            here is the blueprint when creating an array:
 	            <br/>
 	            <b>

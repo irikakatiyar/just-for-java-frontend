@@ -103,7 +103,7 @@ class Break extends React.Component{
 				<h3>pit stop</h3>
 				<div className="problem">
 					<b className="note">how many fingers:</b><br/><br/>
-					how many fingers am i holding up? your <b>goal</b> is to use a <b>while(true)</b> and <b>break</b> statement to <b>write a program</b> that prompts the user to <b>guess the number of fingers being held up</b>. note, we will be assuming that the <b>computer is using one hand</b>, not two. this will require five steps:<br/>
+					how many fingers am i holding up? your <b>goal</b> is to use a <b>while(true)</b> loop and a <b>break</b> statement to <b>write a program</b> that prompts the user to <b>guess the number of fingers being held up</b>. note that we will be assuming that the <b>computer is using one hand</b>, not two. this will require five steps:<br/>
 					<ol>
 						<li>first, we want to import and create the scanner that will get out user input, ask the user to guess, and create a variable to keep track of the number of fingers we want the computer to be holding up</li>
 						<li>next, we want to create a while(true) loop, inside of which we will be creating a variable to hold the user's guess</li>
