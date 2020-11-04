@@ -27,6 +27,7 @@ import Casting from './Casting';
 import Constants from './Constants';
 import Overloading from './Overloading';
 import ForEachLoop from './ForEachLoop';
+import EscapeSequences from './EscapeSequences';
 
 class Content extends React.Component{
 	constructor(props){
@@ -174,9 +175,15 @@ class Content extends React.Component{
 				<Overloading user={this.props.user} page={this.props.page}/>
 			);
 		}
+		else if(this.props.page === "escape sequences"){
+			return (
+				<EscapeSequences user={this.props.user} page={this.props.page}/>
+			);
+		}
 	}
 
 	render(){
+		window.scrollTo(0, 0);
 		return (
 			<div className = "page">
 				<h2>{this.props.page}:</h2>

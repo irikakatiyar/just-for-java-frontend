@@ -6,6 +6,7 @@ import React from 'react';
 import './App.css';
 import SideButton from './components/SideButton';
 import axios from 'axios';
+import Content from './components/Content';
 import Home from './components/Home';
 import About from './components/About';
 import ContactUs from './components/ContactUs';
@@ -34,13 +35,16 @@ import Casting from './components/Casting';
 import Constants from './components/Constants';
 import Overloading from './components/Overloading';
 import ForEachLoop from './components/ForEachLoop';
+/*
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   useLocation,
-  Link
+  Link,
+  withRouter
 } from "react-router-dom";
+*/
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseApp.auth();
@@ -52,24 +56,31 @@ class App extends React.Component{
 
   constructor(props) {
     super(props);
-    var sideButtonText = ["home", "about", "contact-us", "getting-started", "variables", "comments", "printing", "arithmetic", "strings", "user-input", "math", "if-statement", "boolean-logic", "constants", "for-loop", "while-loop", "nesting", "break", "functions", "overloading", "array", "for-each-loop", "arraylist", "2d-array", "hashmap", "casting", "random-numbers", "ascii"];
-    var sideButtonSelected = "home";
+    var sideButtonText = ["home", "about", "contact us", "getting started", "variables", "comments", "printing", "arithmetic", "strings", "escape sequences", "user input", "math", "if statement", "boolean logic", "constants", "for loop", "while loop", "nesting", "break", "functions", "overloading", "array", "for-each loop", "arraylist", "2d array"/*, "hashmap", "casting", "random-numbers", "ascii"*/];
+    /*var sideButtonText = ["home", "about", "contact-us", "getting-started", "variables", "comments", "printing", "arithmetic", "strings", "escape-sequences", "user-input", "math", "if-statement", "boolean-logic", "constants", "for-loop", "while-loop", "nesting", "break", "functions", "overloading", "array", "for-each-loop", "arraylist", "2d-array", "hashmap", "casting", "random-numbers", "ascii"];*/
+    var selectedSideButton = "home";
     
     this.state={
       sideButtonText: sideButtonText,
-      sideButtonSelected: sideButtonSelected
+      selectedSideButton: selectedSideButton
     }
   }
 
+  click(text) {
+    var selectedSideButton = text;
+    this.setState({
+      selectedSideButton: selectedSideButton
+    })
+  }
+
   render() {
-    window.scrollTo(0, 0); //move to content when you create content component!!! this is not working rn
     const {
       user,
       signOut,
       signInWithGoogle,
     } = this.props;
     return (
-      <Router>
+      /*<Router>*/
         <div className="full">
           <div className = "title">
             <h1>
@@ -86,12 +97,17 @@ class App extends React.Component{
             <div className = "sidebar">
               {this.state.sideButtonText.map((text, i) =>
                 <div key={i}>
-                  <SideButton currentPathname={window.location.pathname} myPathname={text}/>
+                  <SideButton /*currentPathname={window.location.pathname} myPathname={text}*/ text={text} click={()=>this.click(text)} isSelected={this.state.selectedSideButton === text} />
                 </div>
               )}
             </div>
             <div className = "content"> 
-              <h2>{this.state.sideButtonSelected}:</h2>
+              <Content 
+                page={this.state.selectedSideButton}
+                user={user}
+              />
+              {/*
+              <h2>{this.state.selectedSideButton}:</h2>
               <br/>
               <Switch>
                 <Route exact path="/">  
@@ -210,10 +226,11 @@ class App extends React.Component{
                   <Overloading user={user}/>
                 </Route>
               </Switch>
+              */}
             </div>
           </div>
         </div>
-      </Router>
+      /*</Router>*/
     );
   }
 

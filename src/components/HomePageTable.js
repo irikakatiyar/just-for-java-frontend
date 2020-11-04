@@ -5,7 +5,7 @@ class HomePageTable extends React.Component{
 	constructor(props){
 		super(props)
 		this.state={
-			pages: ["getting started", "variables", "comments", "printing", "arithmetic", "strings", "user input", "math", "if statement", "boolean logic", "constants", "for loop", "while loop", "nesting", "break", "functions", "overloading", "array", "for-each loop", "arraylist", "2d array", "hashmap", "casting", "random numbers", "ascii"],
+			pages: ["getting started", "variables", "comments", "printing", "arithmetic", "strings", "escape sequences", "user input", "math", "if statement", "boolean logic", "constants", "for loop", "while loop", "nesting", "break", "functions", "overloading", "array", "for-each loop", "arraylist", "2d array"/*, "hashmap", "casting", "random numbers", "ascii"*/],
 			data: {}
 		}
 	}

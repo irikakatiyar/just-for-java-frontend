@@ -10,9 +10,10 @@
 	border-radius: 8px;
 	border: solid 1px #172A3A;
 	text-align: center;
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 	width: 200px;
-	height: 35px;
+	/*height: 35px;*/
+	height: 50px;
 	margin-top: 6px;
 	margin-bottom: 6px;
 	margin-left: 25px;
@@ -26,20 +27,7 @@
 
 .sideButtonSelected {
 	background-color: #172A3A;
-	border-radius: 8px;
 	border: solid 1px #EAF4F4;
-	text-align: center;
-	padding-top: 15px;
-	width: 200px;
-	height: 35px;
-	margin-top: 6px;
-	margin-bottom: 6px;
-	margin-left: 25px;
-	margin-right: 25px;
-	cursor:pointer;
-	transition-duration: 0.4s;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 13px;
 	color: #EAF4F4;
 }
 

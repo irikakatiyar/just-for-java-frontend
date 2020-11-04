@@ -347,7 +347,7 @@ class Array extends React.Component{
 	            <br/><br/>
 	            if you print out an array variable, its memory address will display in the console. instead, you need to <b>print out each element in the array individually</b> using a <b>for loop that iterates through each index in the array</b>.
 	            <br/><br/>
-	            ayyyy! you are now a <b>jedi master</b> at arrays!
+	            you are now a <b>jedi master</b> at arrays!
 	            <h3>pit stop</h3>
 	            <div className="problem">
 					<b className="note">groceries:</b><br/><br/>
