@@ -28,7 +28,7 @@ class Break extends React.Component{
 	            />
 	          	a <b>break</b> statement is used to exit a loop of code. 
 	          	<h3>wait, so how do you make a break statement?</h3>
-				here is the blueprint when making a break: <br/>
+				here is the blueprint for making a break statement: <br/>
 				<b>break;</b><br/>
 				<h3>oh, that's it? lol ok</h3>
 				yup! now, you might be wondering "hmm... where do we use this?" (if you're not wondering that, well, too bad, that's what we're covering next).<br/>
@@ -102,7 +102,7 @@ class Break extends React.Component{
 				nice job!! let's do some practice now!<br/>
 				<h3>pit stop</h3>
 				<div className="problem">
-				<b className="note">how many fingers:</b><br/><br/>
+					<b className="note">how many fingers:</b><br/><br/>
 					how many fingers am i holding up? your <b>goal</b> is to use a <b>while(true)</b> and <b>break</b> statement to <b>write a program</b> that prompts the user to <b>guess the number of fingers being held up</b>. note, we will be assuming that the <b>computer is using one hand</b>, not two. this will require five steps:<br/>
 					<ol>
 						<li>first, we want to import and create the scanner that will get out user input, ask the user to guess, and create a variable to keep track of the number of fingers we want the computer to be holding up</li>
@@ -111,7 +111,7 @@ class Break extends React.Component{
 						<li>since we want to make sure that the guess is a valid guess, meaning it isn't over the number of fingers on one hand or under that range, we want to prompt the user if the guess isn't a valide value and to try again</li>
 						<li>lastly, if the user has simply just guessed wrong, we want to prompt the user to try again</li>
 					</ol>
-				<Hint
+					<Hint
 						hints={[
 							"for step 3, remember, we want to end the infinite while(true) loop since there's no reason for us to continue to prompt the user to guess if they got it right. this is where you should use a break statement!!",
 							"for step 4, if we want to check that the guess is valid, it should be between the numbers 1 and 5 (since that's generally how many fingers people have, that's what we will be using as our range. but, if you're cool and have more or less fingers than 5 on your hand, feel free to change the range!) so, sticking with the 1-5 range, what do we need to check to make sure that the guess isn't more than 5 or less than 1?",
@@ -125,10 +125,41 @@ class Break extends React.Component{
 				</div>
 				<br/>
 				<div className="solution">
-				<b className="note">our solution:</b><br/><br/>
-				below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/break-how-many-fingers-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">second a:</b><br/><br/>
+					your <b>goal</b> is to use a <b>break statement</b> to make a program that can <b>find the index of the second a in a word</b>. this will require steps:<br/>
+					<ol>
+						<li>first, we want to create two variables: one to store the word (choose a word that contains at least two a's), and one to store the count of how many a's we encountered in our word</li>
+						<li>next, we want to make a for loop that goes through the entire word</li>
+						<li>after that, we want to use an if statement to check if the character we are on is an a</li>
+						<li>if that is the case, we also want to check if we are on the second a in the word. </li>
+						<li>if it is the second a, print a statement saying what position the second a in the word is at</li>
+					</ol>
+					<Hint
+						hints={[
+							"for step 2, if we want to go through the word, what should our upper limit for our iterator variable be? maybe something using the .length() function?",
+							"for step 3, if we want to look at the character at a specific point, we need to use the .charAt() function",
+							"for step 5, if we want to print out a statement that includes variables, remember we will need yo use String concatination"
+						]}
+						id="break-second-a"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/break-second-a?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks somewhat similar <b>:)</b> <br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/break-second-a-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>
