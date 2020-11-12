@@ -17,23 +17,22 @@ class About extends React.Component{
 				<b>why we created just for java:</b><br/>
 				coding has the stigma of being complicated, hard to learn, and only useful for computer scientists. however, we want to break that stigma. this doesn't mean that coding will be easy, but we wrote the content in just for java using relatable language so it is easy to understand and fun for you guys! (<b className="note">btw:</b> you may even see some jokes and text slang in there! *wink wink* we even have fun themes for some pages if we were feeling particularly fancy!) we provide blueprints to illustrate coding syntax and examples that we walk through so that you can master the concept. finally, coding is not only useful for computer scientists, but for everyone.
 				<br/><br/>
-
 				<b>a little more about irika:</b><br/>
 				my name is irika, and i'm the older twin (by 30 seconds, every second counts!) the programming languages i know are java, html, 
 				css, and javascript. other than coding, i love to play squash, do bollywood dance, play guitar, sing, bike, travel, write children's books 
 				(search up my name on amazon), and make animated videos (check out 2MinuteBio on youtube). i also love watching netflix, making random videos on imovie, 
 				and hanging out with friends!<br/><br/>
-
 				<b> a little more about irith:</b><br/>
 				my name is irith, and i'm the younger twin, something irika never fails to remind me about. the programming languages i know are java, html, 
 				css, javascript, swift, and python. i love to make apps (check out appchapp.com) and have four apps on the app store! you can also find me on juni 
 				learning's blog and youtube channel. other than coding, i love to play squash, do bollywood dance, play mario kart, binge-watch netflix 
 				(black mirror is my all time favorite show, followed by FRIENDS), and meet new people. <br/><br/>
-
 				<b>special thanks to:</b><br/>
 				our coding instructor, ruby, for helping us create this website!<br/>
 				our amazing parents for letting us stay up till midnight working on this website!
-				<br/><b className="note">:)</b>
+				<br/><br/>
+				<img className="irithAndIrika" src="us.jpg"/>
+				<br/><b className="note">irith on left and irika on right :)</b>
 			</div>
 		)
 	}

@@ -97,6 +97,11 @@ th{
   color: #FFA69E;
 }
 
+.irithAndIrika{
+  max-width: 600px;
+  border: solid 5px #6B9080;
+}
+
 .code{
   background-color: #FFA69E;
   font-family: 'Source Code Pro', monospace;
