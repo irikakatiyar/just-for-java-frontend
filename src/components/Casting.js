@@ -12,6 +12,7 @@ class Casting extends React.Component{
 		window.scrollTo(0, 0);
 		return (
 			<div>
+				<h2>{this.props.page}:</h2><br/>
 				<b>coming soon!</b>
 			</div>
 		)

@@ -10,6 +10,7 @@ class About extends React.Component{
 		window.scrollTo(0, 0);
 		return (
 			<div>
+				<h2>{this.props.page}:</h2><br/>
 				hi! we're irith and irika katiyar, 18 year old twins from sunny northern california who love to code! 
 				we both have been coding since we were in 7th grade. 
 				we have taken ap computer science and are on the silver level of the usa computing olympiad! in the future, we both plan on pursuing bioinformatics or computational biology

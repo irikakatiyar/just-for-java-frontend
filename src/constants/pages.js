@@ -21,7 +21,7 @@ export const pages = [
 	{name: "functions", displayName: "functions", isConceptPage: true},
 	{name: "overloading", displayName: "overloading", isConceptPage: true},
 	{name: "array", displayName: "array", isConceptPage: true},
-	{name: "for-each-loop", displayName: "for each loop", isConceptPage: true},
+	{name: "for-each-loop", displayName: "for-each loop", isConceptPage: true},
 	{name: "arraylist", displayName: "arraylist", isConceptPage: true},
 	{name: "2d-array", displayName: "2d array", isConceptPage: true},
 	/*

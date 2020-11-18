@@ -78,127 +78,125 @@ class App extends React.Component{
           <div className = "bottom">
             <SideBar />
             <div className = "content"> 
-              <h2>{}:</h2>
-              <br/>
               <Switch>
                 <Route exact path="/">
-                  <Home user={user} />
+                  <Home user={user} page="home"/>
                 </Route>
                 
                 <Route path="/home">
-                  <Home user={user}/>
+                  <Home user={user} page="home"/>
                 </Route>
 
                 <Route path="/constants">
-                  <Constants user={user}/>
+                  <Constants user={user} page="constants"/>
                 </Route>
 
                 <Route path="/about">
-                  <About user={user}/>
+                  <About user={user} page="about"/>
                 </Route>
 
                 <Route path="/contact-us">
-                  <ContactUs user={user}/>
+                  <ContactUs user={user} page="contact us"/>
                 </Route>
 
                 <Route path="/variables">
-                  <Variables user={user}/>
+                  <Variables user={user} page="variables"/>
                 </Route>
 
                 <Route path="/printing">
-                  <Printing user={user}/>
+                  <Printing user={user} page="printing"/>
                 </Route>
 
                 <Route path="/user-input">
-                  <UserInput user={user}/>
+                  <UserInput user={user} page="user input"/>
                 </Route>
 
                 <Route path="/if-statement">
-                  <IfStatement user={user}/>
+                  <IfStatement user={user} page="if statement"/>
                 </Route>
 
                 <Route path="/boolean-logic">
-                  <BooleanLogic user={user}/>
+                  <BooleanLogic user={user} page="boolean logic"/>
                 </Route>
 
                 <Route path="/for-loop">
-                  <ForLoop user={user}/>
+                  <ForLoop user={user} page="for loop"/>
                 </Route>
 
                 <Route path="/while-loop">
-                  <WhileLoop user={user}/>
+                  <WhileLoop user={user} page="while loop"/>
                 </Route>
 
                 <Route path="/comments">
-                  <Comments user={user}/>
+                  <Comments user={user} page="comments"/>
                 </Route>
 
                 <Route path="/functions">
-                  <Functions user={user}/>
+                  <Functions user={user} page="functions"/>
                 </Route>
 
                 <Route path="/for-each-loop">
-                  <ForEachLoop user={user}/>
+                  <ForEachLoop user={user} page="for-each loop"/>
                 </Route>
 
                 <Route path="/random-numbers">
-                  <RandomNumbers user={user}/>
+                  <RandomNumbers user={user} page="random numbers"/>
                 </Route>
 
                 <Route path="/ascii">
-                  <ASCII user={user}/>
+                  <ASCII user={user} page="ascii"/>
                 </Route>
 
                 <Route path="/hashmap">
-                  <HashMap user={user}/>
+                  <HashMap user={user} page="hashmap"/>
                 </Route>
 
                 <Route path="/array">
-                  <Arrays user={user}/>
+                  <Arrays user={user} page="array"/>
                 </Route>
 
                 <Route path="/math">
-                  <Mathematics user={user}/>
+                  <Mathematics user={user} page="math"/>
                 </Route>
 
                 <Route path="/strings">
-                  <Strings user={user}/>
+                  <Strings user={user} page="strings"/>
                 </Route>
 
                 <Route path="/escape-sequences">
-                  <EscapeSequences user={user}/>
+                  <EscapeSequences user={user} page="escape sequences"/>
                 </Route>
 
                 <Route path="/arraylist">
-                  <ArrayList user={user}/>
+                  <ArrayList user={user} page="arraylist"/>
                 </Route>
 
                 <Route path="/arithmetic">
-                  <Arithmetic user={user}/>
+                  <Arithmetic user={user} page="arithmetic"/>
                 </Route>
 
                 <Route path="/break">
-                  <Break user={user}/>
+                  <Break user={user} page="break"/>
                 </Route>
 
                 <Route path="/getting-started">
-                  <GettingStarted user={user}/>
+                  <GettingStarted user={user} page="getting started"/>
                 </Route>
 
                 <Route path="/nesting">
-                  <Nesting user={user}/>
+                  <Nesting user={user} page="nesting"/>
                 </Route>
 
                 <Route path="/2d-array">
-                  <TwoDimArrays user={user}/>
+                  <TwoDimArrays user={user} page="2d array"/>
                 </Route>
 
                 <Route path="/casting">
-                  <Casting user={user}/>
+                  <Casting user={user} page="casting"/>
                 </Route>
 
                 <Route path="/overloading">
-                  <Overloading user={user}/>
+                  <Overloading user={user} page="overloading"/>
                 </Route>
               </Switch>
             </div>

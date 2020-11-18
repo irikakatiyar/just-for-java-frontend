@@ -21,6 +21,7 @@ class GettingStarted extends React.Component{
 		window.scrollTo(0, 0);
 		return (
 			<div>
+				<h2>{this.props.page}:</h2><br/>
 				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
