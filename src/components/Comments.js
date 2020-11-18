@@ -33,7 +33,7 @@ class Comments extends React.Component{
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
 				<b>comments</b> are used to <b>write notes</b> next to your code <b>that aren't executed when you run your code</b>. 
-				if, on the <b className="pageName">variables page</b>, you saw notes denoted with two forward slashes, those were comments!
+				if, on the <Link className="contentLink" to="/variables"><b className="pageName">variables page</b></Link>, you saw notes denoted with two forward slashes, those were comments!
 				<br/><br/>
 				there are two types of comments you can make:
 				<ul>
