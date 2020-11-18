@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class EscapeSequences extends React.Component{
 	constructor(props){
@@ -79,7 +83,7 @@ class EscapeSequences extends React.Component{
 	            <br/><br/>
 	            now, are you ready for some <b>fun examples with escape sequences</b>? let's get right to it...
 				<h3>e   m   p   h   a   s   i   s</h3>
-				let's print out <b>"emphasis"</b>, except after each character there is a <b>tab</b>. (<b className="note">psst. need a reminder</b> on how to print a String? check out the <b className="pageName">printing page</b>!) which escape sequence can we use? if you guessed <b>\t</b>, you're absolutely right! check out the code below:
+				let's print out <b>"emphasis"</b>, except after each character there is a <b>tab</b>. (<b className="note">psst. need a reminder</b> on how to print a String? check out the <Link className="contentLink" to="/printing"><b className="pageName">printing page</b></Link>!) which escape sequence can we use? if you guessed <b>\t</b>, you're absolutely right! check out the code below:
 				<div className="code">
 				System.out.println("e\tm\tp\th\ta\ts\ti\ts");
 				</div>
@@ -90,7 +94,7 @@ class EscapeSequences extends React.Component{
 				</div><br/>
 				ready for another example with a different escape sequence? let's do this.
 				<h3>"real programmers count from 0"</h3>
-				let's create a String variable called <i>quoteForCoders</i> to store one of our favorite quotes: <b>"real programmers count from 0"</b>. (<b className="note">psst. need a reminder</b> on why real programmers count from 0? check out the <b className="pageName">strings page</b>!) however, not only do we want to store the quote, but we also want to store the <b>quotation marks</b> at the start and end of the quote. which escape sequence can we use? if you guessed <b>\"</b>, you're absolutely right! check out the code below:
+				let's create a String variable called <i>quoteForCoders</i> to store one of our favorite quotes: <b>"real programmers count from 0"</b>. (<b className="note">psst. need a reminder</b> on why real programmers count from 0? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!) however, not only do we want to store the quote, but we also want to store the <b>quotation marks</b> at the start and end of the quote. which escape sequence can we use? if you guessed <b>\"</b>, you're absolutely right! check out the code below:
 				<div className="code">
 				String quoteForCoders = "\"real programmers count from 0\"";
 				</div>
@@ -218,7 +222,7 @@ class EscapeSequences extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/user-input"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

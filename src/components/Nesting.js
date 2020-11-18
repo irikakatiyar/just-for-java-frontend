@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Nesting extends React.Component{
 	constructor(props){
@@ -28,7 +32,7 @@ class Nesting extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				in programming, <b>nesting</b> simply means <b>putting code blocks inside each other</b>, such as <b>if statements</b>, <b>for loops</b>, and <b>while loops</b>. (<b className="note">psst. need a reminder</b> on how these three code blocks work? check out the <b className="pageName">if statement page</b>, the <b className="pageName">for loop page</b>, and the <b className="pageName">while loop page</b>!) now, you might be thinking, what's the point of putting an if statement inside a while loop inside a for loop? nesting allows our programs to become <b>more complex in their functionality</b>!
+				in programming, <b>nesting</b> simply means <b>putting code blocks inside each other</b>, such as <b>if statements</b>, <b>for loops</b>, and <b>while loops</b>. (<b className="note">psst. need a reminder</b> on how these three code blocks work? check out the <Link className="contentLink" to="/if-statement"><b className="pageName">if statement page</b></Link>, the <Link className="contentLink" to="/for-loop"><b className="pageName">for loop page</b></Link>, and the <Link className="contentLink" to="/while-loop"><b className="pageName">while loop page</b></Link>!) now, you might be thinking, what's the point of putting an if statement inside a while loop inside a for loop? nesting allows our programs to become <b>more complex in their functionality</b>!
 				<h3>let's get funky</h3>
 				let's take a look at the <b>classic example</b> we used to demonstrate how for loops and while loops work: <b>print the numbers 1-5</b>. just to refresh you, here is the classic example coded out using a for loop:
 				<div className="code">
@@ -75,7 +79,7 @@ class Nesting extends React.Component{
 				for sure! let's use nesting to <b>print out a diagonal line of a certain character in the console of size <i>n</i></b>. the first thing we need to do is create some variables and constants (<b className="note">btw:</b> a constant is a variable whose value cannot be changed once it has been initialized):
 				<ul>
 					<li>create a variable <i>n</i> that stores how long we want our diagonal line to be</li>
-					<li>create a constant <i>myChar</i> that stores any character you want (<b className="note">psst. need a reminder</b> on how to create a constant? check out the <b className="pageName">constants page</b>!)</li>
+					<li>create a constant <i>myChar</i> that stores any character you want (<b className="note">psst. need a reminder</b> on how to create a constant? check out the <Link className="contentLink" to="/constants"><b className="pageName">constants page</b></Link>!)</li>
 				</ul>
 				next up: a for loop... or maybe two. hehehehe.
 				<br/>
@@ -268,7 +272,7 @@ class Nesting extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/break"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

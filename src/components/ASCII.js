@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class ASCII extends React.Component{
 	constructor(props){

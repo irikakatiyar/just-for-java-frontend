@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class IfStatement extends React.Component{
 	constructor(props){
@@ -40,7 +44,7 @@ class IfStatement extends React.Component{
 				if the <b>condition is true</b>, the code block <b>will be run</b>. 
 				meanwhile, if the <b>condition is false</b>, the code block <b>won't be run</b>, and will go to whatever is after the end curly bracket.
 				when writing conditions, often times you will be comparing values, whether it's integers, Strings, or any other variable types. 
-				(<b className="note">psst. need a reminder</b> of what variable types there are? check out the <b className="pageName">variables page</b>!)
+				(<b className="note">psst. need a reminder</b> of what variable types there are? check out the <Link className="contentLink" to="/variables"><b className="pageName">variables page</b></Link>!)
 				to make these conditions, there are four types of comparison operators:<br/>
 				<ul>
 					<li>==</li>
@@ -50,7 +54,7 @@ class IfStatement extends React.Component{
 				</ul>
 				<h3>ok, that just looks like math</h3>
 				it might right now, but let's go through each of them...<br/><br/>
-				<b>==</b> is used to check equality between <b>primitive types</b> (<b className="note">psst. need a reminder</b> of what in the world a primitive type is? check out the <b className="pageName">strings page</b>!)
+				<b>==</b> is used to check equality between <b>primitive types</b> (<b className="note">psst. need a reminder</b> of what in the world a primitive type is? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!)
 				let's check out an example:
 				<div className="code">
 					int cookies = 0; <div className="comment">//this will keep track of how many cookies are in our "jar"</div><br/>
@@ -137,7 +141,7 @@ class IfStatement extends React.Component{
 				yessir! in this example, let's say we wanted to make a program to see if you are over speed limit.
 				in this case, we are going to need one variable that keeps track of our speed.  
 				if we are going over the speed limit, we are going to print "slow down!" into the console. 
-				(<b className="note">psst. need a reminder</b> on how to print? check out the <b className="pageName">printing page</b>!)
+				(<b className="note">psst. need a reminder</b> on how to print? check out the <Link className="contentLink" to="/printing"><b className="pageName">printing page</b></Link>!)
 				<div className="code">
 					int yourSpeed = 32;<br/>
 					<div className="comment">//in this example, the speed limit on the road is 35</div><br/>
@@ -327,7 +331,7 @@ class IfStatement extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/boolean-logic"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

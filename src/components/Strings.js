@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Strings extends React.Component{
 	constructor(props){
@@ -27,7 +31,7 @@ class Strings extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				as we learned on the <b className="pageName">variables page</b>, <b>Strings</b> are used to store text and are denoted using double quotation marks. Strings are different from the other variable types that we have learned about so far – integers, doubles, characters, booleans. (<b className="note">btw:</b> the difference you may have noticed is that <b>String</b> has a capital first letter whereas <b>int</b>, <b>double</b>, <b>char</b>, and <b>boolean</b> are all lowercase.) Strings are special, and that's why we've dedicated a whole page to them!
+				as we learned on the <Link className="contentLink" to="/variables"><b className="pageName">variables page</b></Link>, <b>Strings</b> are used to store text and are denoted using double quotation marks. Strings are different from the other variable types that we have learned about so far – integers, doubles, characters, booleans. (<b className="note">btw:</b> the difference you may have noticed is that <b>String</b> has a capital first letter whereas <b>int</b>, <b>double</b>, <b>char</b>, and <b>boolean</b> are all lowercase.) Strings are special, and that's why we've dedicated a whole page to them!
 				<h3>"hello world"</h3>
 				why can Strings have a whole page dedicated to them? what makes them so special from the other variable types?<br/> 
 				<b>int</b>, <b>double</b>, <b>char</b>, and <b>boolean</b> are examples of <b>primitive types</b>. a primitive type is <b>already defined in, or built into, java</b> and have one job: <b>contain a simple value</b>.<br/> 
@@ -328,7 +332,7 @@ class Strings extends React.Component{
 				<br/>
 				System.out.println(myUpperCaseStr);
 				</div>
-				the code above prints out the following in the console (<b className="note">psst. need a reminder</b> on why <b>System.out.println()</b> outputs something to the console? check out the <b className="pageName">printing page</b>!):
+				the code above prints out the following in the console (<b className="note">psst. need a reminder</b> on why <b>System.out.println()</b> outputs something to the console? check out the <Link className="contentLink" to="/printing"><b className="pageName">printing page</b></Link>!):
 				<div className="code">
 				we love strings!
 				<br/>
@@ -354,7 +358,7 @@ class Strings extends React.Component{
 				</div>
 				if a String <i>str</i> is empty, then <b><i>str</i>.isEmpty()</b> will be <b>true</b>. if a String <i>str</i> is not empty, then <b><i>str</i>.isEmpty()</b> will be <b>false</b>.
 				<h3>hello + world</h3>
-				we saw how the <b>+</b> operator was used between integers and doubles in addition. (<b className="note">psst. need a reminder</b> on how you can do addition, as well as other arithmetic operations, in java? check out the <b className="pageName">arithmetics page</b>!) but how about the <b>+</b> being used between <b>Strings</b>? when we have a <b>+</b> between two Strings, we <b>concatenate</b>, which is a fancy word for add, the two Strings together. what does this look like? if we have "hello" + "world", the resulting String would be "helloworld". see how "world" was <b>concatenated</b> to the end of "hello"?
+				we saw how the <b>+</b> operator was used between integers and doubles in addition. (<b className="note">psst. need a reminder</b> on how you can do addition, as well as other arithmetic operations, in java? check out the <Link className="contentLink" to="/arithmetic"><b className="pageName">arithmetic page</b></Link>!) but how about the <b>+</b> being used between <b>Strings</b>? when we have a <b>+</b> between two Strings, we <b>concatenate</b>, which is a fancy word for add, the two Strings together. what does this look like? if we have "hello" + "world", the resulting String would be "helloworld". see how "world" was <b>concatenated</b> to the end of "hello"?
 				<br/><br/>
 				woah, hold your horses! we aren't done yet! String concatenation can be more powerful that just adding Strings together. you can add <b>integers</b>, <b>doubles</b>, and <b>characters</b> to Strings as well! exciting, right?
 				<br/><br/>
@@ -547,7 +551,7 @@ class Strings extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/escape-sequences"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

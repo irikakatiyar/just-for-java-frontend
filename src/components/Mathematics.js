@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Mathematics extends React.Component{
 	constructor(props){
@@ -27,7 +31,7 @@ class Mathematics extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				we've already discussed <b>+</b>, <b>-</b>, <b>*</b>, <b>/</b>, and <b>%</b> (<b className="note">psst. need a reminder</b> on what these operators mean? check out the <b className="pageName">arithmetics page</b>!). but what if we want to do more <b>complex math operations</b>, such as raising a number to a power, or getting the absolute value of a number? luckily for us, the <b>Math</b> library provides us with a variety of math constants and complex functions. let's take a look at all of the brand new and super cool functionality the <b>Math</b> library gives us! 
+				we've already discussed <b>+</b>, <b>-</b>, <b>*</b>, <b>/</b>, and <b>%</b> (<b className="note">psst. need a reminder</b> on what these operators mean? check out the <Link className="contentLink" to="/arithmetic"><b className="pageName">arithmetic page</b></Link>!). but what if we want to do more <b>complex math operations</b>, such as raising a number to a power, or getting the absolute value of a number? luckily for us, the <b>Math</b> library provides us with a variety of math constants and complex functions. let's take a look at all of the brand new and super cool functionality the <b>Math</b> library gives us! 
 				<br/>
 				(<b className="note">btw:</b> if you don't understand some of the mathematical concepts discussed below, that is <b>completely okay</b>. knowing every single aspect of the Math library isn't essential to your programming journey. the goal of talking about the Math library is simply to <b>add more tools into your programming toolbox</b>. you may never use some of the functionality, but you may use other functionality frequently.)
 				<br/>
@@ -49,7 +53,7 @@ class Mathematics extends React.Component{
 				double circumference = 2 * Math.PI * radius;
 				</div>
 				<h3>which one is greater? which one is smaller?</h3>
-				let's learn how to get the <b>maximum value</b> and the <b>minimum value</b> between two numbers using the Math library. the two numbers you are comparing can either both be <b>integers</b> or both be <b>doubles</b> (<b className="note">psst. need a reminder</b> on what the difference is between an <b>int</b> and a <b>double</b>? check out the <b className="pageName">variables page</b>!). here is the blueprint for getting the max and min between two numbers:
+				let's learn how to get the <b>maximum value</b> and the <b>minimum value</b> between two numbers using the Math library. the two numbers you are comparing can either both be <b>integers</b> or both be <b>doubles</b> (<b className="note">psst. need a reminder</b> on what the difference is between an <b>int</b> and a <b>double</b>? check out the <Link className="contentLink" to="/variables"><b className="pageName">variables page</b></Link>!). here is the blueprint for getting the max and min between two numbers:
 				<br/>
 				<b>
 				Math.max(<i>&lt;first int or double&gt;</i>, <i>&lt;second int or double&gt;</i>)
@@ -57,7 +61,7 @@ class Mathematics extends React.Component{
 				Math.min(<i>&lt;first int or double&gt;</i>, <i>&lt;second int or double&gt;</i>)
 				</b>
 				<br/><br/>
-				here's a basic example of some code using <b>Math.min()</b> that prints out the younger age between two variables: <i>myAge</i> and <i>yourAge</i> (<b className="note">psst. need a reminder</b> on why there's a <b>+</b> sign after the String in the print statement at the bottom of the code? check out the <b className="pageName">strings page</b>!). try to predict what will be printed out to the console!
+				here's a basic example of some code using <b>Math.min()</b> that prints out the younger age between two variables: <i>myAge</i> and <i>yourAge</i> (<b className="note">psst. need a reminder</b> on why there's a <b>+</b> sign after the String in the print statement at the bottom of the code? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!). try to predict what will be printed out to the console!
 				<div className="code">
 				int myAge = 18;
 				<br/>
@@ -177,7 +181,7 @@ class Mathematics extends React.Component{
 				<h3>and that's it! for now...</h3>
 				there is so much more cool and complex math functions you can utilize with the Math library! (<b className="note">btw:</b> if you love trigonometry, the Math library has even more trig functions that you can play with.) unfortunately, we didn't have room to talk about everything in the Math library on this page, but <b>if you want to learn more about the Math library, simply search online</b>!
 				<br/>
-				there is one more topic in the Math library – generating random numbers – which is so important that we have dedicated a whole separate <b className="pageName">random numbers page</b> just for that topic. it's a bit more <b>advanced</b> than everything we've talked about so far, so you'll see it after some more pages. <b>exciting times ahead!</b>
+				there is one more topic in the Math library – generating random numbers – which is so important that we have dedicated a whole separate page just for that topic. it's a bit more <b>advanced</b> than everything we've talked about so far, so you'll see it later down the road. <b>exciting times ahead!</b>
 				<h3>Math.recap()</h3>
 				<b>woohoo!</b> you made it to recap!
 				<br/><br/>
@@ -311,7 +315,7 @@ class Mathematics extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/if-statement"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

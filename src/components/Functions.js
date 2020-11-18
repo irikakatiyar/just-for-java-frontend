@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Functions extends React.Component{
 	constructor(props){
@@ -57,7 +61,7 @@ class Functions extends React.Component{
 	            <h3>bro, do i have to write "public static" in front of every function?</h3>
 	            the short answer: <b>yes, for now.</b> we will discuss what the keywords <b>public</b> and <b>static</b> mean in the future, but for now, include them in every function header.
 	            <h3>k thx bro. what's next?</h3>
-	            function name. pretty self-explanatory. it's just the name that you give a function. and it's what you call a function by when you want to use it. (<b className="note">btw:</b> we will talk in detail about how to call a function soon!!) the convention for naming functions is the same as for naming variables. (<b className="note">psst. need a reminder</b> on the naming convention for variables and how it differs from that of constants? check out the <b className="pageName">constants page</b>!)
+	            function name. pretty self-explanatory. it's just the name that you give a function. and it's what you call a function by when you want to use it. (<b className="note">btw:</b> we will talk in detail about how to call a function soon!!) the convention for naming functions is the same as for naming variables. (<b className="note">psst. need a reminder</b> on the naming convention for variables and how it differs from that of constants? check out the <Link className="contentLink" to="/constants"><b className="pageName">constants page</b></Link>!)
 	            <h3>ay that was a simple one bro. im guessing the next components are more complicated?</h3>
 	            hehe you guessed right! but we'll break it down for you so it's easier to understand. here's the <b>big picture</b>: functions have <b>input</b> and <b>output</b>. input is what a function takes in and output is what a function spits out. now let's learn some <b>fancy function terminology</b> that we use to describe input and output:
 	            <ul>
@@ -142,7 +146,7 @@ class Functions extends React.Component{
 	            <br/>
 	            &#125;
 	            </div>
-	            (<b className="note">psst. need a reminder</b> of using the + operator in String concatenation? check out the <b className="pageName">strings page</b>!)
+	            (<b className="note">psst. need a reminder</b> of using the + operator in String concatenation? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!)
 				<br/><br/>
 	            <b>let's create a function called howdy that returns "howdy, <i>name</i>!", where <i>name</i> is a person's name that is passed into the function.</b> before coding, let's do some planning using the list of questions above:
 	            <ol>
@@ -322,16 +326,16 @@ class Functions extends React.Component{
 	            &#125;
 	            </div>
 	            <h3>wait a minute bro – functions seem familiar to me, but idk why</h3>
-	            bro – what if i told you that <b>you've already been using functions</b> since the <b className="pageName">printing page</b>? <br/><br/>
+	            bro – what if i told you that <b>you've already been using functions</b> since the <Link className="contentLink" to="/printing"><b className="pageName">printing page</b></Link>? <br/><br/>
 	            mind. 
 	            <br/>
 	            blown.
 	            <br/><br/>
 	            and yes, that means that <b>println</b> and <b>print</b> are functions. 
-	            <br/>so are <b>charAt</b>, <b>indexOf</b>, and <b>substring</b> (<b className="note">psst. need a reminder</b> of what these functions do? check out the <b className="pageName">strings page</b>!). 
-	            <br/>and how about <b>abs</b>, <b>pow</b>, and <b>sqrt</b>? those are also functions (<b className="note">psst. need a reminder</b> of what these functions do? check out the <b className="pageName">math page</b>!). 
-	            <br/>don't forget about <b>nextLine</b>, <b>nextInt</b>, <b>nextDouble</b>, and <b>nextBoolean</b> (<b className="note">psst. need a reminder</b> of what these functions do? check out the <b className="pageName">user input page</b>!). every time you used one of these functions, you are <b>calling</b> that function! omg!
-	            <br/><br/>we can go even deeper and analyze a function that we've already used to see if it has any parameters or if it returns any value. for example, let's take the <b>length</b> function that you learned about on the <b className="pageName">strings page</b>. check out the following program that uses the <b>length</b> function and sticks with our wild west theme for this page:
+	            <br/>so are <b>charAt</b>, <b>indexOf</b>, and <b>substring</b> (<b className="note">psst. need a reminder</b> of what these functions do? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!). 
+	            <br/>and how about <b>abs</b>, <b>pow</b>, and <b>sqrt</b>? those are also functions (<b className="note">psst. need a reminder</b> of what these functions do? check out the <Link className="contentLink" to="/math"><b className="pageName">math page</b></Link>!). 
+	            <br/>don't forget about <b>nextLine</b>, <b>nextInt</b>, <b>nextDouble</b>, and <b>nextBoolean</b> (<b className="note">psst. need a reminder</b> of what these functions do? check out the <Link className="contentLink" to="/user-input"><b className="pageName">user input page</b></Link>!). every time you used one of these functions, you are <b>calling</b> that function! omg!
+	            <br/><br/>we can go even deeper and analyze a function that we've already used to see if it has any parameters or if it returns any value. for example, let's take the <b>length</b> function that you learned about on the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>. check out the following program that uses the <b>length</b> function and sticks with our wild west theme for this page:
 	            <div className="code">
 	            String yeehaw = "yeehaw cowboy!";
 	            <br/>int yeehawLength = yeehaw.length(); <div className="comment">//the value of yeehawLength is 14</div>
@@ -345,7 +349,7 @@ class Functions extends React.Component{
 	            	<li>the main method's return type is <b>void</b>, which means that it doesn't return anything</li>
 	            	<li>the main method takes in one parameter, with a type of <b>String[]</b> and a name of <b>args</b></li>
 	            </ul>
-	            you don't know yet what String[] means, but we will learn about it thoroughly on the <b className="pageName">array page</b>! (<b className="note">btw:</b> you'll likely never use the parameter passed into the main method when you are coding, but now you know that it's there! we won't cover what the main method's parameter means here, but if you want to learn more, feel free to search it up online!)
+	            you don't know yet what String[] means, but we will learn about it thoroughly on the <Link className="contentLink" to="/array"><b className="pageName">array page</b></Link>! (<b className="note">btw:</b> you'll likely never use the parameter passed into the main method when you are coding, but now you know that it's there! we won't cover what the main method's parameter means here, but if you want to learn more, feel free to search it up online!)
 	            <h3>bro, can you put an if statement in a function?</h3>
 	            yuh bro! want an example? let's make a program that <b>checks if we have enough money to buy a horse</b>.
 	            <br/><br/>
@@ -361,7 +365,7 @@ class Functions extends React.Component{
 	            <br/>
 	            &#125;
 	            </div><br/>
-	            now it's time for the function <b>body</b>. in the body, we need to check if <i>myMoney</i> is <b>greater than or equal to</b> <i>priceOfHorse</i>. (<b className="note">hint:</b> the operator <b>&gt;=</b> means greater than or equal to.) if so, we will return <b>true</b>; otherwise, we will return <b>false</b>. ready to make an <b>if statement</b>? (<b className="note">psst. need a reminder</b> on how to construct an if statement? check out the <b className="pageName">if statement page</b>!) take a look at our dandy function below:
+	            now it's time for the function <b>body</b>. in the body, we need to check if <i>myMoney</i> is <b>greater than or equal to</b> <i>priceOfHorse</i>. (<b className="note">hint:</b> the operator <b>&gt;=</b> means greater than or equal to.) if so, we will return <b>true</b>; otherwise, we will return <b>false</b>. ready to make an <b>if statement</b>? (<b className="note">psst. need a reminder</b> on how to construct an if statement? check out the <Link className="contentLink" to="/if-statement"><b className="pageName">if statement page</b></Link>!) take a look at our dandy function below:
 	            <div className="code">
 	            public static boolean canPurchaseHorse(double myMoney, double priceOfHorse) &#123;
 	            <br/>
@@ -398,7 +402,7 @@ class Functions extends React.Component{
 	            <br/>
 	            &#125;
 	            </div><br/>
-	            sweet bro! now for the body. can you figure out how to <b>print every nth character of a String</b>? (<b className="note">hint:</b> you may need to use a for loop where your iterator variable is the index...) let's construct a <b>for loop</b> that iterates through <b>every <i>n</i>th index</b> in <i>str</i>. to do this, the <b>iterate component</b> of our for loop should be <b>i+=n</b> because we want to advance by <i>n</i> each iteration. (<b className="note">psst. need a reminder</b> on what the iterate component and the other two components of a for loop are? check out the <b className="pageName">for loop page</b>!) and finally, inside our for loop, we'll have a same-line print statement that prints out the character at index <i>i</i> in <i>str</i>. (<b className="note">psst. need a reminder</b> on how to access characters in a String by index? check out the <b className="pageName">strings page</b>!) here's our completed function below:
+	            sweet bro! now for the body. can you figure out how to <b>print every nth character of a String</b>? (<b className="note">hint:</b> you may need to use a for loop where your iterator variable is the index...) let's construct a <b>for loop</b> that iterates through <b>every <i>n</i>th index</b> in <i>str</i>. to do this, the <b>iterate component</b> of our for loop should be <b>i+=n</b> because we want to advance by <i>n</i> each iteration. (<b className="note">psst. need a reminder</b> on what the iterate component and the other two components of a for loop are? check out the <Link className="contentLink" to="/for-loop"><b className="pageName">for loop page</b></Link>!) and finally, inside our for loop, we'll have a same-line print statement that prints out the character at index <i>i</i> in <i>str</i>. (<b className="note">psst. need a reminder</b> on how to access characters in a String by index? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!) here's our completed function below:
 	            <div className="code">
 	            public static void printEveryNth(String str, int n) &#123;
 	            <br/>
@@ -458,7 +462,7 @@ class Functions extends React.Component{
 	            &#125;
 	            </div>
 	            <br/>
-	            let's make another function that <b>asks the user</b> how much money they have and the price of the horse they want, and prints out <b>how much money they have left</b> if they can purchase the horse, or prints out a message telling them that they don't have enough money. this function will involve <b>user input</b>, so this example will be a good review of past concepts as well! (<b className="note">psst. need a reminder</b> on how to ask the user a question and store their answer? check out the <b className="pageName">user input page</b>!) finally, our main method will simply call this new function that we create. 
+	            let's make another function that <b>asks the user</b> how much money they have and the price of the horse they want, and prints out <b>how much money they have left</b> if they can purchase the horse, or prints out a message telling them that they don't have enough money. this function will involve <b>user input</b>, so this example will be a good review of past concepts as well! (<b className="note">psst. need a reminder</b> on how to ask the user a question and store their answer? check out the <Link className="contentLink" to="/user-input"><b className="pageName">user input page</b></Link>!) finally, our main method will simply call this new function that we create. 
 	            <br/><br/>think you can get on that saddle and ride this horse all by yourself? <b>you got this, cowboy.</b> (<b className="note">hint:</b> make sure to store the two pieces of input you receive from the user in two variables so that you can pass those variables into the canPurchaseHorse function as <b>arguments</b>!) take a look at our fully-coded program below with <b>comments</b> explaining the code:
 	            <div className="code">
 	            import java.util.Scanner; <div className="comment">//don't forget this import statement!</div>
@@ -679,7 +683,7 @@ class Functions extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/overloading"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

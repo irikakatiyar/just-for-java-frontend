@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class ForEachLoop extends React.Component{
 	constructor(props){
@@ -27,14 +31,14 @@ class ForEachLoop extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-	            remember when we talked about <b>good ol' for loops</b>? (<b className="note">psst. need a reminder</b> on what these good ol' for loops are? check out the <b className="pageName">for loop page</b>!) well there's actually another type of for loop that we haven't talked about yet. (<b className="note">btw:</b> sry for hiding secrets from you... do you forgive us?) it's called a <b>for-each loop</b>!
+	            remember when we talked about <b>good ol' for loops</b>? (<b className="note">psst. need a reminder</b> on what these good ol' for loops are? check out the <Link className="contentLink" to="/for-loop"><b className="pageName">for loop page</b></Link>!) well there's actually another type of for loop that we haven't talked about yet. (<b className="note">btw:</b> sry for hiding secrets from you... do you forgive us?) it's called a <b>for-each loop</b>!
 	            <h3>a for-each loop? ngl that sounds kinda lame</h3>
 	            well it isn't.
 	            <div className="code">
 	            System.out.print("haters. back. off.");
 	            </div>
 	            <h3>only positive vibes allowed beyond this point</h3>
-	            for-each loops are used to <b>iterate through arrays and other collections that we will talk about later</b>. (<b className="note">psst. need a reminder</b> on what an array is? check out the <b className="pageName">array page</b>!) burning to know how to make one yourself? here is the blueprint for constructing a for-each loop:
+	            for-each loops are used to <b>iterate through arrays and other collections that we will talk about later</b>. (<b className="note">psst. need a reminder</b> on what an array is? check out the <Link className="contentLink" to="/array"><b className="pageName">array page</b></Link>!) burning to know how to make one yourself? here is the blueprint for constructing a for-each loop:
 	            <br/>
 	            <b>
 	            for(<i>&lt;type&gt;</i> <i>&lt;item&gt;</i> : <i>&lt;array&gt;</i>)&#123;
@@ -88,7 +92,7 @@ class ForEachLoop extends React.Component{
 	            violet
 	            </div>
 	            <h3>woah! printing arrays are so much easier with a for-each loop!</h3>
-	            ikr?! here is the function we coded on the <b className="pageName">arrays page</b> that <b>prints out an array using a standard for loop</b>:
+	            ikr?! here is the function we coded on the <Link className="contentLink" to="/array"><b className="pageName">array page</b></Link> that <b>prints out an array using a standard for loop</b>:
 	            <div className="code">
 	            <div className="comment">//this function prints a char array using a for loop</div>
 	            <br/>
@@ -244,7 +248,7 @@ class ForEachLoop extends React.Component{
 	            uni
 	            </div>
 				<h3>scenario 3: roygbiv</h3>
-				let's create a program that <b>prints out the first letter of each color in the <i>rainbow</i> array</b> using the <b>substring</b> method. (<b className="note">psst. need a reminder</b> on what the substring method is? check out the <b className="pageName">strings page</b>!) the console should display as follows:
+				let's create a program that <b>prints out the first letter of each color in the <i>rainbow</i> array</b> using the <b>substring</b> method. (<b className="note">psst. need a reminder</b> on what the substring method is? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!) the console should display as follows:
 				<div className="code">
 				roygbiv
 				</div>
@@ -458,7 +462,7 @@ class ForEachLoop extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/arraylist"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

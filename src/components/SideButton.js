@@ -1,7 +1,6 @@
 import React from 'react';
 import './SideButton.css';
 import {
-  useLocation,
   NavLink
 } from "react-router-dom";
 

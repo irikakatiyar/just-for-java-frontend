@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Variables extends React.Component{
 	constructor(props){
@@ -56,7 +60,7 @@ class Variables extends React.Component{
 				</div>
 				<h3>strings? you mean what you use to make bracelets?</h3>
 				nope. in java, <b>strings</b> are used to store text. they're denoted using double quotation marks. (<b className="note">btw:</b> if you set a string variable equal to <b>""</b>, that's an empty string, meaning it doesn't contain any text yet.)
-				to make a string variable, you need to type <b>String</b> as the type. strings are a lot cooler than the other variable types. if you want to learn why that is, check out the <b className="pageName">strings page</b>!
+				to make a string variable, you need to type <b>String</b> as the type. strings are a lot cooler than the other variable types. if you want to learn why that is, check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!
 				below is an example of a string variable with the name <i>word</i> being used to store the value "hello world".<br/>
 				<div className = "code">
 					String word = "hello world"; <div className = "comment">//note that the value is surrounded by double quotation marks</div>
@@ -164,7 +168,7 @@ class Variables extends React.Component{
 				<br/>
 				<div className="solution">
 					<b className="note">our solution:</b><br/><br/>
-					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. (<b className="note">psst.</b> confused about what a comment is? don't worry about it for now because we're gonna talk about that next on the <b className="pageName">comments page</b>!) 
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. (<b className="note">psst.</b> confused about what a comment is? don't worry about it for now because we're gonna talk about that next on the <Link className="contentLink" to="/comments"><b className="pageName">comments page</b></Link>!) 
 					hopefully your code looks similar to ours <b>:)</b><br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-savvy-school-scheduling-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
@@ -197,7 +201,7 @@ class Variables extends React.Component{
 				<br/>
 				<div className="solution">
 					<b className="note">our solution:</b><br/><br/>
-					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. (<b className="note">psst.</b> confused about what a comment is? don't worry about it for now because we're gonna talk about that next on the <b className="pageName">comments page</b>!) 
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. (<b className="note">psst.</b> confused about what a comment is? don't worry about it for now because we're gonna talk about that next on the <Link className="contentLink" to="/comments"><b className="pageName">comments page</b></Link>!) 
 					hopefully your code looks similar to ours <b>:)</b><br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-sunny-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
@@ -230,7 +234,7 @@ class Variables extends React.Component{
 				<br/>
 				<div className="solution">
 					<b className="note">our solution:</b><br/><br/>
-					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. (<b className="note">psst.</b> confused about what a comment is? don't worry about it for now because we're gonna talk about that next on the <b className="pageName">comments page</b>!) 
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. (<b className="note">psst.</b> confused about what a comment is? don't worry about it for now because we're gonna talk about that next on the <Link className="contentLink" to="/comments"><b className="pageName">comments page</b></Link>!) 
 					hopefully your code looks similar to ours <b>:)</b><br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/variables-i-scream-ice-cream-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
@@ -243,7 +247,7 @@ class Variables extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/comments"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

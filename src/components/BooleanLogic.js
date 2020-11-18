@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class BooleanLogic extends React.Component{
 	constructor(props){
@@ -30,7 +34,7 @@ class BooleanLogic extends React.Component{
 	            />
 				welcome to <b>boolean logic</b>! our goal for this page is for you to understand what <b>2B||!2B</b> means! 
 				<br/>
-				we are going to learn how to make our <b>if statements</b> more complex so that we can check multiple things at once (<b className="note">psst. need a reminder</b> on what in the world if statements are? check out the <b className="pageName">if statements page</b>!). and of course, as the name suggests, we are going to work with <b>booleans</b>! (<b className="note">btw:</b> a <b>boolean</b> is a variable type that has only two possible values: <b>true</b> or <b>false</b>.)
+				we are going to learn how to make our <b>if statements</b> more complex so that we can check multiple things at once (<b className="note">psst. need a reminder</b> on what in the world if statements are? check out the <Link className="contentLink" to="/if-statement"><b className="pageName">if statement page</b></Link>!). and of course, as the name suggests, we are going to work with <b>booleans</b>! (<b className="note">btw:</b> a <b>boolean</b> is a variable type that has only two possible values: <b>true</b> or <b>false</b>.)
 				<br/>
 				are you ready for a bunch of fun symbols like <b>!</b>, <b>&&</b>, <b>||</b>, and <b>()</b>? are you ready for tons of tables filled with <b>true</b> and <b>false</b>? cool. let's do this.
 				<br/>
@@ -52,7 +56,7 @@ class BooleanLogic extends React.Component{
 					</tr>
 				</table>
 				<h3>! understanding this quite yet? maybe an example will help</h3>
-				here's an example: let's make a program that checks if a password that the user enters is not empty. (<b className="note">psst. need a reminder</b> on how in the world you can get and store user input? check out the <b className="pageName">user input page</b>!) (<b className="note">psst. need a reminder</b> on how to check if a String is empty or not? check out the <b className="pageName">strings page</b>!)
+				here's an example: let's make a program that checks if a password that the user enters is not empty. (<b className="note">psst. need a reminder</b> on how in the world you can get and store user input? check out the <Link className="contentLink" to="/user-input"><b className="pageName">user input page</b></Link>!) (<b className="note">psst. need a reminder</b> on how to check if a String is empty or not? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!)
 				<br/><br/>
 				ready for the <b>big reveal</b>? the first thing you need to do is import the <b>Scanner</b> class to help you get user input. at the <b>top of your program</b>, you should have the following line of code:
 				<div className="code">
@@ -120,7 +124,7 @@ class BooleanLogic extends React.Component{
 					</tr>
 				</table>
 				<h3>i'm confused && i might need an example</h3>
-				of course! let's make a program that creates two boolean variables: <i>isSunny</i> and <i>beachOpen</i>. if it's sunny and the beach is open, then print out a message saying "it's a great day to go to the beach!" (<b className="note">psst. need a reminder</b> on how to print a message to the console? check out the <b className="pageName">printing page</b>!)
+				of course! let's make a program that creates two boolean variables: <i>isSunny</i> and <i>beachOpen</i>. if it's sunny and the beach is open, then print out a message saying "it's a great day to go to the beach!" (<b className="note">psst. need a reminder</b> on how to print a message to the console? check out the <Link className="contentLink" to="/printing"><b className="pageName">printing page</b></Link>!)
 				<br/><br/>
 				ready for the <b>big reveal</b>? you should have something like the following in your main method:
 				<div className="code">
@@ -177,7 +181,7 @@ class BooleanLogic extends React.Component{
 					</tr>
 				</table>
 				<h3>can you elaborate? || can you give me an example?</h3>
-				sure! let's make a program that checks if your favorite number is divisible by either 3 or 5 (<b className="note">psst. need a reminder</b> on how you can check divisiblity using the <b>%</b> operator? check out the <b className="pageName">arithmetics page</b>!)
+				sure! let's make a program that checks if your favorite number is divisible by either 3 or 5 (<b className="note">psst. need a reminder</b> on how you can check divisiblity using the <b>%</b> operator? check out the <Link className="contentLink" to="/arithmetic"><b className="pageName">arithmetic page</b></Link>!)
 				<br/><br/>
 				ready for the <b>big reveal</b>? you should have something like the following in your main method: 
 				<div className="code">
@@ -200,7 +204,7 @@ class BooleanLogic extends React.Component{
 				<h3>() = do this first</h3>
 				whenever you see <b>()</b>, think <b>"hey! do this first!"</b>.
 				<br/>
-				if we combine <b>!</b>, <b>&&</b>, <b>||</b>, and <b>()</b> in a giant if statement, then there is a precedence on what happens first, just like how <b>*</b>, <b>/</b>, and <b>%</b> happen before <b>+</b> and <b>-</b>. (<b className="note">psst. need a reminder</b> on the order of operations? check out the <b className="pageName">arithmetics page</b>!) let's take a look at <b>logical precedence</b>:
+				if we combine <b>!</b>, <b>&&</b>, <b>||</b>, and <b>()</b> in a giant if statement, then there is a precedence on what happens first, just like how <b>*</b>, <b>/</b>, and <b>%</b> happen before <b>+</b> and <b>-</b>. (<b className="note">psst. need a reminder</b> on the order of operations? check out the <Link className="contentLink" to="/arithmetic"><b className="pageName">arithmetic page</b></Link>!) let's take a look at <b>logical precedence</b>:
 				<ol>
 					<li>()</li>
 					<li>!</li>
@@ -231,7 +235,7 @@ class BooleanLogic extends React.Component{
 				<br/>
 				the first condition is that the t-shirt needs to be available either in the store or online. did you spot the <b>or</b> in there? in terms of boolean logic, the first condition is equivalent to <i>availableInStore</i> <b>||</b> <i>availableOnline</i>. onto the second condition!
 				<br/>
-				the second condition is that the price of the t-shirt needs to be less than or equal to our budget. did you spot the <b>less than or equal to</b> in there? the second condition is simply <i>price</i> <b>&lt;=</b> <i>budget</i>! (<b className="note">psst. need a reminder</b> on the comparison operators, such as <b>&lt;=</b>? check out the <b className="pageName">if statement page</b>!)
+				the second condition is that the price of the t-shirt needs to be less than or equal to our budget. did you spot the <b>less than or equal to</b> in there? the second condition is simply <i>price</i> <b>&lt;=</b> <i>budget</i>! (<b className="note">psst. need a reminder</b> on the comparison operators, such as <b>&lt;=</b>? check out the <Link className="contentLink" to="/if-statement"><b className="pageName">if statement page</b></Link>!)
 				<br/>
 				the last thing we need to do is combine the two conditions together. remember that both the first condition and the second condition must be true in order for you to be able to buy this t-shirt. did you spot the <b>and</b> in there? in terms of boolean logic, this is equivalent to first condition <b>&&</b> second condition. by substituting "first condition" and "second condition" with what we wrote earlier, we get (<i>availableInStore</i> <b>||</b> <i>availableOnline</i>) <b>&&</b> <i>price</i> <b>&lt;=</b> <i>budget</i>. we put <b>()</b> around the first condition because we want the first condition to be individually evaluated first.
 				<br/><br/>

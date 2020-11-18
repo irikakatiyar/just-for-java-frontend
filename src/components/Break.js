@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Break extends React.Component{
 	constructor(props){
@@ -53,7 +57,7 @@ class Break extends React.Component{
 				</div>
 				pretty straightforward, right? break simply <b>ends the loop that it's written in</b>. 
 				<h3>but, what if we have a loop inside a loop?</h3>
-				aka nesting (<b className="note">psst. need a reminder</b> on what nesting is? check out the <b className="pageName">nesting page</b>!). good question! if we have nested loops, and <b>break is written in the inner most loop</b>, it will simply <b>exit only the inner most loop</b>!
+				aka nesting (<b className="note">psst. need a reminder</b> on what nesting is? check out the <Link className="contentLink" to="/nesting"><b className="pageName">nesting page</b></Link>!). good question! if we have nested loops, and <b>break is written in the inner most loop</b>, it will simply <b>exit only the inner most loop</b>!
 				i know that seems confusing, so let's take a look at an <b>example</b>.<br/>
 				in the example below, we want to do something similar to what we previously did, <i>but</i> we wanna be fancier. you know, just step it up a notch. cuz we're cool like that.
 				alright, back to the coding now. so, here we want to try and print the numbers 1-5 5 times. we can do this using a for loop inside a foor loop, like so:
@@ -82,7 +86,7 @@ class Break extends React.Component{
 				</div>
 				makes sense, right? break exits out of the inner most loop that it is in. in this case, we saw that it exited out of the inner for loop with i only, but continued in the outer for loop until j became 5. awesome!! now, let's take a look at an interesting concept...while(true) loops.
 				<h3>umm... wdym? what's while(true)?</h3>
-				<b>while(true)</b> is essentially a loop that runs forever. (<b className="note">psst. need a reminder</b> on while loops? check out the <b className="pageName">while loop page</b>!). that's why, whevenever you have a while(true) loop, you <i>need</i> a break inside.
+				<b>while(true)</b> is essentially a loop that runs forever. (<b className="note">psst. need a reminder</b> on while loops? check out the <Link className="contentLink" to="/while-loops"><b className="pageName">while loop page</b></Link>!). that's why, whevenever you have a while(true) loop, you <i>need</i> a break inside.
 				let's take a look at an <b>example</b>.<br/><br/> let's say we want to ask a user all of the things they have to do for the day, and once they finish listing their todos, they can type in "quit" to stop the program. but, <b>we don't know the total number of iterations we need</b>. some might have 1 thing to do (if they're on top of their todos), and some might have ten things to do (calling all procrastinators).
 				either way, we won't know how many times it'll take for them to finish listing their todos. that's when we can use a <b>while(true) loop</b>! so, this is what the code would look like:
 				<div className="code">
@@ -171,7 +175,7 @@ class Break extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/functions"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

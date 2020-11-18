@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+  Link
+} from "react-router-dom";
+
 
 class About extends React.Component{
 	constructor(props){
@@ -22,13 +26,13 @@ class About extends React.Component{
 				<b>a little more about irika:</b><br/>
 				my name is irika, and i'm the older twin (by 30 seconds, every second counts!) the programming languages i know are java, html, 
 				css, and javascript. other than coding, i love to play squash, do bollywood dance, play guitar, sing, bike, travel, write children's books 
-				(search up my name on amazon), and make animated videos (check out 2MinuteBio on youtube). i also love watching netflix, making random videos on imovie, 
+				(check out <a className="externalLink" href="https://www.amazon.com/Irika-Katiyar/e/B08CLRVFXC/ref=dp_byline_cont_pop_ebooks_1" target="_blank"><b className="pageName">my books</b></a> on amazon), and make animated videos (check out <a className="externalLink" href="https://www.youtube.com/channel/UCZS-1FYH-OWMNunElTjejKw" target="_blank"><b className="pageName">2MinuteBio</b></a> on youtube). i also love watching netflix, making random videos on imovie, 
 				and hanging out with friends!<br/><br/>
 				<b> a little more about irith:</b><br/>
 				my name is irith, and i'm the younger twin, something irika never fails to remind me about. the programming languages i know are java, html, 
-				css, javascript, swift, and python. i love to make apps (check out appchapp.com) and have four apps on the app store! you can also find me on juni 
+				css, javascript, swift, and python. i love to make apps (check out <a className="externalLink" href="http://appchapp.com" target="_blank"><b className="pageName">appchapp.com</b></a>) and have four apps on the app store! you can also find me on juni 
 				learning's blog and youtube channel. other than coding, i love to play squash, do bollywood dance, play mario kart, binge-watch netflix 
-				(black mirror is my all time favorite show, followed by FRIENDS), and meet new people. <br/><br/>
+				(black mirror is my all time favorite show, followed by friends), and meet new people. <br/><br/>
 				<b>special thanks to:</b><br/>
 				our coding instructor, ruby, for helping us create this website!<br/>
 				our amazing parents for letting us stay up till midnight working on this website!

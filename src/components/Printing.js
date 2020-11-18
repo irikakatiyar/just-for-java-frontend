@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Printing extends React.Component{
 	constructor(props){
@@ -75,7 +79,7 @@ class Printing extends React.Component{
 				<br/>
 				System.out.println(false);
 				</div>
-				(<b className="note">psst. need a reminder</b> on what that first line of code is with the <b>//</b> symbol? check out the <b className="pageName">comments page</b>!)
+				(<b className="note">psst. need a reminder</b> on what that first line of code is with the <b>//</b> symbol? check out the <Link className="contentLink" to="/comments"><b className="pageName">comments page</b></Link>!)
 				<br/><br/>
 				have a prediction in mind? awesome. it would look like this in the console:
 				<div className="code">
@@ -91,7 +95,7 @@ class Printing extends React.Component{
 				in fact, yes! just one more thing. you can also print out <b>variables</b> by putting the <b>variable name</b> in between the parentheses of the print statement. here is the blueprint for printing a variable using both same-line and next-line printing:<br/>
 				<b>System.out.print(<i>&lt;name&gt;</i>);</b> or<br/>
 				<b>System.out.println(<i>&lt;name&gt;</i>);</b><br/><br/>
-				let's do a <b>coding exercise</b> to practice printing variables! create a variable of any type you want and print it out. then change the value of the variable and print it out again. (<b className="note">psst. need a reminder</b> on how to initialize a variable and change its value? check out the <b className="pageName">variables page</b>!)
+				let's do a <b>coding exercise</b> to practice printing variables! create a variable of any type you want and print it out. then change the value of the variable and print it out again. (<b className="note">psst. need a reminder</b> on how to initialize a variable and change its value? check out the <Link className="contentLink" to="/variables"><b className="pageName">variables page</b></Link>!)
 				<br/>
 				here is some example code similar to what you may have:
 				<div className="code">
@@ -203,7 +207,7 @@ class Printing extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/arithmetic"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class UserInput extends React.Component{
 	constructor(props){
@@ -65,7 +69,7 @@ class UserInput extends React.Component{
 				<h3>step 5: do something with their input</h3>
 				this step will vary depending on what your program is supposed to do. 
 				<br/>
-				for our program, we want to say hello to the user. now that we have the user's name stored in the variable <i>name</i>, we can print out a greeting to the user saying "hello <i>name</i>". to do this, we can use <b>String concatenation</b>. (<b className="note">psst. need a reminder</b> of what in the world String concatenation is? check out the <b className="pageName">strings page</b>!) to add our variable <i>name</i> to "hello ". (<b className="note">btw:</b> make sure you add a space after hello so that there is a space between hello and the user's name.)
+				for our program, we want to say hello to the user. now that we have the user's name stored in the variable <i>name</i>, we can print out a greeting to the user saying "hello <i>name</i>". to do this, we can use <b>String concatenation</b>. (<b className="note">psst. need a reminder</b> of what in the world String concatenation is? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!) to add our variable <i>name</i> to "hello ". (<b className="note">btw:</b> make sure you add a space after hello so that there is a space between hello and the user's name.)
 				<div className="code">System.out.println("hello " + name);</div>
 				awesome! we now have a fully functional program that asks the user for their name and prints out "hello <i>name</i>".
 				<h3>step 6: aw it's time to close</h3>
@@ -98,9 +102,9 @@ class UserInput extends React.Component{
 				<br/>
 				in.close();
 				</div>
-				nice work! (<b className="note">psst. need a reminder</b> on why you see a bunch of <b>//</b> in the sample code above? check out the <b className="pageName">comments page</b>!)
+				nice work! (<b className="note">psst. need a reminder</b> on why you see a bunch of <b>//</b> in the sample code above? check out the <Link className="contentLink" to="/comments"><b className="pageName">comments page</b></Link>!)
 				<h3>incoming! user input code dump</h3>
-				we can get a <b>String</b>, <b>int</b>, <b>double</b> or <b>boolean</b> (<b className="note">psst. need a reminder</b> of what all of these variable types are? check out the <b className="pageName">variables page</b>!) as user input:
+				we can get a <b>String</b>, <b>int</b>, <b>double</b> or <b>boolean</b> (<b className="note">psst. need a reminder</b> of what all of these variable types are? check out the <Link className="contentLink" to="/variables"><b className="pageName">variables page</b></Link>!) as user input:
 				<br/>
 				<br/>
 				<table>
@@ -256,7 +260,7 @@ class UserInput extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/math"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

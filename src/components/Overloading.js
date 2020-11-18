@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Overloading extends React.Component{
 	constructor(props){
@@ -30,7 +34,7 @@ class Overloading extends React.Component{
 	            />
 	            mwahaha – we aren't done with <b>functions</b> quite yet! there's one last concept we need to address, called <b>overloading</b>.
 	            <h3>overloading, as in you put too many clothes in the laundry machine?</h3>
-	            not rly... but appreciate the effort. <b>overloading</b>, or more explicitly called method overloading, allows <b>multiple</b> functions to have the <b>same name</b>, as long as the <b>number of parameters</b> and/or the <b>type of parameters</b> are <b>different</b>. (<b className="note">psst. need a reminder</b> on what a parameter is? check out the <b className="pageName">functions page</b>!)
+	            not rly... but appreciate the effort. <b>overloading</b>, or more explicitly called method overloading, allows <b>multiple</b> functions to have the <b>same name</b>, as long as the <b>number of parameters</b> and/or the <b>type of parameters</b> are <b>different</b>. (<b className="note">psst. need a reminder</b> on what a parameter is? check out the <Link className="contentLink" to="/functions"><b className="pageName">functions page</b></Link>!)
 	            <h3>woah that definition was overloaded with technical language</h3>
 	            dw! to illustrate the concept of function overloading, let's go through <b>examples pertaining to each of the following conditions</b>:
 	            <ul>
@@ -113,7 +117,7 @@ class Overloading extends React.Component{
 	            </div>
 	            sweeeet!
 	            <h3>overloading by number of parameters</h3>
-	            now that we've learned how to overload by changing the type of parameters, let's learn how to overload by changing the number of parameters. say we wanted to make a function that <b>returns the absolute value of the maximum number between two integers</b>. do you remember the easy way to get the absolute value of a number and the maximum number between two numbers? (<b className="note">hint:</b> it starts with an <b>"m"</b> and ends in <b>"ath"</b>.) omg wow! you guessed it! we need to use <b>Math</b>! (<b className="note">psst. need a reminder</b> on how to use the Math.max and Math.abs functions? check out the <b className="pageName">math page</b>!) once you have an idea on what you need to do, check out our absMax function below:
+	            now that we've learned how to overload by changing the type of parameters, let's learn how to overload by changing the number of parameters. say we wanted to make a function that <b>returns the absolute value of the maximum number between two integers</b>. do you remember the easy way to get the absolute value of a number and the maximum number between two numbers? (<b className="note">hint:</b> it starts with an <b>"m"</b> and ends in <b>"ath"</b>.) omg wow! you guessed it! we need to use <b>Math</b>! (<b className="note">psst. need a reminder</b> on how to use the Math.max and Math.abs functions? check out the <Link className="contentLink" to="/math"><b className="pageName">math page</b></Link>!) once you have an idea on what you need to do, check out our absMax function below:
 	            <div className="code">
 	            <div className="comment">//this absMax function returns the absolute value of the maximum integer between two integers</div>
 	            <br/>
@@ -217,8 +221,8 @@ class Overloading extends React.Component{
 	            <br/>
 	            overloading allows functions that perform <b>similar or identical tasks</b> – but for whatever reason have <b>different parameters</b>, whether they differ by number or type – to have the <b>same name</b>, which not only makes your life easier and more convenient as a programmer, but also <b>improves the readability of your program</b>.
 	            <h3>have you realized that you've worked with overloaded functions before?</h3>
-	            just like we revealed to you on the <b className="pageName">functions page</b> that you've been working with functions all along, turns out that <b>you've already worked with overloaded functions before!!!</b> now the question becomes: which ones?!?! can you guess? (<b className="note">hint:</b> which functions that we've worked with can take in a different parameters, by number and/or type?) 
-	            <br/>here's a couple: <b>substring</b> is overloaded by a different <b>number</b> of parameters. (<b className="note">psst. need a reminder</b> on what substring does? check out the <b className="pageName">strings page</b>!) substring can take in one int parameter r– the start index – or two int parameters – the start index and end index. on the other hand, <b>printing functions</b> are overloaded by different <b>types</b> of parameters. just take a look at the code snippet below illustrating how print and println are overloaded:
+	            just like we revealed to you on the <Link className="contentLink" to="/functions"><b className="pageName">functions page</b></Link> that you've been working with functions all along, turns out that <b>you've already worked with overloaded functions before!!!</b> now the question becomes: which ones?!?! can you guess? (<b className="note">hint:</b> which functions that we've worked with can take in a different parameters, by number and/or type?) 
+	            <br/>here's a couple: <b>substring</b> is overloaded by a different <b>number</b> of parameters. (<b className="note">psst. need a reminder</b> on what substring does? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!) substring can take in one int parameter r– the start index – or two int parameters – the start index and end index. on the other hand, <b>printing functions</b> are overloaded by different <b>types</b> of parameters. just take a look at the code snippet below illustrating how print and println are overloaded:
 	            <div className="code">
 	            System.out.println(2); <div className="comment">//one int argument</div>
 	            <br/>
@@ -230,7 +234,7 @@ class Overloading extends React.Component{
 	            <br/>
 	            System.out.println(false); <div className="comment">//one boolean argument</div>
 	            </div>
-	            the best overloaded function imo is <b>indexOf</b>, since it has <b>four different sets of parameters</b>: 1 char, 1 String, 1 char and 1 int, and 1 String and 1 int. pretty fancy, eh? (<b className="note">psst. need a reminder</b> on what indexOf does? check out the <b className="pageName">strings page</b>!)
+	            the best overloaded function imo is <b>indexOf</b>, since it has <b>four different sets of parameters</b>: 1 char, 1 String, 1 char and 1 int, and 1 String and 1 int. pretty fancy, eh? (<b className="note">psst. need a reminder</b> on what indexOf does? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!)
 	            <h3>feelin' overloaded with info? time to recap!!</h3>
 	            <b>dang!</b> you made it to recap!
 				<br/><br/>
@@ -326,7 +330,7 @@ class Overloading extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/array"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class WhileLoop extends React.Component{
 	constructor(props){
@@ -36,7 +40,7 @@ class WhileLoop extends React.Component{
 				&#125;</b>
 				<h3>makes sense, but what's with the condition?</h3>
 				good question! just like the condition that we use in our if statements, this condition should have a value of either <b>true</b> or <b>false</b>. 
-				(<b className="note">psst.</b> need a reminder on the condition from if statements? check out our <b className="pageName">if statement page</b>!) 
+				(<b className="note">psst.</b> need a reminder on the condition from if statements? check out the <Link className="contentLink" to="/if-statement"><b className="pageName">if statement page</b></Link>!) 
 				if the condition is <b>true</b>, the <b>code block will be run</b>. however, if the condition is <b>false</b>, the <b>code block won't be run</b>. unlike if statements, however, while loops will <b>continuously loop</b> through the code block <b>until the condition becomes false</b>.
 				<h3>hmm... ok but can i get an example?</h3>
 				yea, definitely! let's say you want to print out the numbers 1-5. here's how we can do that using a while loop:
@@ -57,7 +61,7 @@ class WhileLoop extends React.Component{
 				this is exactly what we want, as we wanted to print out every number starting from 1 that is less than 5! great!<br/><br/>
 				<b>lastly</b>, inside our while loop, we want to <b>print out the number we are currently on</b>, and then <b>increase <i>count</i> by 1</b>. great! now time for some practice!<br/>
 				<h3>hey...wait a minute, that  example looks familiar</h3>
-				omg! you caught us! this example is just like the example in for loops (<b className="note">psst. need a reminder</b> on what we're referring to? check out the <b className="pageName">for loops page</b>!) 
+				omg! you caught us! this example is just like the example in for loops (<b className="note">psst. need a reminder</b> on what we're referring to? check out the <Link className="contentLink" to="/for-loop"><b className="pageName">for loop page</b></Link>!) 
 				as you notice from the example above, you can use while loops to do <b>similar things as what for loops do</b>. thinking back to for loops, remember there were <b>three components</b> needed. so where are those components while loops? well, let's <b>break this down:</b><br/>
 				<ul>
 					<li><b>initialize</b></li>
@@ -80,7 +84,7 @@ class WhileLoop extends React.Component{
 				<h3>let's take a look at an example</h3>
 				let's say we want to make a program that prompts the user to answer the question "do you like chocolate?" normally, the user will either type in yes or no, but what if the user types in "idk" or "sometimes" (cuz i mean sometimes chocolate is good, and sometimes it's not so good u kno?).
 				we can use a <b>while loop</b> to check if the user's answer is valid. let's break down the steps we need to go through...<br/><br/>
-				to do this, we will first need to get the user input, prompting the user to answer the question "do you like chocolate?" (<b className="note">psst. need a reminder</b> on how to get user input? check out the <b className="pageName">user input page</b>!)<br/><br/>
+				to do this, we will first need to get the user input, prompting the user to answer the question "do you like chocolate?" (<b className="note">psst. need a reminder</b> on how to get user input? check out the <Link className="contentLink" to="/user-input"><b className="pageName">user input page</b></Link>!)<br/><br/>
 				next, we will need to make a while loop to check if the user input isn't valid (meaning if they didn't write "yes" and they didn't write "no"). if they didn't have the correct answer, we will need ask the user the question again.<br/><br/>
 				ok, got it? let's take a look at all of that in code!
 				<div className="code">
@@ -183,7 +187,7 @@ class WhileLoop extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/nesting"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

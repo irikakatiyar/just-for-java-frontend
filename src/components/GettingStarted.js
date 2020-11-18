@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class GettingStarted extends React.Component{
 	constructor(props){
@@ -35,7 +39,7 @@ class GettingStarted extends React.Component{
 					<li>see that button in the top right corner that says sign in with google? click it!</li>
 					<li>bet you can't guess what this step is... sign in with google!</li>
 				</ol>
-				with your just for java account, you can now <b>track and save your progress</b>! pretty cool, eh? (<b className="note">btw:</b> it took us super long to write the code to save your progress, so please use it a lot hehe.) want to start tracking your progress <b>right now</b>? change the <b>progress dropdown menu</b> above from todo to in progress. now, go to the <b className="pageName">home page</b> and take a look at your progress table! you should see in progress next to getting started. oooooh fancy!! :) <b>progress dropdown menus</b> are located at both the <b>top</b> and <b>bottom</b> of every concept page.
+				with your just for java account, you can now <b>track and save your progress</b>! pretty cool, eh? (<b className="note">btw:</b> it took us super long to write the code to save your progress, so please use it a lot hehe.) want to start tracking your progress <b>right now</b>? change the <b>progress dropdown menu</b> above from todo to in progress. now, go to the <Link className="contentLink" to="/home"><b className="pageName">home page</b></Link> and take a look at your progress table! you should see in progress next to getting started. oooooh fancy!! :) <b>progress dropdown menus</b> are located at both the <b>top</b> and <b>bottom</b> of every concept page.
 				<h3>bro when can i start coding?</h3>
 				<b>soon bro.</b> briefly, we just wanted to say <b>why we created just for java</b>. coding has the stigma of being complicated, hard to learn, and only useful for computer scientists. however, <b>we want to break that stigma.</b> this doesn't mean that coding will be easy, but we wrote the content in just for java using <b>relatable language</b> so it is easy to understand and <b>fun</b> for you guys! (<b className="note">btw:</b> you may even see some jokes and text slang in there! *wink wink* we even have fun themes for some pages if we were feeling particularly fancy!) we provide <b>blueprints</b> to illustrate coding syntax and <b>examples</b> that we walk through so that you can master the concept. finally, coding is not only useful for computer scientists, but for <b>everyone</b>. oh, before we forget:
 				<div className="code">
@@ -52,12 +56,12 @@ class GettingStarted extends React.Component{
 				heheh. ok sry for killing one of ur brain cells...
 				<h3>recap</h3>
 				<b>yo guess what?!</b> you made it to recap! in <b>recap</b>, we give you a <b>sparknotes version</b> of what you learned – just a <b>lil summary</b> to help reinforce the coding concept. 
-				if you're ever still bamboozled about the concept – which is completely okay – don't hestiate to <b>email us</b>! (<b className="note">psst. need a reminder</b> on what our email address is? check out the <b className="pageName">contact us page</b>!)
+				if you're ever still bamboozled about the concept – which is completely okay – don't hestiate to <b>email us</b>! (<b className="note">psst. need a reminder</b> on what our email address is? check out the <Link className="contentLink" to="/contact-us"><b className="pageName">contact us page</b></Link>!)
 				<h3>pit stop</h3>
 				in <b>pit stops</b>, we provide the <b>problems</b>, and you get a chance to <b>practice</b> your coding skills. <b>no stress</b> if you have no idea what to do in these problems, because we always have <b>hints</b> that steer you in the right direction. in addition, we provide <b>our solution</b>, which you can reference if you ever need extra help or if you want to check your code with ours. now let's do our first pit stop together!<br/><br/>
 				<div className="problem">
 					<b className="note">your first repl:</b><br/><br/>
-					so we've talked about coding in java, but where exactly do you type your code? your <b>goal</b> is to <b>create your first repl</b> using <b className="pageName">repl.it</b>, a website where you can type and run your code (<b className="note">btw:</b> the fancy name for this is a browser based IDE)! a <b>repl</b> is simply a <b>coding project</b>, so by the end of this pit stop problem, you would've created your first coding project!
+					so we've talked about coding in java, but where exactly do you type your code? your <b>goal</b> is to <b>create your first repl</b> using <a className="externalLink" href="https://repl.it/" target="_blank"><b className="pageName">repl.it</b></a>, a website where you can type and run your code (<b className="note">btw:</b> the fancy name for this is a browser based IDE)! a <b>repl</b> is simply a <b>coding project</b>, so by the end of this pit stop problem, you would've created your first coding project!
 					this will require ten steps: <br/>
 					<ol>
 						<li>navigate to the website repl.it</li>
@@ -144,7 +148,7 @@ class GettingStarted extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">get started coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/variables"><b className="pageName">get started coding!</b></Link>
 			</div>
 		)
 	}

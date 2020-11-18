@@ -1,6 +1,9 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
 
 class Array extends React.Component{
 	constructor(props){
@@ -56,7 +59,7 @@ class Array extends React.Component{
 	            boolean[] boolBool = new boolean[2];
 	            </div>
 	            <h3>how can you change and get the values in an array?</h3>
-	            great question!! each element in an array has an <b>index</b>! you've heard of indexes before when we discussed Strings, so hopefully the concept of indexing is something you're already comfortable with. (<b className="note">psst. need a reminder</b> on what in the world indexing is? check out the <b className="pageName">strings page</b>!) we can <b>change elements in an array</b> and <b>access them</b> through their <b>index</b>. (<b className="note">btw:</b> don't forget that indexing always starts at 0!)
+	            great question!! each element in an array has an <b>index</b>! you've heard of indexes before when we discussed Strings, so hopefully the concept of indexing is something you're already comfortable with. (<b className="note">psst. need a reminder</b> on what in the world indexing is? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!) we can <b>change elements in an array</b> and <b>access them</b> through their <b>index</b>. (<b className="note">btw:</b> don't forget that indexing always starts at 0!)
 	            <br/><br/>
 	            here is the blueprint for changing an element in an array through its index:
 	            <br/>
@@ -195,7 +198,7 @@ class Array extends React.Component{
 	            </div>
 	            what in the world is that?!?!? it's the <b>memory address</b> of the array, which is pretty useless to us as of now. and that's why we need to construct a for loop and print each individual value in the array rather than the whole array itself.
 	            <h3>wanna turn spicy into spicier?</h3>
-	            let's use arrays in our own <b>functions</b>! (<b className="note">psst. need a reminder</b> on what functions are and why they are useful? check out the <b className="pageName">functions page</b>!)
+	            let's use arrays in our own <b>functions</b>! (<b className="note">psst. need a reminder</b> on what functions are and why they are useful? check out the <Link className="contentLink" to="/functions"><b className="pageName">functions page</b></Link>!)
 	            <br/><br/>
 	            let's first create a function that <b>prints out an inputted array of characters</b>. we already wrote the code to print an array using a for loop above, so all we really need to do is to <b>put the code inside a function</b>. (<b className="note">hint:</b> what should our function take in as a parameter? what should its return type be?) since we are just printing every element of an array, we won't return anything, so our <b>return type is void</b>. however, our function does need to take in the <b>char[]</b> that it will print out. check out the code below that creates our printArray function:
 	            <div className="code">
@@ -254,7 +257,7 @@ class Array extends React.Component{
 	            <br/>
 	            &#125;
 	            </div>
-	            (<b className="note">psst. need a reminder on</b> what the charAt method does? check out the <b className="pageName">strings page</b>!)
+	            (<b className="note">psst. need a reminder on</b> what the charAt method does? check out the <Link className="contentLink" to="/strings"><b className="pageName">strings page</b></Link>!)
 	            <br/><br/>
 	            now it's time to <b>mash. things. up.</b> literally. let's create a program that includes both our printArray function and our stringToArr function. in the main method, <b>let's call the printArray function on the char array returned from the stringToArr function</b>. sounds complicated? dw! we'll break it down. first, we want to call stringToArr, passing any String we want. stringToArr returns a char[], and the next thing we want to do is to print this array. we can do this by passing the char[] returned from stringToArr into our printArray function, which doesn't return anything. and guess what? it's all <b>one line of code</b>. check it out below (<b className="note">btw:</b> r2-d2 is another star wars character lolol):
 	            <div className="code">
@@ -434,7 +437,7 @@ class Array extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+	            ...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/for-each-loop"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}

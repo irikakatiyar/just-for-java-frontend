@@ -1,6 +1,10 @@
 import React from 'react';
 import ProgressUpdater from './ProgressUpdater';
 import Hint from './Hint';
+import {
+  Link
+} from "react-router-dom";
+
 
 class Constants extends React.Component{
 	constructor(props){
@@ -28,7 +32,7 @@ class Constants extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				let's go down memory lane to the <b className="pageName">variables page</b> where you learned how to initialize a variable and change its value. now, we are going to learn about a special type of variable called a <b>constant</b>. in java, a constant is <b>a variable whose value cannot be changed once it has been initialized</b>. a constant is an <b>immutable</b> variable, or unable to be changed. on the other hand, the variables you have been creating so far have all been <b>mutable</b>, or able to be changed. (<b className="note">btw:</b> from here on out, whenever we say "constant", we are referencing an immutable variable, and whenever we say "variable", you can assume that we are referencing a mutable variable, the ones that you've been creating so far.)
+				let's go down memory lane to the <Link className="contentLink" to="/variables"><b className="pageName">variables page</b></Link> where you learned how to initialize a variable and change its value. now, we are going to learn about a special type of variable called a <b>constant</b>. in java, a constant is <b>a variable whose value cannot be changed once it has been initialized</b>. a constant is an <b>immutable</b> variable, or unable to be changed. on the other hand, the variables you have been creating so far have all been <b>mutable</b>, or able to be changed. (<b className="note">btw:</b> from here on out, whenever we say "constant", we are referencing an immutable variable, and whenever we say "variable", you can assume that we are referencing a mutable variable, the ones that you've been creating so far.)
 				<h3>wait, so how do you make this so-called "special variable"?</h3>
 				in order to create a constant, we can use the <b>final</b> keyword. you can remember that the keyword is final because you are essentially initializing the constant variable to its <b>final value</b>, since it can't be changed. here is the blueprint for <b>creating a constant</b>:<br/>
 				<b>final <i>&lt;type&gt; &lt;name&gt; = &lt;immutable_value&gt;;</i></b><br/><br/>
@@ -52,7 +56,7 @@ class Constants extends React.Component{
 				<h3>ok enough blabbering about naming conventions; let's get an example</h3>
 				let's try to create a program that asks the user how many avocados they want to buy from our avocado store, and prints out the price that the user has to pay for the number of avocados they purchased! (<b className="note">btw:</b> have you realized yet that we love avocados so much that we made this whole page avocado-themed?)
 				<br/><br/>
-				the first we need to do is some <b>setup</b> so that we can get <b>user input</b> in our program. this involves <b>importing Scanner</b> and <b>creating a Scanner variable</b>. (<b className="note">psst. need a reminder</b> of the six steps you need to do in order to get user input? check out the <b className="pageName">user input page</b>!) 
+				the first we need to do is some <b>setup</b> so that we can get <b>user input</b> in our program. this involves <b>importing Scanner</b> and <b>creating a Scanner variable</b>. (<b className="note">psst. need a reminder</b> of the six steps you need to do in order to get user input? check out the <Link className="contentLink" to="/user-input"><b className="pageName">user input page</b></Link>!) 
 				<br/>next, we need to create two <b>constants</b>: one to store the name of your avocado store, and one to store the price per avocado. print a welcome message for the user that incorporates your avocado store's name. (<b className="note">hint:</b> you can concatenate, or add, a variable to the end of a String using the <b>+</b> operator.)
 				<br/>then, <b>print out a prompt</b> asking the user how many avocados they want to buy, and store the user input in an <b>int</b>.
 				<br/>finally, calculate and print the <b>total price</b> the user has to pay for the avocados they purchased. (<b className="note">hint:</b> to calculate the total price, multiply the price per avocado by the number of avocados the user wants to buy.)
@@ -185,7 +189,7 @@ class Constants extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <b className="pageName">keep coding!</b>
+				...we know <b className="note">just for java</b> is as <b>addicting</b> as the newest Netflix binge, so what are you waiting for? <Link className="contentLink" to="/for-loop"><b className="pageName">keep coding!</b></Link>
 			</div>
 		)
 	}
