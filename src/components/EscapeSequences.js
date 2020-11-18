@@ -16,7 +16,9 @@ class EscapeSequences extends React.Component{
 		});
 	}
 
+
 	render(){
+		window.scrollTo(0, 0);
 		return (
 			<div>
 				<ProgressUpdater
@@ -25,7 +27,7 @@ class EscapeSequences extends React.Component{
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}
 	            />
-	            believe it or not, we're gonna spend a whole page talking about <b>a backslash: \</b>. if you're like me and don't know the difference between a forward slash and a back slash, here ya go:
+	            believe it or not, we're gonna spend a whole page talking about a <b>backslash</b>: <b>\</b>. if you're like me and don't know the difference between a forward slash and a backslash, here ya go:
 	            <ul>
 	            	<li><b>/</b> = forward slash</li>
 	            	<li><b>\</b> = backslash</li>
@@ -108,7 +110,7 @@ class EscapeSequences extends React.Component{
 				</div>
 				oof that's a lot of slashes. let's break it down: whenever you see <b>\\</b>, think <b>\</b>. whenever you see <b>\n</b>, think <b>enter</b>. and <b>/</b> is just <b>/</b> – nothing special here. 
 				<br/><br/>and that's how we get two dubs – <b>one for you bro and one for me</b>. (<b className="note">btw:</b> cmon u gotta admit that was kinda wholesome.)
-				<h3>/recap</h3>
+				<h3>\recap</h3>
 				<b>dang bro!</b> you made it to recap!<br/><br/>
 				an <b>escape sequence</b>, or <b>escape character</b>, is a character preceded by a backslash. here is the blueprint for an escape sequence:
 				<br/><b>

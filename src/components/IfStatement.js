@@ -18,6 +18,7 @@ class IfStatement extends React.Component{
 
 
 	render(){
+		window.scrollTo(0, 0);
 		return (
 			<div>
 				<ProgressUpdater

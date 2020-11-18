@@ -9,6 +9,7 @@ class HashMap extends React.Component{
 
 
 	render(){
+		window.scrollTo(0, 0);
 		return (
 			<div>
 				<b>coming soon!</b>

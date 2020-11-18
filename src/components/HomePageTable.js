@@ -1,11 +1,19 @@
 import React from 'react';
+import { pages } from '../constants/pages';
 import axios from 'axios';
 
 class HomePageTable extends React.Component{
 	constructor(props){
 		super(props)
+		var pageArr = [];
+		var page;
+		for(page of pages) {
+			if(page.isConceptPage) {
+				pageArr.push(page.displayName);
+			}
+		}
 		this.state={
-			pages: ["getting started", "variables", "comments", "printing", "arithmetic", "strings", "escape sequences", "user input", "math", "if statement", "boolean logic", "constants", "for loop", "while loop", "nesting", "break", "functions", "overloading", "array", "for-each loop", "arraylist", "2d array"/*, "hashmap", "casting", "random numbers", "ascii"*/],
+			pages: pageArr,
 			data: {}
 		}
 	}

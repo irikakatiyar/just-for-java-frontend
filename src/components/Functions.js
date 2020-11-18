@@ -18,10 +18,11 @@ class Functions extends React.Component{
 
 
 	render(){
+		window.scrollTo(0, 0);
 		return (
 			<div>
 				<ProgressUpdater
-	              page={this.props.page} 
+	              page={this.props.page}
 	              user={this.props.user}
 	              progress={this.state.progress}
 	              update={(progress)=>this.updateProgressState(progress)}

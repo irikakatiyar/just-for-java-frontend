@@ -7,6 +7,7 @@ class ContactUs extends React.Component{
 
 
 	render(){
+		window.scrollTo(0, 0);
 		return (
 			<div>
 				i guess we should put some contact info here...

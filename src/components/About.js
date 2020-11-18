@@ -7,6 +7,7 @@ class About extends React.Component{
 
 
 	render(){
+		window.scrollTo(0, 0);
 		return (
 			<div>
 				hi! we're irith and irika katiyar, 18 year old twins from sunny northern california who love to code! 

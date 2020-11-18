@@ -4,9 +4,8 @@ import 'firebase/auth';
 import firebaseConfig from './firebaseConfig';
 import React from 'react';
 import './App.css';
-import SideButton from './components/SideButton';
 import axios from 'axios';
-import Content from './components/Content';
+import SideBar from './components/SideBar';
 import Home from './components/Home';
 import About from './components/About';
 import ContactUs from './components/ContactUs';
@@ -35,16 +34,14 @@ import Casting from './components/Casting';
 import Constants from './components/Constants';
 import Overloading from './components/Overloading';
 import ForEachLoop from './components/ForEachLoop';
-/*
+import EscapeSequences from './components/EscapeSequences';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation,
-  Link,
-  withRouter
 } from "react-router-dom";
-*/
+
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseApp.auth();
@@ -56,21 +53,6 @@ class App extends React.Component{
 
   constructor(props) {
     super(props);
-    var sideButtonText = ["home", "about", "contact us", "getting started", "variables", "comments", "printing", "arithmetic", "strings", "escape sequences", "user input", "math", "if statement", "boolean logic", "constants", "for loop", "while loop", "nesting", "break", "functions", "overloading", "array", "for-each loop", "arraylist", "2d array"/*, "hashmap", "casting", "random-numbers", "ascii"*/];
-    /*var sideButtonText = ["home", "about", "contact-us", "getting-started", "variables", "comments", "printing", "arithmetic", "strings", "escape-sequences", "user-input", "math", "if-statement", "boolean-logic", "constants", "for-loop", "while-loop", "nesting", "break", "functions", "overloading", "array", "for-each-loop", "arraylist", "2d-array", "hashmap", "casting", "random-numbers", "ascii"];*/
-    var selectedSideButton = "home";
-    
-    this.state={
-      sideButtonText: sideButtonText,
-      selectedSideButton: selectedSideButton
-    }
-  }
-
-  click(text) {
-    var selectedSideButton = text;
-    this.setState({
-      selectedSideButton: selectedSideButton
-    })
   }
 
   render() {
@@ -80,7 +62,7 @@ class App extends React.Component{
       signInWithGoogle,
     } = this.props;
     return (
-      /*<Router>*/
+      <Router>
         <div className="full">
           <div className = "title">
             <h1>
@@ -94,24 +76,13 @@ class App extends React.Component{
 
           </div>
           <div className = "bottom">
-            <div className = "sidebar">
-              {this.state.sideButtonText.map((text, i) =>
-                <div key={i}>
-                  <SideButton /*currentPathname={window.location.pathname} myPathname={text}*/ text={text} click={()=>this.click(text)} isSelected={this.state.selectedSideButton === text} />
-                </div>
-              )}
-            </div>
+            <SideBar />
             <div className = "content"> 
-              <Content 
-                page={this.state.selectedSideButton}
-                user={user}
-              />
-              {/*
-              <h2>{this.state.selectedSideButton}:</h2>
+              <h2>{}:</h2>
               <br/>
               <Switch>
-                <Route exact path="/">  
-                  <Home user={user}/>
+                <Route exact path="/">
+                  <Home user={user} />
                 </Route>
                 
                 <Route path="/home">
@@ -194,6 +165,10 @@ class App extends React.Component{
                   <Strings user={user}/>
                 </Route>
 
+                <Route path="/escape-sequences">
+                  <EscapeSequences user={user}/>
+                </Route>
+
                 <Route path="/arraylist">
                   <ArrayList user={user}/>
                 </Route>
@@ -226,11 +201,10 @@ class App extends React.Component{
                   <Overloading user={user}/>
                 </Route>
               </Switch>
-              */}
             </div>
           </div>
         </div>
-      /*</Router>*/
+      </Router>
     );
   }
 
