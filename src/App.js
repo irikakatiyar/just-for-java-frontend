@@ -30,7 +30,7 @@ import Arithmetic from './components/Arithmetic';
 import Nesting from './components/Nesting';
 import GettingStarted from './components/GettingStarted';
 import TwoDimArrays from './components/TwoDimArrays';
-import Casting from './components/Casting';
+import Searching from './components/Searching';
 import Constants from './components/Constants';
 import Overloading from './components/Overloading';
 import ForEachLoop from './components/ForEachLoop';
@@ -191,8 +191,8 @@ class App extends React.Component{
                   <TwoDimArrays user={user} page="2d array"/>
                 </Route>
 
-                <Route path="/casting">
-                  <Casting user={user} page="casting"/>
+                <Route path="/searching">
+                  <Searching user={user} page="searching"/>
                 </Route>
 
                 <Route path="/overloading">

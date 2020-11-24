@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 
-class Casting extends React.Component{
+class Searching extends React.Component{
 	constructor(props){
 		super(props)
 	}
@@ -23,4 +23,4 @@ class Casting extends React.Component{
 	}
 }
 
-export default Casting;
+export default Searching;

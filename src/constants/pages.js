@@ -22,11 +22,11 @@ export const pages = [
 	{name: "overloading", displayName: "overloading", isConceptPage: true},
 	{name: "array", displayName: "array", isConceptPage: true},
 	{name: "for-each-loop", displayName: "for-each loop", isConceptPage: true},
-	{name: "arraylist", displayName: "arraylist", isConceptPage: true},
 	{name: "2d-array", displayName: "2d array", isConceptPage: true},
+	{name: "arraylist", displayName: "arraylist", isConceptPage: true},
 	/*
 	{name: "hashmap", displayName: "hashmap", isConceptPage: true},
-	{name: "casting", displayName: "casting", isConceptPage: true},
+	{name: "searching", displayName: "searching", isConceptPage: true},
 	{name: "random-numbers", displayName: "random numbers", isConceptPage: true},
 	{name: "ascii", displayName: "ascii", isConceptPage: true}
 	*/
