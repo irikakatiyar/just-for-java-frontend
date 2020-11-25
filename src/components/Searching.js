@@ -11,9 +11,11 @@ class Searching extends React.Component{
 		super(props)
 	}
 
+	componentDidMount() {
+		window.scrollTo(0, 0);
+  	}
 
 	render(){
-		window.scrollTo(0, 0);
 		return (
 			<div>
 				<h2>{this.props.page}:</h2><br/>

@@ -11,7 +11,7 @@ class SideButton extends React.Component{
 
 	render(){
 		return (
-			<NavLink className="sideButton" to={"/"+this.props.myPathname} activeClassName="sideButtonSelected">
+			<NavLink className="sideButton" exact to={"/"+this.props.myPathname} activeClassName="sideButtonSelected">
 				{this.props.myDisplayName}
 			</NavLink>
 		)

@@ -25,6 +25,22 @@
   border: solid 1px #FFA69E;
 }
 
+.contactSubmit{
+  background-color: #FFA69E;
+  color: #172A3A;
+  border-radius: 8px;
+  border: solid 1px #172A3A;
+  width: 200px;
+  height: 50px;
+  transition-duration: 0.4s;
+}
+
+.contactSubmit:hover{
+  color: #FFA69E;
+  background-color: #172A3A;
+  border: solid 1px #FFA69E;
+}
+
 h1{ 
   font-family: 'Source Code Pro', monospace;
   font-weight: 600;

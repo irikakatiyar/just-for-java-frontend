@@ -14,6 +14,10 @@ class Comments extends React.Component{
 		}
 	}
 
+	componentDidMount() {
+		window.scrollTo(0, 0);
+  	}
+
 	updateProgressState(progress){
 		this.setState({
 			progress: progress
@@ -22,7 +26,6 @@ class Comments extends React.Component{
 
 
 	render(){
-		window.scrollTo(0, 0);
 		return (
 			<div>
 				<h2>{this.props.page}:</h2><br/>

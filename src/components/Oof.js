@@ -1,12 +1,7 @@
 import React from 'react';
-import ProgressUpdater from './ProgressUpdater';
-import Hint from './Hint';
-import {
-  Link
-} from "react-router-dom";
 
 
-class HashMap extends React.Component{
+class Oof extends React.Component{
 	constructor(props){
 		super(props)
 	}
@@ -19,10 +14,10 @@ class HashMap extends React.Component{
 		return (
 			<div>
 				<h2>{this.props.page}:</h2><br/>
-				<b>coming soon!</b>
+				<b>404 page not found :(</b>
 			</div>
 		)
 	}
 }
 
-export default HashMap;
+export default Oof;
