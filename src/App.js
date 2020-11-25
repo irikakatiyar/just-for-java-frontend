@@ -45,7 +45,7 @@ import {
 
 import ReactGA from 'react-ga';
 
-const trackingId = "UA-2177105652-1";
+const trackingId = "G-QC0GS7MPXC";
 ReactGA.initialize(trackingId);
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
