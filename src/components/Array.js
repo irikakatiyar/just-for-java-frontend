@@ -19,8 +19,11 @@ class Array extends React.Component{
 		});
 	}
 
-	render(){
+	componentDidMount() {
 		window.scrollTo(0, 0);
+  	}
+
+	render(){
 		return (
 			<div>
 				<h2>{this.props.page}:</h2><br/>

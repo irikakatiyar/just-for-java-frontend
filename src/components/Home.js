@@ -10,6 +10,10 @@ class Home extends React.Component{
 		super(props)
 	}
 
+	componentDidMount() {
+		window.scrollTo(0, 0);
+  	}
+
 	render(){
 		var greeting = this.props.user ? <div><b>hi, {this.props.user.displayName.toLowerCase()}</b>! welcome to <b className="note">just for java</b>!</div> : <div><b>hi!</b> welcome to <b className="note">just for java</b>!</div>
 		var tableTitle = this.props.user ? <div>{this.props.user.displayName.toLowerCase()}'s progress</div> : null

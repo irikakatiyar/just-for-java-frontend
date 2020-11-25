@@ -1,5 +1,5 @@
 export const pages = [
-	{name: "home", displayName: "home", isConceptPage: false},
+	{name: "", displayName: "home", isConceptPage: false},
 	{name: "about", displayName: "about", isConceptPage: false},
 	{name: "contact-us", displayName: "contact us", isConceptPage: false},
 	{name: "getting-started", displayName: "getting started", isConceptPage: true},

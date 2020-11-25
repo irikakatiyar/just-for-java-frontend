@@ -35,6 +35,7 @@ import Constants from './components/Constants';
 import Overloading from './components/Overloading';
 import ForEachLoop from './components/ForEachLoop';
 import EscapeSequences from './components/EscapeSequences';
+import Oof from './components/Oof';
 
 import {
   BrowserRouter as Router,
@@ -42,6 +43,10 @@ import {
   Route,
 } from "react-router-dom";
 
+import ReactGA from 'react-ga';
+
+const trackingId = "UA-WD277ZYSZX";
+ReactGA.initialize(trackingId);
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseApp.auth();
@@ -61,6 +66,11 @@ class App extends React.Component{
       signOut,
       signInWithGoogle,
     } = this.props;
+    if(user){
+      ReactGA.set({
+        userId: user.uid
+      })
+    }
     return (
       <Router>
         <div className="full">
@@ -83,10 +93,6 @@ class App extends React.Component{
                   <Home user={user} page="home"/>
                 </Route>
                 
-                <Route path="/home">
-                  <Home user={user} page="home"/>
-                </Route>
-
                 <Route path="/constants">
                   <Constants user={user} page="constants"/>
                 </Route>
@@ -197,6 +203,10 @@ class App extends React.Component{
 
                 <Route path="/overloading">
                   <Overloading user={user} page="overloading"/>
+                </Route>
+
+                <Route>
+                  <Oof user={user} page="oof"/>
                 </Route>
               </Switch>
             </div>
