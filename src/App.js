@@ -45,19 +45,24 @@ import {
 
 import ReactGA from 'react-ga';
 
-const trackingId = "G-QC0GS7MPXC";
-ReactGA.initialize(trackingId);
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseApp.auth();
 const providers = {
   googleProvider: new firebase.auth.GoogleAuthProvider(),
 };
 
+
+
 class App extends React.Component{
 
   constructor(props) {
     super(props);
+  }
+
+  componentDidMount() {
+    const trackingId = "UA-183909754-1";
+    ReactGA.initialize(trackingId);
+    ReactGA.pageview("/")
   }
 
   render() {
