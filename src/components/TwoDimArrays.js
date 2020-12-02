@@ -293,38 +293,6 @@ class TwoDimArrays extends React.Component{
 					</div>
 				</div>
 				<br/>
-				<div className="problem">
-					<b className="note">square array:</b><br/><br/>
-					your <b>goal</b> is to use <b>2d arrays</b> to create a function that returns <b>true</b> if <b>the given 2d array is a square</b> and <b>false</b> otherwise.
-					this will require three steps:<br/>
-					<ol>
-						<li>create a function that returns true if the given 2d array is a square and false otherwise</li>
-						<ul>
-							<li>a 2d array is a square if the number of rows and number of columns in the 2d array are equal to each other</li>
-						</ul>
-						<li>in the main method, print out the value that gets returned when you call your function with a square 2d array</li>
-						<li>in the main method, print out the value that gets returned when you call your function with a non-square 2d array</li>
-					</ol>
-					<Hint
-						hints={[
-							"for step 1, the number of rows in a 2d array can be retrieved by typing arr.length, where arr is your 2d array",
-							"for step 1, the number of columns in a 2d array can be retrieved by typing arr[i].length, where arr is your 2d array and i is an arbitrary row index"
-						]}
-						id="2d-array-square-array"
-					/>
-					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/2d-array-square-array?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-					</div>
-				</div>
-				<br/>
-				<div className="solution">
-					<b className="note">our solution:</b><br/><br/>
-					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
-					<div className="repl">
-						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/2d-array-square-array-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-					</div>
-				</div>
-				<br/>
 				<ProgressUpdater
 	              page={this.props.page} 
 	              user={this.props.user}
