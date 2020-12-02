@@ -112,7 +112,7 @@ class Constants extends React.Component{
 				</div>
 				as much as i love avocados, this code = <b>no no</b>. if you ever attempt changing the value of a constant in your program, you will get an <b>error</b>. and red text in the console = <b>no no</b>. so don't change the value of a constant. <b>just. don't. do. it.</b>
 				<h3>final(ly), it's recap</h3>
-				<b>awesome!</b> you made it to recap!
+				<b>lit!</b> you made it to recap!
 				<br/><br/>
 				to kick off our recap, here's a nice little <b>vocab dump</b> for you:
 				<ul>
