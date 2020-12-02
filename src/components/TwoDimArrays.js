@@ -183,7 +183,6 @@ class TwoDimArrays extends React.Component{
 	            000000<br/>
 	            000000
 	            </div>
-	            pretty cool. pretty cool.
 	            <h3>let's be fun and fresh and use a for-each loop !!</h3>
 	            yassss we love ur thinking! (<b className="note">psst. need a reminder</b> on how to construct a for-each loop and how it is different from a normal for loop? check out the <Link className="contentLink" to="/for-each-loop"><b className="pageName">for-each loop page</b></Link>!) let's take a look at how nested for-each loops can iterate through a 2d array with some code (<b className="note">btw:</b> we named our variables so that hopefully our code is more readable and easier to comprehend):
 	            <div className="code">
@@ -208,7 +207,7 @@ class TwoDimArrays extends React.Component{
 	        	<br/>
 	        	&#125;
 	            </div>
-	            the nested for-each loops above are equivalent to the nested standard for loops we created earlier, and both print out the same thing to the console.
+	            the <b>nested for-each loops</b> above are equivalent to the <b>nested standard for loops</b> we created earlier, and both print out the same thing to the console.
 	            <h3>just a lil' recap</h3>
 	            <b>awesome!</b> you made it to recap!
 				<br/><br/>
@@ -290,6 +289,45 @@ class TwoDimArrays extends React.Component{
 					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
 					<div className="repl">
 						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/2d-array-square-array-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="problem">
+					<b className="note">rolling dice:</b><br/><br/>
+					your <b>goal</b> is to use <b>2d arrays</b> to <b>store the sum of two six-sided dice rolls in a tabular data structure</b>.
+					this will require two steps:<br/>
+					<ol>
+						<li>create a 2d int array to store the sum of the dice rolls</li>
+						<ul>
+							<li>the value at row 0, column 0 represents when you roll 1 and 1, so your array should store 2 at that position</li>
+							<li>the value at row 0, column 1 represents when you roll 1 and 2, so your array should store 3 at that position</li>
+							<li>the value at row 1, column 0 represents when you roll 2 and 1, so your array should store 3 at that position</li>
+							<li>continue this pattern until you roll 6 and 6, which is the greatest sum since the dice are six-sided</li>
+						</ul>
+						<li>fill your 2d array with the appropriate sums</li>
+						<ul>
+							<li>don't hard-code 36 lines of setting each position in your 2d array to the proper int value</li>
+							<li>instead, use one of the code blocks we discussed above to fill your 2d array</li>
+						</ul>
+					</ol>
+					<Hint
+						hints={[
+							"for step 1, because your dice are six-sided, the number of rows – representing your first die –  in your 2d array is 6, and the number of columns – representing your second die – is also 6",
+							"for step 2, you need to use nested for loops in order to fill your array: your outer for loop represents your first die roll / rows and your inner for loop represents your second die roll / columns",
+							"for step 2, the row and column indexes in your for loops represent the number on your first and second dice rolls, resepctively... just make sure you add 1 to the index because indexing starts at 0"
+						]}
+						id="2d-array-rolling-dice"
+					/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/2d-array-rolling-dice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+					</div>
+				</div>
+				<br/>
+				<div className="solution">
+					<b className="note">our solution:</b><br/><br/>
+					below is <b>our solution</b> for the problem above. the <b>comments</b> help to explain how to code each step. hopefully your code looks similar to ours <b>:)</b><br/><br/>
+					<div className="repl">
+						<iframe height="400px" width="100%" src="https://repl.it/@justforjava/2d-array-rolling-dice-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 					</div>
 				</div>
 				<br/>
